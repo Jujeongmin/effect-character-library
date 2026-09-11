@@ -56,7 +56,13 @@ a{color:var(--violet)}
 .nothing{grid-column:1/-1;color:var(--muted);padding:48px 4px;text-align:center;line-height:1.8}
 
 /* ---- 카드 -------------------------------------------------------------- */
-.card{display:flex;flex-direction:column;background:none;border:0;padding:0;cursor:pointer;text-align:left}
+.card{display:flex;flex-direction:column;text-align:left}
+.plate-btn{background:none;border:0;padding:0;margin:0;display:block;width:100%;cursor:pointer}
+.namerow{display:flex;align-items:flex-start;gap:5px;margin-top:7px}
+.mini{flex:0 0 auto;background:var(--plate);border:1px solid var(--line);border-radius:6px;
+  color:var(--muted);font:500 10px/1.5 var(--mono);padding:2px 6px;cursor:pointer;white-space:nowrap}
+.mini:hover{color:var(--text);border-color:#454a5e}
+.mini.ok{color:var(--amber);border-color:var(--amber)}
 .thumb{position:relative;aspect-ratio:1;background:var(--plate);border:1px solid var(--line);border-radius:11px;
   overflow:hidden;display:grid;place-items:center;transition:.12s}
 .card:hover .thumb{border-color:#454a5e}
@@ -66,7 +72,7 @@ a{color:var(--violet)}
   border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:10.5px;color:var(--muted)}
 .thumb .fr{position:absolute;bottom:6px;right:6px;font:500 10.5px var(--mono);color:var(--muted);
   background:color-mix(in srgb,var(--ink) 78%,transparent);border-radius:5px;padding:1px 5px}
-.card .name{margin-top:7px;font:500 12px/1.35 var(--mono);color:var(--text);word-break:break-all}
+.card .name{flex:1 1 auto;min-width:0;font:500 12px/1.35 var(--mono);color:var(--text);word-break:break-all}
 .card[aria-current=true] .name{color:var(--violet)}
 
 /* ---- 상세 패널 --------------------------------------------------------- */
@@ -75,6 +81,7 @@ a{color:var(--violet)}
 .dt-empty{color:var(--muted);font-size:13px;line-height:1.8;padding:40px 6px;text-align:center}
 .dt-close{display:none}
 .dt-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:14px}
+.dt-title{display:flex;align-items:baseline;gap:7px;min-width:0}
 .dt-head h2{margin:0;font:500 15px/1.3 var(--mono);word-break:break-all}
 .badge{flex:0 0 auto;background:var(--plate-2);border:1px solid var(--line);border-radius:999px;
   padding:3px 10px;font-size:11.5px;color:var(--muted);white-space:nowrap}
@@ -93,6 +100,10 @@ a{color:var(--violet)}
   color:var(--muted);cursor:pointer;text-decoration:none;display:inline-block}
 .btn:hover{color:var(--text);border-color:#454a5e}
 .btn.ok{color:var(--amber);border-color:var(--amber)}
+.btn.primary{background:var(--violet);border-color:var(--violet);color:#fff;font-weight:600}
+.btn.primary:hover{color:#fff;border-color:var(--violet)}
+.btn.primary.ok{background:var(--amber);border-color:var(--amber);color:#18120a}
+.hint{margin:9px 0 0;font-size:11.5px;line-height:1.65;color:var(--muted)}
 .strip{display:flex;gap:5px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:thin}
 .strip canvas{flex:0 0 auto;width:46px;height:46px;border:1px solid var(--line);border-radius:7px;background:var(--plate);cursor:pointer}
 .strip canvas[aria-current=true]{border-color:var(--violet)}
@@ -234,7 +245,8 @@ if (matchMedia('(prefers-reduced-motion: reduce)').matches) state.playing = fals
 
 function absUrl(file){
   if (location.protocol === 'http:' || location.protocol === 'https:') {
-    return new URL(file, location.href.split('#')[0]).href;
+    // 쿼리와 해시는 버린다. 주소에 ?utm_source=… 가 붙어도 경로가 깨지면 안 된다.
+    return location.origin + location.pathname.replace(/[^/]*$/, '') + file;
   }
   return SITE_BASE + file;        // file:// 로 열었을 때는 배포 주소를 준다
 }
@@ -362,9 +374,14 @@ function tick(now){
 /* ── 카드 ────────────────────────────────────────────────────────────── */
 
 function makeCard(kind, id, a){
-  var el2 = document.createElement('button');
-  el2.type = 'button';
+  var el2 = document.createElement('div');
   el2.className = 'card';
+
+  // 그림만 누름 판이다. 이름 옆 복사 버튼이 안에 들어가야 해서 카드 자체는 버튼이 아니다.
+  var plate = document.createElement('button');
+  plate.type = 'button';
+  plate.className = 'plate-btn';
+  plate.setAttribute('aria-label', id + ' 자세히');
 
   var thumb = document.createElement('div');
   thumb.className = 'thumb';
@@ -383,13 +400,20 @@ function makeCard(kind, id, a){
     thumb.appendChild(fr);
   }
 
+  var row = document.createElement('div');
+  row.className = 'namerow';
+
   var name = document.createElement('span');
   name.className = 'name';
   name.textContent = id;
 
-  el2.appendChild(thumb);
-  el2.appendChild(name);
-  el2.addEventListener('click', function(){ select(kind, id, true); });
+  row.appendChild(name);
+  row.appendChild(miniCopy(id));
+
+  plate.appendChild(thumb);
+  el2.appendChild(plate);
+  el2.appendChild(row);
+  plate.addEventListener('click', function(){ select(kind, id, true); });
 
   var rec = { kind: kind, id: id, a: a, ctx: fitCanvas(cv, THUMB, THUMB), w: THUMB, h: THUMB,
               i: 0, acc: 0, visible: false, inst: null, node: el2 };
@@ -535,6 +559,23 @@ function copyText(t){
   });
 }
 
+/** 이름 옆에 붙는 작은 id 복사 버튼. */
+function miniCopy(id){
+  var b = node('button', 'mini', '복사');
+  b.type = 'button';
+  b.title = 'id 복사 — ' + id;
+  b.setAttribute('aria-label', id + ' id 복사');
+  b.addEventListener('click', function(ev){
+    ev.stopPropagation();
+    copyText(id).then(function(){
+      b.textContent = '됨';
+      b.classList.add('ok');
+      setTimeout(function(){ b.textContent = '복사'; b.classList.remove('ok'); }, 1000);
+    });
+  });
+  return b;
+}
+
 function copyBtn(label, value){
   var b = node('button', 'btn', label);
   b.type = 'button';
@@ -584,7 +625,10 @@ function buildDetail(){
   }
 
   var head = node('div', 'dt-head');
-  head.appendChild(node('h2', null, id));
+  var title = node('div', 'dt-title');
+  title.appendChild(node('h2', null, id));
+  title.appendChild(miniCopy(id));
+  head.appendChild(title);
   head.appendChild(node('span', 'badge', kind === 'pfx' ? PFX_LABEL : (CAT_LABEL[a.category] || a.category)));
   detail.appendChild(head);
 
@@ -690,20 +734,27 @@ function buildDetail(){
   }
   detail.appendChild(meta);
 
-  /* 가져가기 */
+  /* 가져가기 — 원격에서 그대로 쓸 수 있는 것만 둔다. id 는 제목 옆에 있다. */
   detail.appendChild(node('div', 'dt-sec', '가져가기'));
   var acts = node('div', 'acts');
-  acts.appendChild(copyBtn('id 복사', id));
+
+  var prompt = kind === 'sprite' ? spritePrompt(a) : pfxPrompt(id, spec);
+  var pb = copyBtn('AI 프롬프트 복사', prompt);
+  pb.classList.add('primary');
+  pb.title = '붙여넣고 "전사 공격에 써줘" 처럼 한 줄만 덧붙이면 됩니다';
+  acts.appendChild(pb);
 
   if (kind === 'sprite') {
-    acts.appendChild(copyBtn('경로 복사', a.file));
-    acts.appendChild(copyBtn('직링크 복사', absUrl(a.file)));
+    acts.appendChild(copyBtn('PNG 주소 복사', absUrl(a.file)));
     var dl = node('a', 'btn', 'PNG 받기');
     dl.href = a.file;
     dl.setAttribute('download', a.id + '.png');
     acts.appendChild(dl);
   }
   detail.appendChild(acts);
+  detail.appendChild(node('p', 'hint',
+    '붙여넣은 다음 "전사 공격에 써줘" 처럼 어디에 쓸지 한 줄만 덧붙이세요. ' +
+    '파일을 받을 필요는 없습니다 — 주소를 그대로 읽어 갑니다.'));
 
   /* 코드 */
   var snippet = kind === 'sprite' ? spriteSnippet(a) : pfxSnippet(id);
@@ -716,6 +767,69 @@ function buildDetail(){
   dtRec = { kind: kind, id: id, a: a, ctx: ctx, w: SW, h: SH,
             i: 0, acc: 0, inst: null, stripCtxs: stripCtxs };
   if (kind === 'sprite') sheetOf(a);
+}
+
+/**
+ * 그대로 붙여넣으면 AI 가 이 이펙트를 붙일 수 있을 만큼의 정보.
+ * 파일을 내려받지 않아도 되도록 전부 절대 주소로 적는다.
+ */
+function spritePrompt(a){
+  var base = absUrl('');
+  var lines = [
+    '이 이펙트를 프로젝트에 붙여줘. 파일을 받을 필요 없이 아래 주소를 그대로 쓰면 돼.',
+    '',
+    'id: ' + a.id,
+    '스프라이트시트: ' + base + a.file,
+    '  ' + a.frameWidth + '×' + a.frameHeight + ' 프레임 ' + a.frames + '장, '
+      + a.cols + '칸 × ' + a.rows + '줄 배치'
+      + (a.frames > 1 ? ', ' + (a.fps || 12) + 'fps' : '') + ', 투명 PNG',
+    '매니페스트: ' + base + 'effects.json   (이펙트 201개의 id·크기·fps)',
+    '로더: ' + base + 'loader.js   (canvas / Phaser 3 / PixiJS)',
+    '',
+    '로더를 쓸 때:',
+    "  const lib = await EffectLib.load('" + base + "effects.json');",
+    "  await lib.preload(['" + a.id + "']);"
+  ];
+  if (a.frames > 1) {
+    lines.push("  const fx = lib.play('" + a.id + "', { loop: false });");
+    lines.push('  fx.update().draw(ctx, x, y, { scale: 1 });   // 매 프레임');
+    lines.push('');
+    lines.push('로더 없이 직접 그릴 때: 위 시트를 ' + a.cols + '칸 × ' + a.rows + '줄로 잘라 '
+      + (a.fps || 12) + 'fps 로 ' + a.frames + '프레임 돌리면 된다.');
+  } else {
+    lines.push("  const t = lib.get('" + a.id + "');");
+    lines.push('  ctx.drawImage(t.image, x, y);');
+    lines.push('');
+    lines.push('한 장짜리다. 크기·회전·투명도를 코드로 바꿔 가며 파티클 재료로 쓴다.');
+  }
+  return lines.join('\n');
+}
+
+function pfxPrompt(id, spec){
+  var base = absUrl('');
+  var ems = (spec && spec.emitters) || [];
+  var tex = {};
+  ems.forEach(function(e){ if (e.texture) tex[e.texture] = 1; });
+  var names = Object.keys(tex);
+
+  return [
+    '이 파티클 이펙트를 프로젝트에 붙여줘. 파일을 받을 필요 없이 아래 주소를 그대로 쓰면 돼.',
+    '',
+    'id: ' + id,
+    '설계: ' + base + 'particles.json   (Unity 프리팹에서 뽑은 파티클 209개)',
+    '런타임: ' + base + 'particles.js   (캔버스에서 재생)',
+    '이미터 ' + ems.length + '개' + (names.length ? ', 텍스처 ' + names.join(', ') : ''),
+    '',
+    '텍스처는 단일 이미지로 같은 저장소에 있다. 이름을 소문자·언더바로 바꾸면 파일명이다.',
+    '  예: NY_glow_01 -> ' + base + 'singles/ny_glow_01.png',
+    '  전체 목록은 ' + base + 'effects.json 의 category=single 항목.',
+    '',
+    "  const fx = await ParticleFX.load('" + base + "particles.json', {",
+    '    resolveTexture: (name) => imageFor(name),   // 이름 -> HTMLImageElement',
+    '  });',
+    "  const burst = fx.spawn('" + id + "', { x, y });",
+    '  burst.update(dt);  burst.draw(ctx);   // 매 프레임, dt 는 초'
+  ].join('\n');
 }
 
 function spriteSnippet(a){
