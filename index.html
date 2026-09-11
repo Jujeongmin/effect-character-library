@@ -147,7 +147,7 @@ a{color:var(--violet)}
       </div>
       <div class="tally" id="tally"></div>
       <button class="btn primary" id="setupBtn" type="button"
-        title="프로젝트당 한 번만. 붙여넣은 뒤로는 id 만 말하면 됩니다">프로젝트에 붙이기</button>
+        title="쓰는 AI 도구에 프로젝트당 한 번만 붙여넣으면 됩니다. 그 뒤로는 id 만 말하면 됩니다">AI에 연결하기</button>
     </div>
     <div class="chips" id="chips"></div>
   </div>
@@ -756,7 +756,7 @@ function buildDetail(){
   detail.appendChild(node('p', 'hint',
     '연결 프롬프트를 이미 붙였다면 이름 옆 ' + '「' + '복사' + '」' + ' 로 id 만 가져가서 ' +
     '"전사 공격에 써줘" 라고 하면 됩니다. 아직이면 위의 ' +
-    '「' + '프로젝트에 붙이기' + '」' + ' 를 먼저 한 번 붙여넣으세요.'));
+    '「' + 'AI에 연결하기' + '」' + ' 를 먼저 한 번 붙여넣으세요.'));
 
   /* 코드 */
   var snippet = kind === 'sprite' ? spriteSnippet(a) : pfxSnippet(id);
@@ -772,7 +772,7 @@ function buildDetail(){
 }
 
 /**
- * 프로젝트당 한 번 붙여넣는 연결 프롬프트. 이걸 CLAUDE.md 에 넣어 두면
+ * 프로젝트당 한 번 붙여넣는 연결 프롬프트. 쓰는 AI 도구의 규칙 파일에 넣어 두면
  * 그 뒤로는 id 만 말해도 된다.
  */
 function setupPrompt(){
@@ -805,7 +805,9 @@ function setupPrompt(){
     '  텍스처 이름은 소문자·언더바로 바꾸면 파일명이다.',
     '    예: NY_glow_01 -> ' + base + 'singles/ny_glow_01.png',
     '',
-    '이 내용을 CLAUDE.md 에 적어 둬. 앞으로는 내가 id 만 말한다.',
+    '이 내용을 프로젝트 규칙 파일에 적어 둬 — 쓰는 도구에 맞게',
+    '(CLAUDE.md / AGENTS.md / .cursorrules / .github/copilot-instructions.md 등).',
+    '앞으로는 내가 id 만 말한다.',
     '  예: "frost_zone 을 전사 공격에 써줘"'
   ].join('\n');
 }
@@ -992,10 +994,10 @@ qClear.addEventListener('click', function(){
 var setupBtn = document.getElementById('setupBtn');
 setupBtn.addEventListener('click', function(){
   copyText(setupPrompt()).then(function(){
-    setupBtn.textContent = '복사됨 — CLAUDE.md 에 붙여넣기';
+    setupBtn.textContent = '복사됨 — AI 에게 붙여넣기';
     setupBtn.classList.add('ok');
     setTimeout(function(){
-      setupBtn.textContent = '프로젝트에 붙이기';
+      setupBtn.textContent = 'AI에 연결하기';
       setupBtn.classList.remove('ok');
     }, 2400);
   });
