@@ -857,6 +857,9 @@ function readHash(){
   if (state.sel && state.sel.kind === 'pfx' && !pfxLib) {
     ensureParticles().then(function(){ buildDetail(); markCurrent(); });
   }
+
+  // 모바일은 상세가 하단 시트다. 링크로 들어왔으면 열어 줘야 보인다.
+  if (state.sel && matchMedia('(max-width:980px)').matches) openSheet();
 }
 
 /* ── 입력 ────────────────────────────────────────────────────────────── */
