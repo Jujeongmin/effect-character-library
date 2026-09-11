@@ -1,0 +1,1101 @@
+<title>Effect Contact Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ink: #14151d;
+    --plate: #1c1e28;
+    --plate-2: #232633;
+    --line: #2e3140;
+    --line-soft: #24263200;
+    --text: #e9eaf2;
+    --muted: #8e92a6;
+    --amber: #d9a05b;
+    --violet: #8b7cf6;
+    --sans: "IBM Plex Sans", ui-sans-serif, system-ui, "Malgun Gothic", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+    --display: "Bricolage Grotesque", var(--sans);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--text);
+    font: 400 14px/1.55 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--violet); }
+
+  /* ---- masthead + filter rail ---------------------------------------- */
+
+  .masthead {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--ink) 94%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .masthead-inner {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 16px 24px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .titlebar { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+
+  h1 {
+    font: 700 20px/1.1 var(--display);
+    letter-spacing: -.015em;
+    margin: 0;
+  }
+
+  .tally {
+    font: 500 12px/1 var(--mono);
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tally b { color: var(--amber); font-weight: 500; }
+
+  .rail { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+
+  .field {
+    background: var(--plate);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    color: var(--text);
+    font: 400 13px/1 var(--sans);
+    padding: 7px 10px;
+    outline: none;
+  }
+  .field:focus-visible { border-color: var(--violet); box-shadow: 0 0 0 3px rgba(139,124,246,.22); }
+  input.field { min-width: 210px; }
+
+  .seg { display: flex; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+  .seg button {
+    background: var(--plate);
+    border: 0;
+    border-left: 1px solid var(--line);
+    color: var(--muted);
+    cursor: pointer;
+    font: 500 11px/1 var(--mono);
+    letter-spacing: .04em;
+    padding: 8px 11px;
+    text-transform: uppercase;
+  }
+  .seg button:first-child { border-left: 0; }
+  .seg button[aria-pressed="true"] { background: var(--plate-2); color: var(--text); }
+  .seg button:focus-visible { outline: 2px solid var(--violet); outline-offset: -2px; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  .chip {
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    cursor: pointer;
+    font: 400 12px/1 var(--sans);
+    padding: 6px 11px;
+  }
+  .chip b {
+    color: var(--muted);
+    font: 500 11px var(--mono);
+    font-variant-numeric: tabular-nums;
+    margin-left: 6px;
+    opacity: .75;
+  }
+  .chip[aria-pressed="true"] { background: var(--violet); border-color: var(--violet); color: #0e0d1a; }
+  .chip[aria-pressed="true"] b { color: #0e0d1a; opacity: .8; }
+  .chip:focus-visible { outline: 2px solid var(--violet); outline-offset: 2px; }
+
+  /* ---- contact sheet --------------------------------------------------- */
+
+  .sheet {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 20px 24px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(146px, 1fr));
+    gap: 14px;
+  }
+
+  .frame {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: left;
+  }
+
+  .plate-btn {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+  .plate-btn:focus-visible { outline: 2px solid var(--violet); outline-offset: 3px; border-radius: 4px; }
+
+  .plate {
+    align-items: center;
+    aspect-ratio: 1;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .plate-btn:hover .plate { border-color: var(--violet); }
+
+  /* Backdrop is a working control, not a theme: VFX needs alpha checked
+     against dark, mid-checker and white. */
+  [data-bg="dark"]   .plate { background: #0b0c11; }
+  [data-bg="light"]  .plate { background: #eceef4; }
+  [data-bg="checker"] .plate {
+    background-color: #14161d;
+    background-image:
+      linear-gradient(45deg, #232633 25%, transparent 25%, transparent 75%, #232633 75%),
+      linear-gradient(45deg, #232633 25%, transparent 25%, transparent 75%, #232633 75%);
+    background-size: 18px 18px;
+    background-position: 0 0, 9px 9px;
+  }
+
+  .plate canvas { display: block; height: 100%; width: 100%; }
+
+  .slug { display: flex; flex-direction: column; gap: 3px; }
+
+  .slug-row { display: flex; align-items: flex-start; gap: 5px; }
+
+  .slug-id {
+    flex: 1;
+    font: 500 11.5px/1.3 var(--mono);
+    letter-spacing: -.01em;
+    overflow-wrap: anywhere;
+  }
+
+  .copy-id {
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    color: var(--muted);
+    cursor: pointer;
+    flex: 0 0 auto;
+    font: 500 9.5px/1 var(--mono);
+    letter-spacing: .04em;
+    padding: 3px 5px;
+  }
+  .copy-id:hover { border-color: var(--violet); color: var(--text); }
+  .copy-id:focus-visible { outline: 2px solid var(--violet); outline-offset: 1px; }
+  .copy-id[data-done="1"] { border-color: var(--amber); color: var(--amber); }
+
+  .slug-data {
+    color: var(--muted);
+    font: 400 10.5px/1.35 var(--mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .flags { display: flex; gap: 4px; margin-top: 2px; }
+
+  .flag {
+    border-radius: 2px;
+    font: 500 9.5px/1 var(--mono);
+    letter-spacing: .05em;
+    padding: 3px 5px;
+    text-transform: uppercase;
+  }
+  .flag.opaque { background: rgba(217,160,91,.16); color: var(--amber); }
+  .flag.big { background: rgba(224,110,110,.16); color: #e08080; }
+  .flag.pfx { background: rgba(139,124,246,.18); color: #a99bff; }
+
+  .nothing {
+    color: var(--muted);
+    grid-column: 1 / -1;
+    padding: 56px 0;
+    text-align: center;
+  }
+
+  /* ---- detail drawer --------------------------------------------------- */
+
+  .scrim {
+    background: rgba(8,8,12,.6);
+    inset: 0;
+    position: fixed;
+    z-index: 30;
+  }
+
+  .drawer {
+    background: var(--plate);
+    border-left: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 460px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 31;
+  }
+
+  .drawer-head {
+    align-items: flex-start;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    padding: 16px 18px;
+  }
+
+  .drawer-head h2 {
+    font: 500 15px/1.3 var(--mono);
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .drawer-body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    overflow-y: auto;
+    padding: 18px;
+  }
+
+  .stage {
+    align-items: center;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    display: flex;
+    height: 232px;
+    justify-content: center;
+  }
+  [data-bg="dark"]   .stage { background: #0b0c11; }
+  [data-bg="light"]  .stage { background: #eceef4; }
+  [data-bg="checker"] .stage {
+    background-color: #14161d;
+    background-image:
+      linear-gradient(45deg, #232633 25%, transparent 25%, transparent 75%, #232633 75%),
+      linear-gradient(45deg, #232633 25%, transparent 25%, transparent 75%, #232633 75%);
+    background-size: 18px 18px;
+    background-position: 0 0, 9px 9px;
+  }
+
+  .strip {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+  .strip canvas {
+    background: #0b0c11;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    flex: 0 0 auto;
+    height: 52px;
+    width: 52px;
+  }
+
+  .spec {
+    display: grid;
+    gap: 5px 14px;
+    grid-template-columns: 92px 1fr;
+    margin: 0;
+  }
+  .spec dt {
+    color: var(--muted);
+    font: 400 11px/1.5 var(--mono);
+    letter-spacing: .03em;
+    text-transform: uppercase;
+  }
+  .spec dd {
+    font: 400 12px/1.5 var(--mono);
+    font-variant-numeric: tabular-nums;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .section-label {
+    color: var(--muted);
+    font: 500 10.5px/1 var(--mono);
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+
+  pre {
+    background: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    font: 400 11.5px/1.6 var(--mono);
+    margin: 0;
+    overflow-x: auto;
+    padding: 11px 12px;
+  }
+
+  .btn {
+    background: var(--plate-2);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--text);
+    cursor: pointer;
+    font: 500 12px/1 var(--sans);
+    padding: 8px 12px;
+  }
+  .btn:hover { border-color: var(--violet); }
+  .btn:focus-visible { outline: 2px solid var(--violet); outline-offset: 2px; }
+
+  .row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  .note {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+
+  @media (max-width: 640px) {
+    .sheet { grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 10px; padding: 14px; }
+    .masthead-inner { padding: 12px 14px 10px; }
+  }
+</style>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="titlebar">
+      <h1>Effect Contact Sheet</h1>
+      <span class="tally" id="tally"></span>
+    </div>
+    <div class="rail">
+      <input class="field" id="q" type="search" placeholder="id 검색 — frost, thor, aura…" aria-label="id 검색">
+      <div class="seg" role="group" aria-label="셀 배경">
+        <button type="button" data-bg-set="dark" aria-pressed="true">어둠</button>
+        <button type="button" data-bg-set="checker" aria-pressed="false">체커</button>
+        <button type="button" data-bg-set="light" aria-pressed="false">밝음</button>
+      </div>
+      <button type="button" class="btn" id="playToggle" aria-pressed="true">재생 중</button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</header>
+
+<main class="sheet" id="sheet"></main>
+
+
+
+<script type="application/json" id="catalog-data">/*__CATALOG__*/</script>
+<script type="application/json" id="particles-data">/*__PARTICLES__*/</script>
+<script>/*__PARTICLES_JS__*/</script>
+<script>
+(function () {
+  'use strict';
+
+  var CATALOG = JSON.parse(document.getElementById('catalog-data').textContent);
+  var PARTICLES = (function () {
+    var el = document.getElementById('particles-data');
+    if (!el) return null;
+    try {
+      var d = JSON.parse(el.textContent);
+      return d && d.effects && Object.keys(d.effects).length ? d : null;
+    } catch (e) { return null; }
+  })();
+  var CATALOG_PARTICLE_COUNT = PARTICLES ? Object.keys(PARTICLES.effects).length : 0;
+  var ATLAS_SRC = /*__ATLAS_SRC__*/[];
+
+  var NEWLINE = String.fromCharCode(10);
+  var CELL = CATALOG.cell, COLS = CATALOG.cols, PER = CATALOG.perAtlas;
+
+  /** Frames this page can actually show (atlas mode samples long loops). */
+  function frameCount(a) { return ATLAS_MODE ? a.n : a.frames; }
+  var assets = CATALOG.assets;
+
+  // Korean labels for the folder-derived categories.
+  var CAT_LABEL = {
+    lightning: '번개', impact: '피격', projectile: '투사체',
+    explosion: '폭발', mythic: '신화스킬', zone: '장판',
+    aura: '아우라', misc: '기타', single: '단일 이미지'
+  };
+
+  // Two ways to get pixels: thumbnail atlases baked into this file (for a
+  // page that has to travel alone), or the real sheets sitting next to it.
+  var ATLAS_MODE = ATLAS_SRC.length > 0;
+
+  var atlasImg = [], atlasReady = [];
+  function atlas(i) {
+    if (atlasImg[i]) return atlasImg[i];
+    var img = new Image();
+    img.decoding = 'async';
+    img.onload = function () { atlasReady[i] = true; };
+    img.src = ATLAS_SRC[i];
+    atlasImg[i] = img;
+    return img;
+  }
+
+  var sheetImg = {};
+  /** Named assetSheet, not sheet - `sheet` is the grid container element. */
+  function assetSheet(a) {
+    var rec = sheetImg[a.id];
+    if (rec) return rec;
+    rec = { img: new Image(), ready: false };
+    rec.img.decoding = 'async';
+    rec.img.onload = function () { rec.ready = true; };
+    rec.img.src = a.file;
+    sheetImg[a.id] = rec;
+    return rec;
+  }
+
+  /** Make sure the pixels for asset `a` are on their way. */
+  function warm(a) {
+    if (ATLAS_MODE) atlas(Math.floor(a.start / PER));
+    else assetSheet(a);
+  }
+
+  /** Paint frame `i` of asset `a` into a square context of side `size`. */
+  function paintFrame(ctx, a, i, size) {
+    ctx.clearRect(0, 0, size, size);
+    var lighter = a.opaque && document.documentElement.dataset.bg !== 'light';
+    ctx.globalCompositeOperation = lighter ? 'lighter' : 'source-over';
+
+    if (ATLAS_MODE) {
+      var c = a.start + (i % a.n);
+      var page = Math.floor(c / PER), slot = c % PER;
+      if (atlasReady[page]) {
+        ctx.drawImage(atlas(page), (slot % COLS) * CELL, Math.floor(slot / COLS) * CELL,
+                      CELL, CELL, 0, 0, size, size);
+      }
+    } else {
+      var rec = assetSheet(a);
+      if (rec.ready) {
+        var f = i % a.frames;
+        // Letterbox the frame into the square cell, preserving aspect.
+        var k = Math.min(size / a.fw, size / a.fh);
+        var dw = a.fw * k, dh = a.fh * k;
+        ctx.drawImage(rec.img, (f % a.cols) * a.fw, Math.floor(f / a.cols) * a.fh,
+                      a.fw, a.fh, (size - dw) / 2, (size - dh) / 2, dw, dh);
+      }
+    }
+    ctx.globalCompositeOperation = 'source-over';
+  }
+
+  /* ---- filter state ---------------------------------------------------- */
+
+  var state = { q: '', cat: '', playing: true };
+  var live = [];
+
+  var counts = {};
+  assets.forEach(function (a) { counts[a.cat] = (counts[a.cat] || 0) + 1; });
+
+  var chips = document.getElementById('chips');
+
+  function selectCategory(cat) {
+    state.cat = cat;
+    [].forEach.call(chips.children, function (c) {
+      c.setAttribute('aria-pressed', String((c.dataset.cat || '') === state.cat));
+    });
+    render();
+  }
+
+  var allChip = document.createElement('button');
+  allChip.type = 'button';
+  allChip.className = 'chip';
+  allChip.dataset.cat = '';
+  allChip.setAttribute('aria-pressed', 'true');
+  allChip.innerHTML = '<span></span><b></b>';
+  allChip.firstChild.textContent = '전체';
+  allChip.lastChild.textContent = assets.length +
+    (CATALOG_PARTICLE_COUNT || 0);
+  allChip.addEventListener('click', function () { selectCategory(''); });
+  chips.appendChild(allChip);
+
+
+  Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; })
+    .forEach(function (cat) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'chip';
+      b.setAttribute('aria-pressed', 'false');
+      b.dataset.cat = cat;
+      b.innerHTML = '<span></span><b></b>';
+      b.firstChild.textContent = CAT_LABEL[cat] || cat;
+      b.lastChild.textContent = counts[cat];
+      b.addEventListener('click', function () {
+        selectCategory(state.cat === cat ? '' : cat);
+      });
+      chips.appendChild(b);
+    });
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      var rec = e.target.__rec;
+      if (rec) rec.visible = e.isIntersecting;
+      if (e.isIntersecting && rec && rec.a) warm(rec.a);
+    });
+  }, { rootMargin: '320px' });
+
+  var sheet = document.getElementById('sheet');
+
+  /** Copy `text`, and say so on the button that was pressed. */
+  function copyTo(btn, text, done, back) {
+    navigator.clipboard.writeText(text).then(function () {
+      btn.dataset.done = '1';
+      btn.textContent = done;
+      setTimeout(function () { btn.dataset.done = ''; btn.textContent = back; }, 1100);
+    });
+  }
+
+  function card(a) {
+    var el = document.createElement('div');
+    el.className = 'frame';
+
+    // The plate is the button; the id's copy button sits outside it, because
+    // a <button> cannot be nested inside another one.
+    var plateBtn = document.createElement('button');
+    plateBtn.type = 'button';
+    plateBtn.className = 'plate-btn';
+    plateBtn.setAttribute('aria-label', a.id + ' 자세히');
+
+    var plate = document.createElement('div');
+    plate.className = 'plate';
+    var cv = document.createElement('canvas');
+    cv.width = cv.height = CELL;
+    plate.appendChild(cv);
+    plateBtn.appendChild(plate);
+
+    var slug = document.createElement('div');
+    slug.className = 'slug';
+    var row = document.createElement('div');
+    row.className = 'slug-row';
+    var sid = document.createElement('div');
+    sid.className = 'slug-id';
+    sid.textContent = a.id;
+    var copy = document.createElement('button');
+    copy.type = 'button';
+    copy.className = 'copy-id';
+    copy.textContent = 'COPY';
+    copy.title = 'id 복사: ' + a.id;
+    copy.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      copyTo(copy, a.id, 'OK', 'COPY');
+    });
+    row.appendChild(sid);
+    row.appendChild(copy);
+    var sdata = document.createElement('div');
+    sdata.className = 'slug-data';
+    sdata.textContent = (CAT_LABEL[a.cat] || a.cat) + ' · ' + a.fw + '×' + a.fh +
+      ' · ' + a.frames + 'f' + (a.frames > 1 ? ' @' + a.fps : '');
+    slug.appendChild(row);
+    slug.appendChild(sdata);
+
+    if (a.opaque) {
+      var flags = document.createElement('div');
+      flags.className = 'flags';
+      var f = document.createElement('span');
+      f.className = 'flag opaque';
+      f.textContent = 'opaque';
+      f.title = '알파 없이 검정 위에 렌더됨 — 가산 합성(lighter)으로 써야 함';
+      flags.appendChild(f);
+      slug.appendChild(flags);
+    }
+
+    el.appendChild(plateBtn);
+    el.appendChild(slug);
+    plateBtn.addEventListener('click', function () { openDrawer(a); });
+
+    var rec = { a: a, ctx: cv.getContext('2d'), i: 0, acc: 0, visible: false, node: el };
+    el.__rec = rec;
+    live.push(rec);
+    io.observe(el);
+    return el;
+  }
+
+  function render() {
+    live.forEach(function (r) { io.unobserve(r.node); });
+    live = [];
+    sheet.textContent = '';
+
+
+    var q = state.q.trim().toLowerCase();
+    var wantSprites = state.cat !== 'pfx';
+    var wantParticles = !!PARTICLES && (state.cat === '' || state.cat === 'pfx');
+
+    var list = wantSprites ? assets.filter(function (a) {
+      if (state.cat && a.cat !== state.cat) return false;
+      if (q && a.id.indexOf(q) === -1 && (CAT_LABEL[a.cat] || '').indexOf(q) === -1) return false;
+      return true;
+    }) : [];
+
+    var plist = wantParticles ? Object.keys(PARTICLES.effects).filter(function (id) {
+      return !q || id.toLowerCase().indexOf(q) !== -1 || '파티클'.indexOf(q) !== -1;
+    }).sort() : [];
+
+    if (!list.length && !plist.length) {
+      var n = document.createElement('p');
+      n.className = 'nothing';
+      n.textContent = '조건에 맞는 이펙트 없음.';
+      sheet.appendChild(n);
+    } else {
+      var frag = document.createDocumentFragment();
+      list.forEach(function (a) { frag.appendChild(card(a)); });
+      plist.forEach(function (id) { frag.appendChild(particleCard(id)); });
+      sheet.appendChild(frag);
+    }
+
+    var anims = assets.filter(function (a) { return a.frames > 1; }).length;
+    var pcount = PARTICLES ? Object.keys(PARTICLES.effects).length : 0;
+    document.getElementById('tally').innerHTML =
+      '<b>' + (list.length + plist.length) + '</b> / ' + (assets.length + pcount) +
+      ' · 애니메이션 ' + anims + ' · 단일 이미지 ' + (assets.length - anims) +
+      (pcount ? ' · 파티클 ' + pcount : '');
+  }
+
+  /* ---- animation clock -------------------------------------------------- */
+
+  var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduced) state.playing = false;
+
+  var last = performance.now();
+  function tick(now) {
+    var dt = now - last;
+    last = now;
+    for (var k = 0; k < live.length; k++) {
+      var r = live[k];
+      if (!r.visible) continue;
+      if (r.kind === 'pfx') {
+        if (!pfxLib) continue;
+        if (!r.inst) {
+          try {
+            r.inst = pfxLib.spawn(r.id, { x: r.w / 2, y: r.h * 0.6 });
+          } catch (err) { r.visible = false; continue; }
+        }
+        if (state.playing) r.inst.update(Math.min(dt, 50) / 1000);
+        r.ctx.clearRect(0, 0, r.w, r.h);
+        r.inst.draw(r.ctx);
+        if (!r.inst.alive()) r.inst = null;      // one-shots replay
+        continue;
+      }
+      if (state.playing && frameCount(r.a) > 1) {
+        r.acc += dt;
+        var step = 1000 / (r.a.fps || 12);
+        while (r.acc >= step) { r.acc -= step; r.i = (r.i + 1) % frameCount(r.a); }
+      }
+      paintFrame(r.ctx, r.a, r.i, CELL);
+    }
+    if (drawerRec && frameCount(drawerRec.a) > 1 && state.playing) {
+      drawerRec.acc += dt;
+      var s2 = 1000 / (drawerRec.a.fps || 12);
+      while (drawerRec.acc >= s2) {
+        drawerRec.acc -= s2;
+        drawerRec.i = (drawerRec.i + 1) % frameCount(drawerRec.a);
+      }
+    }
+    if (drawerRec) paintFrame(drawerRec.ctx, drawerRec.a, drawerRec.i, 208);
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+
+  /* ---- drawer ----------------------------------------------------------- */
+
+  var drawerRec = null, scrim = null, drawer = null;
+
+  function closeDrawer() {
+    if (drawer && drawer.__rec) {
+      // stop the particle preview that was parked in the frame loop
+      live = live.filter(function (r) { return r !== drawer.__rec; });
+    }
+    if (scrim) scrim.remove();
+    if (drawer) drawer.remove();
+    scrim = drawer = null;
+    drawerRec = null;
+  }
+
+  function spec(rows) {
+    var dl = document.createElement('dl');
+    dl.className = 'spec';
+    rows.forEach(function (r) {
+      var dt = document.createElement('dt');
+      dt.textContent = r[0];
+      var dd = document.createElement('dd');
+      dd.textContent = r[1];
+      dl.appendChild(dt);
+      dl.appendChild(dd);
+    });
+    return dl;
+  }
+
+  function openDrawer(a) {
+    closeDrawer();
+
+    scrim = document.createElement('div');
+    scrim.className = 'scrim';
+    scrim.addEventListener('click', closeDrawer);
+
+    drawer = document.createElement('aside');
+    drawer.className = 'drawer';
+    drawer.setAttribute('role', 'dialog');
+    drawer.setAttribute('aria-label', a.id);
+
+    var head = document.createElement('div');
+    head.className = 'drawer-head';
+    var h2 = document.createElement('h2');
+    h2.textContent = a.id;
+    var close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'btn';
+    close.textContent = '닫기';
+    close.addEventListener('click', closeDrawer);
+    head.appendChild(h2);
+    head.appendChild(close);
+
+    var body = document.createElement('div');
+    body.className = 'drawer-body';
+
+    var stage = document.createElement('div');
+    stage.className = 'stage';
+    var big = document.createElement('canvas');
+    big.width = big.height = 208;
+    big.style.width = big.style.height = '208px';
+    stage.appendChild(big);
+    body.appendChild(stage);
+
+    var shown = frameCount(a);
+    if (shown > 1) {
+      var lbl = document.createElement('div');
+      lbl.className = 'section-label';
+      lbl.textContent = '프레임 ' + shown +
+        (shown < a.frames ? ' (원본 ' + a.frames + '중 샘플)' : '');
+      body.appendChild(lbl);
+      var strip = document.createElement('div');
+      strip.className = 'strip';
+      for (var i = 0; i < shown; i++) {
+        var c = document.createElement('canvas');
+        c.width = c.height = 52;
+        (function (ctx2, idx) {
+          // Sheets stream in; repaint the thumb once its image lands.
+          paintFrame(ctx2, a, idx, 52);
+          if (!ATLAS_MODE) assetSheet(a).img.addEventListener('load', function () {
+            paintFrame(ctx2, a, idx, 52);
+          });
+        })(c.getContext('2d'), i);
+        strip.appendChild(c);
+      }
+      body.appendChild(strip);
+    }
+
+    body.appendChild(spec([
+      ['카테고리', CAT_LABEL[a.cat] || a.cat],
+      ['프레임', a.frames + (a.frames > 1 ? ' @ ' + a.fps + 'fps' : ' (단일)')],
+      ['프레임 크기', a.fw + ' × ' + a.fh],
+      ['원본 시트', a.sheet],
+      ['알파', a.opaque ? '없음 — 가산 합성 필요' : '있음'],
+      ['파일', a.file]
+    ]));
+
+    var codeLabel = document.createElement('div');
+    codeLabel.className = 'section-label';
+    codeLabel.textContent = '사용';
+    body.appendChild(codeLabel);
+
+    var pre = document.createElement('pre');
+    pre.textContent =
+      "const lib = await EffectLib.load('./effects.json');\n" +
+      "const fx  = lib.play('" + a.id + "', { loop: true });\n\n" +
+      "// 매 프레임\n" +
+      "fx.update().draw(ctx, x, y, {\n" +
+      "  scale: 1" + (a.opaque ? ",\n  blend: 'lighter'   // 알파 없음" : "") + "\n});";
+    body.appendChild(pre);
+
+    var row = document.createElement('div');
+    row.className = 'row';
+    [['id 복사', a.id], ['경로 복사', a.file]]
+      .forEach(function (pair) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'btn';
+        b.textContent = pair[0];
+        b.addEventListener('click', function () {
+          copyTo(b, pair[1], '복사됨', pair[0]);
+        });
+        row.appendChild(b);
+      });
+    body.appendChild(row);
+
+    var note = document.createElement('p');
+    note.className = 'note';
+    note.textContent = '이 페이지는 128px 축소 썸네일을 보여줍니다. ' +
+      '실제 스프라이트시트 원본은 로컬 라이브러리 web/' + a.file + ' 에 있습니다.';
+    body.appendChild(note);
+
+    drawer.appendChild(head);
+    drawer.appendChild(body);
+    document.body.appendChild(scrim);
+    document.body.appendChild(drawer);
+
+    drawerRec = { a: a, ctx: big.getContext('2d'), i: 0, acc: 0 };
+    close.focus();
+  }
+
+  /** Detail for a particle recipe: what each emitter throws, and how much. */
+  function openParticleDrawer(id) {
+    closeDrawer();
+    var effect = PARTICLES.effects[id];
+
+    scrim = document.createElement('div');
+    scrim.className = 'scrim';
+    scrim.addEventListener('click', closeDrawer);
+
+    drawer = document.createElement('aside');
+    drawer.className = 'drawer';
+    drawer.setAttribute('role', 'dialog');
+    drawer.setAttribute('aria-label', id);
+
+    var head = document.createElement('div');
+    head.className = 'drawer-head';
+    var h2 = document.createElement('h2');
+    h2.textContent = id;
+    var close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'btn';
+    close.textContent = '닫기';
+    close.addEventListener('click', closeDrawer);
+    head.appendChild(h2);
+    head.appendChild(close);
+
+    var body = document.createElement('div');
+    body.className = 'drawer-body';
+
+    var stage = document.createElement('div');
+    stage.className = 'stage';
+    var big = document.createElement('canvas');
+    big.width = big.height = 232;
+    big.style.width = big.style.height = '232px';
+    stage.appendChild(big);
+    body.appendChild(stage);
+
+    var lbl = document.createElement('div');
+    lbl.className = 'section-label';
+    lbl.textContent = '이미터 ' + effect.emitters.length;
+    body.appendChild(lbl);
+
+    function amount(c) {
+      if (!c) return '-';
+      if (c.v !== undefined) return String(c.v);
+      if (c.min !== undefined) return c.min + '~' + c.max;
+      return '곡선';
+    }
+
+    effect.emitters.forEach(function (e) {
+      body.appendChild(spec([
+        ['이미터', e.name || '-'],
+        ['텍스처', e.texture || '(없음)'],
+        ['수명', amount(e.lifetime) + ' 초'],
+        ['속도', amount(e.speed)],
+        ['크기', amount(e.size)],
+        ['분출', (e.rate ? '초당 ' + amount(e.rate) : '') +
+                 (e.bursts && e.bursts.length ? ' 버스트 ' + e.bursts.length + '회' : '') || '-'],
+        ['형태', e.shape ? e.shape.type : '-'],
+      ]));
+    });
+
+    var row = document.createElement('div');
+    row.className = 'row';
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'btn';
+    b.textContent = 'id 복사';
+    b.addEventListener('click', function () { copyTo(b, id, '복사됨', 'id 복사'); });
+    row.appendChild(b);
+    body.appendChild(row);
+
+    var note = document.createElement('p');
+    note.className = 'note';
+    note.textContent = 'particles.json 의 설계를 particles.js 로 재생합니다. ' +
+      '원본은 Unity 프리팹이라 3D로 계산되며, 여기서는 2D로 근사합니다.';
+    body.appendChild(note);
+
+    drawer.appendChild(head);
+    drawer.appendChild(body);
+    document.body.appendChild(scrim);
+    document.body.appendChild(drawer);
+
+    // Reuse the frame loop by parking a particle record in `live`.
+    drawerRec = null;
+    var rec = { kind: 'pfx', id: id, ctx: big.getContext('2d'),
+                w: 232, h: 232, inst: null, visible: true, node: drawer };
+    live.push(rec);
+    drawer.__rec = rec;
+    close.focus();
+  }
+
+  addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDrawer(); });
+
+  /* ---- controls ---------------------------------------------------------- */
+
+  document.getElementById('q').addEventListener('input', function (e) {
+    state.q = e.target.value;
+    render();
+  });
+
+  [].forEach.call(document.querySelectorAll('[data-bg-set]'), function (b) {
+    b.addEventListener('click', function () {
+      document.documentElement.dataset.bg = b.dataset.bgSet;
+      [].forEach.call(document.querySelectorAll('[data-bg-set]'), function (o) {
+        o.setAttribute('aria-pressed', String(o === b));
+      });
+    });
+  });
+
+  var play = document.getElementById('playToggle');
+  play.setAttribute('aria-pressed', String(state.playing));
+  play.textContent = state.playing ? '재생 중' : '정지됨';
+  play.addEventListener('click', function () {
+    state.playing = !state.playing;
+    play.setAttribute('aria-pressed', String(state.playing));
+    play.textContent = state.playing ? '재생 중' : '정지됨';
+  });
+
+
+
+  /* ---- particle recipes --------------------------------------------------
+     particles.json holds the numbers read out of the Unity prefabs; particles.js
+     plays them. Only the cards on screen simulate - there are hundreds. */
+
+
+  var pfxLib = null, texCache = {};
+
+  /** A Unity texture name, resolved to something this page can draw. */
+  function resolveTexture(name) {
+    if (!name) return null;
+    var id = String(name).toLowerCase().replace(/[^a-z0-9]+/g, '_');
+    if (texCache[id]) return texCache[id];
+    if (texCache[id] === null) return null;
+    var asset = null;
+    for (var i = 0; i < assets.length; i++) {
+      if (assets[i].id === id) { asset = assets[i]; break; }
+    }
+    if (!asset) { texCache[id] = null; return null; }
+
+    var img = null;
+    if (ATLAS_MODE) {
+      var page = Math.floor(asset.start / PER), slot = asset.start % PER;
+      if (atlasReady[page]) {
+        var off = document.createElement('canvas');
+        off.width = off.height = CELL;
+        off.getContext('2d').drawImage(atlas(page), (slot % COLS) * CELL,
+          Math.floor(slot / COLS) * CELL, CELL, CELL, 0, 0, CELL, CELL);
+        img = off;
+      }
+    } else {
+      var rec = assetSheet(asset);
+      img = rec.ready ? rec.img : null;
+    }
+    if (img) texCache[id] = img;
+    return img;
+  }
+
+
+  /** A particle recipe rendered as an ordinary card, so it sits in the grid. */
+  function particleCard(id) {
+    var effect = PARTICLES.effects[id];
+    var el = document.createElement('div');
+    el.className = 'frame';
+
+    var plateBtn = document.createElement('button');
+    plateBtn.type = 'button';
+    plateBtn.className = 'plate-btn';
+    plateBtn.setAttribute('aria-label', id + ' 자세히');
+    var plate = document.createElement('div');
+    plate.className = 'plate';
+    var cv = document.createElement('canvas');
+    cv.width = cv.height = CELL;
+    plate.appendChild(cv);
+    plateBtn.appendChild(plate);
+
+    var slug = document.createElement('div');
+    slug.className = 'slug';
+    var row = document.createElement('div');
+    row.className = 'slug-row';
+    var sid = document.createElement('div');
+    sid.className = 'slug-id';
+    sid.textContent = id;
+    var copy = document.createElement('button');
+    copy.type = 'button';
+    copy.className = 'copy-id';
+    copy.textContent = 'COPY';
+    copy.title = 'id 복사: ' + id;
+    copy.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      copyTo(copy, id, 'OK', 'COPY');
+    });
+    row.appendChild(sid);
+    row.appendChild(copy);
+
+    var textures = {};
+    effect.emitters.forEach(function (e) { if (e.texture) textures[e.texture] = 1; });
+    var sdata = document.createElement('div');
+    sdata.className = 'slug-data';
+    sdata.textContent = '파티클 · 이미터 ' + effect.emitters.length +
+      ' · 텍스처 ' + Object.keys(textures).length;
+
+    var flags = document.createElement('div');
+    flags.className = 'flags';
+    var flag = document.createElement('span');
+    flag.className = 'flag pfx';
+    flag.textContent = 'particle';
+    flag.title = 'Unity 프리팹에서 뽑은 파티클 설계';
+    flags.appendChild(flag);
+
+    slug.appendChild(row);
+    slug.appendChild(sdata);
+    slug.appendChild(flags);
+    el.appendChild(plateBtn);
+    el.appendChild(slug);
+    plateBtn.addEventListener('click', function () { openParticleDrawer(id); });
+
+    var rec = { kind: 'pfx', id: id, ctx: cv.getContext('2d'),
+                w: CELL, h: CELL, inst: null, visible: false, node: el };
+    el.__rec = rec;
+    live.push(rec);
+    io.observe(el);
+    return el;
+  }
+
+
+  function initParticles() {
+    if (!PARTICLES || typeof ParticleFX === 'undefined') return;
+    pfxLib = new ParticleFX.Library(PARTICLES, {
+      unitScale: 26, resolveTexture: resolveTexture,
+    });
+  }
+
+  if (PARTICLES) {
+    var pfxChip = document.createElement('button');
+    pfxChip.type = 'button';
+    pfxChip.className = 'chip';
+    pfxChip.dataset.cat = 'pfx';
+    pfxChip.setAttribute('aria-pressed', 'false');
+    pfxChip.innerHTML = '<span></span><b></b>';
+    pfxChip.firstChild.textContent = '파티클';
+    pfxChip.lastChild.textContent = Object.keys(PARTICLES.effects).length;
+    pfxChip.addEventListener('click', function () {
+      selectCategory(state.cat === 'pfx' ? '' : 'pfx');
+    });
+    chips.insertBefore(pfxChip, chips.children[1] || null);
+  }
+
+  document.documentElement.dataset.bg = 'dark';
+  if (ATLAS_MODE) for (var i = 0; i < CATALOG.atlases; i++) atlas(i);
+  initParticles();
+  render();
+})();
+</script>
