@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Effect Library — 이펙트 리소스 검색</title>
+<meta name="description" content="게임용 이펙트 스프라이트 201개와 파티클 설계 209개를 검색하고 미리 보고 URL로 바로 가져다 쓰는 리소스 라이브러리.">
+<meta property="og:title" content="Effect Library">
+<meta property="og:description" content="이펙트 스프라이트 201개 · 파티클 설계 209개. 검색하고 바로 쓰세요.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ink:#14151d; --plate:#1c1e28; --plate-2:#232633; --line:#2e3140;
+  --text:#e9eaf2; --muted:#8e92a6; --amber:#d9a05b; --violet:#8b7cf6;
+  --sans:"IBM Plex Sans",ui-sans-serif,system-ui,"Malgun Gothic",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
+  --display:"Bricolage Grotesque",var(--sans);
+  --barH:132px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--ink);color:var(--text);font:400 14px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+a{color:var(--violet)}
+
+/* ---- 상단 바 ---------------------------------------------------------- */
+.bar{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ink) 94%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:1760px;margin:0 auto;padding:14px 22px 10px;display:flex;flex-direction:column;gap:11px}
+.row1{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px;flex:0 0 auto}
+.brand h1{font:700 19px/1.1 var(--display);letter-spacing:-.015em;margin:0}
+.brand .sub{color:var(--muted);font-size:12px}
+.search{flex:1 1 280px;min-width:200px;position:relative}
+.search input{width:100%;background:var(--plate);border:1px solid var(--line);border-radius:999px;color:var(--text);
+  padding:9px 38px 9px 16px;font:400 14px var(--sans);outline:none}
+.search input:focus{border-color:var(--violet)}
+.search input::placeholder{color:var(--muted)}
+.search .clear{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:none;border:0;
+  color:var(--muted);cursor:pointer;padding:6px 9px;border-radius:999px;line-height:1;font-size:15px}
+.search .clear:hover{color:var(--text)}
+.tally{flex:0 0 auto;color:var(--muted);font:500 12px var(--mono);white-space:nowrap}
+.tally b{color:var(--text)}
+.chips{display:flex;gap:7px;flex-wrap:wrap}
+.chip{background:var(--plate);border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 13px;font-size:12.5px;cursor:pointer;white-space:nowrap;transition:.12s}
+.chip:hover{color:var(--text);border-color:#454a5e}
+.chip[aria-pressed=true]{background:var(--violet);border-color:var(--violet);color:#fff;font-weight:600}
+.chip .n{opacity:.6;font-family:var(--mono);font-size:11px;margin-left:5px}
+
+/* ---- 2단 레이아웃 ------------------------------------------------------ */
+.app{max-width:1760px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) 400px}
+.grid{padding:18px 22px 90px;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:13px;align-content:start}
+.nothing{grid-column:1/-1;color:var(--muted);padding:48px 4px;text-align:center;line-height:1.8}
+
+/* ---- 카드 -------------------------------------------------------------- */
+.card{display:flex;flex-direction:column;background:none;border:0;padding:0;cursor:pointer;text-align:left}
+.thumb{position:relative;aspect-ratio:1;background:var(--plate);border:1px solid var(--line);border-radius:11px;
+  overflow:hidden;display:grid;place-items:center;transition:.12s}
+.card:hover .thumb{border-color:#454a5e}
+.card[aria-current=true] .thumb{border-color:var(--violet);box-shadow:0 0 0 2px color-mix(in srgb,var(--violet) 35%,transparent)}
+.thumb canvas{display:block;width:100%;height:100%}
+.thumb .tag{position:absolute;top:6px;left:6px;background:color-mix(in srgb,var(--ink) 78%,transparent);
+  border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:10.5px;color:var(--muted)}
+.thumb .fr{position:absolute;bottom:6px;right:6px;font:500 10.5px var(--mono);color:var(--muted);
+  background:color-mix(in srgb,var(--ink) 78%,transparent);border-radius:5px;padding:1px 5px}
+.card .name{margin-top:7px;font:500 12px/1.35 var(--mono);color:var(--text);word-break:break-all}
+.card[aria-current=true] .name{color:var(--violet)}
+
+/* ---- 상세 패널 --------------------------------------------------------- */
+.detail{position:sticky;top:var(--barH);height:calc(100vh - var(--barH));overflow-y:auto;
+  border-left:1px solid var(--line);padding:20px 20px 60px;background:color-mix(in srgb,var(--ink) 60%,#000 6%)}
+.dt-empty{color:var(--muted);font-size:13px;line-height:1.8;padding:40px 6px;text-align:center}
+.dt-close{display:none}
+.dt-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:14px}
+.dt-head h2{margin:0;font:500 15px/1.3 var(--mono);word-break:break-all}
+.badge{flex:0 0 auto;background:var(--plate-2);border:1px solid var(--line);border-radius:999px;
+  padding:3px 10px;font-size:11.5px;color:var(--muted);white-space:nowrap}
+.stage{aspect-ratio:4/3;border:1px solid var(--line);border-radius:11px;overflow:hidden;display:grid;place-items:center;background:var(--plate)}
+.stage canvas{display:block;width:100%;height:100%}
+.stage[data-bg=light]{background:#e7e9ef}
+.stage[data-bg=checker]{background-color:#9aa0ae;
+  background-image:linear-gradient(45deg,#727888 25%,transparent 25%),linear-gradient(-45deg,#727888 25%,transparent 25%),
+  linear-gradient(45deg,transparent 75%,#727888 75%),linear-gradient(-45deg,transparent 75%,#727888 75%);
+  background-size:16px 16px;background-position:0 0,0 8px,8px -8px,-8px 0}
+.ctl{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:10px 0 4px}
+.seg{display:inline-flex;background:var(--plate);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{background:none;border:0;padding:5px 10px;font-size:12px;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--plate-2);color:var(--text)}
+.btn{background:var(--plate);border:1px solid var(--line);border-radius:8px;padding:5px 11px;font-size:12px;
+  color:var(--muted);cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{color:var(--text);border-color:#454a5e}
+.btn.ok{color:var(--amber);border-color:var(--amber)}
+.strip{display:flex;gap:5px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:thin}
+.strip canvas{flex:0 0 auto;width:46px;height:46px;border:1px solid var(--line);border-radius:7px;background:var(--plate);cursor:pointer}
+.strip canvas[aria-current=true]{border-color:var(--violet)}
+.meta{margin:14px 0 0;display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:12.5px}
+.meta dt{color:var(--muted)}
+.meta dd{margin:0;font-family:var(--mono);font-size:12px;word-break:break-all}
+.acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.snip{background:var(--plate);border:1px solid var(--line);border-radius:9px;padding:11px 12px;
+  font:400 11.5px/1.6 var(--mono);color:#c9cde0;overflow-x:auto;margin:10px 0 0;white-space:pre}
+.dt-sec{margin-top:20px;font:600 11px var(--sans);letter-spacing:.08em;color:var(--muted)}
+.scrim{display:none}
+
+@media (max-width:980px){
+  .app{grid-template-columns:1fr}
+  .detail{position:fixed;inset:auto 0 0 0;height:min(80vh,660px);top:auto;z-index:50;
+    border-left:0;border-top:1px solid var(--line);border-radius:16px 16px 0 0;background:var(--ink);
+    transform:translateY(102%);transition:transform .22s ease;box-shadow:0 -18px 50px #0008}
+  .detail.open{transform:none}
+  .dt-head{padding-right:36px}     /* 닫기 버튼 자리를 비워 둔다 */
+  .dt-close{display:block;position:absolute;top:12px;right:14px;background:var(--plate);border:1px solid var(--line);
+    border-radius:999px;width:30px;height:30px;line-height:1;cursor:pointer;color:var(--muted);font-size:16px;z-index:2}
+  .scrim.on{display:block;position:fixed;inset:0;background:#0009;z-index:40}
+  .grid{padding:16px 14px 40px;grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
+  .bar-in{padding:12px 14px 9px}
+}
+@media (prefers-reduced-motion:reduce){ .detail{transition:none} }
+</style>
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <div class="bar-in">
+    <div class="row1">
+      <div class="brand">
+        <h1>Effect Library</h1>
+        <span class="sub">스프라이트 201 · 파티클 209</span>
+      </div>
+      <div class="search">
+        <input id="q" type="search" placeholder="검색 — frost, thor, 번개, 아우라…" aria-label="리소스 검색" autocomplete="off">
+        <button class="clear" id="qClear" type="button" aria-label="검색어 지우기" hidden>&times;</button>
+      </div>
+      <div class="tally" id="tally"></div>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</header>
+
+<div class="app">
+  <main class="grid" id="grid" aria-label="리소스 목록"></main>
+  <aside class="detail" id="detail" aria-label="리소스 상세"></aside>
+</div>
+<div class="scrim" id="scrim"></div>
+
+<noscript><p style="padding:24px">이 페이지는 자바스크립트가 있어야 동작합니다.</p></noscript>
+
+<script src="./particles.js"></script>
+<script>
+(function(){
+'use strict';
+
+/* ── 상수 ────────────────────────────────────────────────────────────── */
+
+var SITE_BASE = 'https://jujeongmin.github.io/effect-library/';
+
+var CAT_LABEL = {
+  impact:'피격', lightning:'번개', explosion:'폭발', projectile:'투사체',
+  zone:'장판', aura:'아우라', misc:'기타', single:'단일 이미지'
+};
+var CAT_ORDER = ['impact','lightning','explosion','projectile','zone','aura','misc','single'];
+var PFX_LABEL = '파티클';
+var PFX_TOTAL = 209;
+var THUMB = 150, DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+// 파티클 설계의 크기는 Unity 월드 유닛이다. 기본 100px/유닛으로 풀면
+// 3유닛짜리 파티클이 300px 가 되어 카드 밖으로 나간다. 레시피가 차지하는
+// 반경을 읽어서 화폭에 맞는 px/유닛을 정한다.
+var pfxUnitCache = {};
+
+/** MinMaxCurve 에서 가장 큰 값. */
+function curveMax(spec, fallback){
+  if (!spec) return fallback;
+  if (spec.v !== undefined) return spec.v;
+  if (spec.max !== undefined) return spec.max;
+  if (spec.keys && spec.keys.length) {
+    return spec.keys.reduce(function(m, k){ return Math.max(m, k[1]); }, 0);
+  }
+  return fallback;
+}
+
+/** 이 레시피가 원점에서 대략 몇 유닛까지 퍼지는지. */
+function pfxExtent(spec){
+  var ext = 0.15;
+  (spec.emitters || []).forEach(function(e){
+    var size = curveMax(e.size, 1);
+    var life = curveMax(e.lifetime, 1);
+    var speed = curveMax(e.speed, 0);
+    var grow = e.sizeOverLife ? curveMax(e.sizeOverLife, 1) : 1;
+    var radius = (e.shape && e.shape.radius) || 0;
+    // 최대 속도로 수명 내내 직진하는 입자는 드물다. 이동분은 깎아서 센다.
+    ext = Math.max(ext, radius + speed * life * 0.6 + size * grow / 2);
+  });
+  return ext;
+}
+
+/**
+ * 이 레시피에 맞는 px/유닛. 화폭 비율로 상·하한을 묶어서, 큰 설계만 줄이고
+ * 작은 설계가 점으로 사라지지 않게 한다.
+ */
+function pfxUnitScale(id, box){
+  var ext = pfxUnitCache[id];
+  if (ext === undefined) {
+    try { ext = pfxExtent(pfxLib.get(id)); } catch (e) { ext = 1; }
+    pfxUnitCache[id] = ext;
+  }
+  return Math.max(box * 0.11, Math.min(box * 0.32, (box * 0.45) / ext));
+}
+
+var grid    = document.getElementById('grid');
+var detail  = document.getElementById('detail');
+var chipsEl = document.getElementById('chips');
+var tallyEl = document.getElementById('tally');
+var qInput  = document.getElementById('q');
+var qClear  = document.getElementById('qClear');
+var scrim   = document.getElementById('scrim');
+
+/* ── 상태 ────────────────────────────────────────────────────────────── */
+
+var ASSETS = [], BY_ID = {}, PFX_IDS = [];
+var pfxLib = null, pfxPending = null;
+
+var state = {
+  q: '', cat: '', playing: true, bg: 'dark', scale: 1,
+  sel: null,      // { kind:'sprite'|'pfx', id }
+  frame: null     // 상세에서 프레임을 손으로 고른 경우
+};
+if (matchMedia('(prefers-reduced-motion: reduce)').matches) state.playing = false;
+
+/* ── 절대 URL — 공유·직링크용 ─────────────────────────────────────────── */
+
+function absUrl(file){
+  if (location.protocol === 'http:' || location.protocol === 'https:') {
+    return new URL(file, location.href.split('#')[0]).href;
+  }
+  return SITE_BASE + file;        // file:// 로 열었을 때는 배포 주소를 준다
+}
+
+/* ── 스프라이트시트 이미지 캐시 ───────────────────────────────────────── */
+
+var sheets = {};
+function sheetOf(a){
+  var rec = sheets[a.id];
+  if (rec) return rec;
+  rec = { img: new Image(), ready: false };
+  rec.img.decoding = 'async';
+  rec.img.onload = function(){ rec.ready = true; };
+  rec.img.src = a.file;
+  sheets[a.id] = rec;
+  return rec;
+}
+
+function fitCanvas(cv, w, h){
+  cv.width  = Math.round(w * DPR);
+  cv.height = Math.round(h * DPR);
+  var ctx = cv.getContext('2d');
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  return ctx;
+}
+
+/** 스프라이트 한 프레임을 캔버스 가운데에 맞춰 그린다. */
+function drawSprite(ctx, a, i, W, H, mul){
+  var rec = sheetOf(a);
+  ctx.clearRect(0, 0, W, H);
+  if (!rec.ready) return false;
+  var fw = a.frameWidth, fh = a.frameHeight;
+  var col = i % a.cols, row = Math.floor(i / a.cols);
+  var fit = Math.min(W / fw, H / fh) * (mul || 1);
+  var dw = fw * fit, dh = fh * fit;
+  ctx.drawImage(rec.img, col * fw, row * fh, fw, fh,
+                (W - dw) / 2, (H - dh) / 2, dw, dh);
+  return true;
+}
+
+/* ── 파티클 ──────────────────────────────────────────────────────────── */
+
+var texCache = {};
+/** Unity 텍스처 이름을 이 페이지가 그릴 수 있는 것으로 바꾼다. */
+function resolveTexture(name){
+  if (!name) return null;
+  var id = String(name).toLowerCase().replace(/[^a-z0-9]+/g, '_');
+  if (id in texCache) return texCache[id];
+  var a = BY_ID[id];
+  if (!a) { texCache[id] = null; return null; }
+  var rec = sheetOf(a);
+  if (!rec.ready) return null;             // 아직이면 다음 프레임에 다시 묻는다
+  texCache[id] = rec.img;
+  return rec.img;
+}
+
+/** particles.json 은 909KB — 필요해질 때 딱 한 번 받는다. */
+function ensureParticles(){
+  if (pfxPending) return pfxPending;
+  pfxPending = ParticleFX.load('./particles.json', { resolveTexture: resolveTexture })
+    .then(function(lib){
+      pfxLib = lib;
+      PFX_IDS = lib.ids();
+      return lib;
+    })
+    .catch(function(err){
+      console.warn('particles.json 실패:', err);
+      return null;
+    });
+  return pfxPending;
+}
+
+/* ── 애니메이션 루프 — 화면에 보이는 카드만 ──────────────────────────── */
+
+var live = [];
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    var rec = e.target.__rec;
+    if (!rec) return;
+    rec.visible = e.isIntersecting;
+    if (e.isIntersecting && rec.kind === 'sprite') sheetOf(rec.a);   // PNG 는 여기서 처음 요청된다
+  });
+}, { rootMargin: '120px' });
+
+/** 목록 끝의 자리표시자가 보이면 그때 파티클을 받는다. */
+var pfxWatch = new IntersectionObserver(function(entries){
+  if (!entries.some(function(e){ return e.isIntersecting; })) return;
+  ensureParticles().then(function(lib){ if (lib) render(); });
+}, { rootMargin: '400px' });
+
+var lastT = performance.now();
+function tick(now){
+  var dt = Math.min(now - lastT, 60);
+  lastT = now;
+
+  for (var k = 0; k < live.length; k++) {
+    var r = live[k];
+    if (!r.visible) continue;
+
+    if (r.kind === 'pfx') {
+      if (!pfxLib) continue;
+      if (!r.inst) {
+        try { r.inst = pfxLib.spawn(r.id, { x: r.w / 2, y: r.h * 0.55, unitScale: pfxUnitScale(r.id, r.h) }); }
+        catch (err) { r.visible = false; continue; }
+      }
+      if (state.playing) r.inst.update(dt / 1000);
+      r.ctx.clearRect(0, 0, r.w, r.h);
+      r.inst.draw(r.ctx);
+      if (!r.inst.alive()) r.inst = null;        // 한 방짜리는 다시 튼다
+      continue;
+    }
+
+    if (state.playing && r.a.frames > 1) {
+      r.acc += dt;
+      var step = 1000 / (r.a.fps || 12);
+      while (r.acc >= step) { r.acc -= step; r.i = (r.i + 1) % r.a.frames; }
+    }
+    drawSprite(r.ctx, r.a, r.i, r.w, r.h);
+  }
+
+  drawDetail(dt);
+  requestAnimationFrame(tick);
+}
+
+/* ── 카드 ────────────────────────────────────────────────────────────── */
+
+function makeCard(kind, id, a){
+  var el2 = document.createElement('button');
+  el2.type = 'button';
+  el2.className = 'card';
+
+  var thumb = document.createElement('div');
+  thumb.className = 'thumb';
+  var cv = document.createElement('canvas');
+  thumb.appendChild(cv);
+
+  var tag = document.createElement('span');
+  tag.className = 'tag';
+  tag.textContent = kind === 'pfx' ? PFX_LABEL : (CAT_LABEL[a.category] || a.category);
+  thumb.appendChild(tag);
+
+  if (kind === 'sprite' && a.frames > 1) {
+    var fr = document.createElement('span');
+    fr.className = 'fr';
+    fr.textContent = a.frames + 'f';
+    thumb.appendChild(fr);
+  }
+
+  var name = document.createElement('span');
+  name.className = 'name';
+  name.textContent = id;
+
+  el2.appendChild(thumb);
+  el2.appendChild(name);
+  el2.addEventListener('click', function(){ select(kind, id, true); });
+
+  var rec = { kind: kind, id: id, a: a, ctx: fitCanvas(cv, THUMB, THUMB), w: THUMB, h: THUMB,
+              i: 0, acc: 0, visible: false, inst: null, node: el2 };
+  el2.__rec = rec;
+  live.push(rec);
+  io.observe(el2);
+  return el2;
+}
+
+/* ── 목록 ────────────────────────────────────────────────────────────── */
+
+function matchSprite(a, q){
+  if (!q) return true;
+  return a.id.indexOf(q) !== -1
+      || (CAT_LABEL[a.category] || '').indexOf(q) !== -1
+      || (a.source || '').toLowerCase().indexOf(q) !== -1;
+}
+function matchPfx(id, q){
+  if (!q) return true;
+  return id.toLowerCase().indexOf(q) !== -1 || PFX_LABEL.indexOf(q) !== -1;
+}
+
+function render(){
+  live.forEach(function(r){ io.unobserve(r.node); });
+  live = [];
+  grid.textContent = '';
+
+  var q = state.q.trim().toLowerCase();
+  var wantSprites = state.cat !== 'pfx';
+  var wantPfx     = state.cat === '' || state.cat === 'pfx';
+
+  var sprites = wantSprites ? ASSETS.filter(function(a){
+    if (state.cat && a.category !== state.cat) return false;
+    return matchSprite(a, q);
+  }) : [];
+
+  var pfx = (wantPfx && PFX_IDS.length)
+    ? PFX_IDS.filter(function(id){ return matchPfx(id, q); }).sort()
+    : [];
+
+  var pfxLoading = wantPfx && !PFX_IDS.length;
+
+  if (!sprites.length && !pfx.length && !pfxLoading) {
+    grid.appendChild(node('p', 'nothing', '조건에 맞는 리소스가 없습니다.'));
+  } else {
+    var frag = document.createDocumentFragment();
+    sprites.forEach(function(a){ frag.appendChild(makeCard('sprite', a.id, a)); });
+    pfx.forEach(function(id){ frag.appendChild(makeCard('pfx', id, null)); });
+    grid.appendChild(frag);
+  }
+
+  // 파티클 설계는 909KB 짜리 한 덩어리다. 목록 끝까지 내려왔을 때 받는다.
+  if (pfxLoading) {
+    var sentinel = node('p', 'nothing', '파티클 ' + PFX_TOTAL + '개 불러오는 중…');
+    grid.appendChild(sentinel);
+    pfxWatch.observe(sentinel);
+  }
+
+  var total = ASSETS.length + (PFX_IDS.length || PFX_TOTAL);
+  tallyEl.innerHTML = '<b>' + (sprites.length + pfx.length) + '</b> / ' + total + '개';
+
+  markCurrent();
+}
+
+function markCurrent(){
+  var key = state.sel ? state.sel.kind + ':' + state.sel.id : null;
+  live.forEach(function(r){
+    r.node.setAttribute('aria-current', String(r.kind + ':' + r.id === key));
+  });
+}
+
+/* ── 칩 ──────────────────────────────────────────────────────────────── */
+
+function buildChips(){
+  var counts = {};
+  ASSETS.forEach(function(a){ counts[a.category] = (counts[a.category] || 0) + 1; });
+
+  var defs = [{ k: '', label: '전체', n: ASSETS.length + PFX_TOTAL }];
+  CAT_ORDER.forEach(function(c){
+    if (counts[c]) defs.push({ k: c, label: CAT_LABEL[c], n: counts[c] });
+  });
+  defs.push({ k: 'pfx', label: PFX_LABEL, n: PFX_TOTAL });
+
+  chipsEl.textContent = '';
+  defs.forEach(function(d){
+    var b = node('button', 'chip');
+    b.type = 'button';
+    b.appendChild(document.createTextNode(d.label));
+    b.appendChild(node('span', 'n', String(d.n)));
+    b.addEventListener('click', function(){
+      state.cat = d.k;
+      syncChips();
+      render();
+      writeHash();
+    });
+    b.__k = d.k;
+    chipsEl.appendChild(b);
+  });
+  syncChips();
+}
+
+function syncChips(){
+  Array.prototype.forEach.call(chipsEl.children, function(b){
+    b.setAttribute('aria-pressed', String(b.__k === state.cat));
+  });
+}
+
+/* ── 상세 패널 ───────────────────────────────────────────────────────── */
+
+var dtRec = null;
+
+function node(tag, cls, text){
+  var n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text != null) n.textContent = text;
+  return n;
+}
+
+function select(kind, id, fromClick){
+  state.sel = { kind: kind, id: id };
+  state.frame = null;
+  if (kind === 'pfx' && !pfxLib) {
+    ensureParticles().then(function(){ buildDetail(); });
+  }
+  buildDetail();
+  markCurrent();
+  writeHash();
+  if (fromClick && matchMedia('(max-width:980px)').matches) openSheet();
+}
+
+function openSheet(){ detail.classList.add('open'); scrim.classList.add('on'); }
+function closeSheet(){ detail.classList.remove('open'); scrim.classList.remove('on'); }
+
+function copyText(t){
+  if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(t);
+  return new Promise(function(res){
+    var ta = document.createElement('textarea');
+    ta.value = t; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
+    res();
+  });
+}
+
+function copyBtn(label, value){
+  var b = node('button', 'btn', label);
+  b.type = 'button';
+  b.addEventListener('click', function(){
+    copyText(value).then(function(){
+      b.textContent = '복사됨';
+      b.classList.add('ok');
+      setTimeout(function(){ b.textContent = label; b.classList.remove('ok'); }, 1100);
+    });
+  });
+  return b;
+}
+
+function buildDetail(){
+  dtRec = null;
+  detail.textContent = '';
+
+  var close = node('button', 'dt-close', '×');
+  close.type = 'button';
+  close.setAttribute('aria-label', '닫기');
+  close.addEventListener('click', closeSheet);
+  detail.appendChild(close);
+
+  if (!state.sel) {
+    var e = node('div', 'dt-empty');
+    e.appendChild(document.createTextNode('왼쪽에서 리소스를 고르세요.'));
+    e.appendChild(document.createElement('br'));
+    e.appendChild(document.createTextNode('미리보기·정보·복사용 URL이 여기 나옵니다.'));
+    detail.appendChild(e);
+    return;
+  }
+
+  var kind = state.sel.kind, id = state.sel.id;
+  var a = kind === 'sprite' ? BY_ID[id] : null;
+  var spec = null;
+  if (kind === 'pfx' && pfxLib) {
+    try { spec = pfxLib.get(id); } catch (err) { spec = null; }
+  }
+
+  if (kind === 'sprite' && !a) {
+    detail.appendChild(node('div', 'dt-empty', '없는 id 입니다: ' + id));
+    return;
+  }
+  if (kind === 'pfx' && pfxLib && !spec) {
+    detail.appendChild(node('div', 'dt-empty', '없는 파티클입니다: ' + id));
+    return;
+  }
+
+  var head = node('div', 'dt-head');
+  head.appendChild(node('h2', null, id));
+  head.appendChild(node('span', 'badge', kind === 'pfx' ? PFX_LABEL : (CAT_LABEL[a.category] || a.category)));
+  detail.appendChild(head);
+
+  /* 무대 */
+  var stage = node('div', 'stage');
+  stage.dataset.bg = state.bg;
+  var cv = document.createElement('canvas');
+  stage.appendChild(cv);
+  detail.appendChild(stage);
+
+  var SW = 356, SH = 267;
+  var ctx = fitCanvas(cv, SW, SH);
+
+  /* 조작 */
+  var ctl = node('div', 'ctl');
+
+  var play = node('button', 'btn', state.playing ? '정지' : '재생');
+  play.type = 'button';
+  play.addEventListener('click', function(){
+    state.playing = !state.playing;
+    if (state.playing) state.frame = null;
+    play.textContent = state.playing ? '정지' : '재생';
+  });
+  ctl.appendChild(play);
+
+  var seg = node('div', 'seg');
+  [['dark', '어둠'], ['checker', '체커'], ['light', '밝음']].forEach(function(p){
+    var b = node('button', null, p[1]);
+    b.type = 'button';
+    b.setAttribute('aria-pressed', String(state.bg === p[0]));
+    b.addEventListener('click', function(){
+      state.bg = p[0];
+      stage.dataset.bg = p[0];
+      Array.prototype.forEach.call(seg.children, function(x){
+        x.setAttribute('aria-pressed', String(x === b));
+      });
+    });
+    seg.appendChild(b);
+  });
+  ctl.appendChild(seg);
+
+  var zoomOut   = node('button', 'btn', '−');
+  var zoomLabel = node('span', 'badge', state.scale.toFixed(1) + '×');
+  var zoomIn    = node('button', 'btn', '+');
+  zoomOut.type = zoomIn.type = 'button';
+  function setScale(v){
+    state.scale = Math.max(0.25, Math.min(6, Math.round(v * 100) / 100));
+    zoomLabel.textContent = state.scale.toFixed(1) + '×';
+  }
+  zoomOut.addEventListener('click', function(){ setScale(state.scale / 1.5); });
+  zoomIn.addEventListener('click',  function(){ setScale(state.scale * 1.5); });
+  ctl.appendChild(zoomOut);
+  ctl.appendChild(zoomLabel);
+  ctl.appendChild(zoomIn);
+  detail.appendChild(ctl);
+
+  /* 프레임 스트립 */
+  var stripCtxs = null;
+  if (kind === 'sprite' && a.frames > 1) {
+    var strip = node('div', 'strip');
+    stripCtxs = [];
+    for (var i = 0; i < a.frames; i++) {
+      (function(i){
+        var fc = document.createElement('canvas');
+        fc.setAttribute('aria-current', 'false');
+        fc.title = (i + 1) + '번 프레임';
+        var fctx = fitCanvas(fc, 46, 46);
+        fc.addEventListener('click', function(){
+          state.playing = false;
+          play.textContent = '재생';
+          state.frame = i;
+        });
+        strip.appendChild(fc);
+        stripCtxs.push({ ctx: fctx, node: fc, drawn: false });
+      })(i);
+    }
+    detail.appendChild(strip);
+  }
+
+  /* 정보 */
+  var meta = node('dl', 'meta');
+  function kv(k, v){ meta.appendChild(node('dt', null, k)); meta.appendChild(node('dd', null, v)); }
+
+  if (kind === 'sprite') {
+    kv('프레임', a.frames + '장');
+    kv('프레임 크기', a.frameWidth + ' × ' + a.frameHeight);
+    if (a.frames > 1) kv('fps', String(a.fps || 12));
+    kv('시트', a.width + ' × ' + a.height + ' (' + a.cols + '×' + a.rows + ')');
+    if (a.source) kv('원본', a.source);
+  } else if (spec) {
+    var ems = spec.emitters || [];
+    var dur = 0, tex = {};
+    ems.forEach(function(e2){
+      dur = Math.max(dur, e2.duration || 0);
+      if (e2.texture) tex[e2.texture] = 1;
+    });
+    kv('이미터', ems.length + '개');
+    kv('길이', dur.toFixed(2) + '초');
+    kv('반복', ems.some(function(e2){ return e2.looping; }) ? '있음' : '없음');
+    kv('텍스처', Object.keys(tex).join(', ') || '—');
+  } else {
+    kv('상태', '불러오는 중…');
+  }
+  detail.appendChild(meta);
+
+  /* 가져가기 */
+  detail.appendChild(node('div', 'dt-sec', '가져가기'));
+  var acts = node('div', 'acts');
+  acts.appendChild(copyBtn('id 복사', id));
+
+  if (kind === 'sprite') {
+    acts.appendChild(copyBtn('경로 복사', a.file));
+    acts.appendChild(copyBtn('직링크 복사', absUrl(a.file)));
+    var dl = node('a', 'btn', 'PNG 받기');
+    dl.href = a.file;
+    dl.setAttribute('download', a.id + '.png');
+    acts.appendChild(dl);
+  }
+  detail.appendChild(acts);
+
+  /* 코드 */
+  var snippet = kind === 'sprite' ? spriteSnippet(a) : pfxSnippet(id);
+  detail.appendChild(node('div', 'dt-sec', '코드'));
+  detail.appendChild(node('pre', 'snip', snippet));
+  var sc = node('div', 'acts');
+  sc.appendChild(copyBtn('코드 복사', snippet));
+  detail.appendChild(sc);
+
+  dtRec = { kind: kind, id: id, a: a, ctx: ctx, w: SW, h: SH,
+            i: 0, acc: 0, inst: null, stripCtxs: stripCtxs };
+  if (kind === 'sprite') sheetOf(a);
+}
+
+function spriteSnippet(a){
+  var base = absUrl('');
+  var lines = [
+    '<' + 'script src="' + base + 'loader.js"><' + '/script>',
+    '',
+    "const lib = await EffectLib.load('" + base + "effects.json');",
+    "await lib.preload(['" + a.id + "']);"
+  ];
+  if (a.frames > 1) {
+    lines.push("const fx = lib.play('" + a.id + "', { loop: true });");
+    lines.push('');
+    lines.push('// 매 프레임');
+    lines.push('fx.update().draw(ctx, x, y, { scale: 1 });');
+  } else {
+    lines.push('');
+    lines.push('// 단일 이미지 — 크기·회전·투명도는 직접 준다');
+    lines.push("const t = lib.get('" + a.id + "');");
+    lines.push('ctx.drawImage(t.image, x, y);');
+  }
+  return lines.join('\n');
+}
+
+function pfxSnippet(id){
+  var base = absUrl('');
+  return [
+    '<' + 'script src="' + base + 'particles.js"><' + '/script>',
+    '',
+    "const fx = await ParticleFX.load('" + base + "particles.json', {",
+    '  resolveTexture: (name) => imageFor(name),   // 이름 -> HTMLImageElement',
+    '});',
+    "const burst = fx.spawn('" + id + "', { x: 200, y: 300 });",
+    '',
+    '// 매 프레임 (dt 는 초)',
+    'burst.update(dt);',
+    'burst.draw(ctx);'
+  ].join('\n');
+}
+
+/** 상세 무대와 프레임 스트립을 매 프레임 갱신한다. */
+function drawDetail(dt){
+  var r = dtRec;
+  if (!r) return;
+
+  if (r.kind === 'pfx') {
+    if (!pfxLib) return;
+    if (!r.inst) {
+      try { r.inst = pfxLib.spawn(r.id, { x: r.w / 2, y: r.h * 0.55, unitScale: pfxUnitScale(r.id, r.h) }); }
+      catch (e) { return; }
+    }
+    if (state.playing) r.inst.update(dt / 1000);
+    r.ctx.clearRect(0, 0, r.w, r.h);
+    r.ctx.save();
+    r.ctx.translate(r.w / 2, r.h / 2);
+    r.ctx.scale(state.scale, state.scale);
+    r.ctx.translate(-r.w / 2, -r.h / 2);
+    r.inst.draw(r.ctx);
+    r.ctx.restore();
+    if (!r.inst.alive()) r.inst = null;
+    return;
+  }
+
+  var a = r.a;
+  if (state.frame != null) {
+    r.i = state.frame;
+  } else if (state.playing && a.frames > 1) {
+    r.acc += dt;
+    var step = 1000 / (a.fps || 12);
+    while (r.acc >= step) { r.acc -= step; r.i = (r.i + 1) % a.frames; }
+  }
+  drawSprite(r.ctx, a, r.i, r.w, r.h, state.scale);
+
+  if (r.stripCtxs) {
+    for (var i = 0; i < r.stripCtxs.length; i++) {
+      var s = r.stripCtxs[i];
+      if (!s.drawn) s.drawn = drawSprite(s.ctx, a, i, 46, 46);
+      s.node.setAttribute('aria-current', String(i === r.i));
+    }
+  }
+}
+
+/* ── 해시 라우팅 ─────────────────────────────────────────────────────── */
+
+var hashLock = false;
+
+function writeHash(){
+  var path = '';
+  if (state.sel) {
+    var head = state.sel.kind === 'pfx'
+      ? 'pfx'
+      : ((BY_ID[state.sel.id] || {}).category || 'x');
+    path = head + '/' + encodeURIComponent(state.sel.id);
+  }
+  var qs = [];
+  if (state.q.trim()) qs.push('q=' + encodeURIComponent(state.q.trim()));
+  if (state.cat)      qs.push('cat=' + state.cat);
+
+  var h = '#/' + path + (qs.length ? '?' + qs.join('&') : '');
+  if (h === location.hash) return;
+  hashLock = true;
+  history.replaceState(null, '', h);
+  setTimeout(function(){ hashLock = false; }, 0);
+}
+
+function readHash(){
+  if (hashLock) return;
+  var h  = location.hash.replace(/^#\/?/, '');
+  var qi = h.indexOf('?');
+  var path = qi === -1 ? h : h.slice(0, qi);
+  var qs   = qi === -1 ? '' : h.slice(qi + 1);
+
+  var params = {};
+  qs.split('&').forEach(function(p){
+    if (!p) return;
+    var bits = p.split('=');
+    params[decodeURIComponent(bits[0])] = decodeURIComponent(bits.slice(1).join('=') || '');
+  });
+
+  state.q   = params.q   || '';
+  state.cat = params.cat || '';
+  qInput.value = state.q;
+  qClear.hidden = !state.q;
+
+  var parts = path ? path.split('/') : [];
+  if (parts.length >= 2) {
+    state.sel = {
+      kind: parts[0] === 'pfx' ? 'pfx' : 'sprite',
+      id: decodeURIComponent(parts.slice(1).join('/'))
+    };
+  } else {
+    state.sel = null;
+  }
+
+  syncChips();
+  render();
+  buildDetail();
+
+  if (state.sel && state.sel.kind === 'pfx' && !pfxLib) {
+    ensureParticles().then(function(){ buildDetail(); markCurrent(); });
+  }
+}
+
+/* ── 입력 ────────────────────────────────────────────────────────────── */
+
+var qTimer = null;
+qInput.addEventListener('input', function(){
+  qClear.hidden = !qInput.value;
+  clearTimeout(qTimer);
+  qTimer = setTimeout(function(){
+    state.q = qInput.value;
+    render();
+    writeHash();
+  }, 120);
+});
+qClear.addEventListener('click', function(){
+  qInput.value = '';
+  qClear.hidden = true;
+  state.q = '';
+  render();
+  writeHash();
+  qInput.focus();
+});
+
+scrim.addEventListener('click', closeSheet);
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') closeSheet();
+  if (e.key === '/' && document.activeElement !== qInput) { e.preventDefault(); qInput.focus(); }
+});
+window.addEventListener('hashchange', readHash);
+
+function syncBarHeight(){
+  document.documentElement.style.setProperty(
+    '--barH', document.getElementById('bar').offsetHeight + 'px');
+}
+window.addEventListener('resize', syncBarHeight);
+
+/* ── 시작 ────────────────────────────────────────────────────────────── */
+
+fetch('./effects.json')
+  .then(function(r){
+    if (!r.ok) throw new Error('effects.json -> HTTP ' + r.status);
+    return r.json();
+  })
+  .then(function(m){
+    ASSETS = m.assets;
+    ASSETS.forEach(function(a){
+      if (!a.fps) a.fps = m.defaultFps || 12;
+      BY_ID[a.id] = a;
+    });
+
+    buildChips();
+    syncBarHeight();
+    readHash();
+    requestAnimationFrame(tick);
+
+  })
+  .catch(function(err){
+    var p = node('p', 'nothing');
+    p.appendChild(document.createTextNode('effects.json 을 불러오지 못했습니다.'));
+    p.appendChild(document.createElement('br'));
+    p.appendChild(node('span', null, String(err && err.message || err)));
+    p.appendChild(document.createElement('br'));
+    p.appendChild(document.createElement('br'));
+    p.appendChild(document.createTextNode('file:// 로 열면 브라우저가 막습니다. 배포 주소로 접속하거나 로컬 서버를 띄우세요.'));
+    grid.textContent = '';
+    grid.appendChild(p);
+  });
+
+})();
+</script>
+</body>
+</html>

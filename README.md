@@ -5,7 +5,8 @@ Nine Corporation 게임의 이펙트 리소스를 **웹 게임에서 바로 쓸 
 
 ```
 Effects/
-  viewer.html     ← 더블클릭하면 열립니다. 서버 필요 없음
+  index.html            웹에 올라가는 뷰어. 배포 주소로 접속하면 이것이 열립니다
+  viewer-classic.html   예전 단일 파일 뷰어. 인터넷 없이 더블클릭용
   effects/        이펙트 스프라이트시트 87개
   singles/        단일 이미지 114개 (파티클 재료)
   particles.json  Unity 프리팹에서 뽑은 파티클 설계 209개
@@ -15,9 +16,23 @@ Effects/
   tools/          재빌드용 스크립트 (원본이 있을 때만 필요)
 ```
 
-## 먼저 볼 것
+## 웹에서 바로 보기
 
-`viewer.html` 을 더블클릭하세요. **410개가 한 격자에** 나오고, id 검색·카테고리 필터가 됩니다.
+**https://jujeongmin.github.io/effect-library/**
+
+받을 것도, clone 할 것도 없습니다. 링크만 열면 410개가 격자로 나오고
+검색·카테고리 필터·상세 미리보기가 다 됩니다.
+
+- 항목을 고르면 주소가 같이 바뀝니다. 그 주소를 보내면 상대도 같은 항목을 봅니다
+  — 예: `…/#/zone/frost_zone`. 검색 결과는 `…/#/?q=frost`
+- 상세의 **직링크 복사** 는 PNG 의 절대 주소를 줍니다.
+  `https://jujeongmin.github.io/effect-library/effects/frost_zone.png`
+  이 주소를 코드에 그대로 넣으면 파일을 받을 필요가 없습니다
+- 화면에 보이는 것만 내려받습니다. 처음부터 12MB 를 다 받지 않습니다
+
+## 인터넷 없이 볼 때
+
+`viewer-classic.html` 을 더블클릭하세요. **410개가 한 격자에** 나오고, id 검색·카테고리 필터가 됩니다.
 카드의 **COPY** 버튼을 누르면 id가 바로 복사되고, 카드 그림을 누르면 프레임 하나하나와
 붙여넣을 코드가 나옵니다.
 
@@ -297,6 +312,6 @@ python tools/dedupe_particles.py                    # 중복·UI 정리
 - **dedupe_particles.py** — 같은 설계와 UI 계열을 걸러 파티클 목록을 줄입니다.
 - **add_textures.py** — Unity 파티클 텍스처를 `singles/` 로 합칩니다. 버프 아이콘과
   UI 문구(VICTORY, LEVEL UP 등)는 이름 규칙으로 걸러냅니다.
-- **build_catalog.py + make_page.py** — `viewer.html` 생성.
+- **build_catalog.py + make_page.py** — `viewer-classic.html` 생성.
   `CATALOG_DIRECT=1` 이면 실제 시트를 읽는 뷰어, `--embed` 면 썸네일 아틀라스를
   파일 안에 넣어 혼자 돌아가는 뷰어를 만듭니다.

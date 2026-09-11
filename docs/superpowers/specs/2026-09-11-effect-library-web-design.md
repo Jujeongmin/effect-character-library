@@ -86,8 +86,22 @@ MSU 리소스 페이지 구조를 따른다.
 이번에 새로 하는 것:
 
 - 인라인 `<script type="application/json">` 두 덩어리(합 950KB)를 제거하고 `fetch` 로 전환.
-  `effects.json` 은 즉시, `particles.json`(909KB)은 파티클 칩을 처음 누를 때만.
-- 첫 HTML 을 20KB대로 낮춘다. 첫 화면 총 전송량 목표 300KB 안쪽.
+  `effects.json` 은 즉시, `particles.json`(909KB)은 목록 끝의 자리표시자가 화면에 들어올 때.
+- 파티클 설계는 전용 `IntersectionObserver` 가 지킨다. 파티클 칩을 누르거나
+  스프라이트 201개를 끝까지 내려야 받는다.
+
+실측 (1200×1270 뷰포트, 첫 화면):
+
+| | 기존 viewer.html | 새 index.html |
+|---|---|---|
+| 첫 전송량 | 약 12MB (전부) | 3.0MB |
+| PNG 요청 수 | 201개 | 28개 |
+| particles.json | 즉시 | 안 받음 |
+
+남은 3.0MB 는 화면에 실제로 보이는 스프라이트시트 28장이다. 원본 시트가 크다
+(`poison_9.png` 832KB, `frost_zone.png` 616KB). 이보다 더 줄이려면 128px
+썸네일 아틀라스를 따로 구워야 하는데, 이 환경에 이미지 툴(Pillow/sharp)이
+없어 이번 범위에서는 뺐다.
 
 ## 공유와 직접 사용
 
