@@ -104,6 +104,9 @@ a{color:var(--violet)}
 .btn.primary:hover{color:#fff;border-color:var(--violet)}
 .btn.primary.ok{background:var(--amber);border-color:var(--amber);color:#18120a}
 .hint{margin:9px 0 0;font-size:11.5px;line-height:1.65;color:var(--muted)}
+.motion-note{margin:0;padding:7px 11px;border:1px solid var(--amber);border-radius:8px;
+  background:color-mix(in srgb,var(--amber) 12%,transparent);color:var(--text);font-size:12px;line-height:1.5}
+.motion-note b{color:var(--amber)}
 .strip{display:flex;gap:5px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:thin}
 .strip canvas{flex:0 0 auto;width:46px;height:46px;border:1px solid var(--line);border-radius:7px;background:var(--plate);cursor:pointer}
 .strip canvas[aria-current=true]{border-color:var(--violet)}
@@ -146,10 +149,15 @@ a{color:var(--violet)}
         <button class="clear" id="qClear" type="button" aria-label="검색어 지우기" hidden>&times;</button>
       </div>
       <div class="tally" id="tally"></div>
+      <button class="btn" id="playBtn" type="button" aria-pressed="true">정지</button>
       <button class="btn primary" id="setupBtn" type="button"
         title="쓰는 AI 도구에 프로젝트당 한 번만 붙여넣으면 됩니다. 그 뒤로는 id 만 말하면 됩니다">AI에 연결하기</button>
     </div>
     <div class="chips" id="chips"></div>
+    <p class="motion-note" id="motionNote" hidden>
+      OS 의 <b>동작 줄이기</b> 설정이 켜져 있어 멈춘 채로 시작했습니다.
+      위의 <b>재생</b> 을 누르면 움직입니다. (멈춰 있으면 파티클은 보이지 않습니다)
+    </p>
   </div>
 </header>
 
@@ -241,7 +249,29 @@ var state = {
   sel: null,      // { kind:'sprite'|'pfx', id }
   frame: null     // 상세에서 프레임을 손으로 고른 경우
 };
-if (matchMedia('(prefers-reduced-motion: reduce)').matches) state.playing = false;
+// OS 의 '동작 줄이기' 를 존중해 멈춘 채로 시작한다. 다만 그 사실을 알려 주고
+// 상단에 재생 버튼을 둔다 — 예전에는 재생 버튼이 상세 안에만 있어서,
+// 상세를 열지 않으면 켤 방법이 없었다.
+var REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (REDUCED) state.playing = false;
+
+var playBtn = document.getElementById('playBtn');
+
+function syncPlay(){
+  playBtn.textContent = state.playing ? '정지' : '재생';
+  playBtn.setAttribute('aria-pressed', String(state.playing));
+  playBtn.classList.toggle('primary', !state.playing);
+  var d = detail.querySelector('[data-role=play]');
+  if (d) d.textContent = state.playing ? '정지' : '재생';
+}
+
+function setPlaying(v){
+  state.playing = v;
+  if (v) state.frame = null;
+  syncPlay();
+}
+
+playBtn.addEventListener('click', function(){ setPlaying(!state.playing); });
 
 /* ── 절대 URL — 공유·직링크용 ─────────────────────────────────────────── */
 
@@ -333,6 +363,12 @@ var io = new IntersectionObserver(function(entries){
   });
 }, { rootMargin: '120px' });
 
+/** 정지 상태로 만들어진 파티클은 빈 화면이 된다. 몇 프레임 미리 굴려 한 장면을 남긴다. */
+function primeIfPaused(inst){
+  if (state.playing || !inst) return;
+  for (var i = 0; i < 30; i++) inst.update(1 / 60);
+}
+
 /** 목록 끝의 자리표시자가 보이면 그때 파티클을 받는다. */
 var pfxWatch = new IntersectionObserver(function(entries){
   if (!entries.some(function(e){ return e.isIntersecting; })) return;
@@ -351,8 +387,10 @@ function tick(now){
     if (r.kind === 'pfx') {
       if (!pfxLib) continue;
       if (!r.inst) {
-        try { r.inst = pfxLib.spawn(r.id, { x: r.w / 2, y: r.h * 0.55, unitScale: pfxUnitScale(r.id, r.h) }); }
-        catch (err) { r.visible = false; continue; }
+        try {
+          r.inst = pfxLib.spawn(r.id, { x: r.w / 2, y: r.h * 0.55, unitScale: pfxUnitScale(r.id, r.h) });
+          primeIfPaused(r.inst);
+        } catch (err) { r.visible = false; continue; }
       }
       if (state.playing) r.inst.update(dt / 1000);
       r.ctx.clearRect(0, 0, r.w, r.h);
@@ -649,11 +687,8 @@ function buildDetail(){
 
   var play = node('button', 'btn', state.playing ? '정지' : '재생');
   play.type = 'button';
-  play.addEventListener('click', function(){
-    state.playing = !state.playing;
-    if (state.playing) state.frame = null;
-    play.textContent = state.playing ? '정지' : '재생';
-  });
+  play.dataset.role = 'play';
+  play.addEventListener('click', function(){ setPlaying(!state.playing); });
   ctl.appendChild(play);
 
   var seg = node('div', 'seg');
@@ -699,8 +734,7 @@ function buildDetail(){
         fc.title = (i + 1) + '번 프레임';
         var fctx = fitCanvas(fc, 46, 46);
         fc.addEventListener('click', function(){
-          state.playing = false;
-          play.textContent = '재생';
+          setPlaying(false);
           state.frame = i;
         });
         strip.appendChild(fc);
@@ -872,8 +906,10 @@ function drawDetail(dt){
   if (r.kind === 'pfx') {
     if (!pfxLib) return;
     if (!r.inst) {
-      try { r.inst = pfxLib.spawn(r.id, { x: r.w / 2, y: r.h * 0.55, unitScale: pfxUnitScale(r.id, r.h) }); }
-      catch (e) { return; }
+      try {
+        r.inst = pfxLib.spawn(r.id, { x: r.w / 2, y: r.h * 0.55, unitScale: pfxUnitScale(r.id, r.h) });
+        primeIfPaused(r.inst);
+      } catch (e) { return; }
     }
     if (state.playing) r.inst.update(dt / 1000);
     r.ctx.clearRect(0, 0, r.w, r.h);
@@ -1031,6 +1067,8 @@ fetch('./effects.json')
     });
 
     buildChips();
+    syncPlay();
+    if (REDUCED) document.getElementById('motionNote').hidden = false;
     syncBarHeight();
     readHash();
     requestAnimationFrame(tick);
