@@ -203,32 +203,44 @@ function curveMax(spec, fallback){
   return fallback;
 }
 
-/** 이 레시피가 원점에서 대략 몇 유닛까지 퍼지는지. */
-function pfxExtent(spec){
-  var ext = 0.15;
+/**
+ * 이 레시피의 두 가지 치수.
+ *   extent  — 원점에서 대략 몇 유닛까지 퍼지는지
+ *   biggest — 가장 큰 입자가 몇 유닛으로 그려지는지
+ */
+function pfxMeasure(spec){
+  var extent = 0.15, biggest = 0.0001;
   (spec.emitters || []).forEach(function(e){
     var size = curveMax(e.size, 1);
     var life = curveMax(e.lifetime, 1);
     var speed = curveMax(e.speed, 0);
     var grow = e.sizeOverLife ? curveMax(e.sizeOverLife, 1) : 1;
     var radius = (e.shape && e.shape.radius) || 0;
+    var drawn = size * grow;
     // 최대 속도로 수명 내내 직진하는 입자는 드물다. 이동분은 깎아서 센다.
-    ext = Math.max(ext, radius + speed * life * 0.6 + size * grow / 2);
+    extent = Math.max(extent, radius + speed * life * 0.6 + drawn / 2);
+    biggest = Math.max(biggest, drawn);
   });
-  return ext;
+  return { extent: extent, biggest: biggest };
 }
 
 /**
- * 이 레시피에 맞는 px/유닛. 화폭 비율로 상·하한을 묶어서, 큰 설계만 줄이고
- * 작은 설계가 점으로 사라지지 않게 한다.
+ * 이 레시피에 맞는 px/유닛.
+ *
+ * 두 가지를 동시에 맞춘다. 퍼짐이 화폭에 들어오게 줄이되, 그렇게 줄이면
+ * 입자가 서브픽셀이 되어 사라지는 설계(먼지 같은 것)는 보이는 크기까지
+ * 키운다. 키우다 화폭을 넘치는 것은 넘치게 둔다 — 안 보이는 것보다 낫다.
  */
 function pfxUnitScale(id, box){
-  var ext = pfxUnitCache[id];
-  if (ext === undefined) {
-    try { ext = pfxExtent(pfxLib.get(id)); } catch (e) { ext = 1; }
-    pfxUnitCache[id] = ext;
+  var m = pfxUnitCache[id];
+  if (!m) {
+    try { m = pfxMeasure(pfxLib.get(id)); } catch (e) { m = { extent: 1, biggest: 1 }; }
+    pfxUnitCache[id] = m;
   }
-  return Math.max(box * 0.11, Math.min(box * 0.32, (box * 0.45) / ext));
+  var fit = (box * 0.45) / m.extent;   // 퍼짐이 화폭 안에
+  var vis = 2.5 / m.biggest;           // 가장 큰 입자가 최소 2.5px
+  var ceiling = (box * 1.6) / m.extent;   // 키우더라도 이 이상은 의미 없다
+  return Math.max(0.01, Math.min(Math.max(fit, vis), ceiling));
 }
 
 var grid    = document.getElementById('grid');
