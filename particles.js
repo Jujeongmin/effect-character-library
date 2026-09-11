@@ -227,6 +227,10 @@
     var spec = this.spec, img = this.image();
     if (!img) return this;
     ctx.save();
+    // The caller usually has a transform of its own - a device-pixel-ratio
+    // scale, a zoom. Compose with it; replacing it would drop the caller's
+    // scale and pile every particle into the top-left corner.
+    var base = ctx.getTransform ? ctx.getTransform() : null;
     ctx.globalCompositeOperation = this.additive ? 'lighter' : 'source-over';
     for (var i = 0; i < this.particles.length; i++) {
       var p = this.particles[i];
@@ -238,12 +242,13 @@
       if (a <= 0.003) continue;
       var paint = tinted(img, col ? multiply(p.tint, [col[0], col[1], col[2], 1]) : p.tint);
       ctx.globalAlpha = Math.min(1, a);
-      ctx.setTransform(1, 0, 0, 1, ox + p.x, oy + p.y);
+      if (base) ctx.setTransform(base);
+      else ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.translate(ox + p.x, oy + p.y);
       if (p.rot) ctx.rotate(p.rot);
       ctx.drawImage(paint, -s / 2, -s / 2, s, s);
     }
-    ctx.restore();
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.restore();      // restore() puts the caller's transform back
     return this;
   };
 
