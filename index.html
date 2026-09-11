@@ -146,6 +146,8 @@ a{color:var(--violet)}
         <button class="clear" id="qClear" type="button" aria-label="검색어 지우기" hidden>&times;</button>
       </div>
       <div class="tally" id="tally"></div>
+      <button class="btn primary" id="setupBtn" type="button"
+        title="프로젝트당 한 번만. 붙여넣은 뒤로는 id 만 말하면 됩니다">프로젝트에 붙이기</button>
     </div>
     <div class="chips" id="chips"></div>
   </div>
@@ -738,14 +740,13 @@ function buildDetail(){
   detail.appendChild(node('div', 'dt-sec', '가져가기'));
   var acts = node('div', 'acts');
 
-  var prompt = kind === 'sprite' ? spritePrompt(a) : pfxPrompt(id, spec);
-  var pb = copyBtn('AI 프롬프트 복사', prompt);
+  var line = kind === 'sprite' ? spriteLine(a) : pfxLine(id, spec);
+  var pb = copyBtn('한 줄 복사', line);
   pb.classList.add('primary');
-  pb.title = '붙여넣고 "전사 공격에 써줘" 처럼 한 줄만 덧붙이면 됩니다';
+  pb.title = line;
   acts.appendChild(pb);
 
   if (kind === 'sprite') {
-    acts.appendChild(copyBtn('PNG 주소 복사', absUrl(a.file)));
     var dl = node('a', 'btn', 'PNG 받기');
     dl.href = a.file;
     dl.setAttribute('download', a.id + '.png');
@@ -753,8 +754,9 @@ function buildDetail(){
   }
   detail.appendChild(acts);
   detail.appendChild(node('p', 'hint',
-    '붙여넣은 다음 "전사 공격에 써줘" 처럼 어디에 쓸지 한 줄만 덧붙이세요. ' +
-    '파일을 받을 필요는 없습니다 — 주소를 그대로 읽어 갑니다.'));
+    '연결 프롬프트를 이미 붙였다면 이름 옆 ' + '「' + '복사' + '」' + ' 로 id 만 가져가서 ' +
+    '"전사 공격에 써줘" 라고 하면 됩니다. 아직이면 위의 ' +
+    '「' + '프로젝트에 붙이기' + '」' + ' 를 먼저 한 번 붙여넣으세요.'));
 
   /* 코드 */
   var snippet = kind === 'sprite' ? spriteSnippet(a) : pfxSnippet(id);
@@ -770,66 +772,56 @@ function buildDetail(){
 }
 
 /**
- * 그대로 붙여넣으면 AI 가 이 이펙트를 붙일 수 있을 만큼의 정보.
- * 파일을 내려받지 않아도 되도록 전부 절대 주소로 적는다.
+ * 프로젝트당 한 번 붙여넣는 연결 프롬프트. 이걸 CLAUDE.md 에 넣어 두면
+ * 그 뒤로는 id 만 말해도 된다.
  */
-function spritePrompt(a){
+function setupPrompt(){
   var base = absUrl('');
-  var lines = [
-    '이 이펙트를 프로젝트에 붙여줘. 파일을 받을 필요 없이 아래 주소를 그대로 쓰면 돼.',
+  return [
+    '이 이펙트 라이브러리를 이 프로젝트에서 쓸 수 있게 붙여줘.',
+    '파일은 받지 않는다 — 전부 아래 주소에서 바로 읽는다.',
     '',
-    'id: ' + a.id,
-    '스프라이트시트: ' + base + a.file,
-    '  ' + a.frameWidth + '×' + a.frameHeight + ' 프레임 ' + a.frames + '장, '
-      + a.cols + '칸 × ' + a.rows + '줄 배치'
-      + (a.frames > 1 ? ', ' + (a.fps || 12) + 'fps' : '') + ', 투명 PNG',
-    '매니페스트: ' + base + 'effects.json   (이펙트 201개의 id·크기·fps)',
-    '로더: ' + base + 'loader.js   (canvas / Phaser 3 / PixiJS)',
+    '베이스: ' + base,
     '',
-    '로더를 쓸 때:',
-    "  const lib = await EffectLib.load('" + base + "effects.json');",
-    "  await lib.preload(['" + a.id + "']);"
-  ];
-  if (a.frames > 1) {
-    lines.push("  const fx = lib.play('" + a.id + "', { loop: false });");
-    lines.push('  fx.update().draw(ctx, x, y, { scale: 1 });   // 매 프레임');
-    lines.push('');
-    lines.push('로더 없이 직접 그릴 때: 위 시트를 ' + a.cols + '칸 × ' + a.rows + '줄로 잘라 '
-      + (a.fps || 12) + 'fps 로 ' + a.frames + '프레임 돌리면 된다.');
-  } else {
-    lines.push("  const t = lib.get('" + a.id + "');");
-    lines.push('  ctx.drawImage(t.image, x, y);');
-    lines.push('');
-    lines.push('한 장짜리다. 크기·회전·투명도를 코드로 바꿔 가며 파티클 재료로 쓴다.');
-  }
-  return lines.join('\n');
+    '스프라이트 201개',
+    '  매니페스트: ' + base + 'effects.json',
+    '    항목마다 id, file, frameWidth, frameHeight, frames, cols, rows, fps, category',
+    '  PNG: 베이스 + 항목의 file    예: ' + base + 'effects/frost_zone.png',
+    '  로더: ' + base + 'loader.js',
+    "    const lib = await EffectLib.load('" + base + "effects.json');",
+    "    await lib.preload(['<id>']);",
+    "    const fx = lib.play('<id>', { loop: false });",
+    '    fx.update().draw(ctx, x, y, { scale: 1 });   // 매 프레임',
+    '  로더를 안 쓸 거면 시트를 cols × rows 로 잘라 fps 로 돌리면 된다.',
+    '',
+    '파티클 209개',
+    '  설계: ' + base + 'particles.json',
+    '  런타임: ' + base + 'particles.js',
+    "    const fx = await ParticleFX.load('" + base + "particles.json', {",
+    '      resolveTexture: (name) => imageFor(name),',
+    '    });',
+    "    const burst = fx.spawn('<id>', { x, y });",
+    '    burst.update(dt);  burst.draw(ctx);   // 매 프레임, dt 는 초',
+    '  텍스처 이름은 소문자·언더바로 바꾸면 파일명이다.',
+    '    예: NY_glow_01 -> ' + base + 'singles/ny_glow_01.png',
+    '',
+    '이 내용을 CLAUDE.md 에 적어 둬. 앞으로는 내가 id 만 말한다.',
+    '  예: "frost_zone 을 전사 공격에 써줘"'
+  ].join('\n');
 }
 
-function pfxPrompt(id, spec){
-  var base = absUrl('');
-  var ems = (spec && spec.emitters) || [];
-  var tex = {};
-  ems.forEach(function(e){ if (e.texture) tex[e.texture] = 1; });
-  var names = Object.keys(tex);
+/** 항목 하나를 가리키는 한 줄. 연결 프롬프트를 이미 붙였다면 이것으로 충분하다. */
+function spriteLine(a){
+  return a.id + ' — ' + absUrl(a.file)
+    + ' (' + a.frameWidth + '×' + a.frameHeight
+    + (a.frames > 1 ? ', ' + a.frames + '프레임, ' + (a.fps || 12) + 'fps' : ', 단일 이미지')
+    + ', ' + a.cols + '×' + a.rows + ' 배치)';
+}
 
-  return [
-    '이 파티클 이펙트를 프로젝트에 붙여줘. 파일을 받을 필요 없이 아래 주소를 그대로 쓰면 돼.',
-    '',
-    'id: ' + id,
-    '설계: ' + base + 'particles.json   (Unity 프리팹에서 뽑은 파티클 209개)',
-    '런타임: ' + base + 'particles.js   (캔버스에서 재생)',
-    '이미터 ' + ems.length + '개' + (names.length ? ', 텍스처 ' + names.join(', ') : ''),
-    '',
-    '텍스처는 단일 이미지로 같은 저장소에 있다. 이름을 소문자·언더바로 바꾸면 파일명이다.',
-    '  예: NY_glow_01 -> ' + base + 'singles/ny_glow_01.png',
-    '  전체 목록은 ' + base + 'effects.json 의 category=single 항목.',
-    '',
-    "  const fx = await ParticleFX.load('" + base + "particles.json', {",
-    '    resolveTexture: (name) => imageFor(name),   // 이름 -> HTMLImageElement',
-    '  });',
-    "  const burst = fx.spawn('" + id + "', { x, y });",
-    '  burst.update(dt);  burst.draw(ctx);   // 매 프레임, dt 는 초'
-  ].join('\n');
+function pfxLine(id, spec){
+  var ems = (spec && spec.emitters) || [];
+  return id + ' — 파티클, ' + absUrl('particles.json') + ' 의 설계'
+    + (ems.length ? ' (이미터 ' + ems.length + '개)' : '');
 }
 
 function spriteSnippet(a){
@@ -995,6 +987,18 @@ qClear.addEventListener('click', function(){
   render();
   writeHash();
   qInput.focus();
+});
+
+var setupBtn = document.getElementById('setupBtn');
+setupBtn.addEventListener('click', function(){
+  copyText(setupPrompt()).then(function(){
+    setupBtn.textContent = '복사됨 — CLAUDE.md 에 붙여넣기';
+    setupBtn.classList.add('ok');
+    setTimeout(function(){
+      setupBtn.textContent = '프로젝트에 붙이기';
+      setupBtn.classList.remove('ok');
+    }, 2400);
+  });
 });
 
 scrim.addEventListener('click', closeSheet);
