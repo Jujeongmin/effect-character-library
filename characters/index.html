@@ -569,7 +569,7 @@ function renderDetail() {
 
   var meta = el('dl', { class: 'meta' }, []);
   addMeta(meta, '이름', c.name);
-  addMeta(meta, '애니메이션', names.join(', '));
+  addMeta(meta, '모습', names.join(', '));
   addMeta(meta, '프레임', clip.frames + '장 (' + clip.cols + '×' + clip.rows + ')');
   addMeta(meta, '프레임 크기', clip.frameWidth + '×' + clip.frameHeight);
   addMeta(meta, 'fps', String(clip.fps || 12));
