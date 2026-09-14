@@ -314,11 +314,13 @@ els.playBtn.addEventListener('click', function () {
 function setupPrompt() {
   var base = SITE_BASE.replace(/characters\/$/, '');
   var lib = state.lib;
+  var all = lib ? lib.characters : [];
   var counts = {};
-  (lib ? lib.characters : []).forEach(function (c) { counts[c.category] = (counts[c.category] || 0) + 1; });
+  all.forEach(function (c) { counts[c.category] = (counts[c.category] || 0) + 1; });
   var catLine = lib ? Object.keys(lib.categories).map(function (k) {
     return lib.categoryLabel(k) + ' ' + (counts[k] || 0);
   }).join(' · ') : '';
+  var spineCount = all.filter(function (c) { return c.spine; }).length;
 
   return [
     '이 캐릭터 라이브러리를 이 프로젝트에서 쓸 수 있게 붙여줘.',
@@ -327,30 +329,66 @@ function setupPrompt() {
     '',
     '베이스: ' + base,
     '',
-    '캐릭터 ' + (lib ? lib.characters.length : '') + '개 (' + catLine + ')',
+    '캐릭터 ' + (lib ? all.length : '') + '개 (' + catLine + '), 그중 진짜 Spine 애니메이션 ' + spineCount + '개',
     '  매니페스트: ' + base + 'characters.json',
-    '  로더: ' + base + 'character-loader.js',
+    '  로더(정지 이미지 전용): ' + base + 'character-loader.js',
     '',
-    '항목마다 두 형식 중 하나다:',
-    '  A. 모습이 하나뿐이면 { id, name, category, file, frameWidth, frameHeight, frames, cols, rows }',
-    '  B. 모습이 여러 개(스킨·표정·성장단계)면 { id, name, category, defaultAnimation,',
+    '항목마다 세 형식이 섞여 있다 — 캐릭터마다 다르니 매번 characters.json에서 확인:',
+    '  A. 모습이 하나뿐인 정지 이미지: { id, name, category, file, frameWidth, frameHeight, frames, cols, rows }',
+    '     frames가 1보다 크면 정지컷 여러 장을 이어붙인 진짜 프레임 애니메이션(걷기/공격 등)이다.',
+    '  B. 모습이 여러 개(스킨·표정·성장단계): { id, name, category, defaultAnimation,',
     '     animations: { 이름: {file, frameWidth, frameHeight, frames, cols, rows}, ... } }',
     '     예: mage 는 default/expr_idle/expr_attack/... 여러 개, valkyrie 는 default/black/brown/whitegold',
+    '  C. `spine` 필드가 있으면 원본 게임사가 만든 진짜 Spine 스켈레톤 애니메이션이다 —',
+    '     A/B의 정지 이미지 위에 "추가로" 얹혀 있고, 이 경우 아래 스니펫으로 대신 재생한다',
+    '     (A/B의 file/frames는 이 캐릭터에서는 안 쓴다):',
+    '     spine: { skeleton, atlas, skin?, defaultAnimation, animations: [...], variants?: [...] }',
+    '       - skeleton: ".json"으로 끝나면 텍스트 SkeletonJson, 아니면(.skel.bytes 등) SkeletonBinary로 읽는다',
+    '       - skin: 있으면 "default" 스킨과 합쳐서(Skin.addSkin) 적용 — 색상 변형이 스킨으로 들어있는 경우',
+    '       - variants: 있으면 완전히 다른 skeleton/atlas 세트(자체 skin 포함 가능)로 통째로 갈아 끼우는',
+    '         추가 색상/장식판 — variants[].key/label로 어떤 건지 알 수 있다',
     '',
-    "const lib = await CharacterLib.load('" + base + "characters.json');",
-    "await lib.preload(['<id>']);           // 그 캐릭터의 모습을 전부 미리 받는다",
-    "const anim = lib.play('<id>', { loop: true });              // 모습 하나뿐일 때",
-    "const anim2 = lib.play('<id>', '<모습이름>', { loop: true }); // 여러 모습 중 하나 고를 때",
-    '// 매 프레임',
-    'anim.update().draw(ctx, x, y, { scale: 1 });   // x, y 는 프레임의 중심',
+    '정지 이미지(A/B) 재생:',
+    "  const lib = await CharacterLib.load('" + base + "characters.json');",
+    "  await lib.preload(['<id>']);",
+    "  const anim = lib.play('<id>', { loop: true });              // 모습 하나뿐일 때",
+    "  const anim2 = lib.play('<id>', '<모습이름>', { loop: true }); // 여러 모습 중 하나",
+    '  anim.update().draw(ctx, x, y, { scale: 1 });   // 매 프레임, x/y는 중심',
     '',
-    '전부 정지 이미지 한 장이다(걷기·공격 애니메이션 없음) — frames 는 항상 1.',
-    '표정·스킨 전환은 애니메이션이 아니라 그림 자체를 바꿔치기하는 것이다.',
+    '진짜 Spine 재생 (spine-webgl 필요, CDN에서 그대로 로드하면 됨):',
+    '  <script src="https://unpkg.com/@esotericsoftware/spine-webgl@4.1.24/dist/iife/spine-webgl.js"><\/script>',
+    '  const am = new spine.AssetManager(gl, "' + base + '");',
+    "  am.loadTextureAtlas(c.spine.atlas);",
+    '  if (/\\.json$/i.test(c.spine.skeleton)) am.loadJson(c.spine.skeleton);',
+    '  else am.loadBinary(c.spine.skeleton);',
+    '  // 로딩 끝나면(am.isLoadingComplete()):',
+    '  const atlas = am.require(c.spine.atlas);',
+    '  const loader = new spine.AtlasAttachmentLoader(atlas);',
+    '  const reader = /\\.json$/i.test(c.spine.skeleton) ? new spine.SkeletonJson(loader) : new spine.SkeletonBinary(loader);',
+    '  const skeletonData = reader.readSkeletonData(am.require(c.spine.skeleton));',
+    '  const skeleton = new spine.Skeleton(skeletonData);',
+    '  if (c.spine.skin) {',
+    '    const combined = new spine.Skin("combined");',
+    '    combined.addSkin(skeletonData.findSkin("default"));',
+    '    combined.addSkin(skeletonData.findSkin(c.spine.skin));',
+    '    skeleton.setSkin(combined);',
+    '  }',
+    '  skeleton.setSlotsToSetupPose();',
+    '  const state = new spine.AnimationState(new spine.AnimationStateData(skeletonData));',
+    '  state.setAnimation(0, "<동작이름>", true);   // 예: "Attack" — c.spine.animations 중 하나, loop=true',
+    '  // 매 프레임: state.update(dt); state.apply(skeleton); skeleton.updateWorldTransform(); renderer.drawSkeleton(skeleton, true);',
+    '',
+    '동작(모션) 바꾸는 건 매번 새로 로드하는 게 아니라 이미 재생 중인 state에',
+    '  state.setAnimation(0, "<동작이름>", true) 만 다시 부르면 된다.',
+    'variants로 색상/장식만 바꿀 땐 skeleton/atlas를 그 variant 것으로 바꿔서 처음부터 다시 로드한다',
+    '(같은 캐릭터라도 완전히 다른 skeleton 파일이라 스킨 합치기로는 안 된다).',
     '',
     '이 내용을 프로젝트 규칙 파일에 적어 둬 — 쓰는 도구에 맞게',
     '(CLAUDE.md / AGENTS.md / .cursorrules / .github/copilot-instructions.md 등).',
-    '앞으로는 내가 id 만(모습이 여러 개면 id + 모습이름도) 말한다.',
-    '  예: "mage 를 전사 위치에 idle 로 띄워줘", "발키리 black 스킨 써줘"'
+    '앞으로는 내가 id (+ 모습/동작 이름)만 말한다.',
+    '  예: "mage 를 전사 위치에 idle 로 띄워줘" (정지 이미지)',
+    '      "발키리 black 스킨 써줘" (variants)',
+    '      "fox_warrior_sword 의 attack 넣어줘" (진짜 Spine 동작 전환)'
   ].join('\n');
 }
 
