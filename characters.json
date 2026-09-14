@@ -7120,7 +7120,26 @@
       "frameHeight": 900,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/anniversary_wizard.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/anniversary_wizard.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100042)."
+      }
     },
     {
       "id": "archer",
@@ -7525,7 +7544,32 @@
           "TurnOver_02",
           "Win"
         ],
-        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100023)."
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100023).",
+        "variants": [
+          {
+            "key": "green",
+            "label": "그린",
+            "skeleton": "characters/humanoid/christmas_girl.spine/green/skeleton.json",
+            "atlas": "characters/humanoid/christmas_girl.spine/green/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100024)."
+          }
+        ]
       }
     },
     {
@@ -10176,7 +10220,30 @@
           "TurnOver_02",
           "Win"
         ],
-        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100015)."
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100015).",
+        "variants": [
+          {
+            "key": "christmas",
+            "label": "크리스마스",
+            "skeleton": "characters/humanoid/white_raven.spine/christmas/skeleton.skel.bytes",
+            "atlas": "characters/humanoid/white_raven.spine/christmas/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100025)."
+          }
+        ]
       }
     },
     {
