@@ -8713,7 +8713,31 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character/10240000). 이 캐릭터의 색상/장식 변형(태그)까지는 다 담지 않음 - 기본 모습 하나만.",
-        "skin": "10240000-0"
+        "skin": "10240000-0",
+        "variants": [
+          {
+            "key": "alt",
+            "label": "얼터",
+            "skeleton": "characters/humanoid/neko_boy_demon_armor.spine/alt/skeleton.json",
+            "atlas": "characters/humanoid/neko_boy_demon_armor.spine/alt/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/10240001).",
+            "skin": "10240001-0"
+          }
+        ]
       }
     },
     {
@@ -9365,7 +9389,28 @@
       "frameHeight": 648,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/skuld.spine/skeleton.json",
+        "atlas": "characters/humanoid/skuld.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100047)."
+      }
     },
     {
       "id": "sorcerer",
@@ -9664,7 +9709,28 @@
       "frameHeight": 348,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/urd.spine/skeleton.json",
+        "atlas": "characters/humanoid/urd.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100048)."
+      }
     },
     {
       "id": "valkyrie",
