@@ -140,6 +140,10 @@
     this.category = entry.category;
     this.source = entry.source;
     this.note = entry.note;
+    // Real Spine skeletal animation (bones/atlas/keyframes), when present -
+    // a completely different playback path from the flat-image clips below.
+    // See CHARACTERS.md for the shape of this field.
+    this.spine = entry.spine || null;
 
     // Flat single-clip shorthand (same shape as an effects.json asset):
     // no `animations` map means the whole entry - minus id/name/category -
@@ -149,6 +153,7 @@
       var flat = Object.assign({}, entry);
       delete flat.id; delete flat.name; delete flat.category;
       delete flat.source; delete flat.note; delete flat.defaultAnimation;
+      delete flat.spine;
       animEntries = { 'default': flat };
     }
 

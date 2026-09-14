@@ -7249,7 +7249,27 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "102xxxxx 장비 단계 중 1단계"
+      "note": "102xxxxx 장비 단계 중 1단계",
+      "spine": {
+        "skeleton": "characters/humanoid/neko_boy_casual.spine/skeleton.json",
+        "atlas": "characters/humanoid/neko_boy_casual.spine/atlas.txt",
+        "skin": "10200000-0",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 4.1 리깅 데이터 (character/10200000). 이 export엔 머리카락 아틀라스가 빠져있어 대머리로 보임 - 게임에서 별도 파츠로 합치는 구조로 추정."
+      }
     },
     {
       "id": "neko_boy_dark_armor",

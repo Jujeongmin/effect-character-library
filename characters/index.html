@@ -174,6 +174,7 @@ a{color:var(--violet)}
 <noscript><p style="padding:24px">이 페이지는 자바스크립트가 있어야 동작합니다.</p></noscript>
 
 <script src="../character-loader.js?v=1"></script>
+<script src="https://unpkg.com/@esotericsoftware/spine-webgl@4.1.24/dist/iife/spine-webgl.js"></script>
 <script>
 (function(){
 'use strict';
@@ -462,6 +463,103 @@ function drawCardFrame(c, dt) {
   ctx.drawImage(c.clip.image, r.x, r.y, r.w, r.h, (W - dw) / 2, (H - dh) / 2, dw, dh);
 }
 
+/* ── 진짜 Spine 애니메이션 (스켈레톤/아틀라스가 있는 캐릭터만) ─────────
+ * WebGL 컨텍스트는 개수 제한이 있어서 캐릭터 바꿀 때마다 새로 안 만들고
+ * 캔버스/컨텍스트 하나를 계속 재사용한다 - detail 패널이 innerHTML로
+ * 통째로 갈아끼워져도 이 canvas 엘리먼트는 JS 변수로 붙잡고 있다가
+ * 다음에 다시 넣어주면 됨 (DOM에서 떼도 WebGL 컨텍스트는 안 죽는다).
+ * ────────────────────────────────────────────────────────────────────── */
+var spineRuntime = { canvas: null, app: null, skeleton: null, animationState: null };
+var spineDataCache = {}; // skeleton path -> SkeletonData (안전하게 여러 캐릭터가 공유 가능)
+
+function ensureSpineCanvas() {
+  if (spineRuntime.canvas) return spineRuntime.canvas;
+  var canvas = document.createElement('canvas');
+  canvas.style.width = '100%';
+  canvas.style.height = '100%';
+  canvas.style.display = 'block';
+  spineRuntime.canvas = canvas;
+  spineRuntime.app = new spine.SpineCanvas(canvas, {
+    app: {
+      update: function (sc, delta) {
+        if (!spineRuntime.skeleton || !spineRuntime.animationState) return;
+        spineRuntime.animationState.update(delta);
+        spineRuntime.animationState.apply(spineRuntime.skeleton);
+        spineRuntime.skeleton.updateWorldTransform();
+      },
+      render: function (sc) {
+        var renderer = sc.renderer;
+        renderer.resize(spine.ResizeMode.Expand);
+        var gl = sc.context.gl;
+        gl.clearColor(0, 0, 0, 0);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+        if (!spineRuntime.skeleton) return;
+        renderer.begin();
+        renderer.drawSkeleton(spineRuntime.skeleton, true);
+        renderer.end();
+      }
+    }
+  });
+  return canvas;
+}
+
+// spineSpec = character.spine ({skeleton, atlas, skin, animations, defaultAnimation}).
+// Returns a Promise resolving once spineRuntime.skeleton/animationState point at
+// this character, on the given (already-in-DOM) canvas' asset manager.
+function loadSpineCharacter(spineSpec, baseUrl) {
+  ensureSpineCanvas();
+  var am = spineRuntime.app.assetManager;
+  var skeletonUrl = joinRelative(baseUrl, spineSpec.skeleton);
+  var atlasUrl = joinRelative(baseUrl, spineSpec.atlas);
+
+  function build() {
+    var cached = spineDataCache[skeletonUrl];
+    if (cached) return cached;
+    var atlas = am.require(atlasUrl);
+    var atlasLoader = new spine.AtlasAttachmentLoader(atlas);
+    var skeletonJson = new spine.SkeletonJson(atlasLoader);
+    var skeletonData = skeletonJson.readSkeletonData(am.require(skeletonUrl));
+    spineDataCache[skeletonUrl] = skeletonData;
+    return skeletonData;
+  }
+
+  if (spineDataCache[skeletonUrl]) {
+    setupSkeleton(spineDataCache[skeletonUrl]);
+    return Promise.resolve();
+  }
+  am.loadTextureAtlas(atlasUrl);
+  am.loadJson(skeletonUrl);
+  return new Promise(function (resolve) {
+    (function poll() {
+      if (am.isLoadingComplete()) { setupSkeleton(build()); resolve(); }
+      else requestAnimationFrame(poll);
+    })();
+  });
+
+  function setupSkeleton(skeletonData) {
+    var skeleton = new spine.Skeleton(skeletonData);
+    if (spineSpec.skin) {
+      var combined = new spine.Skin('combined');
+      var defSkin = skeletonData.findSkin('default');
+      var variant = skeletonData.findSkin(spineSpec.skin);
+      if (defSkin) combined.addSkin(defSkin);
+      if (variant) combined.addSkin(variant);
+      skeleton.setSkin(combined);
+    }
+    skeleton.setSlotsToSetupPose();
+    var animationState = new spine.AnimationState(new spine.AnimationStateData(skeletonData));
+    animationState.setAnimation(0, spineSpec.defaultAnimation || spineSpec.animations[0], true);
+    spineRuntime.skeleton = skeleton;
+    spineRuntime.animationState = animationState;
+  }
+}
+
+function joinRelative(baseUrl, path) {
+  // baseUrl is like '../' (page-relative); manifest paths are already
+  // repo-root-relative ("characters/xxx/..."), same convention Clip uses.
+  return baseUrl + path;
+}
+
 /* ── 상세 패널 ─────────────────────────────────────────────────────── */
 
 function selectCharacter(character) {
@@ -488,54 +586,77 @@ function renderDetail() {
   var c = state.current;
   var lib = state.lib;
   var clip = c.getClip(state.animName);
-  var stageCanvas = el('canvas', { width: '640', height: '480' });
-  var stageCtx = stageCanvas.getContext('2d');
+  var isSpine = !!c.spine;
+  var stage, animTabs;
 
-  var frame = 0, elapsed = 0;
-  state.anim = {
-    clip: clip,
-    update: function (dt) {
-      if (!clip.image) return;
-      var fps = clip.fps || 12;
-      elapsed += dt;
-      var step = 1000 / fps;
-      while (elapsed >= step) { elapsed -= step; frame = (frame + 1) % clip.frames; }
-    }
-  };
+  if (isSpine) {
+    drawStage = function () {}; // spine drives its own render loop, not the grid's tick()
+    state.anim = null;
+    var spineCanvas = ensureSpineCanvas();
+    stage = el('div', { class: 'stage', 'data-bg': state.bg }, [spineCanvas]);
+    loadSpineCharacter(c.spine, lib.baseUrl);
 
-  function drawLoading() {
-    var W = stageCanvas.width, H = stageCanvas.height;
-    stageCtx.clearRect(0, 0, W, H);
-    stageCtx.fillStyle = '#8e92a6';
-    stageCtx.font = '14px "IBM Plex Mono", monospace';
-    stageCtx.textAlign = 'center';
-    stageCtx.fillText('불러오는 중…', W / 2, H / 2);
-  }
-  function drawStageNow() {
-    if (!clip.image) { drawLoading(); return; }
-    var r = clip.frameRect(frame);
-    var W = stageCanvas.width, H = stageCanvas.height;
-    stageCtx.clearRect(0, 0, W, H);
-    var scale = Math.min(W / r.w, H / r.h) * state.scale;
-    var dw = r.w * scale, dh = r.h * scale;
-    stageCtx.imageSmoothingEnabled = false;
-    stageCtx.drawImage(clip.image, r.x, r.y, r.w, r.h, (W - dw) / 2, (H - dh) / 2, dw, dh);
-  }
-  drawStage = drawStageNow;
-  drawLoading();
-  clip.load().then(drawStageNow);
-
-  var stage = el('div', { class: 'stage', 'data-bg': state.bg }, [stageCanvas]);
-
-  var animTabs = null;
-  var names = c.animationNames();
-  if (names.length > 1) {
-    animTabs = el('div', { class: 'seg' }, names.map(function (n) {
-      return el('button', {
-        type: 'button', 'aria-pressed': String(n === state.animName),
-        onclick: function () { state.animName = n; renderDetail(); }
+    animTabs = el('div', { class: 'seg' }, c.spine.animations.map(function (n) {
+      var btn = el('button', {
+        type: 'button', 'aria-pressed': String(n === (c.spine.defaultAnimation || c.spine.animations[0])),
+        onclick: function () {
+          if (spineRuntime.animationState) spineRuntime.animationState.setAnimation(0, n, true);
+          Array.prototype.forEach.call(animTabs.children, function (b) {
+            b.setAttribute('aria-pressed', String(b === btn));
+          });
+        }
       }, [document.createTextNode(n)]);
+      return btn;
     }));
+  } else {
+    var stageCanvas = el('canvas', { width: '640', height: '480' });
+    var stageCtx = stageCanvas.getContext('2d');
+
+    var frame = 0, elapsed = 0;
+    state.anim = {
+      clip: clip,
+      update: function (dt) {
+        if (!clip.image) return;
+        var fps = clip.fps || 12;
+        elapsed += dt;
+        var step = 1000 / fps;
+        while (elapsed >= step) { elapsed -= step; frame = (frame + 1) % clip.frames; }
+      }
+    };
+
+    var drawLoading = function () {
+      var W = stageCanvas.width, H = stageCanvas.height;
+      stageCtx.clearRect(0, 0, W, H);
+      stageCtx.fillStyle = '#8e92a6';
+      stageCtx.font = '14px "IBM Plex Mono", monospace';
+      stageCtx.textAlign = 'center';
+      stageCtx.fillText('불러오는 중…', W / 2, H / 2);
+    };
+    var drawStageNow = function () {
+      if (!clip.image) { drawLoading(); return; }
+      var r = clip.frameRect(frame);
+      var W = stageCanvas.width, H = stageCanvas.height;
+      stageCtx.clearRect(0, 0, W, H);
+      var scale = Math.min(W / r.w, H / r.h) * state.scale;
+      var dw = r.w * scale, dh = r.h * scale;
+      stageCtx.imageSmoothingEnabled = false;
+      stageCtx.drawImage(clip.image, r.x, r.y, r.w, r.h, (W - dw) / 2, (H - dh) / 2, dw, dh);
+    };
+    drawStage = drawStageNow;
+    drawLoading();
+    clip.load().then(drawStageNow);
+
+    stage = el('div', { class: 'stage', 'data-bg': state.bg }, [stageCanvas]);
+
+    var names = c.animationNames();
+    if (names.length > 1) {
+      animTabs = el('div', { class: 'seg' }, names.map(function (n) {
+        return el('button', {
+          type: 'button', 'aria-pressed': String(n === state.animName),
+          onclick: function () { state.animName = n; renderDetail(); }
+        }, [document.createTextNode(n)]);
+      }));
+    }
   }
 
   var bgSeg = el('div', { class: 'seg' }, ['dark', 'checker', 'light'].map(function (b) {
@@ -547,7 +668,13 @@ function renderDetail() {
   }));
 
   var absUrl = SITE_BASE.replace(/characters\/$/, '') + clip.file;
-  var snippet = [
+  var snippet = isSpine ? [
+    "// 진짜 Spine 스켈레톤 - spine-ts/spine-webgl 런타임 필요",
+    "const am = new spine.AssetManager(gl, base);",
+    "am.loadTextureAtlas('" + c.spine.atlas + "');",
+    "am.loadJson('" + c.spine.skeleton + "');",
+    "// ... 로드 끝나면 skeleton.setSkin('" + (c.spine.skin || '') + "') 후 재생"
+  ].join('\n') : [
     "const lib = await CharacterLib.load('./characters.json');",
     "const anim = lib.play('" + c.id + "'" + (state.animName === c.defaultAnimation ? '' : ", '" + state.animName + "'") + ", { loop: true });",
     "anim.update();   // call once per frame",
@@ -560,26 +687,36 @@ function renderDetail() {
     el('div', { class: 'dt-title' }, [
       el('h2', { text: c.id }),
     ]),
-    el('span', { class: 'badge', text: lib.categoryLabel(c.category) })
-  ]));
+    el('span', { class: 'badge', text: lib.categoryLabel(c.category) }),
+    isSpine ? el('span', { class: 'badge', text: '진짜 애니메이션 (Spine)' }) : null
+  ].filter(Boolean)));
   els.detail.appendChild(stage);
   var ctl = el('div', { class: 'ctl' }, []);
   if (animTabs) ctl.appendChild(animTabs);
   ctl.appendChild(bgSeg);
   els.detail.appendChild(ctl);
-  els.detail.appendChild(el('div', { class: 'ctl' }, [
-    el('span', { class: 'hint', text: '배율' }),
-    el('input', { type: 'range', min: '0.5', max: '4', step: '0.25', value: String(state.scale), oninput: function (e) { state.scale = parseFloat(e.target.value); } })
-  ]));
+  if (!isSpine) {
+    els.detail.appendChild(el('div', { class: 'ctl' }, [
+      el('span', { class: 'hint', text: '배율' }),
+      el('input', { type: 'range', min: '0.5', max: '4', step: '0.25', value: String(state.scale), oninput: function (e) { state.scale = parseFloat(e.target.value); } })
+    ]));
+  }
 
   var meta = el('dl', { class: 'meta' }, []);
   addMeta(meta, '이름', c.name);
-  addMeta(meta, '애니메이션', hasAnimation(c) ? '있음 — 동작 탭을 선택하세요' : '없음 — 정지 이미지');
-  addMeta(meta, hasAnimation(c) ? '동작' : '모습', names.join(', '));
-  addMeta(meta, '프레임', clip.frames + '장 (' + clip.cols + '×' + clip.rows + ')');
-  addMeta(meta, '프레임 크기', clip.frameWidth + '×' + clip.frameHeight);
-  addMeta(meta, 'fps', String(clip.fps || 12));
-  if (clip.width && clip.height) addMeta(meta, '시트 크기', clip.width + '×' + clip.height);
+  if (isSpine) {
+    addMeta(meta, '애니메이션', '있음 (진짜 Spine 스켈레톤) — 동작 버튼을 눌러보세요');
+    addMeta(meta, '동작', c.spine.animations.join(', '));
+    if (c.spine.note) addMeta(meta, '주의', c.spine.note);
+  } else {
+    var names = c.animationNames();
+    addMeta(meta, '애니메이션', hasAnimation(c) ? '있음 — 동작 탭을 선택하세요' : '없음 — 정지 이미지');
+    addMeta(meta, hasAnimation(c) ? '동작' : '모습', names.join(', '));
+    addMeta(meta, '프레임', clip.frames + '장 (' + clip.cols + '×' + clip.rows + ')');
+    addMeta(meta, '프레임 크기', clip.frameWidth + '×' + clip.frameHeight);
+    addMeta(meta, 'fps', String(clip.fps || 12));
+    if (clip.width && clip.height) addMeta(meta, '시트 크기', clip.width + '×' + clip.height);
+  }
   if (c.source || clip.source) addMeta(meta, '원본', c.source || clip.source);
   els.detail.appendChild(meta);
 

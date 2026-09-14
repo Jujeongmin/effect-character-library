@@ -190,6 +190,38 @@ touch 하나 더). 리깅 없이 상태별로 초상화만 바꿔치기하는 �
 `cols`/`rows` 는 시트 안 프레임 배열, `frames` 는 실제로 재생할 프레임 수
 (시트 끝 빈 칸을 잘라내려면 `cols × rows` 보다 작게), `fps` 없으면 12.
 
+### C. `spine` 필드 — 진짜 Spine 스켈레톤 애니메이션 (있으면 추가로)
+
+원본에 완성된 Spine export(뼈대+아틀라스+진짜 keyframe 애니메이션)가 있는
+캐릭터는, A/B 형식의 정지 이미지는 그대로 두고 `spine` 필드를 추가로 얹는다
+— 카테고리나 새 항목을 만들지 않고 **기존 캐릭터에 진짜 애니메이션을 얹는
+방식**. 뷰어는 이 필드가 있으면 정지 이미지 대신 spine-webgl로 실시간
+재생한다 (`characters/index.html` 의 `ensureSpineCanvas`/`loadSpineCharacter`).
+
+```json
+"spine": {
+  "skeleton": "characters/humanoid/neko_boy_casual.spine/skeleton.json",
+  "atlas": "characters/humanoid/neko_boy_casual.spine/atlas.txt",
+  "skin": "10200000-0",
+  "defaultAnimation": "Idle",
+  "animations": ["Attack", "Casting", "CriticalAttack", "Die", "Hit", "Idle",
+                 "Run", "Touch", "TurnOver_01", "TurnOver_02", "Win"],
+  "note": "선택 — 이 export의 한계 같은 걸 적어둔다"
+}
+```
+
+- `skeleton`/`atlas`는 저장소 루트 기준 경로(다른 `file` 필드들과 같은 규칙),
+  아틀라스가 가리키는 텍스처 png도 같은 폴더에 같이 둔다.
+- `skin`은 스켈레톤 데이터 안에 색상/부위별로 나뉜 스킨이 여러 개 있을 때
+  (`default` + `<id>-0/1/2/3` 식) 그중 하나를 고르는 것 — `default` 스킨과
+  합쳐서(`Skin.addSkin`) 적용한다. 없으면 생략.
+- 지금 들어있는 건 `neko_boy_casual` 하나 (`character/10200000` 원본) —
+  머리카락 아틀라스가 이 export엔 빠져있어서 대머리로 보인다, 원본 게임에서
+  헤어를 별도 파츠로 합치는 구조로 추정.
+- spine-webgl 런타임은 CDN에서 그때그때 받아온다(`characters/index.html`
+  상단 `<script>` 태그) — 이 페이지는 GitHub Pages 정적 사이트라 Artifact
+  CSP 제한이 없어서 어떤 CDN이든 자유롭게 쓸 수 있다.
+
 ## 로더 (`character-loader.js`)
 
 `loader.js`(EffectLib)와 같은 API 감각으로 맞췄다. 차이는 `play()` 에
