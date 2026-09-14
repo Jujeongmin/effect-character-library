@@ -7228,6 +7228,27 @@
         "expr_05": "표정 시트에서 자름, 배경·글자 제거",
         "expr_06": "표정 시트에서 자름, 배경·글자 제거",
         "expr_07": "표정 시트에서 자름, 배경·글자 제거"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/archer.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/archer.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100030). 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음."
       }
     },
     {
@@ -8020,7 +8041,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "루시 스킨"
+      "note": "루시 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/lucy_blueknight.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/lucy_blueknight.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100021). 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음."
+      }
     },
     {
       "id": "lui_spear_warrior",
@@ -9542,7 +9584,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "마도사 스킨"
+      "note": "마도사 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/sorcerer_white.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/sorcerer_white.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "Criticalattack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "Turnover_01",
+          "Turnover_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100026). 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음."
+      }
     },
     {
       "id": "spike_mace_warrior",
@@ -9961,7 +10024,29 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "백사자 스킨"
+      "note": "백사자 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/white_lion_knight_blackghost.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/white_lion_knight_blackghost.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Attack_04",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100029). 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음."
+      }
     },
     {
       "id": "white_lion_knight_fire",
@@ -9975,7 +10060,29 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "백사자 스킨"
+      "note": "백사자 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/white_lion_knight_fire.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/white_lion_knight_fire.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Attack_04",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100022). 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음."
+      }
     },
     {
       "id": "white_raven",
@@ -10021,7 +10128,26 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "흰까마귀 스킨"
+      "note": "흰까마귀 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/white_raven_blackstar.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/white_raven_blackstar.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100028). 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음."
+      }
     },
     {
       "id": "witch",

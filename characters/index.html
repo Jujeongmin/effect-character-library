@@ -576,16 +576,19 @@ function registerSpine(key, spineSpec, baseUrl, ctx2d) {
     thumbSpine.registry.push({ key: key, skeleton: skeleton, animationState: animationState, ctx2d: ctx2d });
   }
 
+  var isBinary = !/\.json$/i.test(skeletonUrl);
+
   if (spineDataCache[skeletonUrl]) {
     add(spineDataCache[skeletonUrl]);
   } else {
     am.loadTextureAtlas(atlasUrl);
-    am.loadJson(skeletonUrl);
+    if (isBinary) am.loadBinary(skeletonUrl); else am.loadJson(skeletonUrl);
     (function poll() {
       if (am.isLoadingComplete()) {
         var atlas = am.require(atlasUrl);
-        var skeletonJson = new spine.SkeletonJson(new spine.AtlasAttachmentLoader(atlas));
-        var skeletonData = skeletonJson.readSkeletonData(am.require(skeletonUrl));
+        var loader = new spine.AtlasAttachmentLoader(atlas);
+        var reader = isBinary ? new spine.SkeletonBinary(loader) : new spine.SkeletonJson(loader);
+        var skeletonData = reader.readSkeletonData(am.require(skeletonUrl));
         spineDataCache[skeletonUrl] = skeletonData;
         add(skeletonData);
       } else {
@@ -736,7 +739,9 @@ function renderDetail() {
     "// 진짜 Spine 스켈레톤 - spine-ts/spine-webgl 런타임 필요",
     "const am = new spine.AssetManager(gl, base);",
     "am.loadTextureAtlas('" + activeSpine.atlas + "');",
-    "am.loadJson('" + activeSpine.skeleton + "');",
+    (/\.json$/i.test(activeSpine.skeleton)
+      ? "am.loadJson('" + activeSpine.skeleton + "');"
+      : "am.loadBinary('" + activeSpine.skeleton + "');  // .skel binary export"),
     "// ... 로드 끝나면 skeleton.setSkin('" + (activeSpine.skin || '') + "') 후 재생"
   ].join('\n') : [
     "const lib = await CharacterLib.load('./characters.json');",
