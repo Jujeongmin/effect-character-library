@@ -5,7 +5,8 @@
     "humanoid": "인간형",
     "beast": "야수형",
     "animal": "동물형",
-    "monster": "몬스터형"
+    "monster": "몬스터형",
+    "item": "아이템"
   },
   "assets": [
     {
@@ -791,6 +792,80 @@
       "cols": 1,
       "rows": 1,
       "note": "이름 미상 — 대충 지은 이름"
+    },
+    {
+      "id": "monster_210003",
+      "name": "몬스터 210003",
+      "category": "beast",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/beast/210003_idle.png",
+          "width": 2416,
+          "height": 1526,
+          "frameWidth": 302,
+          "frameHeight": 218,
+          "frames": 55,
+          "cols": 8,
+          "rows": 7,
+          "fps": 33.33
+        },
+        "run": {
+          "file": "characters/beast/210003_run.png",
+          "width": 2784,
+          "height": 1776,
+          "frameWidth": 348,
+          "frameHeight": 222,
+          "frames": 60,
+          "cols": 8,
+          "rows": 8,
+          "fps": 33.33
+        },
+        "attack": {
+          "file": "characters/beast/210003_attack.png",
+          "width": 3710,
+          "height": 2212,
+          "frameWidth": 530,
+          "frameHeight": 316,
+          "frames": 46,
+          "cols": 7,
+          "rows": 7,
+          "fps": 33.33
+        },
+        "casting": {
+          "file": "characters/beast/210003_casting.png",
+          "width": 2394,
+          "height": 1668,
+          "frameWidth": 342,
+          "frameHeight": 278,
+          "frames": 40,
+          "cols": 7,
+          "rows": 6,
+          "fps": 33.33
+        },
+        "hit": {
+          "file": "characters/beast/210003_hit.png",
+          "width": 1854,
+          "height": 1200,
+          "frameWidth": 309,
+          "frameHeight": 240,
+          "frames": 26,
+          "cols": 6,
+          "rows": 5,
+          "fps": 33.33
+        },
+        "die": {
+          "file": "characters/beast/210003_die.png",
+          "width": 2548,
+          "height": 1946,
+          "frameWidth": 364,
+          "frameHeight": 278,
+          "frames": 48,
+          "cols": 7,
+          "rows": 7,
+          "fps": 33.33
+        }
+      }
     },
     {
       "id": "pet_little_fenrir",
@@ -3302,6 +3377,785 @@
       "note": "마녀 스킨"
     },
     {
+      "id": "item_10200000",
+      "name": "10200000 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_10200000.png",
+          "width": 450,
+          "height": 184,
+          "frameWidth": 450,
+          "frameHeight": 184,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "10200000 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_10210000",
+      "name": "10214000 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_10210000.png",
+          "width": 509,
+          "height": 198,
+          "frameWidth": 509,
+          "frameHeight": 198,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "10210000_10214000 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_10230000",
+      "name": "10234000 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_10230000.png",
+          "width": 624,
+          "height": 248,
+          "frameWidth": 624,
+          "frameHeight": 248,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "10230000_10234000 캐릭터 PSD의 sword_0007 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_10230001",
+      "name": "10234001 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_10230001.png",
+          "width": 700,
+          "height": 537,
+          "frameWidth": 700,
+          "frameHeight": 537,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "10230001_10234001 캐릭터 PSD의 검 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_10240000",
+      "name": "10244000 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_10240000.png",
+          "width": 700,
+          "height": 385,
+          "frameWidth": 700,
+          "frameHeight": 385,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "10240000_10244000 캐릭터 PSD의 sword 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100003",
+      "name": "검은발키리 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100003.png",
+          "width": 642,
+          "height": 509,
+          "frameWidth": 642,
+          "frameHeight": 509,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100003_검은발키리 캐릭터 PSD의 sword 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100007",
+      "name": "마법사_천사 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100007.png",
+          "width": 465,
+          "height": 302,
+          "frameWidth": 465,
+          "frameHeight": 302,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100007_마법사_천사 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100008",
+      "name": "마법사_노말 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100008.png",
+          "width": 465,
+          "height": 302,
+          "frameWidth": 465,
+          "frameHeight": 302,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100008_마법사_노말 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100009",
+      "name": "마법사_악마 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100009.png",
+          "width": 465,
+          "height": 302,
+          "frameWidth": 465,
+          "frameHeight": 302,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100009_마법사_악마 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100012",
+      "name": "나드 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100012.png",
+          "width": 699,
+          "height": 478,
+          "frameWidth": 699,
+          "frameHeight": 478,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100012_나드 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100013",
+      "name": "갈색발키리 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100013.png",
+          "width": 642,
+          "height": 512,
+          "frameWidth": 642,
+          "frameHeight": 512,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100013_갈색발키리 캐릭터 PSD의 sword 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100014",
+      "name": "발키리흰금 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100014.png",
+          "width": 642,
+          "height": 512,
+          "frameWidth": 642,
+          "frameHeight": 512,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100014_발키리흰금 캐릭터 PSD의 sword 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100015",
+      "name": "흰까마귀 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100015.png",
+          "width": 624,
+          "height": 248,
+          "frameWidth": 624,
+          "frameHeight": 248,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100015_흰까마귀 캐릭터 PSD의 sword_0007 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100018",
+      "name": "마녀 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100018.png",
+          "width": 700,
+          "height": 262,
+          "frameWidth": 700,
+          "frameHeight": 262,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100018_마녀 캐릭터 PSD의 staff 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100020",
+      "name": "표범 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100020.png",
+          "width": 700,
+          "height": 549,
+          "frameWidth": 700,
+          "frameHeight": 549,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100020_표범 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100021",
+      "name": "청기사 루시 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100021.png",
+          "width": 376,
+          "height": 700,
+          "frameWidth": 376,
+          "frameHeight": 700,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100021_청기사 루시 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100025",
+      "name": "크리스마스 코스튬 기존 코스튬 색베리 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100025.png",
+          "width": 624,
+          "height": 248,
+          "frameWidth": 624,
+          "frameHeight": 248,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100025_크리스마스 코스튬 기존 코스튬 색베리 캐릭터 PSD의 sword_0007 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100027",
+      "name": "40100027 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100027.png",
+          "width": 700,
+          "height": 335,
+          "frameWidth": 700,
+          "frameHeight": 335,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100027 캐릭터 PSD의 staff 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100028",
+      "name": "40100028 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100028.png",
+          "width": 624,
+          "height": 248,
+          "frameWidth": 624,
+          "frameHeight": 248,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100028 캐릭터 PSD의 sword_0007 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100029",
+      "name": "40100029 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100029.png",
+          "width": 699,
+          "height": 201,
+          "frameWidth": 699,
+          "frameHeight": 201,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100029 캐릭터 PSD의 sword 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100030",
+      "name": "궁수 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100030.png",
+          "width": 497,
+          "height": 700,
+          "frameWidth": 497,
+          "frameHeight": 700,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100030_궁수 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100031",
+      "name": "페어리 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100031.png",
+          "width": 218,
+          "height": 208,
+          "frameWidth": 218,
+          "frameHeight": 208,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100031_페어리 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100032",
+      "name": "궁수_도깨비 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100032.png",
+          "width": 497,
+          "height": 700,
+          "frameWidth": 497,
+          "frameHeight": 700,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100032_궁수_도깨비 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100033",
+      "name": "궁수_벚꽃놀이 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100033.png",
+          "width": 497,
+          "height": 700,
+          "frameWidth": 497,
+          "frameHeight": 700,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100033_궁수_벚꽃놀이 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100034",
+      "name": "궁수_여름해변 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100034.png",
+          "width": 497,
+          "height": 700,
+          "frameWidth": 497,
+          "frameHeight": 700,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100034_궁수_여름해변 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100035",
+      "name": "페어리_미드나잇 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100035.png",
+          "width": 218,
+          "height": 208,
+          "frameWidth": 218,
+          "frameHeight": 208,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100035_페어리_미드나잇 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100036",
+      "name": "페어리_트로피컬 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100036.png",
+          "width": 218,
+          "height": 208,
+          "frameWidth": 218,
+          "frameHeight": 208,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100036_페어리_트로피컬 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100037",
+      "name": "페어리_얼음요정 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100037.png",
+          "width": 218,
+          "height": 208,
+          "frameWidth": 218,
+          "frameHeight": 208,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100037_페어리_얼음요정 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100042",
+      "name": "1주년 기념 스킨 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100042.png",
+          "width": 700,
+          "height": 456,
+          "frameWidth": 700,
+          "frameHeight": 456,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100042_1주년 기념 스킨 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100043",
+      "name": "1주년 기념 스킨 바리에이션 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100043.png",
+          "width": 700,
+          "height": 456,
+          "frameWidth": 700,
+          "frameHeight": 456,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100043_1주년 기념 스킨 바리에이션 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100044",
+      "name": "바다의 신 란(RAN) 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100044.png",
+          "width": 700,
+          "height": 386,
+          "frameWidth": 700,
+          "frameHeight": 386,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100044_바다의 신 란(RAN) 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100045",
+      "name": "다그 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100045.png",
+          "width": 700,
+          "height": 532,
+          "frameWidth": 700,
+          "frameHeight": 532,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100045_다그 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100046",
+      "name": "베르단디 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100046.png",
+          "width": 700,
+          "height": 396,
+          "frameWidth": 700,
+          "frameHeight": 396,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100046_베르단디 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100048",
+      "name": "울드 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100048.png",
+          "width": 692,
+          "height": 700,
+          "frameWidth": 692,
+          "frameHeight": 700,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100048_울드 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100051",
+      "name": "solblade 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100051.png",
+          "width": 700,
+          "height": 395,
+          "frameWidth": 700,
+          "frameHeight": 395,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100051_solblade 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100055",
+      "name": "Glacielle Lui 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100055.png",
+          "width": 589,
+          "height": 700,
+          "frameWidth": 589,
+          "frameHeight": 700,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100055_Glacielle Lui 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100056",
+      "name": "Blazefell Lui 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100056.png",
+          "width": 589,
+          "height": 700,
+          "frameWidth": 589,
+          "frameHeight": 700,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100056_Blazefell Lui 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100057",
+      "name": "Obsidian Lucie 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100057.png",
+          "width": 568,
+          "height": 700,
+          "frameWidth": 568,
+          "frameHeight": 700,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100057_Obsidian Lucie 캐릭터 PSD의 weapon_L+R 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100058",
+      "name": "Radiant Lucie 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100058.png",
+          "width": 571,
+          "height": 700,
+          "frameWidth": 571,
+          "frameHeight": 700,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100058_Radiant Lucie 캐릭터 PSD의 weapon_L+R 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100059",
+      "name": "40100059 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100059.png",
+          "width": 700,
+          "height": 242,
+          "frameWidth": 700,
+          "frameHeight": 242,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100059 캐릭터 PSD의 weapon 레이어에서 분리 추출"
+    },
+    {
+      "id": "item_40100061",
+      "name": "40100061 무기",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100061.png",
+          "width": 624,
+          "height": 248,
+          "frameWidth": 624,
+          "frameHeight": 248,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100061 캐릭터 PSD의 sword_0007 레이어에서 분리 추출"
+    },
+    {
       "id": "ghost_knight_dagger",
       "name": "유령 암살자 (단검)",
       "category": "monster",
@@ -3482,6 +4336,80 @@
       "cols": 1,
       "rows": 1,
       "note": "PSD에서 캐릭터 레이어만 뽑아냄"
+    },
+    {
+      "id": "monster_210004",
+      "name": "몬스터 210004",
+      "category": "monster",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/monster/210004_idle.png",
+          "width": 2496,
+          "height": 1750,
+          "frameWidth": 312,
+          "frameHeight": 250,
+          "frames": 50,
+          "cols": 8,
+          "rows": 7,
+          "fps": 33.33
+        },
+        "run": {
+          "file": "characters/monster/210004_run.png",
+          "width": 1284,
+          "height": 1476,
+          "frameWidth": 214,
+          "frameHeight": 246,
+          "frames": 35,
+          "cols": 6,
+          "rows": 6,
+          "fps": 33.33
+        },
+        "attack": {
+          "file": "characters/monster/210004_attack.png",
+          "width": 2856,
+          "height": 1746,
+          "frameWidth": 408,
+          "frameHeight": 291,
+          "frames": 41,
+          "cols": 7,
+          "rows": 6,
+          "fps": 33.33
+        },
+        "casting": {
+          "file": "characters/monster/210004_casting.png",
+          "width": 1596,
+          "height": 1488,
+          "frameWidth": 266,
+          "frameHeight": 248,
+          "frames": 35,
+          "cols": 6,
+          "rows": 6,
+          "fps": 33.33
+        },
+        "hit": {
+          "file": "characters/monster/210004_hit.png",
+          "width": 1944,
+          "height": 1250,
+          "frameWidth": 324,
+          "frameHeight": 250,
+          "frames": 26,
+          "cols": 6,
+          "rows": 5,
+          "fps": 33.33
+        },
+        "die": {
+          "file": "characters/monster/210004_die.png",
+          "width": 1980,
+          "height": 1686,
+          "frameWidth": 330,
+          "frameHeight": 281,
+          "frames": 35,
+          "cols": 6,
+          "rows": 6,
+          "fps": 33.33
+        }
+      }
     },
     {
       "id": "ogre_archer",
@@ -3902,34 +4830,6 @@
       "cols": 1,
       "rows": 1,
       "note": "이름 미상 — 대충 지은 이름"
-    },
-    {
-      "id": "monster_210003",
-      "name": "몬스터 210003",
-      "category": "beast",
-      "defaultAnimation": "idle",
-      "animations": {
-        "idle": { "file": "characters/beast/210003_idle.png", "width": 2416, "height": 1526, "frameWidth": 302, "frameHeight": 218, "frames": 55, "cols": 8, "rows": 7, "fps": 33.33 },
-        "run": { "file": "characters/beast/210003_run.png", "width": 2784, "height": 1776, "frameWidth": 348, "frameHeight": 222, "frames": 60, "cols": 8, "rows": 8, "fps": 33.33 },
-        "attack": { "file": "characters/beast/210003_attack.png", "width": 3710, "height": 2212, "frameWidth": 530, "frameHeight": 316, "frames": 46, "cols": 7, "rows": 7, "fps": 33.33 },
-        "casting": { "file": "characters/beast/210003_casting.png", "width": 2394, "height": 1668, "frameWidth": 342, "frameHeight": 278, "frames": 40, "cols": 7, "rows": 6, "fps": 33.33 },
-        "hit": { "file": "characters/beast/210003_hit.png", "width": 1854, "height": 1200, "frameWidth": 309, "frameHeight": 240, "frames": 26, "cols": 6, "rows": 5, "fps": 33.33 },
-        "die": { "file": "characters/beast/210003_die.png", "width": 2548, "height": 1946, "frameWidth": 364, "frameHeight": 278, "frames": 48, "cols": 7, "rows": 7, "fps": 33.33 }
-      }
-    },
-    {
-      "id": "monster_210004",
-      "name": "몬스터 210004",
-      "category": "monster",
-      "defaultAnimation": "idle",
-      "animations": {
-        "idle": { "file": "characters/monster/210004_idle.png", "width": 2496, "height": 1750, "frameWidth": 312, "frameHeight": 250, "frames": 50, "cols": 8, "rows": 7, "fps": 33.33 },
-        "run": { "file": "characters/monster/210004_run.png", "width": 1284, "height": 1476, "frameWidth": 214, "frameHeight": 246, "frames": 35, "cols": 6, "rows": 6, "fps": 33.33 },
-        "attack": { "file": "characters/monster/210004_attack.png", "width": 2856, "height": 1746, "frameWidth": 408, "frameHeight": 291, "frames": 41, "cols": 7, "rows": 6, "fps": 33.33 },
-        "casting": { "file": "characters/monster/210004_casting.png", "width": 1596, "height": 1488, "frameWidth": 266, "frameHeight": 248, "frames": 35, "cols": 6, "rows": 6, "fps": 33.33 },
-        "hit": { "file": "characters/monster/210004_hit.png", "width": 1944, "height": 1250, "frameWidth": 324, "frameHeight": 250, "frames": 26, "cols": 6, "rows": 5, "fps": 33.33 },
-        "die": { "file": "characters/monster/210004_die.png", "width": 1980, "height": 1686, "frameWidth": 330, "frameHeight": 281, "frames": 35, "cols": 6, "rows": 6, "fps": 33.33 }
-      }
     },
     {
       "id": "world_boss_unnamed",
