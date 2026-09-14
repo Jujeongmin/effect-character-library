@@ -7413,6 +7413,26 @@
         "alt_tag2": "neko_boy_dark_armor 재탕 — 색/속성태그만 다름",
         "alt_tag3": "neko_boy_dark_armor 재탕 — 색/속성태그만 다름",
         "alt_tag4": "neko_boy_dark_armor 재탕 — 색/속성태그만 다름"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/neko_boy_dark_armor.spine/skeleton.json",
+        "atlas": "characters/humanoid/neko_boy_dark_armor.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character/10230000). 이 캐릭터의 색상/장식 변형(태그)까지는 다 담지 않음 - 기본 모습 하나만.",
+        "skin": "10230000-0"
       }
     },
     {
@@ -7533,6 +7553,26 @@
         "alt_tag2": "neko_boy_demon_armor 재탕 — 색/속성태그만 다름",
         "alt_tag3": "neko_boy_demon_armor 재탕 — 색/속성태그만 다름",
         "alt_tag4": "neko_boy_demon_armor 재탕 — 색/속성태그만 다름"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/neko_boy_demon_armor.spine/skeleton.json",
+        "atlas": "characters/humanoid/neko_boy_demon_armor.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character/10240000). 이 캐릭터의 색상/장식 변형(태그)까지는 다 담지 않음 - 기본 모습 하나만.",
+        "skin": "10240000-0"
       }
     },
     {
@@ -7598,6 +7638,26 @@
         "tag2": "neko_boy_gold_knight 재탕 — 색/속성태그만 다름",
         "tag3": "neko_boy_gold_knight 재탕 — 색/속성태그만 다름",
         "tag4": "neko_boy_gold_knight 재탕 — 색/속성태그만 다름"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/neko_boy_gold_knight.spine/skeleton.json",
+        "atlas": "characters/humanoid/neko_boy_gold_knight.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character/10270000). 이 캐릭터의 색상/장식 변형(태그)까지는 다 담지 않음 - 기본 모습 하나만.",
+        "skin": "10270000-0"
       }
     },
     {
@@ -7718,6 +7778,26 @@
         "alt_tag2": "neko_boy_paladin_armor 재탕 — 색/속성태그만 다름",
         "alt_tag3": "neko_boy_paladin_armor 재탕 — 색/속성태그만 다름",
         "alt_tag4": "neko_boy_paladin_armor 재탕 — 색/속성태그만 다름"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/neko_boy_paladin_armor.spine/skeleton.json",
+        "atlas": "characters/humanoid/neko_boy_paladin_armor.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character/10250000). 이 캐릭터의 색상/장식 변형(태그)까지는 다 담지 않음 - 기본 모습 하나만.",
+        "skin": "10250000-0"
       }
     },
     {
@@ -7783,6 +7863,26 @@
         "tag2": "neko_boy_silver_armor 재탕 — 색/속성태그만 다름",
         "tag3": "neko_boy_silver_armor 재탕 — 색/속성태그만 다름",
         "tag4": "neko_boy_silver_armor 재탕 — 색/속성태그만 다름"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/neko_boy_silver_armor.spine/skeleton.json",
+        "atlas": "characters/humanoid/neko_boy_silver_armor.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character/10220000). 이 캐릭터의 색상/장식 변형(태그)까지는 다 담지 않음 - 기본 모습 하나만.",
+        "skin": "10220000-0"
       }
     },
     {
@@ -7859,6 +7959,26 @@
         "tag3": "neko_boy_traveler 재탕 — 색/속성태그만 다름",
         "tag4": "neko_boy_traveler 재탕 — 색/속성태그만 다름",
         "turnsout": "neko_boy_traveler 특수 상태"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/neko_boy_traveler.spine/skeleton.json",
+        "atlas": "characters/humanoid/neko_boy_traveler.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character/10210000). 이 캐릭터의 색상/장식 변형(태그)까지는 다 담지 않음 - 기본 모습 하나만.",
+        "skin": "10210000-0"
       }
     },
     {
@@ -8324,6 +8444,28 @@
         "black": "발키리 스킨",
         "brown": "발키리 스킨",
         "whitegold": "발키리 스킨"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/valkyrie.spine/skeleton.json",
+        "atlas": "characters/humanoid/valkyrie.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Attack_04",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character/40100000). 이 캐릭터의 색상/장식 변형(태그)까지는 다 담지 않음 - 기본 모습 하나만."
       }
     },
     {
