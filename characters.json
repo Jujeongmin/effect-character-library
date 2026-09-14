@@ -68,6 +68,27 @@
           "cols": 1,
           "rows": 1
         }
+      },
+      "spine": {
+        "skeleton": "characters/animal/craft_cat_dvergr.spine/skeleton.json",
+        "atlas": "characters/animal/craft_cat_dvergr.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Appear",
+          "Appear_02",
+          "Appear_03",
+          "Disappear",
+          "Disappear_02",
+          "Disappear_03",
+          "Effect_01",
+          "Emotion",
+          "Greeting",
+          "Idle",
+          "Loop",
+          "Loop_02",
+          "Touch"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/04_NPC/300001_조합고양이_Dvergr)."
       }
     },
     {
@@ -106,6 +127,21 @@
           "cols": 1,
           "rows": 1
         }
+      },
+      "spine": {
+        "skeleton": "characters/animal/glasses_cat_alex.spine/skeleton.json",
+        "atlas": "characters/animal/glasses_cat_alex.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Emotion",
+          "Emotion_02",
+          "Emotion_03",
+          "Emotion_04",
+          "Greeting",
+          "Idle",
+          "Touch"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/04_NPC/300003_안경고양이_Alex)."
       }
     },
     {
@@ -119,7 +155,19 @@
       "frameHeight": 694,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/animal/parrot_npc.spine/skeleton.json",
+        "atlas": "characters/animal/parrot_npc.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Emotion",
+          "Emotion_02",
+          "Emotion_03",
+          "Idle"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/04_NPC/300006_앵무새)."
+      }
     },
     {
       "id": "pet_black_cat",
@@ -187,7 +235,22 @@
       "frameHeight": 735,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/animal/praise_cat_maya.spine/skeleton.json",
+        "atlas": "characters/animal/praise_cat_maya.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Emotion",
+          "Emotion_02",
+          "Emotion_03",
+          "Idle",
+          "Idle_02",
+          "Idle_03",
+          "Talking"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/04_NPC/300004_칭찬고양이_Maya)."
+      }
     },
     {
       "id": "ranking_cat_devon",
@@ -225,6 +288,20 @@
           "cols": 1,
           "rows": 1
         }
+      },
+      "spine": {
+        "skeleton": "characters/animal/ranking_cat_devon.spine/skeleton.json",
+        "atlas": "characters/animal/ranking_cat_devon.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Appear",
+          "Disappear",
+          "Emotion",
+          "Greeting",
+          "Idle",
+          "Touch"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/04_NPC/300002_랭킹고양이_Devon)."
       }
     },
     {
@@ -303,6 +380,20 @@
           "cols": 1,
           "rows": 1
         }
+      },
+      "spine": {
+        "skeleton": "characters/animal/shop_cat_jade.spine/skeleton.json",
+        "atlas": "characters/animal/shop_cat_jade.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Appear",
+          "Disappear",
+          "Emotion",
+          "Greeting",
+          "Idle",
+          "Touch"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/04_NPC/300000_상점고양이_Jade)."
       }
     },
     {
@@ -6594,7 +6685,22 @@
       "frameHeight": 518,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/crystal_cat_krystal.spine/skeleton.json",
+        "atlas": "characters/humanoid/crystal_cat_krystal.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Appear",
+          "Disappear",
+          "Emotion",
+          "Emotion_02",
+          "Emotion_03",
+          "Idle",
+          "Touch"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/04_NPC/300007_크리스탈고양이_Krystal(예명))."
+      }
     },
     {
       "id": "custom_npc_tom",
