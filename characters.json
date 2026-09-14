@@ -6672,6 +6672,27 @@
         "expr_04": "표정 시트에서 자름, 배경·글자 제거",
         "expr_05": "표정 시트에서 자름, 배경·글자 제거",
         "expr_06": "표정 시트에서 자름, 배경·글자 제거"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/christmas_girl.spine/skeleton.json",
+        "atlas": "characters/humanoid/christmas_girl.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100023)."
       }
     },
     {
@@ -6821,6 +6842,27 @@
         "expr_05": "표정 시트에서 자름, 배경·글자 제거",
         "expr_06": "표정 시트에서 자름, 배경·글자 제거",
         "expr_07": "표정 시트에서 자름, 배경·글자 제거"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/dagr.spine/skeleton.json",
+        "atlas": "characters/humanoid/dagr.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack_01",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "Criticalattack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "Turnover_01",
+          "Turnover_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100045)."
       }
     },
     {
@@ -6834,7 +6876,28 @@
       "frameHeight": 900,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/fairy.spine/skeleton.json",
+        "atlas": "characters/humanoid/fairy.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100031)."
+      }
     },
     {
       "id": "fairy_ice",
@@ -6848,7 +6911,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "페어리 스킨"
+      "note": "페어리 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/fairy_ice.spine/skeleton.json",
+        "atlas": "characters/humanoid/fairy_ice.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100037)."
+      }
     },
     {
       "id": "fairy_midnight",
@@ -6862,7 +6946,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "페어리 스킨"
+      "note": "페어리 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/fairy_midnight.spine/skeleton.json",
+        "atlas": "characters/humanoid/fairy_midnight.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100035)."
+      }
     },
     {
       "id": "fairy_tropical",
@@ -6876,7 +6981,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "페어리 스킨"
+      "note": "페어리 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/fairy_tropical.spine/skeleton.json",
+        "atlas": "characters/humanoid/fairy_tropical.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100036)."
+      }
     },
     {
       "id": "forest_swordswoman",
@@ -6930,7 +7056,29 @@
       "frameHeight": 321,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/hela_phantom.spine/skeleton.json",
+        "atlas": "characters/humanoid/hela_phantom.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Walk",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100002)."
+      }
     },
     {
       "id": "horn_demon_girl",
@@ -7055,7 +7203,28 @@
       "frameHeight": 900,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/lucy.spine/skeleton.json",
+        "atlas": "characters/humanoid/lucy.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100006)."
+      }
     },
     {
       "id": "lucy_blueknight",
@@ -7215,6 +7384,27 @@
         "expr_die": "mage 표정 시트에서 자름, 배경·글자 제거",
         "expr_hit": "mage 표정 시트에서 자름, 배경·글자 제거",
         "expr_run": "mage 표정 시트에서 자름, 배경·글자 제거"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/mage.spine/skeleton.json",
+        "atlas": "characters/humanoid/mage.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100008)."
       }
     },
     {
@@ -7229,7 +7419,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "마법사 스킨"
+      "note": "마법사 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/mage_angel.spine/skeleton.json",
+        "atlas": "characters/humanoid/mage_angel.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100007)."
+      }
     },
     {
       "id": "mage_demon",
@@ -7257,7 +7468,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "마법사 스킨"
+      "note": "마법사 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/mage_yellowhair.spine/skeleton.json",
+        "atlas": "characters/humanoid/mage_yellowhair.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100016)."
+      }
     },
     {
       "id": "nad",
@@ -7365,6 +7597,27 @@
         "expr_05": "표정 시트에서 자름, 배경·글자 제거",
         "expr_06": "표정 시트에서 자름, 배경·글자 제거",
         "expr_07": "표정 시트에서 자름, 배경·글자 제거"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/nad.spine/skeleton.json",
+        "atlas": "characters/humanoid/nad.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "Criticalattack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "Turnover_01",
+          "Turnover_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100012)."
       }
     },
     {
@@ -8179,7 +8432,28 @@
       "frameHeight": 900,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/rui.spine/skeleton.json",
+        "atlas": "characters/humanoid/rui.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100005)."
+      }
     },
     {
       "id": "rui_blueknight",
@@ -8193,7 +8467,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "루이 스킨"
+      "note": "루이 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/rui_blueknight.spine/skeleton.json",
+        "atlas": "characters/humanoid/rui_blueknight.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100019)."
+      }
     },
     {
       "id": "sea_god_ran",
@@ -8206,7 +8501,28 @@
       "frameHeight": 723,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/sea_god_ran.spine/skeleton.json",
+        "atlas": "characters/humanoid/sea_god_ran.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100044)."
+      }
     },
     {
       "id": "skuld",
@@ -8316,6 +8632,27 @@
         "expr_04": "표정 시트에서 자름, 배경·글자 제거",
         "expr_05": "표정 시트에서 자름, 배경·글자 제거",
         "expr_06": "표정 시트에서 자름, 배경·글자 제거"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/sorcerer.spine/skeleton.json",
+        "atlas": "characters/humanoid/sorcerer.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "Criticalattack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "Turnover_01",
+          "Turnover_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100011)."
       }
     },
     {
@@ -8585,7 +8922,28 @@
       "frameHeight": 838,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/verdandi.spine/skeleton.json",
+        "atlas": "characters/humanoid/verdandi.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100046)."
+      }
     },
     {
       "id": "white_lion_knight",
@@ -8598,7 +8956,29 @@
       "frameHeight": 900,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/white_lion_knight.spine/skeleton.json",
+        "atlas": "characters/humanoid/white_lion_knight.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Attack_04",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100001)."
+      }
     },
     {
       "id": "white_lion_knight_blackghost",
@@ -8639,7 +9019,26 @@
       "frameHeight": 900,
       "frames": 1,
       "cols": 1,
-      "rows": 1
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/white_raven.spine/skeleton.json",
+        "atlas": "characters/humanoid/white_raven.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100015)."
+      }
     },
     {
       "id": "white_raven_blackstar",
@@ -8761,6 +9160,27 @@
         "expr_05": "표정 시트에서 자름, 배경·글자 제거",
         "expr_06": "표정 시트에서 자름, 배경·글자 제거",
         "expr_07": "표정 시트에서 자름, 배경·글자 제거"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/witch.spine/skeleton.json",
+        "atlas": "characters/humanoid/witch.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100018)."
       }
     },
     {
@@ -8775,7 +9195,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "마녀 스킨"
+      "note": "마녀 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/witch_red.spine/skeleton.json",
+        "atlas": "characters/humanoid/witch_red.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100027)."
+      }
     },
     {
       "id": "item_10200000",
