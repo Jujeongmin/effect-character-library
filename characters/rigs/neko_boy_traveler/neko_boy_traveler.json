@@ -1,0 +1,885 @@
+{
+  "skeleton": {
+    "hash": "auto",
+    "spine": "4.3.26",
+    "x": 0,
+    "y": 0,
+    "width": 749,
+    "height": 893,
+    "images": "./images/",
+    "audio": ""
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "shadow",
+      "parent": "root",
+      "x": 17.0,
+      "y": 62.5
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "x": 48.5,
+      "y": 444.0
+    },
+    {
+      "name": "waist",
+      "parent": "body",
+      "x": -22.5,
+      "y": -92.0
+    },
+    {
+      "name": "tail",
+      "parent": "body",
+      "x": -257.0,
+      "y": -23.5
+    },
+    {
+      "name": "shoulder_R",
+      "parent": "body",
+      "x": 75.0,
+      "y": 32.5
+    },
+    {
+      "name": "arm_R",
+      "parent": "shoulder_R",
+      "x": 31.5,
+      "y": -51.5
+    },
+    {
+      "name": "hand_R",
+      "parent": "arm_R",
+      "x": 54.5,
+      "y": -48.0
+    },
+    {
+      "name": "head",
+      "parent": "body",
+      "x": 43.5,
+      "y": 207.5
+    },
+    {
+      "name": "thigh_R",
+      "parent": "waist",
+      "x": 20.0,
+      "y": -5.0
+    },
+    {
+      "name": "leg_R",
+      "parent": "thigh_R",
+      "x": 104.5,
+      "y": -149.5
+    },
+    {
+      "name": "ankle_R",
+      "parent": "leg_R",
+      "x": -4.5,
+      "y": -110.5
+    },
+    {
+      "name": "thigh_L",
+      "parent": "waist",
+      "x": -19.0,
+      "y": -6.0
+    },
+    {
+      "name": "leg_L",
+      "parent": "thigh_L",
+      "x": -83.5,
+      "y": -148.0
+    },
+    {
+      "name": "ankle_L",
+      "parent": "leg_L",
+      "x": -65.5,
+      "y": -136.0
+    },
+    {
+      "name": "shoulder_L",
+      "parent": "body",
+      "x": -31.0,
+      "y": 62.5
+    },
+    {
+      "name": "arm_L",
+      "parent": "shoulder_L",
+      "x": -78.5,
+      "y": -31.5
+    },
+    {
+      "name": "hand_L",
+      "parent": "arm_L",
+      "x": -31.5,
+      "y": -68.0
+    },
+    {
+      "name": "weapon",
+      "parent": "hand_R",
+      "x": -57.0,
+      "y": -76.0
+    }
+  ],
+  "slots": [
+    {
+      "name": "shadow_00",
+      "bone": "shadow",
+      "attachment": "shadow_00"
+    },
+    {
+      "name": "waist_00",
+      "bone": "waist",
+      "attachment": "waist_00"
+    },
+    {
+      "name": "tail_00",
+      "bone": "tail",
+      "attachment": "tail_00"
+    },
+    {
+      "name": "hand_R_00",
+      "bone": "hand_R",
+      "attachment": "hand_R_00"
+    },
+    {
+      "name": "arm_R_00",
+      "bone": "arm_R",
+      "attachment": "arm_R_00"
+    },
+    {
+      "name": "shoulder_R_00",
+      "bone": "shoulder_R",
+      "attachment": "shoulder_R_00"
+    },
+    {
+      "name": "head_00",
+      "bone": "head",
+      "attachment": "head_00"
+    },
+    {
+      "name": "head_01",
+      "bone": "head",
+      "attachment": "head_01"
+    },
+    {
+      "name": "head_02",
+      "bone": "head",
+      "attachment": "head_02"
+    },
+    {
+      "name": "head_03",
+      "bone": "head",
+      "attachment": "head_03"
+    },
+    {
+      "name": "head_04",
+      "bone": "head",
+      "attachment": "head_04"
+    },
+    {
+      "name": "head_05",
+      "bone": "head",
+      "attachment": "head_05"
+    },
+    {
+      "name": "head_06",
+      "bone": "head",
+      "attachment": "head_06"
+    },
+    {
+      "name": "head_07",
+      "bone": "head",
+      "attachment": "head_07"
+    },
+    {
+      "name": "head_08",
+      "bone": "head",
+      "attachment": "head_08"
+    },
+    {
+      "name": "head_09",
+      "bone": "head",
+      "attachment": "head_09"
+    },
+    {
+      "name": "head_10",
+      "bone": "head",
+      "attachment": "head_10"
+    },
+    {
+      "name": "head_11",
+      "bone": "head",
+      "attachment": "head_11"
+    },
+    {
+      "name": "head_12",
+      "bone": "head",
+      "attachment": "head_12"
+    },
+    {
+      "name": "head_13",
+      "bone": "head",
+      "attachment": "head_13"
+    },
+    {
+      "name": "thigh_R_00",
+      "bone": "thigh_R",
+      "attachment": "thigh_R_00"
+    },
+    {
+      "name": "thigh_R_01",
+      "bone": "thigh_R",
+      "attachment": "thigh_R_01"
+    },
+    {
+      "name": "thigh_R_02",
+      "bone": "thigh_R",
+      "attachment": "thigh_R_02"
+    },
+    {
+      "name": "leg_R_00",
+      "bone": "leg_R",
+      "attachment": "leg_R_00"
+    },
+    {
+      "name": "ankle_R_00",
+      "bone": "ankle_R",
+      "attachment": "ankle_R_00"
+    },
+    {
+      "name": "leg_L_00",
+      "bone": "leg_L",
+      "attachment": "leg_L_00"
+    },
+    {
+      "name": "ankle_L_00",
+      "bone": "ankle_L",
+      "attachment": "ankle_L_00"
+    },
+    {
+      "name": "thigh_L_00",
+      "bone": "thigh_L",
+      "attachment": "thigh_L_00"
+    },
+    {
+      "name": "thigh_L_01",
+      "bone": "thigh_L",
+      "attachment": "thigh_L_01"
+    },
+    {
+      "name": "thigh_L_02",
+      "bone": "thigh_L",
+      "attachment": "thigh_L_02"
+    },
+    {
+      "name": "body_00",
+      "bone": "body",
+      "attachment": "body_00"
+    },
+    {
+      "name": "arm_L_00",
+      "bone": "arm_L",
+      "attachment": "arm_L_00"
+    },
+    {
+      "name": "shoulder_L_00",
+      "bone": "shoulder_L",
+      "attachment": "shoulder_L_00"
+    },
+    {
+      "name": "shoulder_L_01",
+      "bone": "shoulder_L",
+      "attachment": "shoulder_L_01"
+    },
+    {
+      "name": "shoulder_L_02",
+      "bone": "shoulder_L",
+      "attachment": "shoulder_L_02"
+    },
+    {
+      "name": "hand_L_00",
+      "bone": "hand_L",
+      "attachment": "hand_L_00"
+    },
+    {
+      "name": "hand_L_01",
+      "bone": "hand_L",
+      "attachment": "hand_L_01"
+    },
+    {
+      "name": "weapon_00",
+      "bone": "weapon",
+      "attachment": "weapon_00"
+    },
+    {
+      "name": "weapon_01",
+      "bone": "weapon",
+      "attachment": "weapon_01"
+    }
+  ],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "shadow_00": {
+          "shadow_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 423,
+            "height": 91
+          }
+        },
+        "waist_00": {
+          "waist_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 119,
+            "height": 88
+          }
+        },
+        "tail_00": {
+          "tail_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 332,
+            "height": 319
+          }
+        },
+        "hand_R_00": {
+          "hand_R_00": {
+            "x": 11.5,
+            "y": -6.5,
+            "width": 43,
+            "height": 39
+          }
+        },
+        "arm_R_00": {
+          "arm_R_00": {
+            "x": 27.5,
+            "y": -25.0,
+            "width": 74,
+            "height": 72
+          }
+        },
+        "shoulder_R_00": {
+          "shoulder_R_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 82,
+            "height": 125
+          }
+        },
+        "head_00": {
+          "head_00": {
+            "x": 138.0,
+            "y": 103.5,
+            "width": 97,
+            "height": 156
+          }
+        },
+        "head_01": {
+          "head_01": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 323,
+            "height": 281
+          }
+        },
+        "head_02": {
+          "head_02": {
+            "x": 44.0,
+            "y": 8.5,
+            "width": 221,
+            "height": 262
+          }
+        },
+        "head_03": {
+          "head_03": {
+            "x": 90.0,
+            "y": -100.0,
+            "width": 19,
+            "height": 11
+          }
+        },
+        "head_04": {
+          "head_04": {
+            "x": 77.5,
+            "y": -46.0,
+            "width": 118,
+            "height": 63
+          }
+        },
+        "head_05": {
+          "head_05": {
+            "x": 89.0,
+            "y": -43.0,
+            "width": 61,
+            "height": 9
+          }
+        },
+        "head_06": {
+          "head_06": {
+            "x": 81.0,
+            "y": -16.0,
+            "width": 133,
+            "height": 19
+          }
+        },
+        "head_07": {
+          "head_07": {
+            "x": -40.0,
+            "y": 131.0,
+            "width": 283,
+            "height": 221
+          }
+        },
+        "head_08": {
+          "head_08": {
+            "x": -26.5,
+            "y": 132.0,
+            "width": 110,
+            "height": 171
+          }
+        },
+        "head_09": {
+          "head_09": {
+            "x": -23.0,
+            "y": 1.0,
+            "width": 233,
+            "height": 263
+          }
+        },
+        "head_10": {
+          "head_10": {
+            "x": 156.5,
+            "y": 66.0,
+            "width": 140,
+            "height": 315
+          }
+        },
+        "head_11": {
+          "head_11": {
+            "x": 30.5,
+            "y": 35.5,
+            "width": 170,
+            "height": 156
+          }
+        },
+        "head_12": {
+          "head_12": {
+            "x": 90.0,
+            "y": 27.5,
+            "width": 95,
+            "height": 162
+          }
+        },
+        "head_13": {
+          "head_13": {
+            "x": 0.5,
+            "y": 40.5,
+            "width": 32,
+            "height": 80
+          }
+        },
+        "thigh_R_00": {
+          "thigh_R_00": {
+            "x": 116.5,
+            "y": -135.0,
+            "width": 70,
+            "height": 92
+          }
+        },
+        "thigh_R_01": {
+          "thigh_R_01": {
+            "x": 103.5,
+            "y": -88.0,
+            "width": 106,
+            "height": 88
+          }
+        },
+        "thigh_R_02": {
+          "thigh_R_02": {
+            "x": 38.5,
+            "y": -47.0,
+            "width": 156,
+            "height": 172
+          }
+        },
+        "leg_R_00": {
+          "leg_R_00": {
+            "x": 2.5,
+            "y": -49.5,
+            "width": 109,
+            "height": 162
+          }
+        },
+        "ankle_R_00": {
+          "ankle_R_00": {
+            "x": -3.0,
+            "y": -8.0,
+            "width": 101,
+            "height": 56
+          }
+        },
+        "leg_L_00": {
+          "leg_L_00": {
+            "x": -39.0,
+            "y": -64.5,
+            "width": 124,
+            "height": 183
+          }
+        },
+        "ankle_L_00": {
+          "ankle_L_00": {
+            "x": -4.5,
+            "y": -21.0,
+            "width": 80,
+            "height": 82
+          }
+        },
+        "thigh_L_00": {
+          "thigh_L_00": {
+            "x": -48.0,
+            "y": -74.0,
+            "width": 117,
+            "height": 94
+          }
+        },
+        "thigh_L_01": {
+          "thigh_L_01": {
+            "x": -49.0,
+            "y": -90.5,
+            "width": 109,
+            "height": 169
+          }
+        },
+        "thigh_L_02": {
+          "thigh_L_02": {
+            "x": -32.5,
+            "y": -41.5,
+            "width": 146,
+            "height": 159
+          }
+        },
+        "body_00": {
+          "body_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 176,
+            "height": 286
+          }
+        },
+        "arm_L_00": {
+          "arm_L_00": {
+            "x": -22.0,
+            "y": -30.5,
+            "width": 83,
+            "height": 99
+          }
+        },
+        "shoulder_L_00": {
+          "shoulder_L_00": {
+            "x": -58.5,
+            "y": -14.0,
+            "width": 79,
+            "height": 59
+          }
+        },
+        "shoulder_L_01": {
+          "shoulder_L_01": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 104,
+            "height": 101
+          }
+        },
+        "shoulder_L_02": {
+          "shoulder_L_02": {
+            "x": -24.5,
+            "y": -8.0,
+            "width": 41,
+            "height": 77
+          }
+        },
+        "hand_L_00": {
+          "hand_L_00": {
+            "x": 16.5,
+            "y": -24.0,
+            "width": 19,
+            "height": 34
+          }
+        },
+        "hand_L_01": {
+          "hand_L_01": {
+            "x": -2.0,
+            "y": -21.0,
+            "width": 48,
+            "height": 66
+          }
+        },
+        "weapon_00": {
+          "weapon_00": {
+            "x": -234.5,
+            "y": 64.5,
+            "width": 105,
+            "height": 97
+          }
+        },
+        "weapon_01": {
+          "weapon_01": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 444,
+            "height": 170
+          }
+        }
+      }
+    }
+  ],
+  "animations": {
+    "idle": {
+      "bones": {
+        "body": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "time": 0.6,
+              "x": 0,
+              "y": 6
+            },
+            {
+              "time": 1.2,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.6,
+              "value": 3
+            },
+            {
+              "time": 1.2,
+              "value": 0
+            }
+          ]
+        },
+        "tail": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.6,
+              "value": -8
+            },
+            {
+              "time": 1.2,
+              "value": 0
+            }
+          ]
+        },
+        "arm_L": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.6,
+              "value": 4
+            },
+            {
+              "time": 1.2,
+              "value": 0
+            }
+          ]
+        },
+        "arm_R": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.6,
+              "value": -4
+            },
+            {
+              "time": 1.2,
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    "attack": {
+      "bones": {
+        "shoulder_R": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.15,
+              "value": -20
+            },
+            {
+              "time": 0.35,
+              "value": 55
+            },
+            {
+              "time": 0.6,
+              "value": 0
+            }
+          ]
+        },
+        "arm_R": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.15,
+              "value": -15
+            },
+            {
+              "time": 0.35,
+              "value": 40
+            },
+            {
+              "time": 0.6,
+              "value": 0
+            }
+          ]
+        },
+        "hand_R": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.15,
+              "value": -10
+            },
+            {
+              "time": 0.35,
+              "value": 20
+            },
+            {
+              "time": 0.6,
+              "value": 0
+            }
+          ]
+        },
+        "body": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "time": 0.2,
+              "x": -6,
+              "y": -4
+            },
+            {
+              "time": 0.4,
+              "x": 10,
+              "y": 2
+            },
+            {
+              "time": 0.6,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      }
+    },
+    "hit": {
+      "bones": {
+        "body": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "time": 0.08,
+              "x": -14,
+              "y": -6
+            },
+            {
+              "time": 0.3,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.08,
+              "value": 12
+            },
+            {
+              "time": 0.3,
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    "die": {
+      "bones": {
+        "body": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.5,
+              "value": 80
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "time": 0.5,
+              "x": 0,
+              "y": -120
+            }
+          ]
+        }
+      }
+    }
+  }
+}

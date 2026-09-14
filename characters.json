@@ -1192,6 +1192,17 @@
         "expr_05": "표정 시트에서 자름, 배경·글자 제거",
         "expr_06": "표정 시트에서 자름, 배경·글자 제거",
         "expr_07": "표정 시트에서 자름, 배경·글자 제거"
+      },
+      "spineRig": {
+        "file": "characters/rigs/archer/archer.json",
+        "images": "characters/rigs/archer/images/",
+        "animations": [
+          "idle",
+          "attack",
+          "hit",
+          "die"
+        ],
+        "note": "실험적 자동 생성 리깅 — 뼈대 위치는 PSD 파츠 위치로 추정한 것, attack/hit/die는 손으로 다듬지 않은 절차적 애니메이션. 어깨/팔꿈치 위치는 파츠 겹침 영역에서 추정 — 관절 실측치 아님"
       }
     },
     {
@@ -1913,6 +1924,17 @@
         "expr_die": "mage 표정 시트에서 자름, 배경·글자 제거",
         "expr_hit": "mage 표정 시트에서 자름, 배경·글자 제거",
         "expr_run": "mage 표정 시트에서 자름, 배경·글자 제거"
+      },
+      "spineRig": {
+        "file": "characters/rigs/mage/mage.json",
+        "images": "characters/rigs/mage/images/",
+        "animations": [
+          "idle",
+          "attack",
+          "hit",
+          "die"
+        ],
+        "note": "실험적 자동 생성 리깅 — 뼈대 위치는 PSD 파츠 위치로 추정한 것, attack/hit/die는 손으로 다듬지 않은 절차적 애니메이션. 이름 없는 레이어 일부는 몸통에 고정 부착됨(개별 흔들림 없음)"
       }
     },
     {
@@ -2643,6 +2665,17 @@
         "tag3": "neko_boy_traveler 재탕 — 색/속성태그만 다름",
         "tag4": "neko_boy_traveler 재탕 — 색/속성태그만 다름",
         "turnsout": "neko_boy_traveler 특수 상태"
+      },
+      "spineRig": {
+        "file": "characters/rigs/neko_boy_traveler/neko_boy_traveler.json",
+        "images": "characters/rigs/neko_boy_traveler/images/",
+        "animations": [
+          "idle",
+          "attack",
+          "hit",
+          "die"
+        ],
+        "note": "실험적 자동 생성 리깅 — 뼈대 위치는 PSD 파츠 위치로 추정한 것, attack/hit/die는 손으로 다듬지 않은 절차적 애니메이션. 최초 시험판 캐릭터, 무기(weapon)는 왼손에 임의로 부착"
       }
     },
     {
@@ -3096,6 +3129,17 @@
         "black": "발키리 스킨",
         "brown": "발키리 스킨",
         "whitegold": "발키리 스킨"
+      },
+      "spineRig": {
+        "file": "characters/rigs/valkyrie/valkyrie.json",
+        "images": "characters/rigs/valkyrie/images/",
+        "animations": [
+          "idle",
+          "attack",
+          "hit",
+          "die"
+        ],
+        "note": "실험적 자동 생성 리깅 — 뼈대 위치는 PSD 파츠 위치로 추정한 것, attack/hit/die는 손으로 다듬지 않은 절차적 애니메이션. 이름 없는 레이어 일부는 몸통에 고정 부착됨(개별 흔들림 없음)"
       }
     },
     {
@@ -3909,12 +3953,72 @@
       "category": "beast",
       "defaultAnimation": "idle",
       "animations": {
-        "idle": { "file": "characters/beast/210003_idle.png", "width": 2416, "height": 1526, "frameWidth": 302, "frameHeight": 218, "frames": 55, "cols": 8, "rows": 7, "fps": 33.33 },
-        "run": { "file": "characters/beast/210003_run.png", "width": 2784, "height": 1776, "frameWidth": 348, "frameHeight": 222, "frames": 60, "cols": 8, "rows": 8, "fps": 33.33 },
-        "attack": { "file": "characters/beast/210003_attack.png", "width": 3710, "height": 2212, "frameWidth": 530, "frameHeight": 316, "frames": 46, "cols": 7, "rows": 7, "fps": 33.33 },
-        "casting": { "file": "characters/beast/210003_casting.png", "width": 2394, "height": 1668, "frameWidth": 342, "frameHeight": 278, "frames": 40, "cols": 7, "rows": 6, "fps": 33.33 },
-        "hit": { "file": "characters/beast/210003_hit.png", "width": 1854, "height": 1200, "frameWidth": 309, "frameHeight": 240, "frames": 26, "cols": 6, "rows": 5, "fps": 33.33 },
-        "die": { "file": "characters/beast/210003_die.png", "width": 2548, "height": 1946, "frameWidth": 364, "frameHeight": 278, "frames": 48, "cols": 7, "rows": 7, "fps": 33.33 }
+        "idle": {
+          "file": "characters/beast/210003_idle.png",
+          "width": 2416,
+          "height": 1526,
+          "frameWidth": 302,
+          "frameHeight": 218,
+          "frames": 55,
+          "cols": 8,
+          "rows": 7,
+          "fps": 33.33
+        },
+        "run": {
+          "file": "characters/beast/210003_run.png",
+          "width": 2784,
+          "height": 1776,
+          "frameWidth": 348,
+          "frameHeight": 222,
+          "frames": 60,
+          "cols": 8,
+          "rows": 8,
+          "fps": 33.33
+        },
+        "attack": {
+          "file": "characters/beast/210003_attack.png",
+          "width": 3710,
+          "height": 2212,
+          "frameWidth": 530,
+          "frameHeight": 316,
+          "frames": 46,
+          "cols": 7,
+          "rows": 7,
+          "fps": 33.33
+        },
+        "casting": {
+          "file": "characters/beast/210003_casting.png",
+          "width": 2394,
+          "height": 1668,
+          "frameWidth": 342,
+          "frameHeight": 278,
+          "frames": 40,
+          "cols": 7,
+          "rows": 6,
+          "fps": 33.33
+        },
+        "hit": {
+          "file": "characters/beast/210003_hit.png",
+          "width": 1854,
+          "height": 1200,
+          "frameWidth": 309,
+          "frameHeight": 240,
+          "frames": 26,
+          "cols": 6,
+          "rows": 5,
+          "fps": 33.33
+        },
+        "die": {
+          "file": "characters/beast/210003_die.png",
+          "width": 2548,
+          "height": 1946,
+          "frameWidth": 364,
+          "frameHeight": 278,
+          "frames": 48,
+          "cols": 7,
+          "rows": 7,
+          "fps": 33.33
+        }
       }
     },
     {
@@ -3923,12 +4027,72 @@
       "category": "monster",
       "defaultAnimation": "idle",
       "animations": {
-        "idle": { "file": "characters/monster/210004_idle.png", "width": 2496, "height": 1750, "frameWidth": 312, "frameHeight": 250, "frames": 50, "cols": 8, "rows": 7, "fps": 33.33 },
-        "run": { "file": "characters/monster/210004_run.png", "width": 1284, "height": 1476, "frameWidth": 214, "frameHeight": 246, "frames": 35, "cols": 6, "rows": 6, "fps": 33.33 },
-        "attack": { "file": "characters/monster/210004_attack.png", "width": 2856, "height": 1746, "frameWidth": 408, "frameHeight": 291, "frames": 41, "cols": 7, "rows": 6, "fps": 33.33 },
-        "casting": { "file": "characters/monster/210004_casting.png", "width": 1596, "height": 1488, "frameWidth": 266, "frameHeight": 248, "frames": 35, "cols": 6, "rows": 6, "fps": 33.33 },
-        "hit": { "file": "characters/monster/210004_hit.png", "width": 1944, "height": 1250, "frameWidth": 324, "frameHeight": 250, "frames": 26, "cols": 6, "rows": 5, "fps": 33.33 },
-        "die": { "file": "characters/monster/210004_die.png", "width": 1980, "height": 1686, "frameWidth": 330, "frameHeight": 281, "frames": 35, "cols": 6, "rows": 6, "fps": 33.33 }
+        "idle": {
+          "file": "characters/monster/210004_idle.png",
+          "width": 2496,
+          "height": 1750,
+          "frameWidth": 312,
+          "frameHeight": 250,
+          "frames": 50,
+          "cols": 8,
+          "rows": 7,
+          "fps": 33.33
+        },
+        "run": {
+          "file": "characters/monster/210004_run.png",
+          "width": 1284,
+          "height": 1476,
+          "frameWidth": 214,
+          "frameHeight": 246,
+          "frames": 35,
+          "cols": 6,
+          "rows": 6,
+          "fps": 33.33
+        },
+        "attack": {
+          "file": "characters/monster/210004_attack.png",
+          "width": 2856,
+          "height": 1746,
+          "frameWidth": 408,
+          "frameHeight": 291,
+          "frames": 41,
+          "cols": 7,
+          "rows": 6,
+          "fps": 33.33
+        },
+        "casting": {
+          "file": "characters/monster/210004_casting.png",
+          "width": 1596,
+          "height": 1488,
+          "frameWidth": 266,
+          "frameHeight": 248,
+          "frames": 35,
+          "cols": 6,
+          "rows": 6,
+          "fps": 33.33
+        },
+        "hit": {
+          "file": "characters/monster/210004_hit.png",
+          "width": 1944,
+          "height": 1250,
+          "frameWidth": 324,
+          "frameHeight": 250,
+          "frames": 26,
+          "cols": 6,
+          "rows": 5,
+          "fps": 33.33
+        },
+        "die": {
+          "file": "characters/monster/210004_die.png",
+          "width": 1980,
+          "height": 1686,
+          "frameWidth": 330,
+          "frameHeight": 281,
+          "frames": 35,
+          "cols": 6,
+          "rows": 6,
+          "fps": 33.33
+        }
       }
     },
     {

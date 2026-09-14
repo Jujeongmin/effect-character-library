@@ -1,0 +1,896 @@
+{
+  "skeleton": {
+    "hash": "auto",
+    "spine": "4.3.26",
+    "x": 0,
+    "y": 0,
+    "width": 523,
+    "height": 917,
+    "images": "./images/",
+    "audio": ""
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "shadow",
+      "parent": "root",
+      "x": 1.0,
+      "y": 59.0
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "x": -61.5,
+      "y": 375.5
+    },
+    {
+      "name": "head",
+      "parent": "body",
+      "x": 47.0,
+      "y": 416.5
+    },
+    {
+      "name": "misc",
+      "parent": "body",
+      "x": 102.5,
+      "y": 132.5
+    },
+    {
+      "name": "shoulder_R",
+      "parent": "body",
+      "x": -38.5,
+      "y": 187.0
+    },
+    {
+      "name": "misc_그룹_3",
+      "parent": "body",
+      "x": 57.0,
+      "y": -136.0
+    },
+    {
+      "name": "misc_그룹_2",
+      "parent": "body",
+      "x": 35.0,
+      "y": -165.5
+    },
+    {
+      "name": "shoulder_L",
+      "parent": "body",
+      "x": 42.0,
+      "y": 278.0
+    },
+    {
+      "name": "misc_그룹_1",
+      "parent": "body",
+      "x": 14.0,
+      "y": 192.0
+    },
+    {
+      "name": "arm_R",
+      "parent": "shoulder_R",
+      "x": 100.0,
+      "y": -562.5
+    },
+    {
+      "name": "hand_R",
+      "parent": "arm_R",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "name": "weapon",
+      "parent": "hand_R",
+      "x": 29.0,
+      "y": 358.0
+    },
+    {
+      "name": "arm_L",
+      "parent": "shoulder_L",
+      "x": 19.5,
+      "y": -653.5
+    },
+    {
+      "name": "hand_L",
+      "parent": "arm_L",
+      "x": 144.0,
+      "y": 450.5
+    }
+  ],
+  "slots": [
+    {
+      "name": "shadow_00",
+      "bone": "shadow",
+      "attachment": "shadow_00"
+    },
+    {
+      "name": "head_00",
+      "bone": "head",
+      "attachment": "head_00"
+    },
+    {
+      "name": "head_01",
+      "bone": "head",
+      "attachment": "head_01"
+    },
+    {
+      "name": "head_02",
+      "bone": "head",
+      "attachment": "head_02"
+    },
+    {
+      "name": "head_03",
+      "bone": "head",
+      "attachment": "head_03"
+    },
+    {
+      "name": "head_04",
+      "bone": "head",
+      "attachment": "head_04"
+    },
+    {
+      "name": "head_05",
+      "bone": "head",
+      "attachment": "head_05"
+    },
+    {
+      "name": "head_06",
+      "bone": "head",
+      "attachment": "head_06"
+    },
+    {
+      "name": "head_07",
+      "bone": "head",
+      "attachment": "head_07"
+    },
+    {
+      "name": "head_08",
+      "bone": "head",
+      "attachment": "head_08"
+    },
+    {
+      "name": "head_09",
+      "bone": "head",
+      "attachment": "head_09"
+    },
+    {
+      "name": "head_10",
+      "bone": "head",
+      "attachment": "head_10"
+    },
+    {
+      "name": "head_11",
+      "bone": "head",
+      "attachment": "head_11"
+    },
+    {
+      "name": "head_12",
+      "bone": "head",
+      "attachment": "head_12"
+    },
+    {
+      "name": "misc_00",
+      "bone": "misc",
+      "attachment": "misc_00"
+    },
+    {
+      "name": "misc_01",
+      "bone": "misc",
+      "attachment": "misc_01"
+    },
+    {
+      "name": "misc_02",
+      "bone": "misc",
+      "attachment": "misc_02"
+    },
+    {
+      "name": "misc_03",
+      "bone": "misc",
+      "attachment": "misc_03"
+    },
+    {
+      "name": "misc_04",
+      "bone": "misc",
+      "attachment": "misc_04"
+    },
+    {
+      "name": "misc_05",
+      "bone": "misc",
+      "attachment": "misc_05"
+    },
+    {
+      "name": "misc_06",
+      "bone": "misc",
+      "attachment": "misc_06"
+    },
+    {
+      "name": "misc_07",
+      "bone": "misc",
+      "attachment": "misc_07"
+    },
+    {
+      "name": "misc_08",
+      "bone": "misc",
+      "attachment": "misc_08"
+    },
+    {
+      "name": "misc_09",
+      "bone": "misc",
+      "attachment": "misc_09"
+    },
+    {
+      "name": "misc_10",
+      "bone": "misc",
+      "attachment": "misc_10"
+    },
+    {
+      "name": "misc_11",
+      "bone": "misc",
+      "attachment": "misc_11"
+    },
+    {
+      "name": "misc_12",
+      "bone": "misc",
+      "attachment": "misc_12"
+    },
+    {
+      "name": "misc_13",
+      "bone": "misc",
+      "attachment": "misc_13"
+    },
+    {
+      "name": "misc_14",
+      "bone": "misc",
+      "attachment": "misc_14"
+    },
+    {
+      "name": "misc_15",
+      "bone": "misc",
+      "attachment": "misc_15"
+    },
+    {
+      "name": "misc_16",
+      "bone": "misc",
+      "attachment": "misc_16"
+    },
+    {
+      "name": "misc_17",
+      "bone": "misc",
+      "attachment": "misc_17"
+    },
+    {
+      "name": "misc_18",
+      "bone": "misc",
+      "attachment": "misc_18"
+    },
+    {
+      "name": "misc_19",
+      "bone": "misc",
+      "attachment": "misc_19"
+    },
+    {
+      "name": "misc_20",
+      "bone": "misc",
+      "attachment": "misc_20"
+    },
+    {
+      "name": "misc_21",
+      "bone": "misc",
+      "attachment": "misc_21"
+    },
+    {
+      "name": "misc_22",
+      "bone": "misc",
+      "attachment": "misc_22"
+    },
+    {
+      "name": "misc_23",
+      "bone": "misc",
+      "attachment": "misc_23"
+    },
+    {
+      "name": "misc_24",
+      "bone": "misc",
+      "attachment": "misc_24"
+    },
+    {
+      "name": "misc_25",
+      "bone": "misc",
+      "attachment": "misc_25"
+    },
+    {
+      "name": "shoulder_R_00",
+      "bone": "shoulder_R",
+      "attachment": "shoulder_R_00"
+    },
+    {
+      "name": "misc_그룹_3_00",
+      "bone": "misc_그룹_3",
+      "attachment": "misc_그룹_3_00"
+    },
+    {
+      "name": "body_00",
+      "bone": "body",
+      "attachment": "body_00"
+    },
+    {
+      "name": "misc_그룹_2_00",
+      "bone": "misc_그룹_2",
+      "attachment": "misc_그룹_2_00"
+    },
+    {
+      "name": "misc_그룹_2_01",
+      "bone": "misc_그룹_2",
+      "attachment": "misc_그룹_2_01"
+    },
+    {
+      "name": "shoulder_L_00",
+      "bone": "shoulder_L",
+      "attachment": "shoulder_L_00"
+    },
+    {
+      "name": "misc_그룹_1_00",
+      "bone": "misc_그룹_1",
+      "attachment": "misc_그룹_1_00"
+    },
+    {
+      "name": "misc_그룹_1_01",
+      "bone": "misc_그룹_1",
+      "attachment": "misc_그룹_1_01"
+    },
+    {
+      "name": "weapon_00",
+      "bone": "weapon",
+      "attachment": "weapon_00"
+    },
+    {
+      "name": "hand_L_00",
+      "bone": "hand_L",
+      "attachment": "hand_L_00"
+    }
+  ],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "shadow_00": {
+          "shadow_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 495,
+            "height": 118
+          }
+        },
+        "head_00": {
+          "head_00": {
+            "x": -122.0,
+            "y": 48.5,
+            "width": 142,
+            "height": 121
+          }
+        },
+        "head_01": {
+          "head_01": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 236,
+            "height": 250
+          }
+        },
+        "head_02": {
+          "head_02": {
+            "x": -19.5,
+            "y": -31.0,
+            "width": 189,
+            "height": 218
+          }
+        },
+        "head_03": {
+          "head_03": {
+            "x": -48.5,
+            "y": -83.5,
+            "width": 137,
+            "height": 73
+          }
+        },
+        "head_04": {
+          "head_04": {
+            "x": -21.0,
+            "y": -65.5,
+            "width": 68,
+            "height": 41
+          }
+        },
+        "head_05": {
+          "head_05": {
+            "x": -48.0,
+            "y": -66.0,
+            "width": 120,
+            "height": 42
+          }
+        },
+        "head_06": {
+          "head_06": {
+            "x": -59.5,
+            "y": -63.5,
+            "width": 67,
+            "height": 7
+          }
+        },
+        "head_07": {
+          "head_07": {
+            "x": -47.0,
+            "y": -35.0,
+            "width": 116,
+            "height": 16
+          }
+        },
+        "head_08": {
+          "head_08": {
+            "x": -62.5,
+            "y": -114.5,
+            "width": 31,
+            "height": 7
+          }
+        },
+        "head_09": {
+          "head_09": {
+            "x": -222.5,
+            "y": -53.0,
+            "width": 49,
+            "height": 130
+          }
+        },
+        "head_10": {
+          "head_10": {
+            "x": 219.5,
+            "y": -53.0,
+            "width": 49,
+            "height": 130
+          }
+        },
+        "head_11": {
+          "head_11": {
+            "x": 102.5,
+            "y": 45.0,
+            "width": 169,
+            "height": 124
+          }
+        },
+        "head_12": {
+          "head_12": {
+            "x": -91.0,
+            "y": 19.0,
+            "width": 126,
+            "height": 146
+          }
+        },
+        "misc_00": {
+          "misc_00": {
+            "x": 61.5,
+            "y": 261.0,
+            "width": 58,
+            "height": 162
+          }
+        },
+        "misc_01": {
+          "misc_01": {
+            "x": -231.0,
+            "y": -33.0,
+            "width": 79,
+            "height": 52
+          }
+        },
+        "misc_02": {
+          "misc_02": {
+            "x": -178.5,
+            "y": 8.0,
+            "width": 98,
+            "height": 98
+          }
+        },
+        "misc_03": {
+          "misc_03": {
+            "x": -122.0,
+            "y": 93.5,
+            "width": 71,
+            "height": 73
+          }
+        },
+        "misc_04": {
+          "misc_04": {
+            "x": -219.0,
+            "y": -100.5,
+            "width": 123,
+            "height": 65
+          }
+        },
+        "misc_05": {
+          "misc_05": {
+            "x": -182.5,
+            "y": -94.0,
+            "width": 90,
+            "height": 124
+          }
+        },
+        "misc_06": {
+          "misc_06": {
+            "x": -133.0,
+            "y": -78.5,
+            "width": 93,
+            "height": 177
+          }
+        },
+        "misc_07": {
+          "misc_07": {
+            "x": 84.0,
+            "y": -119.0,
+            "width": 85,
+            "height": 82
+          }
+        },
+        "misc_08": {
+          "misc_08": {
+            "x": 29.5,
+            "y": -106.0,
+            "width": 82,
+            "height": 124
+          }
+        },
+        "misc_09": {
+          "misc_09": {
+            "x": -15.5,
+            "y": -93.5,
+            "width": 76,
+            "height": 149
+          }
+        },
+        "misc_10": {
+          "misc_10": {
+            "x": -63.0,
+            "y": -67.0,
+            "width": 77,
+            "height": 176
+          }
+        },
+        "misc_11": {
+          "misc_11": {
+            "x": -171.0,
+            "y": -5.0,
+            "width": 177,
+            "height": 166
+          }
+        },
+        "misc_12": {
+          "misc_12": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 219,
+            "height": 204
+          }
+        },
+        "misc_13": {
+          "misc_13": {
+            "x": -72.5,
+            "y": 58.0,
+            "width": 140,
+            "height": 88
+          }
+        },
+        "misc_14": {
+          "misc_14": {
+            "x": -104.0,
+            "y": -49.5,
+            "width": 117,
+            "height": 183
+          }
+        },
+        "misc_15": {
+          "misc_15": {
+            "x": 13.0,
+            "y": 83.5,
+            "width": 97,
+            "height": 107
+          }
+        },
+        "misc_16": {
+          "misc_16": {
+            "x": 15.0,
+            "y": 83.0,
+            "width": 77,
+            "height": 38
+          }
+        },
+        "misc_17": {
+          "misc_17": {
+            "x": 65.0,
+            "y": 20.0,
+            "width": 123,
+            "height": 126
+          }
+        },
+        "misc_18": {
+          "misc_18": {
+            "x": -157.0,
+            "y": 205.5,
+            "width": 91,
+            "height": 101
+          }
+        },
+        "misc_19": {
+          "misc_19": {
+            "x": -16.0,
+            "y": 246.5,
+            "width": 69,
+            "height": 175
+          }
+        },
+        "misc_20": {
+          "misc_20": {
+            "x": -35.5,
+            "y": 230.0,
+            "width": 50,
+            "height": 108
+          }
+        },
+        "misc_21": {
+          "misc_21": {
+            "x": -14.5,
+            "y": 280.5,
+            "width": 106,
+            "height": 187
+          }
+        },
+        "misc_22": {
+          "misc_22": {
+            "x": -43.5,
+            "y": 295.5,
+            "width": 80,
+            "height": 161
+          }
+        },
+        "misc_23": {
+          "misc_23": {
+            "x": -119.0,
+            "y": 307.5,
+            "width": 83,
+            "height": 143
+          }
+        },
+        "misc_24": {
+          "misc_24": {
+            "x": -67.0,
+            "y": 298.0,
+            "width": 63,
+            "height": 146
+          }
+        },
+        "misc_25": {
+          "misc_25": {
+            "x": -24.0,
+            "y": -242.5,
+            "width": 181,
+            "height": 135
+          }
+        },
+        "shoulder_R_00": {
+          "shoulder_R_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 75,
+            "height": 85
+          }
+        },
+        "misc_그룹_3_00": {
+          "misc_그룹_3_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 110,
+            "height": 177
+          }
+        },
+        "body_00": {
+          "body_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 74,
+            "height": 177
+          }
+        },
+        "misc_그룹_2_00": {
+          "misc_그룹_2_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 96,
+            "height": 218
+          }
+        },
+        "misc_그룹_2_01": {
+          "misc_그룹_2_01": {
+            "x": 23.5,
+            "y": 161.5,
+            "width": 87,
+            "height": 183
+          }
+        },
+        "shoulder_L_00": {
+          "shoulder_L_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 122,
+            "height": 111
+          }
+        },
+        "misc_그룹_1_00": {
+          "misc_그룹_1_00": {
+            "x": -2.0,
+            "y": -5.0,
+            "width": 100,
+            "height": 59
+          }
+        },
+        "misc_그룹_1_01": {
+          "misc_그룹_1_01": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 106,
+            "height": 63
+          }
+        },
+        "weapon_00": {
+          "weapon_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 465,
+            "height": 302
+          }
+        },
+        "hand_L_00": {
+          "hand_L_00": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 57,
+            "height": 73
+          }
+        }
+      }
+    }
+  ],
+  "animations": {
+    "idle": {
+      "bones": {
+        "body": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "time": 0.6,
+              "x": 0,
+              "y": 6
+            },
+            {
+              "time": 1.2,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.6,
+              "value": 3
+            },
+            {
+              "time": 1.2,
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    "attack": {
+      "bones": {
+        "body": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "time": 0.2,
+              "x": -6,
+              "y": -4
+            },
+            {
+              "time": 0.4,
+              "x": 10,
+              "y": 2
+            },
+            {
+              "time": 0.6,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      }
+    },
+    "hit": {
+      "bones": {
+        "body": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "time": 0.08,
+              "x": -14,
+              "y": -6
+            },
+            {
+              "time": 0.3,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.08,
+              "value": 12
+            },
+            {
+              "time": 0.3,
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    "die": {
+      "bones": {
+        "body": {
+          "rotate": [
+            {
+              "time": 0,
+              "value": 0
+            },
+            {
+              "time": 0.5,
+              "value": 80
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "time": 0.5,
+              "x": 0,
+              "y": -120
+            }
+          ]
+        }
+      }
+    }
+  }
+}
