@@ -14250,6 +14250,523 @@
           "rows": 1
         }
       }
+    },
+    {
+      "id": "horn_reaper",
+      "name": "뿔 전사",
+      "category": "humanoid",
+      "file": "characters/humanoid/horn_reaper.png",
+      "width": 317,
+      "height": 271,
+      "frameWidth": 317,
+      "frameHeight": 271,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/horn_reaper.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/horn_reaper.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Idle"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100041). 이름 미상 — 대충 지은 이름.",
+        "variants": [
+          {
+            "key": "gold",
+            "label": "골드혼",
+            "skeleton": "characters/humanoid/horn_reaper.spine/gold/skeleton.skel.bytes",
+            "atlas": "characters/humanoid/horn_reaper.spine/gold/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Idle"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100049)."
+          },
+          {
+            "key": "blood",
+            "label": "블러드혼",
+            "skeleton": "characters/humanoid/horn_reaper.spine/blood/skeleton.skel.bytes",
+            "atlas": "characters/humanoid/horn_reaper.spine/blood/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Idle"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100050)."
+          },
+          {
+            "key": "sol",
+            "label": "솔블레이드",
+            "skeleton": "characters/humanoid/horn_reaper.spine/sol/skeleton.skel.bytes",
+            "atlas": "characters/humanoid/horn_reaper.spine/sol/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Idle"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100051)."
+          },
+          {
+            "key": "void",
+            "label": "보이드블레이드",
+            "skeleton": "characters/humanoid/horn_reaper.spine/void/skeleton.skel.bytes",
+            "atlas": "characters/humanoid/horn_reaper.spine/void/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Idle"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100052)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "leopard_warrior",
+      "name": "표범 전사",
+      "category": "humanoid",
+      "file": "characters/humanoid/leopard_warrior.png",
+      "width": 304,
+      "height": 349,
+      "frameWidth": 304,
+      "frameHeight": 349,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/leopard_warrior.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/leopard_warrior.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Idle"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100020). 이름 미상 — 대충 지은 이름.",
+        "variants": [
+          {
+            "key": "aurelia",
+            "label": "오렐리아 (황금포효)",
+            "skeleton": "characters/humanoid/leopard_warrior.spine/aurelia/skeleton.json",
+            "atlas": "characters/humanoid/leopard_warrior.spine/aurelia/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100053)."
+          },
+          {
+            "key": "nocturne",
+            "label": "녹턴 (그림자포효)",
+            "skeleton": "characters/humanoid/leopard_warrior.spine/nocturne/skeleton.json",
+            "atlas": "characters/humanoid/leopard_warrior.spine/nocturne/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100054)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "brown_skin_warrior",
+      "name": "갈색피부 여전사",
+      "category": "humanoid",
+      "file": "characters/humanoid/brown_skin_warrior.png",
+      "width": 393,
+      "height": 271,
+      "frameWidth": 393,
+      "frameHeight": 271,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/brown_skin_warrior.spine/skeleton.json",
+        "atlas": "characters/humanoid/brown_skin_warrior.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100010).",
+        "variants": [
+          {
+            "key": "gold",
+            "label": "골드",
+            "skeleton": "characters/humanoid/brown_skin_warrior.spine/gold/skeleton.json",
+            "atlas": "characters/humanoid/brown_skin_warrior.spine/gold/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100017)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "blunt_warrior",
+      "name": "둔기 여전사",
+      "category": "humanoid",
+      "file": "characters/humanoid/blunt_warrior.png",
+      "width": 270,
+      "height": 326,
+      "frameWidth": 270,
+      "frameHeight": 326,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/blunt_warrior.spine/skeleton.json",
+        "atlas": "characters/humanoid/blunt_warrior.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100038).",
+        "variants": [
+          {
+            "key": "hot",
+            "label": "핫",
+            "skeleton": "characters/humanoid/blunt_warrior.spine/hot/skeleton.json",
+            "atlas": "characters/humanoid/blunt_warrior.spine/hot/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100039)."
+          },
+          {
+            "key": "blue_lemonade",
+            "label": "블루레모네이드",
+            "skeleton": "characters/humanoid/blunt_warrior.spine/blue_lemonade/skeleton.json",
+            "atlas": "characters/humanoid/blunt_warrior.spine/blue_lemonade/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100040)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "anniversary_2nd",
+      "name": "2주년 기념 캐릭터",
+      "category": "humanoid",
+      "file": "characters/humanoid/anniversary_2nd.png",
+      "width": 370,
+      "height": 330,
+      "frameWidth": 370,
+      "frameHeight": 330,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/anniversary_2nd.spine/skeleton.json",
+        "atlas": "characters/humanoid/anniversary_2nd.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100059). 이름 미상 — 대충 지은 이름."
+      }
+    },
+    {
+      "id": "raven_ascended",
+      "name": "초월신성까마귀",
+      "category": "humanoid",
+      "file": "characters/humanoid/raven_ascended.png",
+      "width": 322,
+      "height": 309,
+      "frameWidth": 322,
+      "frameHeight": 309,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/raven_ascended.spine/skeleton.json",
+        "atlas": "characters/humanoid/raven_ascended.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100060)."
+      }
+    },
+    {
+      "id": "raven_fallen",
+      "name": "초월타락까마귀",
+      "category": "humanoid",
+      "file": "characters/humanoid/raven_fallen.png",
+      "width": 322,
+      "height": 309,
+      "frameWidth": 322,
+      "frameHeight": 309,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/raven_fallen.spine/skeleton.json",
+        "atlas": "characters/humanoid/raven_fallen.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100061)."
+      }
+    },
+    {
+      "id": "lion_warrior",
+      "name": "라이온 전사",
+      "category": "humanoid",
+      "file": "characters/humanoid/lion_warrior.png",
+      "width": 311,
+      "height": 381,
+      "frameWidth": 311,
+      "frameHeight": 381,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/lion_warrior.spine/skeleton.json",
+        "atlas": "characters/humanoid/lion_warrior.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Attack_04",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100069). 이름 미상 — 대충 지은 이름.",
+        "variants": [
+          {
+            "key": "purple",
+            "label": "퍼플",
+            "skeleton": "characters/humanoid/lion_warrior.spine/purple/skeleton.json",
+            "atlas": "characters/humanoid/lion_warrior.spine/purple/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Attack_04",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100068)."
+          },
+          {
+            "key": "green",
+            "label": "그린",
+            "skeleton": "characters/humanoid/lion_warrior.spine/green/skeleton.json",
+            "atlas": "characters/humanoid/lion_warrior.spine/green/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Attack_04",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100067)."
+          },
+          {
+            "key": "ember",
+            "label": "엠버",
+            "skeleton": "characters/humanoid/lion_warrior.spine/ember/skeleton.json",
+            "atlas": "characters/humanoid/lion_warrior.spine/ember/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Attack_04",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100066)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "wing_knight",
+      "name": "날개 기사",
+      "category": "humanoid",
+      "file": "characters/humanoid/wing_knight.png",
+      "width": 534,
+      "height": 409,
+      "frameWidth": 534,
+      "frameHeight": 409,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "spine": {
+        "skeleton": "characters/humanoid/wing_knight.spine/skeleton.json",
+        "atlas": "characters/humanoid/wing_knight.spine/atlas.txt",
+        "skin": "10280000-0",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/10280000). 이름 미상 — 대충 지은 이름. 이 파일 하나에 색상/장식 태그가 20개(10280000~10284000 x -0~-3) 들어있음 - 기본값(10280000-0) 하나만 사용. 이 스킨 조합에서는 얼굴 텍스처가 안 나와서 대머리로 보임 (neko_boy 계열과 같은 한계)."
+      }
     }
   ]
 }
