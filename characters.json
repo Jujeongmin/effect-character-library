@@ -7138,7 +7138,30 @@
           "TurnOver_02",
           "Win"
         ],
-        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100042)."
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100042).",
+        "variants": [
+          {
+            "key": "blue",
+            "label": "파랑",
+            "skeleton": "characters/humanoid/anniversary_wizard.spine/blue/skeleton.skel.bytes",
+            "atlas": "characters/humanoid/anniversary_wizard.spine/blue/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100043)."
+          }
+        ]
       }
     },
     {
