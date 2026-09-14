@@ -128,10 +128,10 @@
       "y": -127.5
     },
     {
-      "name": "misc_sword",
-      "parent": "body",
-      "x": 295.5,
-      "y": -109.5
+      "name": "weapon",
+      "parent": "hand_R",
+      "x": -141.5,
+      "y": -165.0
     },
     {
       "name": "misc",
@@ -427,14 +427,14 @@
       "attachment": "shoulder_L_01"
     },
     {
-      "name": "misc_sword_00",
-      "bone": "misc_sword",
-      "attachment": "misc_sword_00"
+      "name": "weapon_00",
+      "bone": "weapon",
+      "attachment": "weapon_00"
     },
     {
-      "name": "misc_sword_01",
-      "bone": "misc_sword",
-      "attachment": "misc_sword_01"
+      "name": "weapon_01",
+      "bone": "weapon",
+      "attachment": "weapon_01"
     },
     {
       "name": "arm_L_00",
@@ -907,16 +907,16 @@
             "height": 194
           }
         },
-        "misc_sword_00": {
-          "misc_sword_00": {
+        "weapon_00": {
+          "weapon_00": {
             "x": 79.0,
             "y": -58.0,
             "width": 482,
             "height": 397
           }
         },
-        "misc_sword_01": {
-          "misc_sword_01": {
+        "weapon_01": {
+          "weapon_01": {
             "x": 0.0,
             "y": 0.0,
             "width": 642,
