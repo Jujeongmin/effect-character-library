@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "defaultFps": 12,
+  "categories": {
+    "humanoid": "인간형",
+    "monster": "몬스터형"
+  },
+  "assets": []
+}

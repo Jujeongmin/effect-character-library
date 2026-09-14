@@ -33,6 +33,8 @@ a{color:var(--violet)}
 .brand{display:flex;align-items:baseline;gap:10px;flex:0 0 auto}
 .brand h1{font:700 19px/1.1 var(--display);letter-spacing:-.015em;margin:0}
 .brand .sub{color:var(--muted);font-size:12px}
+.back{flex:0 0 auto;font-size:12.5px;color:var(--muted);text-decoration:none;white-space:nowrap}
+.back:hover{color:var(--text)}
 .search{flex:1 1 280px;min-width:200px;position:relative}
 .search input{width:100%;background:var(--plate);border:1px solid var(--line);border-radius:999px;color:var(--text);
   padding:9px 38px 9px 16px;font:400 14px var(--sans);outline:none}
@@ -144,6 +146,7 @@ a{color:var(--violet)}
         <h1>Effect Library</h1>
         <span class="sub">스프라이트 201 · 파티클 209</span>
       </div>
+      <a class="back" href="./characters/index.html">캐릭터 (준비 중) →</a>
       <div class="search">
         <input id="q" type="search" placeholder="검색 — frost, thor, 번개, 아우라…" aria-label="리소스 검색" autocomplete="off">
         <button class="clear" id="qClear" type="button" aria-label="검색어 지우기" hidden>&times;</button>
