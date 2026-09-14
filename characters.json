@@ -1281,32 +1281,28 @@
       "id": "catkin",
       "name": "고양이수인",
       "category": "humanoid",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/humanoid/catkin.png",
-          "width": 871,
-          "height": 900,
-          "frameWidth": 871,
-          "frameHeight": 900,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        },
-        "expressions": {
-          "file": "characters/humanoid/catkin_expressions.png",
-          "width": 1600,
-          "height": 585,
-          "frameWidth": 1600,
-          "frameHeight": 585,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "clipNotes": {
-        "expressions": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
-      }
+      "file": "characters/humanoid/catkin.png",
+      "width": 871,
+      "height": 900,
+      "frameWidth": 871,
+      "frameHeight": 900,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1
+    },
+    {
+      "id": "catkin_expressions",
+      "name": "고양이수인 표정 시트",
+      "category": "humanoid",
+      "file": "characters/humanoid/catkin_expressions.png",
+      "width": 1600,
+      "height": 585,
+      "frameWidth": 1600,
+      "frameHeight": 585,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "note": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
     },
     {
       "id": "christmas_girl",
@@ -1543,32 +1539,28 @@
       "id": "fairy",
       "name": "페어리",
       "category": "humanoid",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/humanoid/fairy.png",
-          "width": 774,
-          "height": 900,
-          "frameWidth": 774,
-          "frameHeight": 900,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        },
-        "expressions": {
-          "file": "characters/humanoid/fairy_expressions.png",
-          "width": 1600,
-          "height": 467,
-          "frameWidth": 1600,
-          "frameHeight": 467,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "clipNotes": {
-        "expressions": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
-      }
+      "file": "characters/humanoid/fairy.png",
+      "width": 774,
+      "height": 900,
+      "frameWidth": 774,
+      "frameHeight": 900,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1
+    },
+    {
+      "id": "fairy_expressions",
+      "name": "페어리 표정 시트",
+      "category": "humanoid",
+      "file": "characters/humanoid/fairy_expressions.png",
+      "width": 1600,
+      "height": 467,
+      "frameWidth": 1600,
+      "frameHeight": 467,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "note": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
     },
     {
       "id": "fairy_ice",
@@ -1782,32 +1774,14 @@
       "id": "lucy",
       "name": "루시",
       "category": "humanoid",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/humanoid/lucy.png",
-          "width": 698,
-          "height": 900,
-          "frameWidth": 698,
-          "frameHeight": 900,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        },
-        "expressions": {
-          "file": "characters/humanoid/lucy_expressions.png",
-          "width": 1600,
-          "height": 329,
-          "frameWidth": 1600,
-          "frameHeight": 329,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "clipNotes": {
-        "expressions": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
-      }
+      "file": "characters/humanoid/lucy.png",
+      "width": 698,
+      "height": 900,
+      "frameWidth": 698,
+      "frameHeight": 900,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1
     },
     {
       "id": "lucy_blueknight",
@@ -1822,6 +1796,20 @@
       "cols": 1,
       "rows": 1,
       "note": "루시 스킨"
+    },
+    {
+      "id": "lucy_expressions",
+      "name": "루시 표정 시트",
+      "category": "humanoid",
+      "file": "characters/humanoid/lucy_expressions.png",
+      "width": 1600,
+      "height": 329,
+      "frameWidth": 1600,
+      "frameHeight": 329,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "note": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
     },
     {
       "id": "lui_spear_warrior",
@@ -2772,32 +2760,14 @@
       "id": "rui",
       "name": "루이",
       "category": "humanoid",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/humanoid/rui.png",
-          "width": 711,
-          "height": 900,
-          "frameWidth": 711,
-          "frameHeight": 900,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        },
-        "expressions": {
-          "file": "characters/humanoid/rui_expressions.png",
-          "width": 1600,
-          "height": 325,
-          "frameWidth": 1600,
-          "frameHeight": 325,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "clipNotes": {
-        "expressions": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
-      }
+      "file": "characters/humanoid/rui.png",
+      "width": 711,
+      "height": 900,
+      "frameWidth": 711,
+      "frameHeight": 900,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1
     },
     {
       "id": "rui_blueknight",
@@ -2812,6 +2782,20 @@
       "cols": 1,
       "rows": 1,
       "note": "루이 스킨"
+    },
+    {
+      "id": "rui_expressions",
+      "name": "루이 표정 시트",
+      "category": "humanoid",
+      "file": "characters/humanoid/rui_expressions.png",
+      "width": 1600,
+      "height": 325,
+      "frameWidth": 1600,
+      "frameHeight": 325,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "note": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
     },
     {
       "id": "sea_god_ran",
@@ -2830,32 +2814,28 @@
       "id": "skuld",
       "name": "스쿨드",
       "category": "humanoid",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/humanoid/skuld.png",
-          "width": 900,
-          "height": 648,
-          "frameWidth": 900,
-          "frameHeight": 648,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        },
-        "expressions": {
-          "file": "characters/humanoid/skuld_expressions.png",
-          "width": 1600,
-          "height": 706,
-          "frameWidth": 1600,
-          "frameHeight": 706,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "clipNotes": {
-        "expressions": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
-      }
+      "file": "characters/humanoid/skuld.png",
+      "width": 900,
+      "height": 648,
+      "frameWidth": 900,
+      "frameHeight": 648,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1
+    },
+    {
+      "id": "skuld_expressions",
+      "name": "스쿨드 표정 시트",
+      "category": "humanoid",
+      "file": "characters/humanoid/skuld_expressions.png",
+      "width": 1600,
+      "height": 706,
+      "frameWidth": 1600,
+      "frameHeight": 706,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "note": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
     },
     {
       "id": "sorcerer",
@@ -3126,32 +3106,28 @@
       "id": "urd",
       "name": "울드",
       "category": "humanoid",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/humanoid/urd.png",
-          "width": 364,
-          "height": 348,
-          "frameWidth": 364,
-          "frameHeight": 348,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        },
-        "expressions": {
-          "file": "characters/humanoid/urd_expressions.png",
-          "width": 1600,
-          "height": 782,
-          "frameWidth": 1600,
-          "frameHeight": 782,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "clipNotes": {
-        "expressions": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
-      }
+      "file": "characters/humanoid/urd.png",
+      "width": 364,
+      "height": 348,
+      "frameWidth": 364,
+      "frameHeight": 348,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1
+    },
+    {
+      "id": "urd_expressions",
+      "name": "울드 표정 시트",
+      "category": "humanoid",
+      "file": "characters/humanoid/urd_expressions.png",
+      "width": 1600,
+      "height": 782,
+      "frameWidth": 1600,
+      "frameHeight": 782,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "note": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
     },
     {
       "id": "valkyrie",
@@ -3210,32 +3186,28 @@
       "id": "verdandi",
       "name": "베르단디",
       "category": "humanoid",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/humanoid/verdandi.png",
-          "width": 900,
-          "height": 838,
-          "frameWidth": 900,
-          "frameHeight": 838,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        },
-        "expressions": {
-          "file": "characters/humanoid/verdandi_expressions.png",
-          "width": 1600,
-          "height": 782,
-          "frameWidth": 1600,
-          "frameHeight": 782,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "clipNotes": {
-        "expressions": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
-      }
+      "file": "characters/humanoid/verdandi.png",
+      "width": 900,
+      "height": 838,
+      "frameWidth": 900,
+      "frameHeight": 838,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1
+    },
+    {
+      "id": "verdandi_expressions",
+      "name": "베르단디 표정 시트",
+      "category": "humanoid",
+      "file": "characters/humanoid/verdandi_expressions.png",
+      "width": 1600,
+      "height": 782,
+      "frameWidth": 1600,
+      "frameHeight": 782,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "note": "표정 시트 통짜 — 자동 슬라이스 실패, 안 잘림"
     },
     {
       "id": "white_lion_knight",
