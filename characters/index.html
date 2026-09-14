@@ -403,6 +403,9 @@ function selectCharacter(character) {
   renderDetail();
   document.getElementById('detail').classList.add('open');
   document.getElementById('scrim').classList.add('on');
+  // fetch every clip's image now, not just the one showing - so switching
+  // tabs afterward is instant instead of a blank flash while it loads
+  character.preload();
 }
 
 function closeDetail() {
@@ -430,8 +433,16 @@ function renderDetail() {
     }
   };
 
+  function drawLoading() {
+    var W = stageCanvas.width, H = stageCanvas.height;
+    stageCtx.clearRect(0, 0, W, H);
+    stageCtx.fillStyle = '#8e92a6';
+    stageCtx.font = '14px "IBM Plex Mono", monospace';
+    stageCtx.textAlign = 'center';
+    stageCtx.fillText('불러오는 중…', W / 2, H / 2);
+  }
   function drawStageNow() {
-    if (!clip.image) return;
+    if (!clip.image) { drawLoading(); return; }
     var r = clip.frameRect(frame);
     var W = stageCanvas.width, H = stageCanvas.height;
     stageCtx.clearRect(0, 0, W, H);
@@ -441,6 +452,7 @@ function renderDetail() {
     stageCtx.drawImage(clip.image, r.x, r.y, r.w, r.h, (W - dw) / 2, (H - dh) / 2, dw, dh);
   }
   drawStage = drawStageNow;
+  drawLoading();
   clip.load().then(drawStageNow);
 
   var stage = el('div', { class: 'stage', 'data-bg': state.bg }, [stageCanvas]);
