@@ -3415,63 +3415,6 @@
       "note": "10210000_10214000 캐릭터 PSD의 weapon 레이어에서 분리 추출"
     },
     {
-      "id": "item_10230000",
-      "name": "10234000 무기",
-      "category": "item",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/items/item_10230000.png",
-          "width": 624,
-          "height": 248,
-          "frameWidth": 624,
-          "frameHeight": 248,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "note": "10230000_10234000 캐릭터 PSD의 sword_0007 레이어에서 분리 추출"
-    },
-    {
-      "id": "item_10230001",
-      "name": "10234001 무기",
-      "category": "item",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/items/item_10230001.png",
-          "width": 700,
-          "height": 537,
-          "frameWidth": 700,
-          "frameHeight": 537,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "note": "10230001_10234001 캐릭터 PSD의 검 레이어에서 분리 추출"
-    },
-    {
-      "id": "item_10240000",
-      "name": "10244000 무기",
-      "category": "item",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/items/item_10240000.png",
-          "width": 700,
-          "height": 385,
-          "frameWidth": 700,
-          "frameHeight": 385,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "note": "10240000_10244000 캐릭터 PSD의 sword 레이어에서 분리 추출"
-    },
-    {
       "id": "item_40100003",
       "name": "검은발키리 무기",
       "category": "item",
@@ -3529,25 +3472,6 @@
       "note": "40100008_마법사_노말 캐릭터 PSD의 weapon 레이어에서 분리 추출"
     },
     {
-      "id": "item_40100009",
-      "name": "마법사_악마 무기",
-      "category": "item",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/items/item_40100009.png",
-          "width": 465,
-          "height": 302,
-          "frameWidth": 465,
-          "frameHeight": 302,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "note": "40100009_마법사_악마 캐릭터 PSD의 weapon 레이어에서 분리 추출"
-    },
-    {
       "id": "item_40100012",
       "name": "나드 무기",
       "category": "item",
@@ -3603,25 +3527,6 @@
         }
       },
       "note": "40100014_발키리흰금 캐릭터 PSD의 sword 레이어에서 분리 추출"
-    },
-    {
-      "id": "item_40100015",
-      "name": "흰까마귀 무기",
-      "category": "item",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/items/item_40100015.png",
-          "width": 624,
-          "height": 248,
-          "frameWidth": 624,
-          "frameHeight": 248,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "note": "40100015_흰까마귀 캐릭터 PSD의 sword_0007 레이어에서 분리 추출"
     },
     {
       "id": "item_40100018",
@@ -3964,25 +3869,6 @@
         }
       },
       "note": "40100042_1주년 기념 스킨 캐릭터 PSD의 weapon 레이어에서 분리 추출"
-    },
-    {
-      "id": "item_40100043",
-      "name": "1주년 기념 스킨 바리에이션 무기",
-      "category": "item",
-      "defaultAnimation": "default",
-      "animations": {
-        "default": {
-          "file": "characters/items/item_40100043.png",
-          "width": 700,
-          "height": 456,
-          "frameWidth": 700,
-          "frameHeight": 456,
-          "frames": 1,
-          "cols": 1,
-          "rows": 1
-        }
-      },
-      "note": "40100043_1주년 기념 스킨 바리에이션 캐릭터 PSD의 weapon 레이어에서 분리 추출"
     },
     {
       "id": "item_40100044",

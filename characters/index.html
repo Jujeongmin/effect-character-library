@@ -75,8 +75,6 @@ a{color:var(--violet)}
 .thumb canvas{display:block;width:100%;height:100%}
 .thumb .tag{position:absolute;top:6px;left:6px;background:color-mix(in srgb,var(--ink) 78%,transparent);
   border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:10.5px;color:var(--muted)}
-.thumb .fr{position:absolute;bottom:6px;right:6px;font:500 10.5px var(--mono);color:var(--muted);
-  background:color-mix(in srgb,var(--ink) 78%,transparent);border-radius:5px;padding:1px 5px}
 .card .name{flex:1 1 auto;min-width:0;font:500 12px/1.35 var(--mono);color:var(--text);word-break:break-all}
 .card[aria-current=true] .name{color:var(--violet)}
 
@@ -389,11 +387,9 @@ function renderGrid() {
     var clip = character.getClip();
     clip.load();
 
-    var names = character.animationNames();
     var thumb = el('div', { class: 'thumb' }, [
       canvas,
-      el('span', { class: 'tag', text: state.lib.categoryLabel(character.category) }),
-      el('span', { class: 'fr', title: names.join(', '), text: hasAnimation(character) ? '애니메이션 있음' : '애니메이션 없음' })
+      el('span', { class: 'tag', text: state.lib.categoryLabel(character.category) })
     ]);
     var card = el('div', { class: 'card', 'aria-current': 'false' }, [
       el('button', { class: 'plate-btn', type: 'button', onclick: function () { selectCharacter(character); } }, [thumb]),
