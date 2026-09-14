@@ -7957,7 +7957,55 @@
           "TurnOver_02",
           "Win"
         ],
-        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100006)."
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100006).",
+        "variants": [
+          {
+            "key": "obsidian",
+            "label": "흑요석",
+            "skeleton": "characters/humanoid/lucy.spine/obsidian/skeleton.json",
+            "atlas": "characters/humanoid/lucy.spine/obsidian/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100057)."
+          },
+          {
+            "key": "radiant",
+            "label": "빛나는",
+            "skeleton": "characters/humanoid/lucy.spine/radiant/skeleton.json",
+            "atlas": "characters/humanoid/lucy.spine/radiant/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100058)."
+          }
+        ]
       }
     },
     {
@@ -9186,7 +9234,55 @@
           "TurnOver_02",
           "Win"
         ],
-        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100005)."
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100005).",
+        "variants": [
+          {
+            "key": "glacier",
+            "label": "빙하",
+            "skeleton": "characters/humanoid/rui.spine/glacier/skeleton.json",
+            "atlas": "characters/humanoid/rui.spine/glacier/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100055)."
+          },
+          {
+            "key": "flame",
+            "label": "불길",
+            "skeleton": "characters/humanoid/rui.spine/flame/skeleton.json",
+            "atlas": "characters/humanoid/rui.spine/flame/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100056)."
+          }
+        ]
       }
     },
     {
@@ -9642,7 +9738,80 @@
           "TurnOver_02",
           "Win"
         ],
-        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character/40100000). 이 캐릭터의 색상/장식 변형(태그)까지는 다 담지 않음 - 기본 모습 하나만."
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character/40100000). 이 캐릭터의 색상/장식 변형(태그)까지는 다 담지 않음 - 기본 모습 하나만.",
+        "variants": [
+          {
+            "key": "black",
+            "label": "흑기사",
+            "skeleton": "characters/humanoid/valkyrie.spine/black/skeleton.json",
+            "atlas": "characters/humanoid/valkyrie.spine/black/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100003)."
+          },
+          {
+            "key": "brown",
+            "label": "갈색",
+            "skeleton": "characters/humanoid/valkyrie.spine/brown/skeleton.json",
+            "atlas": "characters/humanoid/valkyrie.spine/brown/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Attack_04",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100013)."
+          },
+          {
+            "key": "whitegold",
+            "label": "흰금",
+            "skeleton": "characters/humanoid/valkyrie.spine/whitegold/skeleton.json",
+            "atlas": "characters/humanoid/valkyrie.spine/whitegold/atlas.txt",
+            "defaultAnimation": "Idle",
+            "animations": [
+              "Attack",
+              "Attack_02",
+              "Attack_03",
+              "Attack_04",
+              "Casting",
+              "CriticalAttack",
+              "Die",
+              "Hit",
+              "Idle",
+              "Run",
+              "Touch",
+              "TurnOver_01",
+              "TurnOver_02",
+              "Win"
+            ],
+            "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100014)."
+          }
+        ]
       }
     },
     {

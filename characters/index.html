@@ -613,6 +613,7 @@ function selectCharacter(character) {
   state.animName = character.defaultAnimation;
   state.bg = 'dark';
   state.scale = 1;
+  state.spineVariant = null;
   markCurrent();
   renderDetail();
   document.getElementById('detail').classList.add('open');
@@ -634,18 +635,23 @@ function renderDetail() {
   var lib = state.lib;
   var clip = c.getClip(state.animName);
   var isSpine = !!c.spine;
-  var stage, animTabs;
+  var stage, animTabs, skinTabs;
+  var activeSpine = c.spine;
 
   if (isSpine) {
+    activeSpine = state.spineVariant
+      ? c.spine.variants.filter(function (v) { return v.key === state.spineVariant; })[0]
+      : c.spine;
+
     drawStage = function () {}; // spine drives its own render loop, not the grid's tick()
     state.anim = null;
     var detailCanvas = el('canvas', { width: '640', height: '480' });
     stage = el('div', { class: 'stage', 'data-bg': state.bg }, [detailCanvas]);
-    registerSpine('detail', c.spine, lib.baseUrl, detailCanvas.getContext('2d'));
+    registerSpine('detail', activeSpine, lib.baseUrl, detailCanvas.getContext('2d'));
 
-    animTabs = el('div', { class: 'seg' }, c.spine.animations.map(function (n) {
+    animTabs = el('div', { class: 'seg' }, activeSpine.animations.map(function (n) {
       var btn = el('button', {
-        type: 'button', 'aria-pressed': String(n === (c.spine.defaultAnimation || c.spine.animations[0])),
+        type: 'button', 'aria-pressed': String(n === (activeSpine.defaultAnimation || activeSpine.animations[0])),
         onclick: function () {
           var entry = findSpineEntry('detail');
           if (entry) entry.animationState.setAnimation(0, n, true);
@@ -656,6 +662,16 @@ function renderDetail() {
       }, [document.createTextNode(n)]);
       return btn;
     }));
+
+    if (c.spine.variants && c.spine.variants.length) {
+      var allSkins = [{ key: null, label: '기본' }].concat(c.spine.variants);
+      skinTabs = el('div', { class: 'seg' }, allSkins.map(function (v) {
+        return el('button', {
+          type: 'button', 'aria-pressed': String(state.spineVariant === v.key),
+          onclick: function () { state.spineVariant = v.key; renderDetail(); }
+        }, [document.createTextNode(v.label)]);
+      }));
+    }
   } else {
     var stageCanvas = el('canvas', { width: '640', height: '480' });
     var stageCtx = stageCanvas.getContext('2d');
@@ -719,9 +735,9 @@ function renderDetail() {
   var snippet = isSpine ? [
     "// 진짜 Spine 스켈레톤 - spine-ts/spine-webgl 런타임 필요",
     "const am = new spine.AssetManager(gl, base);",
-    "am.loadTextureAtlas('" + c.spine.atlas + "');",
-    "am.loadJson('" + c.spine.skeleton + "');",
-    "// ... 로드 끝나면 skeleton.setSkin('" + (c.spine.skin || '') + "') 후 재생"
+    "am.loadTextureAtlas('" + activeSpine.atlas + "');",
+    "am.loadJson('" + activeSpine.skeleton + "');",
+    "// ... 로드 끝나면 skeleton.setSkin('" + (activeSpine.skin || '') + "') 후 재생"
   ].join('\n') : [
     "const lib = await CharacterLib.load('./characters.json');",
     "const anim = lib.play('" + c.id + "'" + (state.animName === c.defaultAnimation ? '' : ", '" + state.animName + "'") + ", { loop: true });",
@@ -740,6 +756,7 @@ function renderDetail() {
   ].filter(Boolean)));
   els.detail.appendChild(stage);
   var ctl = el('div', { class: 'ctl' }, []);
+  if (skinTabs) ctl.appendChild(skinTabs);
   if (animTabs) ctl.appendChild(animTabs);
   ctl.appendChild(bgSeg);
   els.detail.appendChild(ctl);
@@ -754,8 +771,9 @@ function renderDetail() {
   addMeta(meta, '이름', c.name);
   if (isSpine) {
     addMeta(meta, '애니메이션', '있음 (진짜 Spine 스켈레톤) — 동작 버튼을 눌러보세요');
-    addMeta(meta, '동작', c.spine.animations.join(', '));
-    if (c.spine.note) addMeta(meta, '주의', c.spine.note);
+    addMeta(meta, '동작', activeSpine.animations.join(', '));
+    if (c.spine.variants && c.spine.variants.length) addMeta(meta, '색상/장식', '기본 + ' + c.spine.variants.length + '종 — 위 탭에서 전환');
+    if (activeSpine.note) addMeta(meta, '주의', activeSpine.note);
   } else {
     var names = c.animationNames();
     addMeta(meta, '애니메이션', hasAnimation(c) ? '있음 — 동작 탭을 선택하세요' : '없음 — 정지 이미지');
