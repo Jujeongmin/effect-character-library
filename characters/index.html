@@ -516,8 +516,14 @@ function ensureThumbSpineCanvas() {
           renderer.begin();
           renderer.drawSkeleton(r.skeleton, true);
           renderer.end();
-          r.ctx2d.clearRect(0, 0, r.ctx2d.canvas.width, r.ctx2d.canvas.height);
-          r.ctx2d.drawImage(canvas, 0, 0, r.ctx2d.canvas.width, r.ctx2d.canvas.height);
+          // Letterbox instead of stretching to fill - the shared source
+          // canvas is square, but targets aren't all square (the detail
+          // panel's is 640x480), and drawImage happily squashes otherwise.
+          var tw = r.ctx2d.canvas.width, th = r.ctx2d.canvas.height;
+          var s = Math.min(tw / canvas.width, th / canvas.height);
+          var dw = canvas.width * s, dh = canvas.height * s;
+          r.ctx2d.clearRect(0, 0, tw, th);
+          r.ctx2d.drawImage(canvas, 0, 0, canvas.width, canvas.height, (tw - dw) / 2, (th - dh) / 2, dw, dh);
         });
       }
     }
