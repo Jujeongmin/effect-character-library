@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Character Library — 캐릭터 리소스 검색</title>
+<meta name="description" content="게임용 캐릭터 스프라이트를 인간형·몬스터형으로 검색하고 미리 보고 URL로 바로 가져다 쓰는 리소스 라이브러리.">
+<meta property="og:title" content="Character Library">
+<meta property="og:description" content="캐릭터 스프라이트 리소스. 검색하고 바로 쓰세요.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ink:#14151d; --plate:#1c1e28; --plate-2:#232633; --line:#2e3140;
+  --text:#e9eaf2; --muted:#8e92a6; --amber:#d9a05b; --violet:#8b7cf6;
+  --sans:"IBM Plex Sans",ui-sans-serif,system-ui,"Malgun Gothic",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
+  --display:"Bricolage Grotesque",var(--sans);
+  --barH:132px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--ink);color:var(--text);font:400 14px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+a{color:var(--violet)}
+
+/* ---- 상단 바 ---------------------------------------------------------- */
+.bar{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ink) 94%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:1760px;margin:0 auto;padding:14px 22px 10px;display:flex;flex-direction:column;gap:11px}
+.row1{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px;flex:0 0 auto}
+.brand h1{font:700 19px/1.1 var(--display);letter-spacing:-.015em;margin:0}
+.brand .sub{color:var(--muted);font-size:12px}
+.back{flex:0 0 auto;font-size:12.5px;color:var(--muted);text-decoration:none;white-space:nowrap}
+.back:hover{color:var(--text)}
+.search{flex:1 1 280px;min-width:200px;position:relative}
+.search input{width:100%;background:var(--plate);border:1px solid var(--line);border-radius:999px;color:var(--text);
+  padding:9px 38px 9px 16px;font:400 14px var(--sans);outline:none}
+.search input:focus{border-color:var(--violet)}
+.search input::placeholder{color:var(--muted)}
+.search .clear{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:none;border:0;
+  color:var(--muted);cursor:pointer;padding:6px 9px;border-radius:999px;line-height:1;font-size:15px}
+.search .clear:hover{color:var(--text)}
+.tally{flex:0 0 auto;color:var(--muted);font:500 12px var(--mono);white-space:nowrap}
+.tally b{color:var(--text)}
+.chips{display:flex;gap:7px;flex-wrap:wrap}
+.chip{background:var(--plate);border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 13px;font-size:12.5px;cursor:pointer;white-space:nowrap;transition:.12s}
+.chip:hover{color:var(--text);border-color:#454a5e}
+.chip[aria-pressed=true]{background:var(--violet);border-color:var(--violet);color:#fff;font-weight:600}
+.chip .n{opacity:.6;font-family:var(--mono);font-size:11px;margin-left:5px}
+
+/* ---- 2단 레이아웃 ------------------------------------------------------ */
+.app{max-width:1760px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) 400px}
+.grid{padding:18px 22px 90px;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:13px;align-content:start}
+.nothing{grid-column:1/-1;color:var(--muted);padding:56px 20px;text-align:center;line-height:1.9}
+.nothing h2{margin:0 0 8px;font:600 15px var(--sans);color:var(--text)}
+.nothing p{margin:0 0 6px;font-size:13px}
+.nothing code{background:var(--plate);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:12px}
+
+/* ---- 카드 -------------------------------------------------------------- */
+.card{display:flex;flex-direction:column;text-align:left}
+.plate-btn{background:none;border:0;padding:0;margin:0;display:block;width:100%;cursor:pointer}
+.namerow{display:flex;align-items:flex-start;gap:5px;margin-top:7px}
+.mini{flex:0 0 auto;background:var(--plate);border:1px solid var(--line);border-radius:6px;
+  color:var(--muted);font:500 10px/1.5 var(--mono);padding:2px 6px;cursor:pointer;white-space:nowrap}
+.mini:hover{color:var(--text);border-color:#454a5e}
+.mini.ok{color:var(--amber);border-color:var(--amber)}
+.thumb{position:relative;aspect-ratio:1;background:var(--plate);border:1px solid var(--line);border-radius:11px;
+  overflow:hidden;display:grid;place-items:center;transition:.12s}
+.card:hover .thumb{border-color:#454a5e}
+.card[aria-current=true] .thumb{border-color:var(--violet);box-shadow:0 0 0 2px color-mix(in srgb,var(--violet) 35%,transparent)}
+.thumb canvas{display:block;width:100%;height:100%}
+.thumb .tag{position:absolute;top:6px;left:6px;background:color-mix(in srgb,var(--ink) 78%,transparent);
+  border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:10.5px;color:var(--muted)}
+.thumb .fr{position:absolute;bottom:6px;right:6px;font:500 10.5px var(--mono);color:var(--muted);
+  background:color-mix(in srgb,var(--ink) 78%,transparent);border-radius:5px;padding:1px 5px}
+.card .name{flex:1 1 auto;min-width:0;font:500 12px/1.35 var(--mono);color:var(--text);word-break:break-all}
+.card[aria-current=true] .name{color:var(--violet)}
+
+/* ---- 상세 패널 --------------------------------------------------------- */
+.detail{position:sticky;top:var(--barH);height:calc(100vh - var(--barH));overflow-y:auto;
+  border-left:1px solid var(--line);padding:20px 20px 60px;background:color-mix(in srgb,var(--ink) 60%,#000 6%)}
+.dt-empty{color:var(--muted);font-size:13px;line-height:1.8;padding:40px 6px;text-align:center}
+.dt-close{display:none}
+.dt-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:14px}
+.dt-title{display:flex;align-items:baseline;gap:7px;min-width:0}
+.dt-head h2{margin:0;font:500 15px/1.3 var(--mono);word-break:break-all}
+.badge{flex:0 0 auto;background:var(--plate-2);border:1px solid var(--line);border-radius:999px;
+  padding:3px 10px;font-size:11.5px;color:var(--muted);white-space:nowrap}
+.stage{aspect-ratio:4/3;border:1px solid var(--line);border-radius:11px;overflow:hidden;display:grid;place-items:center;background:var(--plate)}
+.stage canvas{display:block;width:100%;height:100%}
+.stage[data-bg=light]{background:#e7e9ef}
+.stage[data-bg=checker]{background-color:#9aa0ae;
+  background-image:linear-gradient(45deg,#727888 25%,transparent 25%),linear-gradient(-45deg,#727888 25%,transparent 25%),
+  linear-gradient(45deg,transparent 75%,#727888 75%),linear-gradient(-45deg,transparent 75%,#727888 75%);
+  background-size:16px 16px;background-position:0 0,0 8px,8px -8px,-8px 0}
+.ctl{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:10px 0 4px}
+.seg{display:inline-flex;background:var(--plate);border:1px solid var(--line);border-radius:8px;overflow:hidden;flex-wrap:wrap}
+.seg button{background:none;border:0;padding:5px 10px;font-size:12px;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--plate-2);color:var(--text)}
+.btn{background:var(--plate);border:1px solid var(--line);border-radius:8px;padding:5px 11px;font-size:12px;
+  color:var(--muted);cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{color:var(--text);border-color:#454a5e}
+.btn.ok{color:var(--amber);border-color:var(--amber)}
+.hint{margin:9px 0 0;font-size:11.5px;line-height:1.65;color:var(--muted)}
+.motion-note{margin:0;padding:7px 11px;border:1px solid var(--amber);border-radius:8px;
+  background:color-mix(in srgb,var(--amber) 12%,transparent);color:var(--text);font-size:12px;line-height:1.5}
+.motion-note b{color:var(--amber)}
+.strip{display:flex;gap:5px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:thin}
+.strip canvas{flex:0 0 auto;width:46px;height:46px;border:1px solid var(--line);border-radius:7px;background:var(--plate);cursor:pointer}
+.strip canvas[aria-current=true]{border-color:var(--violet)}
+.meta{margin:14px 0 0;display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:12.5px}
+.meta dt{color:var(--muted)}
+.meta dd{margin:0;font-family:var(--mono);font-size:12px;word-break:break-all}
+.acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.snip{background:var(--plate);border:1px solid var(--line);border-radius:9px;padding:11px 12px;
+  font:400 11.5px/1.6 var(--mono);color:#c9cde0;overflow-x:auto;margin:10px 0 0;white-space:pre}
+.dt-sec{margin-top:20px;font:600 11px var(--sans);letter-spacing:.08em;color:var(--muted)}
+.scrim{display:none}
+
+@media (max-width:980px){
+  .app{grid-template-columns:1fr}
+  .detail{position:fixed;inset:auto 0 0 0;height:min(80vh,660px);top:auto;z-index:50;
+    border-left:0;border-top:1px solid var(--line);border-radius:16px 16px 0 0;background:var(--ink);
+    transform:translateY(102%);transition:transform .22s ease;box-shadow:0 -18px 50px #0008}
+  .detail.open{transform:none}
+  .dt-head{padding-right:36px}
+  .dt-close{display:block;position:absolute;top:12px;right:14px;background:var(--plate);border:1px solid var(--line);
+    border-radius:999px;width:30px;height:30px;line-height:1;cursor:pointer;color:var(--muted);font-size:16px;z-index:2}
+  .scrim.on{display:block;position:fixed;inset:0;background:#0009;z-index:40}
+  .grid{padding:16px 14px 40px;grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
+  .bar-in{padding:12px 14px 9px}
+}
+@media (prefers-reduced-motion:reduce){ .detail{transition:none} }
+</style>
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <div class="bar-in">
+    <div class="row1">
+      <div class="brand">
+        <h1>Character Library</h1>
+        <span class="sub" id="sub">불러오는 중…</span>
+      </div>
+      <a class="back" href="../index.html">← 이펙트 라이브러리</a>
+      <div class="search">
+        <input id="q" type="search" placeholder="검색 — id, 이름…" aria-label="캐릭터 검색" autocomplete="off">
+        <button class="clear" id="qClear" type="button" aria-label="검색어 지우기" hidden>&times;</button>
+      </div>
+      <div class="tally" id="tally"></div>
+      <button class="btn" id="playBtn" type="button" aria-pressed="true">정지</button>
+    </div>
+    <div class="chips" id="chips"></div>
+    <p class="motion-note" id="motionNote" hidden>
+      OS 의 <b>동작 줄이기</b> 설정이 켜져 있어 멈춘 채로 시작했습니다.
+      위의 <b>재생</b> 을 누르면 움직입니다.
+    </p>
+  </div>
+</header>
+
+<div class="app">
+  <main class="grid" id="grid" aria-label="캐릭터 목록"></main>
+  <aside class="detail" id="detail" aria-label="캐릭터 상세"></aside>
+</div>
+<div class="scrim" id="scrim"></div>
+
+<noscript><p style="padding:24px">이 페이지는 자바스크립트가 있어야 동작합니다.</p></noscript>
+
+<script src="../character-loader.js?v=1"></script>
+<script>
+(function(){
+'use strict';
+
+/* ── 상수 ──────────────────────────────────────────────────────────────
+ * 이 페이지는 effects 뷰어(../index.html)와 같은 디자인 시스템을 쓴다.
+ * 데이터가 아직 없다 (characters.json 의 assets 는 []) — 리소스가 들어오면
+ * 이 페이지는 고치지 않아도 그대로 그리드에 나타난다. 스키마는 CHARACTERS.md.
+ * ────────────────────────────────────────────────────────────────────── */
+
+var SITE_BASE = 'https://jujeongmin.github.io/effect-library/characters/';
+var THUMB = 150, DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+var els = {
+  sub: document.getElementById('sub'),
+  q: document.getElementById('q'),
+  qClear: document.getElementById('qClear'),
+  tally: document.getElementById('tally'),
+  playBtn: document.getElementById('playBtn'),
+  chips: document.getElementById('chips'),
+  motionNote: document.getElementById('motionNote'),
+  grid: document.getElementById('grid'),
+  detail: document.getElementById('detail'),
+  scrim: document.getElementById('scrim')
+};
+
+var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var state = { lib: null, cat: 'all', query: '', playing: !reduceMotion, current: null, bg: 'dark', scale: 1, anim: null, animName: null };
+var cards = []; // { character, canvas, ctx, clip, playhead }
+
+/* ── 유틸 ──────────────────────────────────────────────────────────── */
+
+function el(tag, attrs, children) {
+  var n = document.createElement(tag);
+  for (var k in attrs || {}) {
+    if (k === 'text') n.textContent = attrs[k];
+    else if (k.indexOf('on') === 0) n.addEventListener(k.slice(2), attrs[k]);
+    else n.setAttribute(k, attrs[k]);
+  }
+  (children || []).forEach(function (c) { n.appendChild(c); });
+  return n;
+}
+
+function copy(text, btn) {
+  navigator.clipboard.writeText(text).then(function () {
+    if (!btn) return;
+    var was = btn.textContent;
+    btn.textContent = '복사됨';
+    btn.classList.add('ok');
+    setTimeout(function () { btn.textContent = was; btn.classList.remove('ok'); }, 1100);
+  });
+}
+
+/* ── 로드 ──────────────────────────────────────────────────────────── */
+
+CharacterLib.load('../characters.json').then(function (lib) {
+  state.lib = lib;
+  els.sub.textContent = lib.characters.length + '개 캐릭터';
+  if (reduceMotion) { els.motionNote.hidden = false; els.playBtn.textContent = '재생'; els.playBtn.setAttribute('aria-pressed', 'false'); }
+  buildChips();
+  renderGrid();
+  requestAnimationFrame(tick);
+}).catch(function (err) {
+  els.sub.textContent = '로드 실패';
+  els.grid.innerHTML = '';
+  els.grid.appendChild(el('div', { class: 'nothing' }, [
+    el('h2', { text: '캐릭터 목록을 불러오지 못했습니다' }),
+    el('p', { text: String(err && err.message || err) })
+  ]));
+});
+
+/* ── 칩 ────────────────────────────────────────────────────────────── */
+
+function buildChips() {
+  var lib = state.lib;
+  var counts = {};
+  lib.characters.forEach(function (c) { counts[c.category] = (counts[c.category] || 0) + 1; });
+  var order = Object.keys(lib.categories);
+
+  els.chips.innerHTML = '';
+  els.chips.appendChild(chip('all', '전체', lib.characters.length));
+  order.forEach(function (key) {
+    els.chips.appendChild(chip(key, lib.categoryLabel(key), counts[key] || 0));
+  });
+
+  function chip(key, label, n) {
+    var btn = el('button', {
+      class: 'chip', type: 'button', 'aria-pressed': String(state.cat === key),
+      onclick: function () { state.cat = key; buildChips(); renderGrid(); }
+    }, [document.createTextNode(label)]);
+    btn.appendChild(el('span', { class: 'n', text: String(n) }));
+    return btn;
+  }
+}
+
+/* ── 필터 ──────────────────────────────────────────────────────────── */
+
+function filtered() {
+  var lib = state.lib;
+  var q = state.query.trim().toLowerCase();
+  return lib.characters.filter(function (c) {
+    if (state.cat !== 'all' && c.category !== state.cat) return false;
+    if (!q) return true;
+    return c.id.toLowerCase().indexOf(q) !== -1 || (c.name || '').toLowerCase().indexOf(q) !== -1;
+  });
+}
+
+els.q.addEventListener('input', function () {
+  state.query = els.q.value;
+  els.qClear.hidden = !state.query;
+  if (state.lib) renderGrid();
+});
+els.qClear.addEventListener('click', function () {
+  els.q.value = ''; state.query = ''; els.qClear.hidden = true;
+  if (state.lib) renderGrid();
+});
+els.playBtn.addEventListener('click', function () {
+  state.playing = !state.playing;
+  els.playBtn.textContent = state.playing ? '정지' : '재생';
+  els.playBtn.setAttribute('aria-pressed', String(state.playing));
+});
+
+/* ── 그리드 ────────────────────────────────────────────────────────── */
+
+function renderGrid() {
+  var list = filtered();
+  els.tally.innerHTML = '<b>' + list.length + '</b> / ' + state.lib.characters.length;
+  els.grid.innerHTML = '';
+  cards = [];
+
+  if (state.lib.characters.length === 0) {
+    els.grid.appendChild(emptyState());
+    return;
+  }
+  if (list.length === 0) {
+    els.grid.appendChild(el('div', { class: 'nothing' }, [el('p', { text: '검색·필터에 걸리는 캐릭터가 없습니다.' })]));
+    return;
+  }
+
+  list.forEach(function (character) {
+    var canvas = el('canvas', { width: String(THUMB * DPR), height: String(THUMB * DPR) });
+    var ctx = canvas.getContext('2d');
+    var clip = character.getClip();
+    clip.load();
+
+    var thumb = el('div', { class: 'thumb' }, [
+      canvas,
+      el('span', { class: 'tag', text: state.lib.categoryLabel(character.category) }),
+      clip.frames > 1 ? el('span', { class: 'fr', text: clip.frames + 'f' }) : document.createTextNode('')
+    ]);
+    var card = el('div', { class: 'card', 'aria-current': 'false' }, [
+      el('button', { class: 'plate-btn', type: 'button', onclick: function () { selectCharacter(character); } }, [thumb]),
+      el('div', { class: 'namerow' }, [
+        el('span', { class: 'name', text: character.id }),
+        el('button', { class: 'mini', type: 'button', title: 'id 복사', onclick: function (e) { copy(character.id, e.currentTarget); } }, [document.createTextNode('COPY')])
+      ])
+    ]);
+    card._character = character;
+    els.grid.appendChild(card);
+    cards.push({ character: character, card: card, canvas: canvas, ctx: ctx, clip: clip, frame: 0, elapsed: 0 });
+  });
+
+  markCurrent();
+}
+
+function emptyState() {
+  return el('div', { class: 'nothing' }, [
+    el('h2', { text: '아직 등록된 캐릭터가 없습니다' }),
+    el('p', { text: '리소스가 준비되면 characters.json 에 항목을 추가하는 즉시 이 그리드에 나타납니다.' }),
+    el('p', {}, []),
+    (function () {
+      var p = el('p', {});
+      p.innerHTML = '분류는 ' + Object.keys(state.lib.categories).map(function (k) {
+        return '<code>' + k + '</code> (' + state.lib.categoryLabel(k) + ')';
+      }).join(' · ') + ' 로 이미 준비돼 있습니다.';
+      return p;
+    })(),
+    (function () {
+      var p = el('p', {});
+      p.innerHTML = '항목 스키마는 저장소 루트의 <code>CHARACTERS.md</code> 참고.';
+      return p;
+    })()
+  ]);
+}
+
+function markCurrent() {
+  cards.forEach(function (c) {
+    c.card.setAttribute('aria-current', String(state.current === c.character));
+  });
+}
+
+/* ── 재생 루프 (그리드 카드) ───────────────────────────────────────── */
+
+var lastTick = null;
+function tick(now) {
+  var dt = lastTick == null ? 0 : now - lastTick;
+  lastTick = now;
+  if (state.playing) {
+    cards.forEach(function (c) { drawCardFrame(c, dt); });
+  }
+  if (state.anim && state.playing) {
+    state.anim.update(dt);
+    drawStage();
+  }
+  requestAnimationFrame(tick);
+}
+
+function drawCardFrame(c, dt) {
+  if (!c.clip.image) return;
+  var fps = c.clip.fps || 12;
+  c.elapsed += dt;
+  var step = 1000 / fps;
+  while (c.elapsed >= step) { c.elapsed -= step; c.frame = (c.frame + 1) % c.clip.frames; }
+  var r = c.clip.frameRect(c.frame);
+  var ctx = c.ctx, W = c.canvas.width, H = c.canvas.height;
+  ctx.clearRect(0, 0, W, H);
+  var scale = Math.min(W / r.w, H / r.h);
+  var dw = r.w * scale, dh = r.h * scale;
+  ctx.drawImage(c.clip.image, r.x, r.y, r.w, r.h, (W - dw) / 2, (H - dh) / 2, dw, dh);
+}
+
+/* ── 상세 패널 ─────────────────────────────────────────────────────── */
+
+function selectCharacter(character) {
+  state.current = character;
+  state.animName = character.defaultAnimation;
+  state.bg = 'dark';
+  state.scale = 1;
+  markCurrent();
+  renderDetail();
+  document.getElementById('detail').classList.add('open');
+  document.getElementById('scrim').classList.add('on');
+}
+
+function closeDetail() {
+  els.detail.classList.remove('open');
+  els.scrim.classList.remove('on');
+}
+els.scrim.addEventListener('click', closeDetail);
+
+function renderDetail() {
+  var c = state.current;
+  var lib = state.lib;
+  var clip = c.getClip(state.animName);
+  var stageCanvas = el('canvas', { width: '640', height: '480' });
+  var stageCtx = stageCanvas.getContext('2d');
+
+  var frame = 0, elapsed = 0;
+  state.anim = {
+    clip: clip,
+    update: function (dt) {
+      if (!clip.image) return;
+      var fps = clip.fps || 12;
+      elapsed += dt;
+      var step = 1000 / fps;
+      while (elapsed >= step) { elapsed -= step; frame = (frame + 1) % clip.frames; }
+    }
+  };
+
+  function drawStageNow() {
+    if (!clip.image) return;
+    var r = clip.frameRect(frame);
+    var W = stageCanvas.width, H = stageCanvas.height;
+    stageCtx.clearRect(0, 0, W, H);
+    var scale = Math.min(W / r.w, H / r.h) * state.scale;
+    var dw = r.w * scale, dh = r.h * scale;
+    stageCtx.imageSmoothingEnabled = false;
+    stageCtx.drawImage(clip.image, r.x, r.y, r.w, r.h, (W - dw) / 2, (H - dh) / 2, dw, dh);
+  }
+  drawStage = drawStageNow;
+  clip.load().then(drawStageNow);
+
+  var stage = el('div', { class: 'stage', 'data-bg': state.bg }, [stageCanvas]);
+
+  var animTabs = null;
+  var names = c.animationNames();
+  if (names.length > 1) {
+    animTabs = el('div', { class: 'seg' }, names.map(function (n) {
+      return el('button', {
+        type: 'button', 'aria-pressed': String(n === state.animName),
+        onclick: function () { state.animName = n; renderDetail(); }
+      }, [document.createTextNode(n)]);
+    }));
+  }
+
+  var bgSeg = el('div', { class: 'seg' }, ['dark', 'checker', 'light'].map(function (b) {
+    var label = b === 'dark' ? '어둠' : b === 'checker' ? '체커' : '밝음';
+    return el('button', {
+      type: 'button', 'aria-pressed': String(state.bg === b),
+      onclick: function () { state.bg = b; stage.setAttribute('data-bg', b); }
+    }, [document.createTextNode(label)]);
+  }));
+
+  var absUrl = SITE_BASE.replace(/characters\/$/, '') + clip.file;
+  var snippet = [
+    "const lib = await CharacterLib.load('./characters.json');",
+    "const anim = lib.play('" + c.id + "'" + (state.animName === c.defaultAnimation ? '' : ", '" + state.animName + "'") + ", { loop: true });",
+    "anim.draw(ctx, x, y);   // call once per frame, x/y = center"
+  ].join('\n');
+
+  els.detail.innerHTML = '';
+  els.detail.appendChild(el('button', { class: 'dt-close', type: 'button', 'aria-label': '닫기', onclick: closeDetail }, [document.createTextNode('×')]));
+  els.detail.appendChild(el('div', { class: 'dt-head' }, [
+    el('div', { class: 'dt-title' }, [
+      el('h2', { text: c.id }),
+    ]),
+    el('span', { class: 'badge', text: lib.categoryLabel(c.category) })
+  ]));
+  els.detail.appendChild(stage);
+  var ctl = el('div', { class: 'ctl' }, []);
+  if (animTabs) ctl.appendChild(animTabs);
+  ctl.appendChild(bgSeg);
+  els.detail.appendChild(ctl);
+  els.detail.appendChild(el('div', { class: 'ctl' }, [
+    el('span', { class: 'hint', text: '배율' }),
+    el('input', { type: 'range', min: '0.5', max: '4', step: '0.25', value: String(state.scale), oninput: function (e) { state.scale = parseFloat(e.target.value); } })
+  ]));
+
+  var meta = el('dl', { class: 'meta' }, []);
+  addMeta(meta, '이름', c.name);
+  addMeta(meta, '애니메이션', names.join(', '));
+  addMeta(meta, '프레임', clip.frames + '장 (' + clip.cols + '×' + clip.rows + ')');
+  addMeta(meta, '프레임 크기', clip.frameWidth + '×' + clip.frameHeight);
+  addMeta(meta, 'fps', String(clip.fps || 12));
+  if (clip.width && clip.height) addMeta(meta, '시트 크기', clip.width + '×' + clip.height);
+  if (c.source || clip.source) addMeta(meta, '원본', c.source || clip.source);
+  els.detail.appendChild(meta);
+
+  var acts = el('div', { class: 'acts' }, []);
+  acts.appendChild(el('button', { class: 'btn', type: 'button', onclick: function (e) { copy(c.id, e.currentTarget); } }, [document.createTextNode('id 복사')]));
+  acts.appendChild(el('button', { class: 'btn', type: 'button', onclick: function (e) { copy(clip.file, e.currentTarget); } }, [document.createTextNode('경로 복사')]));
+  acts.appendChild(el('button', { class: 'btn', type: 'button', onclick: function (e) { copy(absUrl, e.currentTarget); } }, [document.createTextNode('직링크 복사')]));
+  els.detail.appendChild(acts);
+
+  els.detail.appendChild(el('div', { class: 'dt-sec', text: '코드' }));
+  var snip = el('pre', { class: 'snip', text: snippet });
+  els.detail.appendChild(snip);
+  els.detail.appendChild(el('div', { class: 'acts' }, [
+    el('button', { class: 'btn', type: 'button', onclick: function (e) { copy(snippet, e.currentTarget); } }, [document.createTextNode('코드 복사')])
+  ]));
+}
+
+function addMeta(dl, label, value) {
+  dl.appendChild(el('dt', { text: label }));
+  dl.appendChild(el('dd', { text: value }));
+}
+
+var drawStage = function () {}; // reassigned per selectCharacter → renderDetail
+
+})();
+</script>
+</body>
+</html>
