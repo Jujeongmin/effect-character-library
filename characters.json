@@ -3904,6 +3904,34 @@
       "note": "이름 미상 — 대충 지은 이름"
     },
     {
+      "id": "monster_210003",
+      "name": "몬스터 210003",
+      "category": "beast",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": { "file": "characters/beast/210003_idle.png", "width": 2416, "height": 1526, "frameWidth": 302, "frameHeight": 218, "frames": 55, "cols": 8, "rows": 7, "fps": 33.33 },
+        "run": { "file": "characters/beast/210003_run.png", "width": 2784, "height": 1776, "frameWidth": 348, "frameHeight": 222, "frames": 60, "cols": 8, "rows": 8, "fps": 33.33 },
+        "attack": { "file": "characters/beast/210003_attack.png", "width": 3710, "height": 2212, "frameWidth": 530, "frameHeight": 316, "frames": 46, "cols": 7, "rows": 7, "fps": 33.33 },
+        "casting": { "file": "characters/beast/210003_casting.png", "width": 2394, "height": 1668, "frameWidth": 342, "frameHeight": 278, "frames": 40, "cols": 7, "rows": 6, "fps": 33.33 },
+        "hit": { "file": "characters/beast/210003_hit.png", "width": 1854, "height": 1200, "frameWidth": 309, "frameHeight": 240, "frames": 26, "cols": 6, "rows": 5, "fps": 33.33 },
+        "die": { "file": "characters/beast/210003_die.png", "width": 2548, "height": 1946, "frameWidth": 364, "frameHeight": 278, "frames": 48, "cols": 7, "rows": 7, "fps": 33.33 }
+      }
+    },
+    {
+      "id": "monster_210004",
+      "name": "몬스터 210004",
+      "category": "monster",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": { "file": "characters/monster/210004_idle.png", "width": 2496, "height": 1750, "frameWidth": 312, "frameHeight": 250, "frames": 50, "cols": 8, "rows": 7, "fps": 33.33 },
+        "run": { "file": "characters/monster/210004_run.png", "width": 1284, "height": 1476, "frameWidth": 214, "frameHeight": 246, "frames": 35, "cols": 6, "rows": 6, "fps": 33.33 },
+        "attack": { "file": "characters/monster/210004_attack.png", "width": 2856, "height": 1746, "frameWidth": 408, "frameHeight": 291, "frames": 41, "cols": 7, "rows": 6, "fps": 33.33 },
+        "casting": { "file": "characters/monster/210004_casting.png", "width": 1596, "height": 1488, "frameWidth": 266, "frameHeight": 248, "frames": 35, "cols": 6, "rows": 6, "fps": 33.33 },
+        "hit": { "file": "characters/monster/210004_hit.png", "width": 1944, "height": 1250, "frameWidth": 324, "frameHeight": 250, "frames": 26, "cols": 6, "rows": 5, "fps": 33.33 },
+        "die": { "file": "characters/monster/210004_die.png", "width": 1980, "height": 1686, "frameWidth": 330, "frameHeight": 281, "frames": 35, "cols": 6, "rows": 6, "fps": 33.33 }
+      }
+    },
+    {
       "id": "world_boss_unnamed",
       "name": "월드보스 (이름 미상)",
       "category": "monster",
