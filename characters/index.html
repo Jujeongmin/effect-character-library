@@ -510,9 +510,22 @@ function ensureThumbSpineCanvas() {
         // attached with real layout size in the way ResizeMode.Expand
         // expects, so leave it at the fixed size set above.
         var renderer = sc.renderer, gl = sc.context.gl;
+        var offset = new spine.Vector2(), size = new spine.Vector2();
         thumbSpine.registry.forEach(function (r) {
           gl.clearColor(0, 0, 0, 0);
           gl.clear(gl.COLOR_BUFFER_BIT);
+          // Every character has a different root/origin convention (some
+          // rigs put non-trivial offsets above the root bone), so a single
+          // fixed camera left most of them off-center or oddly scaled.
+          // Fit the camera to this skeleton's own current bounds instead,
+          // every frame, right before drawing it.
+          r.skeleton.getBounds(offset, size, []);
+          renderer.camera.position.x = offset.x + size.x / 2;
+          renderer.camera.position.y = offset.y + size.y / 2;
+          renderer.camera.viewportWidth = canvas.width;
+          renderer.camera.viewportHeight = canvas.height;
+          renderer.camera.zoom = Math.max(size.x / canvas.width, size.y / canvas.height, 0.001) * 1.2;
+          renderer.camera.update();
           renderer.begin();
           renderer.drawSkeleton(r.skeleton, true);
           renderer.end();
