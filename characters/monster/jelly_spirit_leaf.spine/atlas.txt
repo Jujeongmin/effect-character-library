@@ -1,0 +1,12 @@
+atlas.png
+size:512,64
+filter:Linear,Linear
+pma:true
+acc
+bounds:89,4,68,58
+body
+bounds:159,2,68,60
+eye
+bounds:229,32,35,30
+shadow
+bounds:2,16,85,46

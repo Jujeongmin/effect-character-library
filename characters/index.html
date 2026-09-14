@@ -500,7 +500,7 @@ function ensureThumbSpineCanvas() {
     app: {
       update: function (sc, delta) {
         thumbSpine.registry.forEach(function (r) {
-          r.animationState.update(delta);
+          if (state.playing) r.animationState.update(delta);
           r.animationState.apply(r.skeleton);
           r.skeleton.updateWorldTransform();
         });
