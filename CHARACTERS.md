@@ -1,11 +1,8 @@
-# Character Library — 스키마 (틀만 준비된 상태)
+# Character Library — 스키마
 
 `characters.json` / `character-loader.js` / `characters/index.html` 는
 [effects.json 팩](README.md)과 같은 저장소에 있지만 **완전히 별도의 라이브러리**다.
 서로의 id 공간을 공유하지 않고, 뷰어 링크도 따로다 (`characters/index.html`).
-
-리소스가 아직 없다 — `characters.json` 의 `assets` 는 `[]`. 아래 스키마대로 항목을
-채우면 `characters/index.html` 은 고칠 필요 없이 그대로 그리드에 표시한다.
 
 ## 폴더
 
@@ -14,12 +11,34 @@ characters.json          매니페스트
 character-loader.js      로더 (CharacterLib — loader.js 의 캐릭터 버전)
 characters/
   index.html              뷰어 (effects 뷰어와 같은 디자인 시스템, 별도 링크)
-  humanoid/               인간형 스프라이트 원본
-  monster/                몬스터형 스프라이트 원본
+  humanoid/               인간형 — 사람 체형 (동물 귀·꼬리가 있어도 얼굴·몸은 사람)
+  beast/                  야수형 — 짐승 몸(네발 또는 짐승 머리)의 판타지 생물
+  animal/                 동물형 — 평범한 실사풍 동물(고양이, 새 등)
+  monster/                몬스터형 — 위 셋에 안 들어가는 나머지(슬라임, 유령, 오우거, 식물 골렘 등)
 ```
+
+분류는 **원본이 어느 폴더(캐릭터/몬스터/NPC/펫)에서 왔는지가 아니라 실제로
+어떻게 생겼는지** 기준이다 — `effects.json` 이 카테고리를 "원본 폴더 이름이
+아니라 실제로 어떻게 보이는지" 기준으로 잡은 것과 같은 원칙. NPC 폴더에서
+왔어도 사람처럼 생겼으면 `humanoid`, 고양이처럼 생겼으면 `animal`.
 
 카테고리를 늘리려면 `characters.json` 의 `categories` 맵에 키를 추가하고
 `characters/<새 카테고리>/` 폴더를 만들면 된다. 뷰어의 칩은 그 맵에서 자동으로 뽑힌다.
+
+## 지금 들어있는 데이터
+
+71개 (인간형 47 · 몬스터형 9 · 야수형 8 · 동물형 7). 전부 정지 이미지 한 장
+(A 형식, `frames: 1`) — 원본이 애니메이션 스프라이트가 아니라 일러스트 한 장짜리
+캐릭터 원화이기 때문이다.
+
+원본 폴더에는 훨씬 많은 파일이 있었는데 (예: 캐릭터 하나가 스킨·속성태그별로
+5~8장씩) **같은 캐릭터의 색만 다른 재탕은 한 장만 남기고 다 뺐다** — `effects`
+팩이 파티클 344개를 209개로 접었을 때와 같은 이유. 웹에서 원본 해상도(최대
+4500px)로 쓸 이유가 없어서 긴 변 900px로 줄여서 넣었다(원본은 훨씬 큼).
+
+이름이 원본에 없는 항목(주로 몬스터, 일부 캐릭터)은 생김새 보고 대충 지었다 —
+`note` 필드에 `"이름 미상 — 대충 지은 이름"` 이라고 표시해 뒀다. 다른 프로젝트에서
+가져다 쓸 때 원하는 이름으로 다시 붙이면 된다는 전제로 정확도보다 속도를 택함.
 
 ## 매니페스트 형식
 
@@ -95,10 +114,14 @@ function frame() {
 `registerPhaser` / `toPixi` 도 있다 — Phaser 스프라이트시트 키는
 `"<캐릭터id>:<애니메이션이름>"` (예: `"goblin:walk"`).
 
-## 리소스가 들어오면 할 일
+## 리소스가 더 들어오면 할 일
 
-1. PNG를 `characters/humanoid/` 또는 `characters/monster/` 에 넣는다
-   (effects 팩처럼 `tools/build.py` 계열로 자동화해도 되고, 수동으로 넣어도 된다).
+1. PNG를 `characters/<카테고리>/` 에 넣는다 (필요하면 웹용으로 리사이즈 —
+   원본이 리소스 폴더에 그대로 있으니 손실은 없다).
 2. `characters.json` 의 `assets` 배열에 위 A/B 형식 중 맞는 쪽으로 항목을 추가한다.
 3. `characters/index.html` 을 열어 그리드·상세·애니메이션 탭이 뜨는지 확인한다.
    코드를 고칠 필요는 없다 — 데이터만 채우면 된다.
+
+실제 애니메이션 스프라이트(`idle`/`walk`/`attack`/`hit`/`death` 여러 장)가 들어오면
+B 형식으로 바꿔서 등록하면 된다 — 지금 A 형식으로 들어있는 항목도 나중에 그렇게
+업그레이드할 수 있다, id는 그대로 두고 `animations` 맵만 채우면 된다.
