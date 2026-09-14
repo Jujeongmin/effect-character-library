@@ -3643,6 +3643,44 @@
       "note": "40100018_마녀 캐릭터 PSD의 staff 레이어에서 분리 추출"
     },
     {
+      "id": "item_40100018_cape",
+      "name": "마녀 망토",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100018_cape.png",
+          "width": 491,
+          "height": 377,
+          "frameWidth": 491,
+          "frameHeight": 377,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100018_마녀 캐릭터 PSD의 cape* 레이어들을 합쳐서 추출"
+    },
+    {
+      "id": "item_40100018_hat",
+      "name": "마녀 모자",
+      "category": "item",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/items/item_40100018_hat.png",
+          "width": 927,
+          "height": 431,
+          "frameWidth": 927,
+          "frameHeight": 431,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      "note": "40100018_마녀 캐릭터 PSD의 hat 레이어에서 분리 추출"
+    },
+    {
       "id": "item_40100020",
       "name": "표범 무기",
       "category": "item",
