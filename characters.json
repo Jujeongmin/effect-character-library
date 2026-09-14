@@ -7455,22 +7455,7 @@
       "frameHeight": 518,
       "frames": 1,
       "cols": 1,
-      "rows": 1,
-      "spine": {
-        "skeleton": "characters/humanoid/crystal_cat_krystal.spine/skeleton.json",
-        "atlas": "characters/humanoid/crystal_cat_krystal.spine/atlas.txt",
-        "defaultAnimation": "Idle",
-        "animations": [
-          "Appear",
-          "Disappear",
-          "Emotion",
-          "Emotion_02",
-          "Emotion_03",
-          "Idle",
-          "Touch"
-        ],
-        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/04_NPC/300007_크리스탈고양이_Krystal(예명))."
-      }
+      "rows": 1
     },
     {
       "id": "custom_npc_tom",
@@ -11005,80 +10990,6 @@
       "cols": 1,
       "rows": 1,
       "note": "PSD에서 캐릭터 레이어만 뽑아냄"
-    },
-    {
-      "id": "monster_210004",
-      "name": "몬스터 210004",
-      "category": "monster",
-      "defaultAnimation": "idle",
-      "animations": {
-        "idle": {
-          "file": "characters/monster/210004_idle.png",
-          "width": 2496,
-          "height": 1750,
-          "frameWidth": 312,
-          "frameHeight": 250,
-          "frames": 50,
-          "cols": 8,
-          "rows": 7,
-          "fps": 33.33
-        },
-        "run": {
-          "file": "characters/monster/210004_run.png",
-          "width": 1284,
-          "height": 1476,
-          "frameWidth": 214,
-          "frameHeight": 246,
-          "frames": 35,
-          "cols": 6,
-          "rows": 6,
-          "fps": 33.33
-        },
-        "attack": {
-          "file": "characters/monster/210004_attack.png",
-          "width": 2856,
-          "height": 1746,
-          "frameWidth": 408,
-          "frameHeight": 291,
-          "frames": 41,
-          "cols": 7,
-          "rows": 6,
-          "fps": 33.33
-        },
-        "casting": {
-          "file": "characters/monster/210004_casting.png",
-          "width": 1596,
-          "height": 1488,
-          "frameWidth": 266,
-          "frameHeight": 248,
-          "frames": 35,
-          "cols": 6,
-          "rows": 6,
-          "fps": 33.33
-        },
-        "hit": {
-          "file": "characters/monster/210004_hit.png",
-          "width": 1944,
-          "height": 1250,
-          "frameWidth": 324,
-          "frameHeight": 250,
-          "frames": 26,
-          "cols": 6,
-          "rows": 5,
-          "fps": 33.33
-        },
-        "die": {
-          "file": "characters/monster/210004_die.png",
-          "width": 1980,
-          "height": 1686,
-          "frameWidth": 330,
-          "frameHeight": 281,
-          "frames": 35,
-          "cols": 6,
-          "rows": 6,
-          "fps": 33.33
-        }
-      }
     },
     {
       "id": "ogre_archer",
