@@ -250,7 +250,7 @@ CharacterLib.load('../characters.json').then(function (lib) {
 /* ── 칩 ────────────────────────────────────────────────────────────── */
 
 function hasAnimation(c) {
-  return c.animationNames().some(function (name) { return c.getClip(name).frames > 1; });
+  return !!c.spine || c.animationNames().some(function (name) { return c.getClip(name).frames > 1; });
 }
 
 function buildChips() {
@@ -372,6 +372,9 @@ function renderGrid() {
   els.tally.innerHTML = '<b>' + list.length + '</b> / ' + state.lib.characters.length;
   els.grid.innerHTML = '';
   cards = [];
+  // old cards' canvases are gone - drop their registry entries too, but
+  // keep the detail panel's entry (it isn't rebuilt when the grid is)
+  thumbSpine.registry = thumbSpine.registry.filter(function (r) { return r.key === 'detail'; });
 
   if (state.lib.characters.length === 0) {
     els.grid.appendChild(emptyState());
@@ -383,10 +386,12 @@ function renderGrid() {
   }
 
   list.forEach(function (character) {
-    var canvas = el('canvas', { width: String(THUMB * DPR), height: String(THUMB * DPR) });
-    var ctx = canvas.getContext('2d');
-    var clip = character.getClip();
-    clip.load();
+    var canvas, isSpineThumb = !!character.spine;
+    if (isSpineThumb) {
+      canvas = createSpineThumb(character, state.lib.baseUrl);
+    } else {
+      canvas = el('canvas', { width: String(THUMB * DPR), height: String(THUMB * DPR) });
+    }
 
     var thumb = el('div', { class: 'thumb' }, [
       canvas,
@@ -401,7 +406,14 @@ function renderGrid() {
     ]);
     card._character = character;
     els.grid.appendChild(card);
-    cards.push({ character: character, card: card, canvas: canvas, ctx: ctx, clip: clip, frame: 0, elapsed: 0 });
+    if (isSpineThumb) {
+      cards.push({ character: character, card: card, isSpineThumb: true });
+    } else {
+      var ctx = canvas.getContext('2d');
+      var clip = character.getClip();
+      clip.load();
+      cards.push({ character: character, card: card, canvas: canvas, ctx: ctx, clip: clip, frame: 0, elapsed: 0 });
+    }
   });
 
   markCurrent();
@@ -440,7 +452,7 @@ function tick(now) {
   var dt = lastTick == null ? 0 : now - lastTick;
   lastTick = now;
   if (state.playing) {
-    cards.forEach(function (c) { drawCardFrame(c, dt); });
+    cards.forEach(function (c) { if (!c.isSpineThumb) drawCardFrame(c, dt); });
   }
   if (state.anim && state.playing) {
     state.anim.update(dt);
@@ -464,79 +476,72 @@ function drawCardFrame(c, dt) {
 }
 
 /* ── 진짜 Spine 애니메이션 (스켈레톤/아틀라스가 있는 캐릭터만) ─────────
- * WebGL 컨텍스트는 개수 제한이 있어서 캐릭터 바꿀 때마다 새로 안 만들고
- * 캔버스/컨텍스트 하나를 계속 재사용한다 - detail 패널이 innerHTML로
- * 통째로 갈아끼워져도 이 canvas 엘리먼트는 JS 변수로 붙잡고 있다가
- * 다음에 다시 넣어주면 됨 (DOM에서 떼도 WebGL 컨텍스트는 안 죽는다).
+ * WebGL 컨텍스트 하나만 계속 재사용한다 - detail 패널용, 그리드 카드용
+ * 따로 만들었더니 컨텍스트가 여러 개(≥2) 뜨는 순간 서로 검은 화면으로
+ * 깨지는 게 이 환경에서 재현됨(라이브러리가 컨텍스트 하나만 쓴다고
+ * 가정하는 듯). 그래서 모든 캐릭터(그리드 미리보기 + 상세 패널)를 이
+ * 하나의 숨겨진 캔버스에 순서대로 그린 다음, 그 결과를 각자의 진짜
+ * (보이는) 2D 캔버스로 복사해 붙이는 방식으로 통일했다.
  * ────────────────────────────────────────────────────────────────────── */
-var spineRuntime = { canvas: null, app: null, skeleton: null, animationState: null };
-var spineDataCache = {}; // skeleton path -> SkeletonData (안전하게 여러 캐릭터가 공유 가능)
+var spineDataCache = {}; // skeleton path -> SkeletonData (여러 캐릭터가 안전하게 공유)
+var thumbSpine = { canvas: null, app: null, registry: [] }; // registry: {key, skeleton, animationState, ctx2d}
 
-function ensureSpineCanvas() {
-  if (spineRuntime.canvas) return spineRuntime.canvas;
+function ensureThumbSpineCanvas() {
+  if (thumbSpine.canvas) return;
   var canvas = document.createElement('canvas');
-  canvas.style.width = '100%';
-  canvas.style.height = '100%';
-  canvas.style.display = 'block';
-  spineRuntime.canvas = canvas;
-  spineRuntime.app = new spine.SpineCanvas(canvas, {
+  canvas.width = 512; canvas.height = 512;
+  // Actually attached (off-screen) rather than a bare detached element -
+  // spine-webgl's own resize handling reads clientWidth/Height, which is
+  // always 0 on a detached canvas and was blanking the framebuffer.
+  canvas.style.cssText = 'position:fixed;left:-9999px;top:-9999px;width:512px;height:512px';
+  document.body.appendChild(canvas);
+  thumbSpine.canvas = canvas;
+  thumbSpine.app = new spine.SpineCanvas(canvas, {
     app: {
       update: function (sc, delta) {
-        if (!spineRuntime.skeleton || !spineRuntime.animationState) return;
-        spineRuntime.animationState.update(delta);
-        spineRuntime.animationState.apply(spineRuntime.skeleton);
-        spineRuntime.skeleton.updateWorldTransform();
+        thumbSpine.registry.forEach(function (r) {
+          r.animationState.update(delta);
+          r.animationState.apply(r.skeleton);
+          r.skeleton.updateWorldTransform();
+        });
       },
       render: function (sc) {
-        var renderer = sc.renderer;
-        renderer.resize(spine.ResizeMode.Expand);
-        var gl = sc.context.gl;
-        gl.clearColor(0, 0, 0, 0);
-        gl.clear(gl.COLOR_BUFFER_BIT);
-        if (!spineRuntime.skeleton) return;
-        renderer.begin();
-        renderer.drawSkeleton(spineRuntime.skeleton, true);
-        renderer.end();
+        // no renderer.resize() here on purpose: this canvas is never
+        // attached with real layout size in the way ResizeMode.Expand
+        // expects, so leave it at the fixed size set above.
+        var renderer = sc.renderer, gl = sc.context.gl;
+        thumbSpine.registry.forEach(function (r) {
+          gl.clearColor(0, 0, 0, 0);
+          gl.clear(gl.COLOR_BUFFER_BIT);
+          renderer.begin();
+          renderer.drawSkeleton(r.skeleton, true);
+          renderer.end();
+          r.ctx2d.clearRect(0, 0, r.ctx2d.canvas.width, r.ctx2d.canvas.height);
+          r.ctx2d.drawImage(canvas, 0, 0, r.ctx2d.canvas.width, r.ctx2d.canvas.height);
+        });
       }
     }
   });
-  return canvas;
 }
 
-// spineSpec = character.spine ({skeleton, atlas, skin, animations, defaultAnimation}).
-// Returns a Promise resolving once spineRuntime.skeleton/animationState point at
-// this character, on the given (already-in-DOM) canvas' asset manager.
-function loadSpineCharacter(spineSpec, baseUrl) {
-  ensureSpineCanvas();
-  var am = spineRuntime.app.assetManager;
+function joinRelative(baseUrl, path) {
+  // baseUrl is like '../' (page-relative); manifest paths are already
+  // repo-root-relative ("characters/xxx/..."), same convention Clip uses.
+  return baseUrl + path;
+}
+
+// Loads (or reuses cached) skeleton data for spineSpec and registers a
+// live-playing instance under `key`, drawing into ctx2d every frame.
+// Replaces any existing entry with the same key first (used for the detail
+// panel, which shows one character at a time under key 'detail').
+function registerSpine(key, spineSpec, baseUrl, ctx2d) {
+  ensureThumbSpineCanvas();
+  thumbSpine.registry = thumbSpine.registry.filter(function (r) { return r.key !== key; });
   var skeletonUrl = joinRelative(baseUrl, spineSpec.skeleton);
   var atlasUrl = joinRelative(baseUrl, spineSpec.atlas);
+  var am = thumbSpine.app.assetManager;
 
-  function build() {
-    var cached = spineDataCache[skeletonUrl];
-    if (cached) return cached;
-    var atlas = am.require(atlasUrl);
-    var atlasLoader = new spine.AtlasAttachmentLoader(atlas);
-    var skeletonJson = new spine.SkeletonJson(atlasLoader);
-    var skeletonData = skeletonJson.readSkeletonData(am.require(skeletonUrl));
-    spineDataCache[skeletonUrl] = skeletonData;
-    return skeletonData;
-  }
-
-  if (spineDataCache[skeletonUrl]) {
-    setupSkeleton(spineDataCache[skeletonUrl]);
-    return Promise.resolve();
-  }
-  am.loadTextureAtlas(atlasUrl);
-  am.loadJson(skeletonUrl);
-  return new Promise(function (resolve) {
-    (function poll() {
-      if (am.isLoadingComplete()) { setupSkeleton(build()); resolve(); }
-      else requestAnimationFrame(poll);
-    })();
-  });
-
-  function setupSkeleton(skeletonData) {
+  function add(skeletonData) {
     var skeleton = new spine.Skeleton(skeletonData);
     if (spineSpec.skin) {
       var combined = new spine.Skin('combined');
@@ -549,15 +554,37 @@ function loadSpineCharacter(spineSpec, baseUrl) {
     skeleton.setSlotsToSetupPose();
     var animationState = new spine.AnimationState(new spine.AnimationStateData(skeletonData));
     animationState.setAnimation(0, spineSpec.defaultAnimation || spineSpec.animations[0], true);
-    spineRuntime.skeleton = skeleton;
-    spineRuntime.animationState = animationState;
+    thumbSpine.registry.push({ key: key, skeleton: skeleton, animationState: animationState, ctx2d: ctx2d });
+  }
+
+  if (spineDataCache[skeletonUrl]) {
+    add(spineDataCache[skeletonUrl]);
+  } else {
+    am.loadTextureAtlas(atlasUrl);
+    am.loadJson(skeletonUrl);
+    (function poll() {
+      if (am.isLoadingComplete()) {
+        var atlas = am.require(atlasUrl);
+        var skeletonJson = new spine.SkeletonJson(new spine.AtlasAttachmentLoader(atlas));
+        var skeletonData = skeletonJson.readSkeletonData(am.require(skeletonUrl));
+        spineDataCache[skeletonUrl] = skeletonData;
+        add(skeletonData);
+      } else {
+        requestAnimationFrame(poll);
+      }
+    })();
   }
 }
 
-function joinRelative(baseUrl, path) {
-  // baseUrl is like '../' (page-relative); manifest paths are already
-  // repo-root-relative ("characters/xxx/..."), same convention Clip uses.
-  return baseUrl + path;
+function findSpineEntry(key) {
+  return thumbSpine.registry.filter(function (r) { return r.key === key; })[0] || null;
+}
+
+// Grid-card preview: a small 2D <canvas>, kept live by the shared renderer.
+function createSpineThumb(character, baseUrl) {
+  var canvas = el('canvas', { width: String(THUMB * DPR), height: String(THUMB * DPR) });
+  registerSpine('grid:' + character.id, character.spine, baseUrl, canvas.getContext('2d'));
+  return canvas;
 }
 
 /* ── 상세 패널 ─────────────────────────────────────────────────────── */
@@ -579,6 +606,7 @@ function selectCharacter(character) {
 function closeDetail() {
   els.detail.classList.remove('open');
   els.scrim.classList.remove('on');
+  thumbSpine.registry = thumbSpine.registry.filter(function (r) { return r.key !== 'detail'; });
 }
 els.scrim.addEventListener('click', closeDetail);
 
@@ -592,15 +620,16 @@ function renderDetail() {
   if (isSpine) {
     drawStage = function () {}; // spine drives its own render loop, not the grid's tick()
     state.anim = null;
-    var spineCanvas = ensureSpineCanvas();
-    stage = el('div', { class: 'stage', 'data-bg': state.bg }, [spineCanvas]);
-    loadSpineCharacter(c.spine, lib.baseUrl);
+    var detailCanvas = el('canvas', { width: '640', height: '480' });
+    stage = el('div', { class: 'stage', 'data-bg': state.bg }, [detailCanvas]);
+    registerSpine('detail', c.spine, lib.baseUrl, detailCanvas.getContext('2d'));
 
     animTabs = el('div', { class: 'seg' }, c.spine.animations.map(function (n) {
       var btn = el('button', {
         type: 'button', 'aria-pressed': String(n === (c.spine.defaultAnimation || c.spine.animations[0])),
         onclick: function () {
-          if (spineRuntime.animationState) spineRuntime.animationState.setAnimation(0, n, true);
+          var entry = findSpineEntry('detail');
+          if (entry) entry.animationState.setAnimation(0, n, true);
           Array.prototype.forEach.call(animTabs.children, function (b) {
             b.setAttribute('aria-pressed', String(b === btn));
           });

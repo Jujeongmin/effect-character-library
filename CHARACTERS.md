@@ -215,12 +215,23 @@ touch 하나 더). 리깅 없이 상태별로 초상화만 바꿔치기하는 �
 - `skin`은 스켈레톤 데이터 안에 색상/부위별로 나뉜 스킨이 여러 개 있을 때
   (`default` + `<id>-0/1/2/3` 식) 그중 하나를 고르는 것 — `default` 스킨과
   합쳐서(`Skin.addSkin`) 적용한다. 없으면 생략.
-- 지금 들어있는 건 `neko_boy_casual` 하나 (`character/10200000` 원본) —
-  머리카락 아틀라스가 이 export엔 빠져있어서 대머리로 보인다, 원본 게임에서
-  헤어를 별도 파츠로 합치는 구조로 추정.
+- 지금 들어있는 건 5개 — `neko_boy_casual`(`character/10200000`, 머리카락
+  아틀라스가 이 export엔 빠져있어서 대머리로 보임, 원본 게임에서 헤어를
+  별도 파츠로 합치는 구조로 추정), `pet_black_cat`/`pet_roundy`/
+  `pet_valkyrie`/`pet_little_fenrir`(`character/09_펫`, 이쪽은 스킨이
+  하나뿐이라 멀쩡하게 다 보인다).
 - spine-webgl 런타임은 CDN에서 그때그때 받아온다(`characters/index.html`
   상단 `<script>` 태그) — 이 페이지는 GitHub Pages 정적 사이트라 Artifact
   CSP 제한이 없어서 어떤 CDN이든 자유롭게 쓸 수 있다.
+- `hasAnimation()` 판정에도 포함되고(`애니메이션 있음` 칩), 그리드
+  카드에도 정지 썸네일 대신 idle이 실제로 재생된다. WebGL 컨텍스트를
+  캐릭터 개수만큼 만들면(카드 하나당 하나씩) 이 환경에서 불안정하게
+  깨졌다(컨텍스트 몇 개 넘어가면 서로 검은 화면으로 밀어냄) — 그래서
+  숨겨진 캔버스 하나에 전부 순서대로 그린 다음 각자의 눈에 보이는
+  2D 캔버스로 복사하는 식으로 통일했다(`characters/index.html` 의
+  `registerSpine`/`ensureThumbSpineCanvas`). 스펙 늘어나서 캐릭터가
+  많아지면 이 멀티플렉싱 방식을 계속 써야 한다 — 컨텍스트 여러 개로
+  되돌리면 다시 깨진다.
 
 ## 로더 (`character-loader.js`)
 

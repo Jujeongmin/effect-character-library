@@ -162,6 +162,18 @@
         "default": "성장단계 1/3",
         "2": "성장단계 2/3",
         "3": "성장단계 3/3"
+      },
+      "spine": {
+        "skeleton": "characters/animal/pet_black_cat.spine/skeleton.json",
+        "atlas": "characters/animal/pet_black_cat.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "BattleStart",
+          "Idle",
+          "Interaction",
+          "Special",
+          "BattleEnd"
+        ]
       }
     },
     {
@@ -911,6 +923,18 @@
         "default": "성장단계 1/3",
         "2": "성장단계 2/3",
         "3": "성장단계 3/3"
+      },
+      "spine": {
+        "skeleton": "characters/beast/pet_little_fenrir.spine/skeleton.json",
+        "atlas": "characters/beast/pet_little_fenrir.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "BattleStart",
+          "Idle",
+          "Interaction",
+          "Special",
+          "BattleEnd"
+        ]
       }
     },
     {
@@ -7891,6 +7915,18 @@
         "default": "성장단계 1/3",
         "2": "성장단계 2/3",
         "3": "성장단계 3/3"
+      },
+      "spine": {
+        "skeleton": "characters/humanoid/pet_valkyrie.spine/skeleton.json",
+        "atlas": "characters/humanoid/pet_valkyrie.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "BattleStart",
+          "Idle",
+          "Interaction",
+          "Special",
+          "BattleEnd"
+        ]
       }
     },
     {
@@ -9605,6 +9641,18 @@
         "default": "성장단계 1/3",
         "2": "성장단계 2/3",
         "3": "성장단계 3/3"
+      },
+      "spine": {
+        "skeleton": "characters/monster/pet_roundy.spine/skeleton.json",
+        "atlas": "characters/monster/pet_roundy.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "BattleStart",
+          "Idle",
+          "Interaction",
+          "Special",
+          "BattleEnd"
+        ]
       }
     },
     {
