@@ -7263,7 +7263,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "궁수 스킨"
+      "note": "궁수 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/archer_cherryblossom.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/archer_cherryblossom.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100033). 바이너리(.skel) 내보내기."
+      }
     },
     {
       "id": "archer_goblin",
@@ -7277,7 +7298,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "궁수 스킨"
+      "note": "궁수 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/archer_goblin.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/archer_goblin.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100032). 바이너리(.skel) 내보내기."
+      }
     },
     {
       "id": "archer_summerbeach",
@@ -7291,7 +7333,28 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "note": "궁수 스킨"
+      "note": "궁수 스킨",
+      "spine": {
+        "skeleton": "characters/humanoid/archer_summerbeach.spine/skeleton.skel.bytes",
+        "atlas": "characters/humanoid/archer_summerbeach.spine/atlas.txt",
+        "defaultAnimation": "Idle",
+        "animations": [
+          "Attack",
+          "Attack_02",
+          "Attack_03",
+          "Casting",
+          "CriticalAttack",
+          "Die",
+          "Hit",
+          "Idle",
+          "Run",
+          "Touch",
+          "TurnOver_01",
+          "TurnOver_02",
+          "Win"
+        ],
+        "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터 (character/01_character_ani/40100034). 바이너리(.skel) 내보내기."
+      }
     },
     {
       "id": "balder",
