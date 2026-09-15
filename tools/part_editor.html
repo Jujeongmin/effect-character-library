@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Spine 파츠 에디터</title>
+<script src="https://unpkg.com/@esotericsoftware/spine-webgl@4.1.24/dist/iife/spine-webgl.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 13px/1.4 -apple-system, "Malgun Gothic", sans-serif; background: #16161c; color: #ddd; display: flex; height: 100vh; overflow: hidden; }
+  #left { width: 620px; flex: none; display: flex; flex-direction: column; border-right: 1px solid #333; }
+  #topbar { display: flex; gap: 8px; align-items: center; padding: 8px; background: #1e1e26; border-bottom: 1px solid #333; flex-wrap: wrap; }
+  #topbar select, #topbar button, #topbar input { background: #2a2a33; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 4px 8px; font: inherit; }
+  #topbar button { cursor: pointer; }
+  #topbar button.primary { background: #5b6fd8; border-color: #5b6fd8; color: #fff; font-weight: 600; }
+  #status { margin-left: auto; color: #9a9; font-size: 12px; white-space: nowrap; }
+  #canvases { flex: 1; display: flex; position: relative; background: #0d0d12; }
+  #spineCanvas, #refImg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; }
+  #refImg { opacity: var(--ref-opacity, 0); pointer-events: none; }
+  #refCtl { position: absolute; bottom: 8px; left: 8px; background: #000a; padding: 6px 10px; border-radius: 6px; display: flex; align-items: center; gap: 6px; }
+  #animRow { display: flex; gap: 4px; flex-wrap: wrap; padding: 8px; background: #1e1e26; border-top: 1px solid #333; }
+  #animRow button { background: #2a2a33; color: #bbb; border: 1px solid #444; border-radius: 4px; padding: 4px 8px; cursor: pointer; font-size: 12px; }
+  #animRow button.active { background: #5b6fd8; border-color: #5b6fd8; color: #fff; }
+  #right { flex: 1; display: flex; flex-direction: column; min-width: 380px; }
+  #slotListWrap { flex: none; max-height: 40%; overflow-y: auto; border-bottom: 1px solid #333; }
+  #slotList { display: flex; flex-direction: column; }
+  .slotRow { display: flex; align-items: center; gap: 6px; padding: 5px 8px; border-bottom: 1px solid #26262e; cursor: pointer; }
+  .slotRow:hover { background: #22222b; }
+  .slotRow.active { background: #2a2f4a; }
+  .slotRow input[type=checkbox] { margin: 0; }
+  .slotRow .nm { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .slotRow .bone { color: #888; font-size: 11px; }
+  #addSlotRow { display: flex; gap: 4px; padding: 6px 8px; background: #1a1a20; }
+  #addSlotRow input { flex: 1; min-width: 0; background: #2a2a33; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 4px 6px; font: inherit; }
+  #editor { flex: 1; overflow-y: auto; padding: 12px; }
+  #editor h3 { margin: 0 0 10px; font-size: 14px; color: #fff; }
+  .field { margin-bottom: 12px; }
+  .field label { display: flex; justify-content: space-between; font-size: 12px; color: #aaa; margin-bottom: 3px; }
+  .field .row { display: flex; gap: 6px; align-items: center; }
+  .field input[type=range] { flex: 1; }
+  .field input[type=number] { width: 64px; background: #2a2a33; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 3px 5px; font: inherit; }
+  .field input[type=text] { width: 100%; background: #2a2a33; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 4px 6px; font: inherit; }
+  .field select { width: 100%; background: #2a2a33; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 4px 6px; font: inherit; }
+  .hint { color: #777; font-size: 11px; margin-top: 12px; line-height: 1.5; }
+  .danger { color: #e88; cursor: pointer; text-decoration: underline; font-size: 12px; }
+  #empty { padding: 24px; color: #888; text-align: center; }
+</style>
+</head>
+<body>
+<div id="left">
+  <div id="topbar">
+    <select id="charSelect"></select>
+    <button id="reloadBtn" title="파일 다시 읽기 (저장 후 새로고침)">↻ 다시읽기</button>
+    <button id="saveBtn" class="primary">💾 skeleton.json 저장</button>
+    <span id="status"></span>
+  </div>
+  <div id="canvases">
+    <canvas id="spineCanvas"></canvas>
+    <img id="refImg">
+    <div id="refCtl">
+      <span>참고그림</span>
+      <input type="range" id="refOpacity" min="0" max="100" value="0" style="width:100px">
+    </div>
+  </div>
+  <div id="animRow"></div>
+</div>
+<div id="right">
+  <div id="slotListWrap">
+    <div id="slotList"></div>
+    <div id="addSlotRow">
+      <input id="newSlotName" placeholder="새 슬롯 이름 (예: hair_07)">
+      <input id="newSlotRegion" placeholder="atlas 리전 이름 (예: part_hair_02)">
+      <input id="newSlotBone" placeholder="본 (기본 head)" style="max-width:90px">
+      <button id="addSlotBtn">추가</button>
+    </div>
+  </div>
+  <div id="editor"><div id="empty">왼쪽 목록에서 슬롯을 선택하세요.<br>같은 이름의 파츠를 여러 개 추가해 겹쳐 쓸 수 있습니다.</div></div>
+</div>
+
+<script>
+'use strict';
+const qs = new URLSearchParams(location.search);
+const state = {
+  charId: qs.get('char') || 'neko_boy_casual',
+  skeletonData: null, skeleton: null, animState: null, atlas: null,
+  json: null, // raw loaded skeleton.json object - mutated in place, saved verbatim
+  skinName: null, skin: null,
+  base: null, // e.g. 'characters/humanoid/neko_boy_casual.spine/'
+  activeSlot: null,
+  canvas: null, spineApp: null, camera: null,
+  animName: 'Idle',
+};
+
+const els = {
+  charSelect: document.getElementById('charSelect'),
+  reloadBtn: document.getElementById('reloadBtn'),
+  saveBtn: document.getElementById('saveBtn'),
+  status: document.getElementById('status'),
+  refImg: document.getElementById('refImg'),
+  refOpacity: document.getElementById('refOpacity'),
+  animRow: document.getElementById('animRow'),
+  slotList: document.getElementById('slotList'),
+  editor: document.getElementById('editor'),
+  newSlotName: document.getElementById('newSlotName'),
+  newSlotRegion: document.getElementById('newSlotRegion'),
+  newSlotBone: document.getElementById('newSlotBone'),
+  addSlotBtn: document.getElementById('addSlotBtn'),
+};
+
+function setStatus(msg, ok) {
+  els.status.textContent = msg;
+  els.status.style.color = ok === false ? '#e88' : (ok ? '#9a9' : '#999');
+}
+
+els.refOpacity.addEventListener('input', () => {
+  document.getElementById('canvases').style.setProperty('--ref-opacity', els.refOpacity.value / 100);
+});
+
+// ---- load the character list from ../characters.json ----
+async function loadCharList() {
+  const m = await fetch('../characters.json').then(r => r.json());
+  const withSpine = m.assets.filter(a => a.spine && /\.json$/i.test(a.spine.skeleton));
+  els.charSelect.innerHTML = withSpine.map(a =>
+    `<option value="${a.id}" ${a.id === state.charId ? 'selected' : ''}>${a.id}</option>`
+  ).join('');
+  if (!withSpine.some(a => a.id === state.charId) && withSpine[0]) state.charId = withSpine[0].id;
+}
+
+els.charSelect.addEventListener('change', () => {
+  state.charId = els.charSelect.value;
+  history.replaceState(null, '', '?char=' + state.charId);
+  loadCharacter();
+});
+els.reloadBtn.addEventListener('click', loadCharacter);
+
+// ---- spine-webgl setup (continuous render loop so the WebGL buffer never goes blank) ----
+function ensureSpineApp() {
+  if (state.spineApp) return;
+  const canvas = document.getElementById('spineCanvas');
+  canvas.width = 900; canvas.height = 900;
+  state.canvas = canvas;
+  state.spineApp = new spine.SpineCanvas(canvas, {
+    app: {
+      loadAssets() {},
+      initialize() {},
+      update(sc, delta) {
+        if (state.animState) { state.animState.update(delta); state.animState.apply(state.skeleton); state.skeleton.updateWorldTransform(); }
+      },
+      render(sc) {
+        if (!state.skeleton) return;
+        const r = sc.renderer, gl = sc.context.gl;
+        const off = new spine.Vector2(), size = new spine.Vector2();
+        state.skeleton.getBounds(off, size, []);
+        if (size.x <= 0 || size.y <= 0) return;
+        r.camera.position.x = off.x + size.x / 2;
+        r.camera.position.y = off.y + size.y / 2;
+        r.camera.viewportWidth = canvas.width; r.camera.viewportHeight = canvas.height;
+        r.camera.zoom = Math.max(size.x / canvas.width, size.y / canvas.height) * 1.25;
+        r.camera.update();
+        state.camera = r.camera;
+        gl.clearColor(0.05, 0.05, 0.07, 1); gl.clear(gl.COLOR_BUFFER_BIT);
+        r.begin(); r.drawSkeleton(state.skeleton, true); r.end();
+      },
+      error(sc, e) { setStatus('렌더 오류: ' + e, false); }
+    }
+  });
+}
+
+// ---- load one character's spine data ----
+async function loadCharacter() {
+  setStatus('불러오는 중…');
+  els.activeSlot = null;
+  try {
+    const m = await fetch('../characters.json').then(r => r.json());
+    const a = m.assets.find(x => x.id === state.charId);
+    if (!a || !a.spine) throw new Error('spine 데이터 없는 캐릭터');
+    const skeletonPath = '../' + a.spine.skeleton;
+    const atlasPath = '../' + a.spine.atlas;
+    state.base = a.spine.skeleton.replace(/[^/]*$/, '');
+    state.skeletonPath = skeletonPath;
+    els.refImg.src = a.file ? ('../' + a.file) : '';
+
+    const atlasText = await fetch(atlasPath + '?t=' + Date.now()).then(r => r.text());
+    const json = await fetch(skeletonPath + '?t=' + Date.now()).then(r => r.json());
+    state.json = json;
+
+    ensureSpineApp();
+    const atlas = new spine.TextureAtlas(atlasText);
+    await Promise.all(atlas.pages.map(page => new Promise((res, rej) => {
+      const img = new Image();
+      img.onload = () => { page.setTexture(new spine.GLTexture(state.spineApp.context, img)); res(); };
+      img.onerror = rej;
+      img.src = '../' + state.base + page.name + '?t=' + Date.now();
+    })));
+    state.atlas = atlas;
+    const loader = new spine.AtlasAttachmentLoader(atlas);
+    state.skeletonData = new spine.SkeletonJson(loader).readSkeletonData(json);
+    state.skeleton = new spine.Skeleton(state.skeletonData);
+    state.skinName = a.spine.skin || (json.skins[0] && json.skins[0].name) || 'default';
+    state.rawSkin = state.json.skins.find(s => s.name === state.skinName) || state.json.skins[0];
+    if (!state.rawSkin.attachments) state.rawSkin.attachments = {};
+    const anims = json.animations ? Object.keys(json.animations) : [];
+    state.animName = anims.includes(a.spine.defaultAnimation) ? a.spine.defaultAnimation : (anims[0] || null);
+    rebuildSkeleton();
+
+    buildAnimButtons(anims);
+    buildSlotList();
+    setStatus('불러옴 — ' + state.charId, true);
+  } catch (e) {
+    setStatus('실패: ' + e.message, false);
+    console.error(e);
+  }
+}
+
+// Re-parses the whole skeleton from state.json every time an attachment field
+// changes. spine's SkeletonJson does a one-time parse into its own Attachment
+// objects, so mutating our plain JSON afterward has no effect on what's
+// already rendering - re-parsing is the simplest way to keep them in sync,
+// and it's cheap enough for a single character at slider-drag rates.
+function rebuildSkeleton() {
+  const loader = new spine.AtlasAttachmentLoader(state.atlas);
+  state.skeletonData = new spine.SkeletonJson(loader).readSkeletonData(state.json);
+  state.skeleton = new spine.Skeleton(state.skeletonData);
+  const combined = new spine.Skin('editor-combined');
+  const def = state.skeletonData.findSkin('default');
+  if (def) combined.addSkin(def);
+  const named = state.skeletonData.findSkin(state.skinName);
+  if (named && named !== def) combined.addSkin(named);
+  state.skeleton.setSkin(combined);
+  state.skeleton.setSlotsToSetupPose();
+  state.animState = new spine.AnimationState(new spine.AnimationStateData(state.skeletonData));
+  if (state.animName && state.skeletonData.findAnimation(state.animName)) {
+    state.animState.setAnimation(0, state.animName, true);
+  }
+}
+
+function buildAnimButtons(names) {
+  els.animRow.innerHTML = '';
+  names.forEach(n => {
+    const b = document.createElement('button');
+    b.textContent = n;
+    b.className = n === state.animName ? 'active' : '';
+    b.onclick = () => {
+      state.animName = n;
+      state.animState.setAnimation(0, n, true);
+      [...els.animRow.children].forEach(c => c.classList.toggle('active', c === b));
+    };
+    els.animRow.appendChild(b);
+  });
+}
+
+// ---- slot list (every slot in the currently-applied skin) ----
+function slotAttachmentEntry(slotName) {
+  // returns { key, data } for rawSkin.attachments[slotName][key], or null.
+  // Reads the plain JSON we loaded/save, not spine's parsed runtime Skin -
+  // those are different objects (see rebuildSkeleton).
+  if (!state.rawSkin) return null;
+  const bucket = state.rawSkin.attachments[slotName];
+  if (!bucket) return null;
+  const key = Object.keys(bucket)[0];
+  return key ? { key, data: bucket[key] } : null;
+}
+
+function buildSlotList() {
+  els.slotList.innerHTML = '';
+  const slotDefs = state.json.slots; // [{name, bone, attachment?, ...}]
+  slotDefs.forEach(sd => {
+    const entry = slotAttachmentEntry(sd.name);
+    const row = document.createElement('div');
+    row.className = 'slotRow' + (sd.name === state.activeSlot ? ' active' : '');
+    row.dataset.slot = sd.name;
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = !!sd.attachment; // has a visible default attachment
+    cb.title = '보이기/숨기기';
+    cb.onclick = (e) => { e.stopPropagation(); toggleSlotVisible(sd.name, cb.checked); };
+    row.appendChild(cb);
+    const nm = document.createElement('span');
+    nm.className = 'nm';
+    nm.textContent = sd.name;
+    row.appendChild(nm);
+    const bone = document.createElement('span');
+    bone.className = 'bone';
+    bone.textContent = sd.bone || '';
+    row.appendChild(bone);
+    row.onclick = () => selectSlot(sd.name);
+    els.slotList.appendChild(row);
+  });
+}
+
+function toggleSlotVisible(slotName, visible) {
+  const sd = state.json.slots.find(s => s.name === slotName);
+  const entry = slotAttachmentEntry(slotName);
+  if (!entry) return;
+  sd.attachment = visible ? entry.key : null;
+  rebuildSkeleton();
+}
+
+function selectSlot(slotName) {
+  state.activeSlot = slotName;
+  [...els.slotList.children].forEach(r => r.classList.toggle('active', r.dataset.slot === slotName));
+  renderEditor();
+}
+
+// ---- right-side editor for the selected slot's attachment (x, y, rotation, scale) ----
+function renderEditor() {
+  const slotName = state.activeSlot;
+  if (!slotName) { els.editor.innerHTML = '<div id="empty">왼쪽 목록에서 슬롯을 선택하세요.</div>'; return; }
+  const entry = slotAttachmentEntry(slotName);
+  if (!entry) {
+    els.editor.innerHTML = `<h3>${slotName}</h3><div class="hint">이 슬롯엔 붙은 모양이 없습니다 (attachment 없음).</div>`;
+    return;
+  }
+  const att = entry.data; // {name, x, y, rotation, width, height, scaleX?, scaleY?}
+  att.scaleX = att.scaleX ?? 1; att.scaleY = att.scaleY ?? 1;
+  const baseW = att.width / att.scaleX, baseH = att.height / att.scaleY;
+
+  els.editor.innerHTML = `
+    <h3>${slotName}</h3>
+    <div class="field">
+      <label>atlas 리전 (region.name)</label>
+      <input type="text" id="f_region" value="${att.name}">
+    </div>
+    <div class="field">
+      <label><span>X</span><span id="v_x">${att.x.toFixed(1)}</span></label>
+      <div class="row"><input type="range" id="s_x" min="-250" max="250" step="0.5" value="${att.x}">
+        <input type="number" id="n_x" value="${att.x.toFixed(1)}" step="0.5"></div>
+    </div>
+    <div class="field">
+      <label><span>Y</span><span id="v_y">${att.y.toFixed(1)}</span></label>
+      <div class="row"><input type="range" id="s_y" min="-250" max="250" step="0.5" value="${att.y}">
+        <input type="number" id="n_y" value="${att.y.toFixed(1)}" step="0.5"></div>
+    </div>
+    <div class="field">
+      <label><span>회전 (rotation)</span><span id="v_r">${att.rotation.toFixed(1)}°</span></label>
+      <div class="row"><input type="range" id="s_r" min="-180" max="180" step="0.5" value="${att.rotation}">
+        <input type="number" id="n_r" value="${att.rotation.toFixed(1)}" step="0.5"></div>
+    </div>
+    <div class="field">
+      <label><span>크기 (scale)</span><span id="v_s">${att.scaleX.toFixed(2)}×</span></label>
+      <div class="row"><input type="range" id="s_s" min="0.2" max="3" step="0.01" value="${att.scaleX}">
+        <input type="number" id="n_s" value="${att.scaleX.toFixed(2)}" step="0.01"></div>
+    </div>
+    <div class="field">
+      <label>본 (bone)</label>
+      <input type="text" id="f_bone" value="${state.json.slots.find(s=>s.name===slotName).bone}">
+    </div>
+    <div class="hint">
+      X: 0에 가까울수록 목/턱 쪽, 커질수록 정수리 쪥으로 올라갑니다 (head 본 기준).<br>
+      Y: 음수는 뒤통수 쪽, 양수는 얼굴 앞쪽입니다.<br>
+      atlas 리전을 바꾸면(예: part_hair_02 → part_hair_05) 같은 슬롯에서 다른 그림으로 바로 바꿔볼 수 있습니다.
+    </div>
+    <div class="danger" id="deleteSlot">이 슬롯 삭제</div>
+  `;
+
+  function updateAttachment() {
+    att.x = parseFloat(document.getElementById('n_x').value) || 0;
+    att.y = parseFloat(document.getElementById('n_y').value) || 0;
+    att.rotation = parseFloat(document.getElementById('n_r').value) || 0;
+    const s = parseFloat(document.getElementById('n_s').value) || 1;
+    att.scaleX = s; att.scaleY = s;
+    att.width = baseW * s; att.height = baseH * s;
+    att.name = document.getElementById('f_region').value.trim() || att.name;
+    const sd = state.json.slots.find(x => x.name === slotName);
+    const newBone = document.getElementById('f_bone').value.trim();
+    if (newBone && newBone !== sd.bone) sd.bone = newBone;
+    rebuildSkeleton();
+  }
+
+  function wire(pair, key, fmt) {
+    const [sliderId, numId] = pair;
+    const slider = document.getElementById(sliderId), num = document.getElementById(numId);
+    const label = document.getElementById('v_' + key);
+    const sync = (val) => {
+      slider.value = val; num.value = val;
+      if (label) label.textContent = fmt ? fmt(val) : val;
+    };
+    slider.addEventListener('input', () => { sync(slider.value); updateAttachment(); });
+    num.addEventListener('input', () => { sync(num.value); updateAttachment(); });
+  }
+  wire(['s_x', 'n_x'], 'x', v => (+v).toFixed(1));
+  wire(['s_y', 'n_y'], 'y', v => (+v).toFixed(1));
+  wire(['s_r', 'n_r'], 'r', v => (+v).toFixed(1) + '°');
+  wire(['s_s', 'n_s'], 's', v => (+v).toFixed(2) + '×');
+  document.getElementById('f_region').addEventListener('change', updateAttachment);
+  document.getElementById('f_bone').addEventListener('change', updateAttachment);
+  document.getElementById('deleteSlot').addEventListener('click', () => {
+    if (!confirm(slotName + ' 슬롯을 삭제할까요?')) return;
+    const i = state.json.slots.findIndex(s => s.name === slotName);
+    if (i !== -1) state.json.slots.splice(i, 1);
+    delete state.rawSkin.attachments[slotName];
+    state.activeSlot = null;
+    rebuildSkeleton();
+    buildSlotList();
+    renderEditor();
+  });
+}
+
+// ---- add a brand new slot ----
+els.addSlotBtn.addEventListener('click', () => {
+  const name = els.newSlotName.value.trim();
+  const region = els.newSlotRegion.value.trim();
+  const bone = els.newSlotBone.value.trim() || 'head';
+  if (!name || !region) { setStatus('슬롯 이름 + 리전 이름 둘 다 입력', false); return; }
+  if (state.json.slots.some(s => s.name === name)) { setStatus('이미 있는 슬롯 이름', false); return; }
+  state.json.slots.push({ name, bone, attachment: name });
+  state.rawSkin.attachments[name] = { [name]: { name: region, x: 0, y: 0, rotation: -76.78, width: 50, height: 50 } };
+  els.newSlotName.value = ''; els.newSlotRegion.value = '';
+  rebuildSkeleton();
+  buildSlotList();
+  selectSlot(name);
+});
+
+// ---- save skeleton.json back to disk via the dev server's PUT support ----
+els.saveBtn.addEventListener('click', async () => {
+  setStatus('저장 중…');
+  try {
+    const body = JSON.stringify(state.json);
+    const r = await fetch(state.skeletonPath, { method: 'PUT', body });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    setStatus('저장됨 ✓ (node tools/stamp_hashes.js 다시 돌려야 캐시 안 꼬임)', true);
+  } catch (e) {
+    setStatus('저장 실패: ' + e.message + ' — PUT 지원하는 로컬 서버로 열었는지 확인', false);
+  }
+});
+
+(async function start() {
+  await loadCharList();
+  await loadCharacter();
+})();
+</script>
+</body>
+</html>
