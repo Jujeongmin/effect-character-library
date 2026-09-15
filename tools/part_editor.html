@@ -54,6 +54,7 @@
     <button id="reloadBtn" title="파일 다시 읽기 (저장 후 새로고침)">↻ 다시읽기</button>
     <button id="undoBtn" title="Ctrl+Z">↶ 되돌리기</button>
     <button id="redoBtn" title="Ctrl+Shift+Z / Ctrl+Y">↷ 다시실행</button>
+    <button id="pauseBtn" title="Space">⏸ 정지</button>
     <button id="saveBtn" class="primary">💾 skeleton.json 저장</button>
     <span id="status"></span>
   </div>
@@ -95,6 +96,7 @@ const state = {
   activeSlot: null,
   canvas: null, spineApp: null, camera: null,
   animName: 'Idle',
+  playing: true,
 };
 
 const els = {
@@ -112,6 +114,7 @@ const els = {
   newSlotBone: document.getElementById('newSlotBone'),
   addSlotBtn: document.getElementById('addSlotBtn'),
   undoBtn: document.getElementById('undoBtn'),
+  pauseBtn: document.getElementById('pauseBtn'),
   redoBtn: document.getElementById('redoBtn'),
   onlyExtraChk: document.getElementById('onlyExtraChk'),
 };
@@ -166,7 +169,30 @@ function updateUndoButtons() {
 }
 els.undoBtn.addEventListener('click', undo);
 els.redoBtn.addEventListener('click', redo);
+
+// ---- pause/play the animation - useful for holding a frame steady while
+// dragging sliders, instead of fighting a moving target ----
+function setPlaying(playing) {
+  state.playing = playing;
+  els.pauseBtn.textContent = playing ? '⏸ 정지' : '▶ 재생';
+  els.pauseBtn.classList.toggle('primary', !playing);
+}
+function togglePlaying() { setPlaying(!state.playing); }
+els.pauseBtn.addEventListener('click', togglePlaying);
+
+function isTypingTarget(el) {
+  // BUTTON is included too: a focused <button> already activates on Space
+  // natively, so our own handler would double-toggle (once from the click
+  // that fires, once from us) if we didn't skip it here.
+  return el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT' || el.tagName === 'BUTTON' || el.isContentEditable);
+}
+
 window.addEventListener('keydown', (e) => {
+  if (e.code === 'Space' && !isTypingTarget(document.activeElement)) {
+    e.preventDefault();
+    togglePlaying();
+    return;
+  }
   if (!(e.ctrlKey || e.metaKey)) return;
   const k = e.key.toLowerCase();
   if (k === 'z' && e.shiftKey) { e.preventDefault(); redo(); }
@@ -210,7 +236,11 @@ function ensureSpineApp() {
       loadAssets() {},
       initialize() {},
       update(sc, delta) {
-        if (state.animState) { state.animState.update(delta); state.animState.apply(state.skeleton); state.skeleton.updateWorldTransform(); }
+        if (state.animState) {
+          if (state.playing) state.animState.update(delta);
+          state.animState.apply(state.skeleton);
+          state.skeleton.updateWorldTransform();
+        }
       },
       render(sc) {
         if (!state.skeleton) return;
@@ -287,6 +317,11 @@ async function loadCharacter() {
 // already rendering - re-parsing is the simplest way to keep them in sync,
 // and it's cheap enough for a single character at slider-drag rates.
 function rebuildSkeleton() {
+  // Preserve the current playhead across a rebuild - otherwise every slider
+  // tweak would snap a paused pose back to frame 0 of the animation.
+  const prevTrack = state.animState && state.animState.tracks[0];
+  const prevTime = prevTrack ? prevTrack.trackTime : 0;
+
   const loader = new spine.AtlasAttachmentLoader(state.atlas);
   state.skeletonData = new spine.SkeletonJson(loader).readSkeletonData(state.json);
   state.skeleton = new spine.Skeleton(state.skeletonData);
@@ -300,6 +335,9 @@ function rebuildSkeleton() {
   state.animState = new spine.AnimationState(new spine.AnimationStateData(state.skeletonData));
   if (state.animName && state.skeletonData.findAnimation(state.animName)) {
     state.animState.setAnimation(0, state.animName, true);
+    state.animState.tracks[0].trackTime = prevTime;
+    state.animState.apply(state.skeleton);
+    state.skeleton.updateWorldTransform();
   }
 }
 
