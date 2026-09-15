@@ -230,3 +230,17 @@ filter:Linear,Linear
 pma:false
 part_mouth
 bounds:0,0,19,5
+
+parts/ear_back.png
+size:32,50
+filter:Linear,Linear
+pma:false
+part_ear_back
+bounds:0,0,32,50
+
+parts/ear_front.png
+size:28,45
+filter:Linear,Linear
+pma:false
+part_ear_front
+bounds:0,0,28,45

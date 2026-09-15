@@ -3618,8 +3618,8 @@
           "TurnOver_02",
           "Win"
         ],
-        "note": "원본 게임사가 만든 진짜 Spine 4.1 리깅 데이터. 이 export엔 머리카락/눈/눈썹/입 아틀라스가 빠져있었는데, 원본 소스 폴더(10200000)에서 낱장 파츠(hair_brown_04/06, eye_red_01, eyebrow_01, mouth_01)를 찾아 head 본에 직접 붙였음 — 새 아틀라스 페이지 5장 + 슬롯 5개 추가 (characters/humanoid/neko_boy_casual.spine/parts/). 위치는 손으로 맞춘 값이라 다른 표정 스킨(-1/-2/-3)에는 안 맞을 수 있음.",
-        "hash": "da6c907349"
+        "note": "원본 게임사가 만든 진짜 Spine 4.1 리깅 데이터. 이 export엔 머리카락/눈/눈썹/입 아틀라스가 빠져있었는데, 원본 소스 폴더(10200000)에서 낱장 파츠(hair_brown_04/06, eye_red_01, eyebrow_01, mouth_01)를 찾아 head 본에 직접 붙였음 — 새 아틀라스 페이지 5장 + 슬롯 5개 추가 (characters/humanoid/neko_boy_casual.spine/parts/). 위치는 손으로 맞춘 값이라 다른 표정 스킨(-1/-2/-3)에는 안 맞을 수 있음. 고양이 귀(ear_back/ear_front)도 같은 방식으로 붙임.",
+        "hash": "95a06b0fd1"
       },
       "hash": "d81cc5bbd8"
     },
