@@ -77,7 +77,9 @@ def locate(web_dir, entry):
 
 def source_path(root, entry):
     """Absolute path of the original file this entry was built from."""
-    src = entry['source']
+    src = entry.get('source')   # absent in the published library manifest
+    if not src:
+        return None
     tag, _, rel = src.partition('/')
     base = SOURCE_ROOTS.get(tag)
     if not base:
@@ -93,10 +95,10 @@ def reference_reason(entry, real_bases):
     effects (auras, backgrounds) were exported on black at full size.
     """
     aid = entry['id']
-    src = entry['source']
-    ext = src.rsplit('.', 1)[-1].lower()
+    src = entry.get('source', '')   # absent in the published library manifest
+    ext = src.rsplit('.', 1)[-1].lower() if '.' in src else ''
 
-    if REF_DIR_RE.search(src):
+    if src and REF_DIR_RE.search(src):
         return 'sits in a 00_reference folder (third-party / gathered clips)'
     for marker in REFERENCE_MARKERS:
         if marker in aid:

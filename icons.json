@@ -1,0 +1,7383 @@
+{
+  "version": 1,
+  "defaultFps": 12,
+  "categories": {
+    "weapon": "무기(아이콘)",
+    "skill_icon": "스킬 아이콘",
+    "equipment_icon": "장비 아이콘"
+  },
+  "assets": [
+    {
+      "id": "equipment_icon_10100000",
+      "name": "10100000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10100000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c17f28d847"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10110000",
+      "name": "10110000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10110000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "68e6eda44e"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10111000",
+      "name": "10111000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10111000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "42919774b0"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10112000",
+      "name": "10112000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10112000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c2150d2f65"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10113000",
+      "name": "10113000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10113000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6b4237bcf3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10114000",
+      "name": "10114000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10114000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "692bbefe4e"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10120000",
+      "name": "10120000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10120000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6eb0fac988"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10121000",
+      "name": "10121000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10121000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "156577439c"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10122000",
+      "name": "10122000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10122000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c7c14b5ef3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10123000",
+      "name": "10123000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10123000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "55951c4174"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10124000",
+      "name": "10124000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10124000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3e587b6d97"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10130000",
+      "name": "10130000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10130000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3965d797ab"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10130001",
+      "name": "10130001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10130001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "39667373dd"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10131000",
+      "name": "10131000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10131000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "140973897d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10131001",
+      "name": "10131001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10131001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2175181b26"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10132000",
+      "name": "10132000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10132000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c703b0e2f2"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10132001",
+      "name": "10132001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10132001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "53cfaa2efc"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10133000",
+      "name": "10133000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10133000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "1643d8f2ad"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10133001",
+      "name": "10133001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10133001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "72e7a9c898"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10134000",
+      "name": "10134000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10134000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "88067912b2"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10134001",
+      "name": "10134001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10134001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "cede0c7db4"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10140000",
+      "name": "10140000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10140000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8428250aaf"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10140001",
+      "name": "10140001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10140001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a7a911e518"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10141000",
+      "name": "10141000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10141000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9f17cf4d50"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10141001",
+      "name": "10141001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10141001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8479b1d5ae"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10142000",
+      "name": "10142000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10142000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9cd644d5e3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10142001",
+      "name": "10142001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10142001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3e30ba6b01"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10143000",
+      "name": "10143000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10143000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e5a4512424"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10143001",
+      "name": "10143001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10143001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "310aeb4a4f"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10144000",
+      "name": "10144000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10144000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d612fb7aad"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10144001",
+      "name": "10144001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10144001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6c3278268f"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10150000",
+      "name": "10150000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10150000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c66db36b86"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10150001",
+      "name": "10150001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10150001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "bee5c7bd9c"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10151000",
+      "name": "10151000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10151000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "87d57e6ef6"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10151001",
+      "name": "10151001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10151001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "517a680a3e"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10152000",
+      "name": "10152000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10152000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8fbb76ec20"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10152001",
+      "name": "10152001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10152001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3a37c550e5"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10153000",
+      "name": "10153000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10153000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4c602b2f5d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10153001",
+      "name": "10153001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10153001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "bfcf9216b1"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10154000",
+      "name": "10154000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10154000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "86096d8d52"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10154001",
+      "name": "10154001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10154001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f7044b1add"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10155000",
+      "name": "10155000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10155000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a317c62f35"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10170000",
+      "name": "10170000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10170000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "13f6fcd333"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10171000",
+      "name": "10171000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10171000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "668685a8fe"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10172000",
+      "name": "10172000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10172000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "258a5e68a4"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10173000",
+      "name": "10173000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10173000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "75cd67b79b"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10174000",
+      "name": "10174000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10174000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b277a630be"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10180000",
+      "name": "10180000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10180000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "bceb38f996"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10181000",
+      "name": "10181000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10181000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "203bea9136"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10182000",
+      "name": "10182000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10182000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a2ee24e740"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10183000",
+      "name": "10183000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10183000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8e479b7bf7"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10184000",
+      "name": "10184000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10184000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0d5b62e520"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10200000",
+      "name": "10200000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10200000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f89bd99e77"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10210000",
+      "name": "10210000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10210000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d00fa6737f"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10211000",
+      "name": "10211000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10211000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "13cc85b52d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10212000",
+      "name": "10212000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10212000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "01a96ea78f"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10213000",
+      "name": "10213000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10213000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6500f8b872"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10214000",
+      "name": "10214000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10214000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7516208df6"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10220000",
+      "name": "10220000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10220000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "dd67de2d03"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10221000",
+      "name": "10221000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10221000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "cb5cf51783"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10222000",
+      "name": "10222000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10222000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "97e45c70aa"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10223000",
+      "name": "10223000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10223000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3cacfccc39"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10224000",
+      "name": "10224000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10224000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ecb0d893ad"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10230000",
+      "name": "10230000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10230000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "42982cda92"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10230001",
+      "name": "10230001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10230001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b78b5c0c04"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10231000",
+      "name": "10231000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10231000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "5c17cf64fe"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10231001",
+      "name": "10231001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10231001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ac4da1f200"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10232000",
+      "name": "10232000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10232000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "456a1ffdb5"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10232001",
+      "name": "10232001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10232001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d40fb1b456"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10233000",
+      "name": "10233000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10233000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7f559e31b7"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10233001",
+      "name": "10233001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10233001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "04ba4004d8"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10234000",
+      "name": "10234000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10234000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9fa5e88426"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10234001",
+      "name": "10234001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10234001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3cd30ab6d8"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10240000",
+      "name": "10240000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10240000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3da61d5187"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10240001",
+      "name": "10240001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10240001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "89359f112a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10241000",
+      "name": "10241000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10241000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4a67bcd5e9"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10241001",
+      "name": "10241001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10241001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7a69191907"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10242000",
+      "name": "10242000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10242000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6e8fa29916"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10242001",
+      "name": "10242001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10242001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "97617ded82"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10243000",
+      "name": "10243000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10243000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d4e330e708"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10243001",
+      "name": "10243001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10243001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "cbb554a4f3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10244000",
+      "name": "10244000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10244000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b64c6ebbb1"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10244001",
+      "name": "10244001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10244001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "90a7931efb"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10250000",
+      "name": "10250000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10250000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "79760d6f38"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10250001",
+      "name": "10250001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10250001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "31e5d10134"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10251000",
+      "name": "10251000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10251000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0fe21e3b67"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10251001",
+      "name": "10251001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10251001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2d777899d4"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10252000",
+      "name": "10252000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10252000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "5eb198ce8d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10252001",
+      "name": "10252001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10252001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "005dcb79fa"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10253000",
+      "name": "10253000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10253000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8ae0dc55b5"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10253001",
+      "name": "10253001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10253001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d529baf5c7"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10254000",
+      "name": "10254000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10254000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c9015079e1"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10254001",
+      "name": "10254001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10254001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b0afd7a19b"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10270000",
+      "name": "10270000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10270000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "81bd4335ff"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10271000",
+      "name": "10271000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10271000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "55c485a7fb"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10272000",
+      "name": "10272000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10272000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "60029d1aa1"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10273000",
+      "name": "10273000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10273000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2f558790e9"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10274000",
+      "name": "10274000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10274000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b8e9e8f9aa"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10280000",
+      "name": "10280000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10280000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2e6a1f1c53"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10281000",
+      "name": "10281000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10281000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "cb3895ff17"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10282000",
+      "name": "10282000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10282000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8b71b5090f"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10283000",
+      "name": "10283000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10283000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "750d368d90"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10284000",
+      "name": "10284000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10284000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f1d85a6a71"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10310000",
+      "name": "10310000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10310000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e464835606"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10311000",
+      "name": "10311000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10311000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6b389356eb"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10312000",
+      "name": "10312000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10312000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a7ee0d36d0"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10313000",
+      "name": "10313000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10313000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d892cb1dfb"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10314000",
+      "name": "10314000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10314000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3434ce9ba3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10320000",
+      "name": "10320000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10320000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "666f7b2336"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10321000",
+      "name": "10321000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10321000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "385e736555"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10322000",
+      "name": "10322000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10322000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "29ad0ef94d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10323000",
+      "name": "10323000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10323000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "49daa9b526"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10324000",
+      "name": "10324000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10324000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "989c28bc48"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10330000",
+      "name": "10330000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10330000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "cd0d32f32d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10331000",
+      "name": "10331000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10331000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "64506d1cf2"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10332000",
+      "name": "10332000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10332000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "82f2fa091c"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10333000",
+      "name": "10333000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10333000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "bcfb38ce57"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10334000",
+      "name": "10334000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10334000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "65c8fc2da3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10340000",
+      "name": "10340000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10340000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6c237cab35"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10341000",
+      "name": "10341000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10341000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "44d3f25daa"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10342000",
+      "name": "10342000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10342000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "de06e0e6ae"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10343000",
+      "name": "10343000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10343000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "741b4801aa"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10344000",
+      "name": "10344000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10344000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8de448f622"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10350000",
+      "name": "10350000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10350000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "17c1ef8532"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10350001_25",
+      "name": "10350001_25%",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10350001_25.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ecf728a2e4"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10350002",
+      "name": "10350002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10350002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9ce3691f5c"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10351000",
+      "name": "10351000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10351000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "88cdebbc3e"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10351001_25",
+      "name": "10351001_25%",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10351001_25.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "afb9187e0e"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10351002",
+      "name": "10351002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10351002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7585412c89"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10352000",
+      "name": "10352000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10352000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d0e324ab3d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10352001_25",
+      "name": "10352001_25%",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10352001_25.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "01d6046fd4"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10352002",
+      "name": "10352002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10352002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "60f8d2653a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10353000",
+      "name": "10353000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10353000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "93cec3f102"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10353001_25",
+      "name": "10353001_25%",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10353001_25.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b518464bab"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10353002",
+      "name": "10353002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10353002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b6d6f25991"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10354000",
+      "name": "10354000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10354000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6692ac9744"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10354001_25",
+      "name": "10354001_25%",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10354001_25.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3f218127cd"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10354002",
+      "name": "10354002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10354002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8e8494dfe2"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10355000",
+      "name": "10355000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10355000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "97c3b8132b"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10370000",
+      "name": "10370000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10370000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "1d16b27112"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10371000",
+      "name": "10371000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10371000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "cb5512222d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10372000",
+      "name": "10372000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10372000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f370dbd9bd"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10373000",
+      "name": "10373000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10373000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f6f2b08c28"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10374000",
+      "name": "10374000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10374000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "298a2cdc02"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10380000",
+      "name": "10380000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10380000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ffd4fa964f"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10381000",
+      "name": "10381000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10381000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e2b82c55c6"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10382000",
+      "name": "10382000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10382000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b29f5bd4c5"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10383000",
+      "name": "10383000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10383000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3a2a9d8ee6"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10384000",
+      "name": "10384000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10384000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b9bef3af22"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10410000",
+      "name": "10410000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10410000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "664dc0072b"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10411000",
+      "name": "10411000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10411000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "110e0faf7d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10412000",
+      "name": "10412000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10412000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d1a211650a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10413000",
+      "name": "10413000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10413000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ee58c2fa9e"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10414000",
+      "name": "10414000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10414000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "27759ff822"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10420000",
+      "name": "10420000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10420000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "076cf6f818"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10421000",
+      "name": "10421000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10421000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "1fddb7109a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10422000",
+      "name": "10422000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10422000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ce11b32454"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10423000",
+      "name": "10423000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10423000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2e784e807c"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10424000",
+      "name": "10424000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10424000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "796e827ee7"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10430000",
+      "name": "10430000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10430000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "fef9a603a6"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10431000",
+      "name": "10431000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10431000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a0a7568820"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10432000",
+      "name": "10432000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10432000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9d3d67d356"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10433000",
+      "name": "10433000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10433000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ca8faeccc6"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10434000",
+      "name": "10434000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10434000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0f0420b462"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10440000",
+      "name": "10440000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10440000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6ec4304a88"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10441000",
+      "name": "10441000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10441000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "96ff752ccf"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10442000",
+      "name": "10442000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10442000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9a94af4535"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10443000",
+      "name": "10443000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10443000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "859726a1d5"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10444000",
+      "name": "10444000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10444000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0436963c00"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10450000",
+      "name": "10450000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10450000.png",
+          "width": 56,
+          "height": 56,
+          "frameWidth": 56,
+          "frameHeight": 56,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d4dd79079d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10450001_25",
+      "name": "10450001_25%",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10450001_25.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "07dc860b6c"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10450002",
+      "name": "10450002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10450002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0cffd71d5a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10451000",
+      "name": "10451000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10451000.png",
+          "width": 56,
+          "height": 56,
+          "frameWidth": 56,
+          "frameHeight": 56,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "40093308b0"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10451001_25",
+      "name": "10451001_25%",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10451001_25.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f94eac0bc6"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10451002",
+      "name": "10451002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10451002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0564b69f23"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10452000",
+      "name": "10452000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10452000.png",
+          "width": 56,
+          "height": 56,
+          "frameWidth": 56,
+          "frameHeight": 56,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "91a7d9115f"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10452001_25",
+      "name": "10452001_25%",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10452001_25.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4f5debcd9e"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10452002",
+      "name": "10452002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10452002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "fe07086eb7"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10453000",
+      "name": "10453000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10453000.png",
+          "width": 56,
+          "height": 56,
+          "frameWidth": 56,
+          "frameHeight": 56,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "25ccff54cb"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10453001_25",
+      "name": "10453001_25%",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10453001_25.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "69f7235363"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10453002",
+      "name": "10453002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10453002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "485ede0582"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10454000",
+      "name": "10454000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10454000.png",
+          "width": 56,
+          "height": 56,
+          "frameWidth": 56,
+          "frameHeight": 56,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "774cdba077"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10454001_25",
+      "name": "10454001_25%",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10454001_25.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "352bd91d7b"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10454002",
+      "name": "10454002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10454002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d4477c7b0c"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10470000",
+      "name": "10470000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10470000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "54cc2e7318"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10471000",
+      "name": "10471000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10471000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f28c768a55"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10472000",
+      "name": "10472000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10472000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "740784249f"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10473000",
+      "name": "10473000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10473000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "1e8dbbe0b3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10474000",
+      "name": "10474000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10474000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6b998ffebe"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10480000",
+      "name": "10480000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10480000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "905037fc28"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10481000",
+      "name": "10481000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10481000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4f43978285"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10482000",
+      "name": "10482000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10482000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "760d25bae1"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10483000",
+      "name": "10483000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10483000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "5266d5f7c2"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10484000",
+      "name": "10484000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10484000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3ab9cf966d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10510000",
+      "name": "10510000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10510000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7f9db74614"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10511000",
+      "name": "10511000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10511000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8146e6691e"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10512000",
+      "name": "10512000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10512000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "831e31c883"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10513000",
+      "name": "10513000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10513000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0a15f1a603"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10514000",
+      "name": "10514000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10514000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "18464bc7f0"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10520000",
+      "name": "10520000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10520000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9c264a6345"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10521000",
+      "name": "10521000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10521000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "5ac28c5120"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10522000",
+      "name": "10522000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10522000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "97d31198c7"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10523000",
+      "name": "10523000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10523000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e0b52cdcf4"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10524000",
+      "name": "10524000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10524000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2015a36d7c"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10530000",
+      "name": "10530000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10530000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b236915221"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10531000",
+      "name": "10531000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10531000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "87613eee68"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10532000",
+      "name": "10532000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10532000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "722de56bc3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10533000",
+      "name": "10533000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10533000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "91fe3f8c11"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10534000",
+      "name": "10534000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10534000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "cd34a308f5"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10540000",
+      "name": "10540000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10540000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "5cdca3b4e9"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10541000",
+      "name": "10541000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10541000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "77718c6fad"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10542000",
+      "name": "10542000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10542000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b735f7e245"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10543000",
+      "name": "10543000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10543000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a779f60780"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10544000",
+      "name": "10544000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10544000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6829738183"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10550000",
+      "name": "10550000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10550000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2acd90384c"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10550001",
+      "name": "10550001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10550001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4e4a43885c"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10551000",
+      "name": "10551000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10551000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "732c37ffda"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10551001",
+      "name": "10551001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10551001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f1b54f1bf1"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10552000",
+      "name": "10552000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10552000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f1d678a9c0"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10552001",
+      "name": "10552001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10552001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a6e717891a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10553000",
+      "name": "10553000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10553000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "060987bfe1"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10553001",
+      "name": "10553001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10553001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "660ddfb6c6"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10554000",
+      "name": "10554000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10554000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "26187c5921"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10554001",
+      "name": "10554001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10554001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "23c5631ed3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10570000",
+      "name": "10570000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10570000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "fa43436280"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10571000",
+      "name": "10571000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10571000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7b2b605797"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10572000",
+      "name": "10572000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10572000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "bb2be10c84"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10573000",
+      "name": "10573000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10573000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "86308ec354"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10574000",
+      "name": "10574000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10574000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8f67f1af08"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10580000",
+      "name": "10580000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10580000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9f9207ce12"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10581000",
+      "name": "10581000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10581000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "04dddb3360"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10582000",
+      "name": "10582000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10582000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "56daa90929"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10583000",
+      "name": "10583000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10583000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9d006ae9ae"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_10584000",
+      "name": "10584000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_10584000.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "17a067cb33"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_11320000",
+      "name": "11320000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_11320000.png",
+          "width": 53,
+          "height": 49,
+          "frameWidth": 53,
+          "frameHeight": 49,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "25aecfceeb"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_11420000",
+      "name": "11420000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_11420000.png",
+          "width": 56,
+          "height": 55,
+          "frameWidth": 56,
+          "frameHeight": 55,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "1c8fbf39f0"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_11520000",
+      "name": "11520000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_11520000.png",
+          "width": 47,
+          "height": 46,
+          "frameWidth": 47,
+          "frameHeight": 46,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "116837929a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161020",
+      "name": "20161020",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161020.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2b4e2c3a90"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161021",
+      "name": "20161021",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161021.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6c87aaacdc"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161022",
+      "name": "20161022",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161022.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ad8e5cadd4"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161023",
+      "name": "20161023",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161023.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ccbc97eb53"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161024",
+      "name": "20161024",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161024.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9396150ba1"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161025",
+      "name": "20161025",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161025.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d3f393a13a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161026",
+      "name": "20161026",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161026.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7bd2000c59"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161027",
+      "name": "20161027",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161027.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "47b209b61a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161028",
+      "name": "20161028",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161028.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a937f8c3b8"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161029",
+      "name": "20161029",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161029.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "cfa05fb6d3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161030",
+      "name": "20161030",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161030.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f74be16a4e"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161031",
+      "name": "20161031",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161031.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "935f1b9e0f"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161032",
+      "name": "20161032",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161032.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "fe6e549091"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20161033",
+      "name": "20161033",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20161033.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7933277bb2"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461000",
+      "name": "20461000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461000.png",
+          "width": 57,
+          "height": 58,
+          "frameWidth": 57,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c63903121b"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461001",
+      "name": "20461001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461001.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "424f397a45"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461002",
+      "name": "20461002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461002.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f83425c26d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461003",
+      "name": "20461003",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461003.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d30065cbe9"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461004",
+      "name": "20461004",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461004.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a15faa2c8d"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461005",
+      "name": "20461005",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461005.png",
+          "width": 57,
+          "height": 58,
+          "frameWidth": 57,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "031e69e1f6"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461006",
+      "name": "20461006",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461006.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6c149b4f60"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461007",
+      "name": "20461007",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461007.png",
+          "width": 57,
+          "height": 58,
+          "frameWidth": 57,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "eca7fcbf92"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461008",
+      "name": "20461008",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461008.png",
+          "width": 57,
+          "height": 58,
+          "frameWidth": 57,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d9414b2afa"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461009",
+      "name": "20461009",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461009.png",
+          "width": 57,
+          "height": 58,
+          "frameWidth": 57,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "1e3c6a4c7a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461010",
+      "name": "20461010",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461010.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0719c09ec2"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461011",
+      "name": "20461011",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461011.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "cd0e802e8a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461012",
+      "name": "20461012",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461012.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3f73bef483"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461013",
+      "name": "20461013",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461013.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c0e7b5f5d7"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20461014",
+      "name": "20461014",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20461014.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "305d5b7051"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561000",
+      "name": "20561000",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561000.png",
+          "width": 57,
+          "height": 58,
+          "frameWidth": 57,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "be5589d612"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561001",
+      "name": "20561001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561001.png",
+          "width": 56,
+          "height": 58,
+          "frameWidth": 56,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "1c5e502a83"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561002",
+      "name": "20561002",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561002.png",
+          "width": 56,
+          "height": 58,
+          "frameWidth": 56,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a355d61470"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561003",
+      "name": "20561003",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561003.png",
+          "width": 56,
+          "height": 58,
+          "frameWidth": 56,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "462e4dd5f6"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561004",
+      "name": "20561004",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561004.png",
+          "width": 56,
+          "height": 58,
+          "frameWidth": 56,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "14553799b9"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561005",
+      "name": "20561005",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561005.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "95ba14b844"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561006",
+      "name": "20561006",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561006.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "cbaabf7029"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561007",
+      "name": "20561007",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561007.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a7ea55199e"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561008",
+      "name": "20561008",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561008.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "689d2bdd0a"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561009",
+      "name": "20561009",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561009.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9033c007fa"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561010",
+      "name": "20561010",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561010.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "bab5f4bdf3"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561011",
+      "name": "20561011",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561011.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b1c45e1798"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561012",
+      "name": "20561012",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561012.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "167eb73dc0"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561013",
+      "name": "20561013",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561013.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4406814819"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_20561014",
+      "name": "20561014",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_20561014.png",
+          "width": 58,
+          "height": 58,
+          "frameWidth": 58,
+          "frameHeight": 58,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d32f4bc7b9"
+        }
+      }
+    },
+    {
+      "id": "equipment_icon_49900001",
+      "name": "49900001",
+      "category": "equipment_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/equipment_icon/equipment_icon_49900001.png",
+          "width": 73,
+          "height": 54,
+          "frameWidth": 73,
+          "frameHeight": 54,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "5103015464"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_Bleed",
+      "name": "icon_Bleed",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_Bleed.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0c10da8a82"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_dispel",
+      "name": "icon_buff_dispel",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_dispel.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b175075fac"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_focus",
+      "name": "icon_buff_focus",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_focus.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "aea20a8375"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_frostbite",
+      "name": "icon_buff_frostbite",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_frostbite.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "65e833a44b"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_hill",
+      "name": "icon_buff_hill",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_hill.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "225ee40d13"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_iceshield",
+      "name": "icon_buff_iceshield",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_iceshield.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0b79c12cce"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_lifesteal",
+      "name": "icon_buff_lifesteal",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_lifesteal.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4eaac659b0"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_lifesteal_02",
+      "name": "icon_buff_lifesteal_02",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_lifesteal_02.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ddff80ae2a"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_minus_Attack",
+      "name": "icon_buff_minus_Attack",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_minus_Attack.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8c4e860b13"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_minus_critical",
+      "name": "icon_buff_minus_critical",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_minus_critical.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "47ebcdfa7e"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_minus_criticaldamage",
+      "name": "icon_buff_minus_criticaldamage",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_minus_criticaldamage.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a4d0965dfc"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_minus_defense",
+      "name": "icon_buff_minus_defense",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_minus_defense.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6b2849b968"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_minus_hit",
+      "name": "icon_buff_minus_hit",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_minus_hit.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b91a39096c"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_minus_speed",
+      "name": "icon_buff_minus_speed",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_minus_speed.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4a8c9f52c9"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_plus_ArmorPenetration",
+      "name": "icon_buff_plus_ArmorPenetration",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_plus_ArmorPenetration.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "83ef6c7896"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_plus_Thorn",
+      "name": "icon_buff_plus_Thorn",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_plus_Thorn.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ef9e2e577d"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_plus_allstats",
+      "name": "icon_buff_plus_allstats",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_plus_allstats.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "676cfe976e"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_plus_attack",
+      "name": "icon_buff_plus_attack",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_plus_attack.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3d08129dd1"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_plus_critical",
+      "name": "icon_buff_plus_critical",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_plus_critical.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8ba58551c5"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_plus_critical_damage",
+      "name": "icon_buff_plus_critical_damage",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_plus_critical_damage.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2a2be270c8"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_plus_damage_reduction_rate",
+      "name": "icon_buff_plus_damage_reduction_rate",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_plus_damage_reduction_rate.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0785a4bb63"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_plus_defense",
+      "name": "icon_buff_plus_defense",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_plus_defense.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6f19208a0f"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_plus_hit",
+      "name": "icon_buff_plus_hit",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_plus_hit.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "adef963cbe"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_plus_speed",
+      "name": "icon_buff_plus_speed",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_plus_speed.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e5d46089f1"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_resurrection",
+      "name": "icon_buff_resurrection",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_resurrection.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d47d2b1f1a"
+        }
+      }
+    },
+    {
+      "id": "skill_icon_buff_stun",
+      "name": "icon_buff_stun",
+      "category": "skill_icon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/skill_icon/skill_icon_buff_stun.png",
+          "width": 34,
+          "height": 35,
+          "frameWidth": 34,
+          "frameHeight": 35,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "dd77a16de6"
+        }
+      }
+    },
+    {
+      "id": "weapon_10100000",
+      "name": "10100000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10100000.png",
+          "width": 138,
+          "height": 26,
+          "frameWidth": 138,
+          "frameHeight": 26,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "49b9669e58"
+        }
+      }
+    },
+    {
+      "id": "weapon_10110000",
+      "name": "10110000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10110000.png",
+          "width": 156,
+          "height": 31,
+          "frameWidth": 156,
+          "frameHeight": 31,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "dea56ac69a"
+        }
+      }
+    },
+    {
+      "id": "weapon_10111000",
+      "name": "10111000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10111000.png",
+          "width": 156,
+          "height": 31,
+          "frameWidth": 156,
+          "frameHeight": 31,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e8912c6142"
+        }
+      }
+    },
+    {
+      "id": "weapon_10112000",
+      "name": "10112000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10112000.png",
+          "width": 156,
+          "height": 31,
+          "frameWidth": 156,
+          "frameHeight": 31,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6e8d52e491"
+        }
+      }
+    },
+    {
+      "id": "weapon_10113000",
+      "name": "10113000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10113000.png",
+          "width": 156,
+          "height": 31,
+          "frameWidth": 156,
+          "frameHeight": 31,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "28fe67e433"
+        }
+      }
+    },
+    {
+      "id": "weapon_10114000",
+      "name": "10114000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10114000.png",
+          "width": 156,
+          "height": 31,
+          "frameWidth": 156,
+          "frameHeight": 31,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "71f9e6b8de"
+        }
+      }
+    },
+    {
+      "id": "weapon_10120000",
+      "name": "10120000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10120000.png",
+          "width": 188,
+          "height": 66,
+          "frameWidth": 188,
+          "frameHeight": 66,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8f59f1c675"
+        }
+      }
+    },
+    {
+      "id": "weapon_10121000",
+      "name": "10121000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10121000.png",
+          "width": 188,
+          "height": 66,
+          "frameWidth": 188,
+          "frameHeight": 66,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c4a86a3098"
+        }
+      }
+    },
+    {
+      "id": "weapon_10122000",
+      "name": "10122000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10122000.png",
+          "width": 188,
+          "height": 66,
+          "frameWidth": 188,
+          "frameHeight": 66,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "5cdd8fd95a"
+        }
+      }
+    },
+    {
+      "id": "weapon_10123000",
+      "name": "10123000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10123000.png",
+          "width": 188,
+          "height": 66,
+          "frameWidth": 188,
+          "frameHeight": 66,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "5aa9b5b77a"
+        }
+      }
+    },
+    {
+      "id": "weapon_10124000",
+      "name": "10124000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10124000.png",
+          "width": 188,
+          "height": 66,
+          "frameWidth": 188,
+          "frameHeight": 66,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "18bdc82e47"
+        }
+      }
+    },
+    {
+      "id": "weapon_10130000",
+      "name": "10130000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10130000.png",
+          "width": 194,
+          "height": 42,
+          "frameWidth": 194,
+          "frameHeight": 42,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4dd38ae766"
+        }
+      }
+    },
+    {
+      "id": "weapon_10130001",
+      "name": "10130001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10130001.png",
+          "width": 205,
+          "height": 70,
+          "frameWidth": 205,
+          "frameHeight": 70,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "bbbefc3506"
+        }
+      }
+    },
+    {
+      "id": "weapon_10131000",
+      "name": "10131000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10131000.png",
+          "width": 211,
+          "height": 62,
+          "frameWidth": 211,
+          "frameHeight": 62,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "844e8d1e42"
+        }
+      }
+    },
+    {
+      "id": "weapon_10131001",
+      "name": "10131001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10131001.png",
+          "width": 205,
+          "height": 70,
+          "frameWidth": 205,
+          "frameHeight": 70,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "bcef366419"
+        }
+      }
+    },
+    {
+      "id": "weapon_10132000",
+      "name": "10132000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10132000.png",
+          "width": 220,
+          "height": 72,
+          "frameWidth": 220,
+          "frameHeight": 72,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "53af38781d"
+        }
+      }
+    },
+    {
+      "id": "weapon_10132001",
+      "name": "10132001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10132001.png",
+          "width": 204,
+          "height": 71,
+          "frameWidth": 204,
+          "frameHeight": 71,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ef669b0593"
+        }
+      }
+    },
+    {
+      "id": "weapon_10133000",
+      "name": "10133000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10133000.png",
+          "width": 194,
+          "height": 42,
+          "frameWidth": 194,
+          "frameHeight": 42,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "bb1a6fef18"
+        }
+      }
+    },
+    {
+      "id": "weapon_10133001",
+      "name": "10133001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10133001.png",
+          "width": 205,
+          "height": 71,
+          "frameWidth": 205,
+          "frameHeight": 71,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "50727902ee"
+        }
+      }
+    },
+    {
+      "id": "weapon_10134000",
+      "name": "10134000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10134000.png",
+          "width": 210,
+          "height": 61,
+          "frameWidth": 210,
+          "frameHeight": 61,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e1b379a47e"
+        }
+      }
+    },
+    {
+      "id": "weapon_10134001",
+      "name": "10134001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10134001.png",
+          "width": 205,
+          "height": 71,
+          "frameWidth": 205,
+          "frameHeight": 71,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "df506053c4"
+        }
+      }
+    },
+    {
+      "id": "weapon_10135000",
+      "name": "10135000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10135000.png",
+          "width": 216,
+          "height": 67,
+          "frameWidth": 216,
+          "frameHeight": 67,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "00b20033f2"
+        }
+      }
+    },
+    {
+      "id": "weapon_10140000",
+      "name": "10140000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10140000.png",
+          "width": 231,
+          "height": 86,
+          "frameWidth": 231,
+          "frameHeight": 86,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7b3cccc35d"
+        }
+      }
+    },
+    {
+      "id": "weapon_10140001",
+      "name": "10140001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10140001.png",
+          "width": 230,
+          "height": 71,
+          "frameWidth": 230,
+          "frameHeight": 71,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "93bd183b2d"
+        }
+      }
+    },
+    {
+      "id": "weapon_10141000",
+      "name": "10141000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10141000.png",
+          "width": 231,
+          "height": 86,
+          "frameWidth": 231,
+          "frameHeight": 86,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7111bebc19"
+        }
+      }
+    },
+    {
+      "id": "weapon_10141001",
+      "name": "10141001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10141001.png",
+          "width": 241,
+          "height": 71,
+          "frameWidth": 241,
+          "frameHeight": 71,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6df6845efa"
+        }
+      }
+    },
+    {
+      "id": "weapon_10142000",
+      "name": "10142000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10142000.png",
+          "width": 231,
+          "height": 85,
+          "frameWidth": 231,
+          "frameHeight": 85,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ba3dd53909"
+        }
+      }
+    },
+    {
+      "id": "weapon_10142001",
+      "name": "10142001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10142001.png",
+          "width": 241,
+          "height": 71,
+          "frameWidth": 241,
+          "frameHeight": 71,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c2ef064835"
+        }
+      }
+    },
+    {
+      "id": "weapon_10143000",
+      "name": "10143000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10143000.png",
+          "width": 230,
+          "height": 86,
+          "frameWidth": 230,
+          "frameHeight": 86,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c1ae5fdcfa"
+        }
+      }
+    },
+    {
+      "id": "weapon_10143001",
+      "name": "10143001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10143001.png",
+          "width": 230,
+          "height": 72,
+          "frameWidth": 230,
+          "frameHeight": 72,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "aa2c2b558f"
+        }
+      }
+    },
+    {
+      "id": "weapon_10144000",
+      "name": "10144000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10144000.png",
+          "width": 231,
+          "height": 85,
+          "frameWidth": 231,
+          "frameHeight": 85,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "156ac89021"
+        }
+      }
+    },
+    {
+      "id": "weapon_10144001",
+      "name": "10144001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10144001.png",
+          "width": 241,
+          "height": 71,
+          "frameWidth": 241,
+          "frameHeight": 71,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ecbbd9f47b"
+        }
+      }
+    },
+    {
+      "id": "weapon_10150000",
+      "name": "10150000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10150000.png",
+          "width": 254,
+          "height": 92,
+          "frameWidth": 254,
+          "frameHeight": 92,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9f4ec7d77f"
+        }
+      }
+    },
+    {
+      "id": "weapon_10150001",
+      "name": "10150001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10150001.png",
+          "width": 266,
+          "height": 78,
+          "frameWidth": 266,
+          "frameHeight": 78,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e4aefbc19a"
+        }
+      }
+    },
+    {
+      "id": "weapon_10151000",
+      "name": "10151000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10151000.png",
+          "width": 254,
+          "height": 92,
+          "frameWidth": 254,
+          "frameHeight": 92,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "5636187a08"
+        }
+      }
+    },
+    {
+      "id": "weapon_10151001",
+      "name": "10151001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10151001.png",
+          "width": 266,
+          "height": 77,
+          "frameWidth": 266,
+          "frameHeight": 77,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f70069e0ea"
+        }
+      }
+    },
+    {
+      "id": "weapon_10152000",
+      "name": "10152000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10152000.png",
+          "width": 254,
+          "height": 92,
+          "frameWidth": 254,
+          "frameHeight": 92,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9e91523c21"
+        }
+      }
+    },
+    {
+      "id": "weapon_10152001",
+      "name": "10152001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10152001.png",
+          "width": 266,
+          "height": 77,
+          "frameWidth": 266,
+          "frameHeight": 77,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a9fb3916d5"
+        }
+      }
+    },
+    {
+      "id": "weapon_10153000",
+      "name": "10153000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10153000.png",
+          "width": 254,
+          "height": 92,
+          "frameWidth": 254,
+          "frameHeight": 92,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "02e0b77dfb"
+        }
+      }
+    },
+    {
+      "id": "weapon_10153001",
+      "name": "10153001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10153001.png",
+          "width": 266,
+          "height": 77,
+          "frameWidth": 266,
+          "frameHeight": 77,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "53fa7ff818"
+        }
+      }
+    },
+    {
+      "id": "weapon_10154000",
+      "name": "10154000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10154000.png",
+          "width": 254,
+          "height": 92,
+          "frameWidth": 254,
+          "frameHeight": 92,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a5a4a013c0"
+        }
+      }
+    },
+    {
+      "id": "weapon_10154001",
+      "name": "10154001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_10154001.png",
+          "width": 266,
+          "height": 77,
+          "frameWidth": 266,
+          "frameHeight": 77,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "59c0194f13"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161000",
+      "name": "20161000",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161000.png",
+          "width": 297,
+          "height": 68,
+          "frameWidth": 297,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "fd4930f8fc"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161001",
+      "name": "20161001",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161001.png",
+          "width": 297,
+          "height": 68,
+          "frameWidth": 297,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a1a2858b19"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161002",
+      "name": "20161002",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161002.png",
+          "width": 297,
+          "height": 68,
+          "frameWidth": 297,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a26b38ed35"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161003",
+      "name": "20161003",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161003.png",
+          "width": 297,
+          "height": 68,
+          "frameWidth": 297,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "83a0cb34f4"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161004",
+      "name": "20161004",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161004.png",
+          "width": 297,
+          "height": 68,
+          "frameWidth": 297,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "7c45e09363"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161005",
+      "name": "20161005",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161005.png",
+          "width": 290,
+          "height": 81,
+          "frameWidth": 290,
+          "frameHeight": 81,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "9589897238"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161006",
+      "name": "20161006",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161006.png",
+          "width": 290,
+          "height": 81,
+          "frameWidth": 290,
+          "frameHeight": 81,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3708860d4a"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161007",
+      "name": "20161007",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161007.png",
+          "width": 290,
+          "height": 81,
+          "frameWidth": 290,
+          "frameHeight": 81,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "06771f2f6e"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161008",
+      "name": "20161008",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161008.png",
+          "width": 290,
+          "height": 81,
+          "frameWidth": 290,
+          "frameHeight": 81,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "3b312d6e92"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161009",
+      "name": "20161009",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161009.png",
+          "width": 290,
+          "height": 81,
+          "frameWidth": 290,
+          "frameHeight": 81,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "1b0bf2fa7e"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161010",
+      "name": "20161010",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161010.png",
+          "width": 264,
+          "height": 85,
+          "frameWidth": 264,
+          "frameHeight": 85,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "653a1a70fe"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161011",
+      "name": "20161011",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161011.png",
+          "width": 264,
+          "height": 85,
+          "frameWidth": 264,
+          "frameHeight": 85,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "83d0f17fc0"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161012",
+      "name": "20161012",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161012.png",
+          "width": 264,
+          "height": 85,
+          "frameWidth": 264,
+          "frameHeight": 85,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a5090babe2"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161013",
+      "name": "20161013",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161013.png",
+          "width": 264,
+          "height": 85,
+          "frameWidth": 264,
+          "frameHeight": 85,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "aac33f21c5"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161014",
+      "name": "20161014",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161014.png",
+          "width": 264,
+          "height": 85,
+          "frameWidth": 264,
+          "frameHeight": 85,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "5832085a95"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161015",
+      "name": "20161015",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161015.png",
+          "width": 296,
+          "height": 108,
+          "frameWidth": 296,
+          "frameHeight": 108,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b97f5563fb"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161016",
+      "name": "20161016",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161016.png",
+          "width": 296,
+          "height": 108,
+          "frameWidth": 296,
+          "frameHeight": 108,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ab94a672ac"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161017",
+      "name": "20161017",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161017.png",
+          "width": 296,
+          "height": 108,
+          "frameWidth": 296,
+          "frameHeight": 108,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "238e5e439c"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161018",
+      "name": "20161018",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161018.png",
+          "width": 296,
+          "height": 108,
+          "frameWidth": 296,
+          "frameHeight": 108,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b657ffcf0e"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161019",
+      "name": "20161019",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161019.png",
+          "width": 296,
+          "height": 108,
+          "frameWidth": 296,
+          "frameHeight": 108,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e3e5b7aad6"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161020",
+      "name": "20161020",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161020.png",
+          "width": 262,
+          "height": 66,
+          "frameWidth": 262,
+          "frameHeight": 66,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "ed71656e7b"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161021",
+      "name": "20161021",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161021.png",
+          "width": 300,
+          "height": 132,
+          "frameWidth": 300,
+          "frameHeight": 132,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "86c05579cb"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161022",
+      "name": "20161022",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161022.png",
+          "width": 198,
+          "height": 113,
+          "frameWidth": 198,
+          "frameHeight": 113,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "501de27aeb"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161023",
+      "name": "20161023",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161023.png",
+          "width": 342,
+          "height": 106,
+          "frameWidth": 342,
+          "frameHeight": 106,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "336a589f31"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161024",
+      "name": "20161024",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161024.png",
+          "width": 308,
+          "height": 134,
+          "frameWidth": 308,
+          "frameHeight": 134,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a1c87a5bad"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161025",
+      "name": "20161025",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161025.png",
+          "width": 285,
+          "height": 98,
+          "frameWidth": 285,
+          "frameHeight": 98,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b6e25e20b3"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161026",
+      "name": "20161026",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161026.png",
+          "width": 281,
+          "height": 90,
+          "frameWidth": 281,
+          "frameHeight": 90,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "fb53422876"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161027",
+      "name": "20161027",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161027.png",
+          "width": 217,
+          "height": 119,
+          "frameWidth": 217,
+          "frameHeight": 119,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "02330f4bc0"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161028",
+      "name": "20161028",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161028.png",
+          "width": 317,
+          "height": 83,
+          "frameWidth": 317,
+          "frameHeight": 83,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f83a3d0103"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161029",
+      "name": "20161029",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161029.png",
+          "width": 296,
+          "height": 131,
+          "frameWidth": 296,
+          "frameHeight": 131,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "0ef09e060f"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161030",
+      "name": "20161030",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161030.png",
+          "width": 279,
+          "height": 108,
+          "frameWidth": 279,
+          "frameHeight": 108,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f3755b85ec"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161031",
+      "name": "20161031",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161031.png",
+          "width": 249,
+          "height": 140,
+          "frameWidth": 249,
+          "frameHeight": 140,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "96bf79e9e4"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161032",
+      "name": "20161032",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161032.png",
+          "width": 286,
+          "height": 157,
+          "frameWidth": 286,
+          "frameHeight": 157,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4b52c86710"
+        }
+      }
+    },
+    {
+      "id": "weapon_20161033",
+      "name": "20161033",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_20161033.png",
+          "width": 235,
+          "height": 188,
+          "frameWidth": 235,
+          "frameHeight": 188,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "02c2224b9c"
+        }
+      }
+    },
+    {
+      "id": "weapon_40100000_흰발키리_무기",
+      "name": "40100000_흰발키리_무기",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_40100000_흰발키리_무기.png",
+          "width": 238,
+          "height": 67,
+          "frameWidth": 238,
+          "frameHeight": 67,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2633e03349"
+        }
+      }
+    },
+    {
+      "id": "weapon_40100001_백사자의_이빨검",
+      "name": "40100001_백사자의 이빨검",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_40100001_백사자의_이빨검.png",
+          "width": 258,
+          "height": 74,
+          "frameWidth": 258,
+          "frameHeight": 74,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c35147f7d2"
+        }
+      }
+    },
+    {
+      "id": "weapon_40100002_헬라의환영_무기",
+      "name": "40100002_헬라의환영_무기",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_40100002_헬라의환영_무기.png",
+          "width": 908,
+          "height": 242,
+          "frameWidth": 908,
+          "frameHeight": 242,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "793b54f897"
+        }
+      }
+    },
+    {
+      "id": "weapon_40100003_검은발키리_무기",
+      "name": "40100003_검은발키리_무기",
+      "category": "weapon",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/weapon/weapon_40100003_검은발키리_무기.png",
+          "width": 232,
+          "height": 66,
+          "frameWidth": 232,
+          "frameHeight": 66,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e982fd42a1"
+        }
+      }
+    }
+  ]
+}

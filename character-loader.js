@@ -1,5 +1,5 @@
 /**
- * CharacterLib - character sprite loader for the Nine Corporation asset pack.
+ * CharacterLib - character sprite loader for the asset pack.
  *
  * Sibling of loader.js (EffectLib), same framework-agnostic shape, but a
  * character can carry several named animation clips (idle / walk / attack /
@@ -8,6 +8,8 @@
  * (identical shape to an effects.json asset) still work unchanged.
  *
  *   const lib = await CharacterLib.load('./characters.json');
+ *   // icons (weapon / skill_icon / equipment_icon) live in icons.json:
+ *   const all = await CharacterLib.load(['./characters.json', './icons.json']);
  *   const anim = lib.play('goblin', 'walk', { loop: true });
  *   anim.draw(ctx, x, y);            // call once per frame
  *
@@ -25,7 +27,7 @@
   function Clip(name, entry, baseUrl) {
     Object.assign(this, entry);
     this.name = name;
-    this.url = joinPath(baseUrl, entry.file);
+    this.url = joinPath(baseUrl, entry.file) + (entry.hash ? '?v=' + entry.hash : '');
     this.image = null;
     this._promise = null;
   }
@@ -269,30 +271,53 @@
     return list;
   };
 
-  /** Build a PixiJS AnimatedSprite for one character clip (PIXI v7+). */
+  /**
+   * Build a PixiJS AnimatedSprite for one character clip.
+   * PIXI v7: returns the AnimatedSprite synchronously.
+   * PIXI v8: textures must load first, so returns Promise<AnimatedSprite>.
+   */
   Library.prototype.toPixi = function (PIXI, id, animName) {
     var clip = this.get(id).getClip(animName);
-    var base = PIXI.BaseTexture.from(clip.url);
-    var textures = [];
-    for (var i = 0; i < clip.frames; i++) {
-      var r = clip.frameRect(i);
-      textures.push(new PIXI.Texture(base, new PIXI.Rectangle(r.x, r.y, r.w, r.h)));
+    function build(makeTex) {
+      var textures = [];
+      for (var i = 0; i < clip.frames; i++) {
+        var r = clip.frameRect(i);
+        textures.push(makeTex(new PIXI.Rectangle(r.x, r.y, r.w, r.h)));
+      }
+      var sprite = new PIXI.AnimatedSprite(textures);
+      sprite.animationSpeed = (clip.fps || 12) / 60;
+      sprite.anchor.set(0.5);
+      return sprite;
     }
-    var sprite = new PIXI.AnimatedSprite(textures);
-    sprite.animationSpeed = (clip.fps || 12) / 60;
-    sprite.anchor.set(0.5);
-    return sprite;
+    if (PIXI.BaseTexture) {
+      var base = PIXI.BaseTexture.from(clip.url);
+      return build(function (rect) { return new PIXI.Texture(base, rect); });
+    }
+    return PIXI.Assets.load(clip.url).then(function (tex) {
+      return build(function (rect) { return new PIXI.Texture({ source: tex.source, frame: rect }); });
+    });
   };
 
+  function fetchManifest(url) {
+    // no-cache: revalidate the manifest so it never pairs with stale ?v= files
+    return fetch(url, { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error('manifest ' + url + ' -> HTTP ' + r.status);
+      return r.json();
+    });
+  }
+
+  /** One manifest URL, or several (e.g. characters.json + icons.json) merged into one Library. */
   function load(manifestUrl, baseUrl) {
-    manifestUrl = manifestUrl || './characters.json';
-    if (baseUrl == null) baseUrl = manifestUrl.replace(/[^/]*$/, '');
-    return fetch(manifestUrl)
-      .then(function (r) {
-        if (!r.ok) throw new Error('manifest ' + manifestUrl + ' -> HTTP ' + r.status);
-        return r.json();
-      })
-      .then(function (m) { return new Library(m, baseUrl); });
+    var urls = Array.isArray(manifestUrl) ? manifestUrl : [manifestUrl || './characters.json'];
+    if (baseUrl == null) baseUrl = urls[0].replace(/[^/]*$/, '');
+    return Promise.all(urls.map(fetchManifest)).then(function (list) {
+      var merged = Object.assign({}, list[0], { categories: {}, assets: [] });
+      list.forEach(function (m) {
+        Object.assign(merged.categories, m.categories);
+        merged.assets = merged.assets.concat(m.assets || []);
+      });
+      return new Library(merged, baseUrl);
+    });
   }
 
   var CharacterLib = { load: load, Library: Library, Character: Character, Clip: Clip, Animation: Animation };

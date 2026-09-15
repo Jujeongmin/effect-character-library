@@ -1,5 +1,5 @@
 /**
- * EffectLib - sprite library loader for the Nine Corporation effect pack.
+ * EffectLib - sprite library loader for the effect pack.
  *
  * Framework-agnostic. Works with a raw 2D canvas, and ships helpers for
  * Phaser 3 and PixiJS.
@@ -19,7 +19,7 @@
   /** One animated (or still) asset from the manifest. */
   function Asset(entry, baseUrl) {
     Object.assign(this, entry);
-    this.url = joinPath(baseUrl, entry.file);
+    this.url = joinPath(baseUrl, entry.file) + (entry.hash ? '?v=' + entry.hash : '');
     this.image = null;
     this._promise = null;
   }
@@ -204,25 +204,38 @@
     return list;
   };
 
-  /** Build a PixiJS AnimatedSprite for one effect (PIXI v7+). */
+  /**
+   * Build a PixiJS AnimatedSprite for one effect.
+   * PIXI v7: returns the AnimatedSprite synchronously.
+   * PIXI v8: textures must load first, so returns Promise<AnimatedSprite>.
+   */
   Library.prototype.toPixi = function (PIXI, id) {
     var a = this.get(id);
-    var base = PIXI.BaseTexture.from(a.url);
-    var textures = [];
-    for (var i = 0; i < a.frames; i++) {
-      var r = a.frameRect(i);
-      textures.push(new PIXI.Texture(base, new PIXI.Rectangle(r.x, r.y, r.w, r.h)));
+    function build(makeTex) {
+      var textures = [];
+      for (var i = 0; i < a.frames; i++) {
+        var r = a.frameRect(i);
+        textures.push(makeTex(new PIXI.Rectangle(r.x, r.y, r.w, r.h)));
+      }
+      var sprite = new PIXI.AnimatedSprite(textures);
+      sprite.animationSpeed = (a.fps || 12) / 60;
+      sprite.anchor.set(0.5);
+      return sprite;
     }
-    var sprite = new PIXI.AnimatedSprite(textures);
-    sprite.animationSpeed = (a.fps || 12) / 60;
-    sprite.anchor.set(0.5);
-    return sprite;
+    if (PIXI.BaseTexture) {
+      var base = PIXI.BaseTexture.from(a.url);
+      return build(function (rect) { return new PIXI.Texture(base, rect); });
+    }
+    return PIXI.Assets.load(a.url).then(function (tex) {
+      return build(function (rect) { return new PIXI.Texture({ source: tex.source, frame: rect }); });
+    });
   };
 
   function load(manifestUrl, baseUrl) {
     manifestUrl = manifestUrl || './effects.json';
     if (baseUrl == null) baseUrl = manifestUrl.replace(/[^/]*$/, '');
-    return fetch(manifestUrl)
+    // no-cache: revalidate the manifest so it never pairs with stale ?v= files
+    return fetch(manifestUrl, { cache: 'no-cache' })
       .then(function (r) {
         if (!r.ok) throw new Error('manifest ' + manifestUrl + ' -> HTTP ' + r.status);
         return r.json();

@@ -123,17 +123,37 @@
       var a0 = Math.random() * Math.PI * 2;
       return [Math.cos(a0), Math.sin(a0)];
     }
-    if (shape.type === 'cone' || shape.type === 'cone_volume') {
+    var type = shape.type;
+    if (type === 'cone' || type === 'cone_volume') {
       // Unity cones point along +Z; on a 2D stage that reads as "upward".
       var spread = (shape.angle || 25) * Math.PI / 180;
       var a1 = -Math.PI / 2 + rand(-spread, spread);
       return [Math.cos(a1), Math.sin(a1)];
     }
-    if (shape.type === 'box' || shape.type === 'edge') {
+    if (type === 'box' || type === 'edge' || type === 'single_sided_edge') {
       return [rand(-1, 1), rand(-0.2, 0.2)];
     }
+    if (type === 'hemisphere') {
+      // Upper half only (canvas y grows downward).
+      var a2 = -Math.PI * Math.random();
+      return [Math.cos(a2), Math.sin(a2)];
+    }
+    // sphere, circle, donut and anything unknown: radial in the stage plane.
     var a = Math.random() * Math.PI * 2;
     return [Math.cos(a), Math.sin(a)];
+  }
+
+  /** Spawn offset along `dir`: donuts sit on their ring, the rest fill the radius. */
+  function spawnDistance(shape) {
+    if (!shape || !shape.radius) return 0;
+    return shape.type === 'donut' ? shape.radius : shape.radius * Math.random();
+  }
+
+  /** Material blend: `blend` when known, else the Unity factor (10 = OneMinusSrcAlpha). */
+  function isAdditive(spec) {
+    if (spec.blend === 'alpha') return false;
+    if (spec.blend === 'additive') return true;
+    return spec.dstBlend !== 10;   // missing / 0 = unknown -> additive, as before
   }
 
   function Emitter(spec, opts) {
@@ -144,7 +164,7 @@
     this.pending = 0;
     this.burstsFired = [];
     this.texture = null;
-    this.additive = spec.dstBlend !== 10;      // 10 = OneMinusSrcAlpha (alpha blend)
+    this.additive = isAdditive(spec);
   }
 
   /**
@@ -166,10 +186,10 @@
     for (var i = 0; i < n; i++) {
       var dir = launch(spec.shape);
       var speed = initial(spec.speed, 1) * scale;
-      var radius = (spec.shape && spec.shape.radius ? spec.shape.radius : 0) * scale;
+      var dist = spawnDistance(spec.shape) * scale;
       this.particles.push({
-        x: dir[0] * radius * Math.random(),
-        y: dir[1] * radius * Math.random(),
+        x: dir[0] * dist,
+        y: dir[1] * dist,
         vx: dir[0] * speed,
         vy: dir[1] * speed,
         life: 0,
@@ -312,7 +332,7 @@
 
   function load(url, options) {
     options = options || {};
-    return fetch(url || './particles.json')
+    return fetch(url || './particles.json', { cache: 'no-cache' })
       .then(function (r) {
         if (!r.ok) throw new Error('particles.json -> HTTP ' + r.status);
         return r.json();

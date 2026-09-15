@@ -28,8 +28,8 @@ characters/
 
 ## 지금 들어있는 데이터
 
-299장의 그림이 **172개 캐릭터 항목**으로 들어있다 (인간형 69 · 야수형 54 ·
-동물형 7 · 몬스터형 42). 148개는 그림 한 장짜리, 24개는 여러 장 중 골라보는
+`characters.json` 에 **204개 항목**이 들어있다 (인간형 63 · 야수형 55 ·
+동물형 7 · 몬스터형 42 · 아이템 37). 아이콘 388개는 `icons.json` 으로 분리했다(아래). 여러 장 중 골라보는 항목은
 B 형식(`animations`) — 뷰어에서 카드를 클릭하면 자동으로 탭이 뜨고, 그리드
 카드에도 미리 "N개" 표시가 붙어서 클릭 전에 여러 모습이 있는지 알 수 있다.
 
@@ -52,10 +52,14 @@ B 형식(`animations`) — 뷰어에서 카드를 클릭하면 자동으로 탭�
 위 `item`(캐릭터 그림에서 손수 오려낸 것)과 달리, 이 셋은 원본이 **이미
 따로 뽑혀있던 아이콘 파일**이라 추출 작업 없이 그대로 등록만 했다.
 
-- `weapon` 81개 — 무기 티어별 아이콘(`10100000` 나무막대기 ~ `10150001` 5성
+캐릭터가 아니라서 이 셋은 **`icons.json`** 으로 따로 뺐다 (스키마·로더는 같다). 뷰어는 둘을 합쳐 보여주고,
+코드에서는 `CharacterLib.load(['./characters.json', './icons.json'])` 로 합쳐 받거나 `icons.json` 만 받으면 된다.
+그림이 바이트 단위로 똑같던 중복 아이콘 6개(`skill_icon_buff_plus_hp` 등)는 지웠다.
+
+- `weapon` 80개 — 무기 티어별 아이콘(`10100000` 나무막대기 ~ `10150001` 5성
   이빨검), `014_weapon/` 폴더 최상위 PNG 그대로.
-- `skill_icon` 30개 — 버프/디버프/스킬 아이콘, `010_icon_skill/` 최상위 PNG.
-- `equipment_icon` 344개 — 장비 아이콘 대량 세트, `008_icon/02_icon_equipment/`.
+- `skill_icon` 26개 — 버프/디버프/스킬 아이콘, `010_icon_skill/` 최상위 PNG.
+- `equipment_icon` 282개 — 장비 아이콘 대량 세트, `008_icon/02_icon_equipment/`.
 
 `008_icon/` 안에는 이 equipment 말고도 룬·칭호·몬스터·NPC·눈꼬리귀 파츠
 같은 아이콘 세트가 더 있는데, 아직 안 넣었다 — 필요하면 추가하면 된다.
@@ -83,6 +87,9 @@ B 형식(`animations`) — 뷰어에서 카드를 클릭하면 자동으로 탭�
   `neko_boy_gold_knight`, 7개)도 이 기준으로 각자 캐릭터로 분리했고, 그
   안에서 순수 속성태그 재도색(`_tag1~4`)과 코스튬B(`_alt`)만 탭으로 묶었다
   (예: `neko_boy_dark_armor` 카드 안에 태그 10개 탭).
+- **똑같이 생긴 항목은 하나만 둔다.** 스파인 변형(`spine.variants`)과 같은 그림이 별도 항목으로
+  있던 경우(`lucie_swordswoman` = `lucy` 흑요석, `sun_void_swordsman` = `horn_reaper` 솔블레이드 등)는
+  그 정지 그림을 기준 캐릭터의 탭(키는 변형 key 와 같게)으로 옮기고 항목은 지웠다.
 
 id 접두어로 계열을 알아볼 수 있게 맞췄다 (`fox_warrior_*`, `neko_boy_dark_armor_*`
 등). 웹에서 원본 해상도(최대 4500px)로 쓸 이유가 없어서 긴 변 900px로 줄여서
@@ -158,8 +165,7 @@ touch 하나 더). 리깅 없이 상태별로 초상화만 바꿔치기하는 �
   "width": 512, "height": 64,
   "frameWidth": 64, "frameHeight": 64,
   "frames": 8, "cols": 8, "rows": 1,
-  "fps": 10,
-  "source": "원본 경로"
+  "fps": 10
 }
 ```
 
@@ -177,8 +183,7 @@ touch 하나 더). 리깅 없이 상태별로 초상화만 바꿔치기하는 �
     "attack": { "file": "characters/monster/goblin_attack.png", "width": 320, "height": 64, "frameWidth": 64, "frameHeight": 64, "frames": 5, "cols": 5, "rows": 1, "fps": 12 },
     "hit":    { "file": "characters/monster/goblin_hit.png",    "width": 128, "height": 64, "frameWidth": 64, "frameHeight": 64, "frames": 2, "cols": 2, "rows": 1, "fps": 12 },
     "death":  { "file": "characters/monster/goblin_death.png",  "width": 384, "height": 64, "frameWidth": 64, "frameHeight": 64, "frames": 6, "cols": 6, "rows": 1, "fps": 10 }
-  },
-  "source": "원본 경로"
+  }
 }
 ```
 
@@ -215,11 +220,12 @@ touch 하나 더). 리깅 없이 상태별로 초상화만 바꿔치기하는 �
 - `skin`은 스켈레톤 데이터 안에 색상/부위별로 나뉜 스킨이 여러 개 있을 때
   (`default` + `<id>-0/1/2/3` 식) 그중 하나를 고르는 것 — `default` 스킨과
   합쳐서(`Skin.addSkin`) 적용한다. 없으면 생략.
-- 지금 들어있는 건 5개 — `neko_boy_casual`(`character/10200000`, 머리카락
-  아틀라스가 이 export엔 빠져있어서 대머리로 보임, 원본 게임에서 헤어를
-  별도 파츠로 합치는 구조로 추정), `pet_black_cat`/`pet_roundy`/
-  `pet_valkyrie`/`pet_little_fenrir`(`character/09_펫`, 이쪽은 스킨이
-  하나뿐이라 멀쩡하게 다 보인다).
+- `variants`: 완전히 다른 skeleton/atlas 세트로 통째로 갈아 끼우는 색상/장식판 (`key`/`label`).
+- `incomplete`: 이 export 로는 제대로 안 그려지는 이유. 예: `neko_boy_*`/`wing_knight` 는 머리카락·귀·
+  꼬리·얼굴이 게임에서 `*_BoneFollower` 본에 별도 파츠로 붙는 구조라 export 에 없어서 대머리로 보인다.
+  있으면 그리드 카드는 정지 그림을 쓰고, 상세 패널에서만 스파인 + 경고를 띄운다.
+- 뷰어 런타임은 4.1 이다. 3.8 export(`neko_boy_dark_armor`)는 안 그려져서 `spine` 을 뺐다.
+- `hash`: 아래 "캐시" 참고 — 손으로 쓰지 않는다.
 - spine-webgl 런타임은 CDN에서 그때그때 받아온다(`characters/index.html`
   상단 `<script>` 태그) — 이 페이지는 GitHub Pages 정적 사이트라 Artifact
   CSP 제한이 없어서 어떤 CDN이든 자유롭게 쓸 수 있다.
@@ -232,6 +238,19 @@ touch 하나 더). 리깅 없이 상태별로 초상화만 바꿔치기하는 �
   `registerSpine`/`ensureThumbSpineCanvas`). 스펙 늘어나서 캐릭터가
   많아지면 이 멀티플렉싱 방식을 계속 써야 한다 — 컨텍스트 여러 개로
   되돌리면 다시 깨진다.
+
+## 캐시 (`hash` 필드)
+
+GitHub Pages 는 모든 파일을 `max-age=600` 으로 내보낸다. 같은 경로에 덮어쓰면 최대 10분 동안
+새 매니페스트와 옛 그림이 섞일 수 있어서, 매니페스트의 각 그림(`file`)과 `spine` 묶음에 내용 해시
+`hash` 를 적어두고 로더·뷰어가 `?v=<hash>` 를 붙여 받는다. 매니페스트 자체는
+`cache: 'no-cache'` 로 매번 재검증한다(안 바뀌었으면 304).
+
+그림이나 스파인 파일을 바꿨으면 커밋 전에:
+
+```
+node tools/stamp_hashes.js
+```
 
 ## 로더 (`character-loader.js`)
 
@@ -258,13 +277,17 @@ function frame() {
 
 `registerPhaser` / `toPixi` 도 있다 — Phaser 스프라이트시트 키는
 `"<캐릭터id>:<애니메이션이름>"` (예: `"goblin:walk"`).
+`toPixi(PIXI, id, animName)` 은 PixiJS v7 에서는 `AnimatedSprite` 를 바로 반환하고,
+v8 에서는 텍스처를 먼저 로드해야 하므로 `Promise<AnimatedSprite>` 를 반환한다
+(`const s = await lib.toPixi(PIXI, 'goblin', 'walk')` — `await` 은 v7 반환값에도 무해하다).
 
 ## 리소스가 더 들어오면 할 일
 
 1. PNG를 `characters/<카테고리>/` 에 넣는다 (필요하면 웹용으로 리사이즈 —
    원본이 리소스 폴더에 그대로 있으니 손실은 없다).
 2. `characters.json` 의 `assets` 배열에 위 A/B 형식 중 맞는 쪽으로 항목을 추가한다.
-3. `characters/index.html` 을 열어 그리드·상세·애니메이션 탭이 뜨는지 확인한다.
+3. `node tools/stamp_hashes.js` 로 `hash` 를 채운다.
+4. `characters/index.html` 을 열어 그리드·상세·애니메이션 탭이 뜨는지 확인한다.
    코드를 고칠 필요는 없다 — 데이터만 채우면 된다.
 
 실제 애니메이션 스프라이트(`idle`/`walk`/`attack`/`hit`/`death` 여러 장)가 들어오면

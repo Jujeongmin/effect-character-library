@@ -79,7 +79,8 @@ def keep(entry):
         return False
     if entry['id'] in DROP_IDS:
         return False
-    return CONCEPT_MARKER not in entry['source']
+    # `source` is stripped from the published manifest (see below).
+    return CONCEPT_MARKER not in entry.get('source', '')
 
 
 def prune(web_dir, dry_run=False):
@@ -112,6 +113,9 @@ def prune(web_dir, dry_run=False):
     by_cat = Counter(e['category'] for e in kept)
 
     if not dry_run:
+        # Last pass before the library ships: drop internal studio paths.
+        for e in kept:
+            e.pop('source', None)
         manifest['assets'] = kept
         with open(manifest_path, 'w', encoding='utf-8') as f:
             json.dump(manifest, f, ensure_ascii=False, indent=2)

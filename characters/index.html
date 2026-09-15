@@ -231,7 +231,7 @@ function copy(text, btn) {
 
 /* ── 로드 ──────────────────────────────────────────────────────────── */
 
-CharacterLib.load('../characters.json').then(function (lib) {
+CharacterLib.load(['../characters.json', '../icons.json']).then(function (lib) {
   state.lib = lib;
   els.sub.textContent = lib.characters.length + '개 캐릭터 · 애니메이션 ' + lib.characters.filter(hasAnimation).length + '종';
   if (reduceMotion) { els.motionNote.hidden = false; els.playBtn.textContent = '재생'; els.playBtn.setAttribute('aria-pressed', 'false'); }
@@ -348,6 +348,7 @@ function setupPrompt() {
     '',
     '정지 이미지(A/B) 재생:',
     "  const lib = await CharacterLib.load('" + base + "characters.json');",
+    "  // 아이콘(weapon / skill_icon / equipment_icon)은 icons.json 에 따로: CharacterLib.load(['" + base + "characters.json', '" + base + "icons.json'])",
     "  await lib.preload(['<id>']);",
     "  const anim = lib.play('<id>', { loop: true });              // 모습 하나뿐일 때",
     "  const anim2 = lib.play('<id>', '<모습이름>', { loop: true }); // 여러 모습 중 하나",
@@ -422,7 +423,7 @@ function renderGrid() {
   }
 
   list.forEach(function (character) {
-    var canvas, isSpineThumb = !!character.spine;
+    var canvas, isSpineThumb = !!character.spine && !character.spine.incomplete;
     if (isSpineThumb) {
       canvas = createSpineThumb(character, state.lib.baseUrl);
     } else {
@@ -555,7 +556,7 @@ function ensureThumbSpineCanvas() {
           // fixed camera left most of them off-center or oddly scaled.
           // Fit the camera to this skeleton's own current bounds instead,
           // every frame, right before drawing it.
-          r.skeleton.getBounds(offset, size, []);
+          visibleBounds(r.skeleton, offset, size);
           renderer.camera.position.x = offset.x + size.x / 2;
           renderer.camera.position.y = offset.y + size.y / 2;
           renderer.camera.viewportWidth = canvas.width;
@@ -579,6 +580,27 @@ function ensureThumbSpineCanvas() {
   });
 }
 
+// getBounds() also counts fully transparent attachments (e.g. fairy rigs keep
+// hidden plant props far off to the side), which shrinks and off-centers the fit.
+function visibleBounds(skeleton, offset, size) {
+  var minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity, verts = [];
+  skeleton.drawOrder.forEach(function (slot) {
+    var att = slot.getAttachment();
+    if (!att || !slot.bone.active || slot.color.a * att.color.a < 0.01) return;
+    var n;
+    if (att instanceof spine.RegionAttachment) { n = 8; att.computeWorldVertices(slot, verts, 0, 2); }
+    else if (att instanceof spine.MeshAttachment) { n = att.worldVerticesLength; att.computeWorldVertices(slot, 0, n, verts, 0, 2); }
+    else return;
+    for (var i = 0; i < n; i += 2) {
+      if (verts[i] < minX) minX = verts[i]; if (verts[i] > maxX) maxX = verts[i];
+      if (verts[i + 1] < minY) minY = verts[i + 1]; if (verts[i + 1] > maxY) maxY = verts[i + 1];
+    }
+  });
+  if (minX === Infinity) { skeleton.getBounds(offset, size, []); return; }
+  offset.set(minX, minY);
+  size.set(maxX - minX, maxY - minY);
+}
+
 function joinRelative(baseUrl, path) {
   // baseUrl is like '../' (page-relative); manifest paths are already
   // repo-root-relative ("characters/xxx/..."), same convention Clip uses.
@@ -592,8 +614,9 @@ function joinRelative(baseUrl, path) {
 function registerSpine(key, spineSpec, baseUrl, ctx2d) {
   ensureThumbSpineCanvas();
   thumbSpine.registry = thumbSpine.registry.filter(function (r) { return r.key !== key; });
-  var skeletonUrl = joinRelative(baseUrl, spineSpec.skeleton);
-  var atlasUrl = joinRelative(baseUrl, spineSpec.atlas);
+  var v = spineSpec.hash ? '?v=' + spineSpec.hash : '';
+  var skeletonUrl = joinRelative(baseUrl, spineSpec.skeleton) + v;
+  var atlasUrl = joinRelative(baseUrl, spineSpec.atlas) + v;
   var am = thumbSpine.app.assetManager;
 
   function add(skeletonData) {
@@ -612,11 +635,15 @@ function registerSpine(key, spineSpec, baseUrl, ctx2d) {
     thumbSpine.registry.push({ key: key, skeleton: skeleton, animationState: animationState, ctx2d: ctx2d });
   }
 
-  var isBinary = !/\.json$/i.test(skeletonUrl);
+  var isBinary = !/\.json$/i.test(spineSpec.skeleton);
 
   if (spineDataCache[skeletonUrl]) {
     add(spineDataCache[skeletonUrl]);
   } else {
+    // spine-webgl resolves each atlas page (the .png) itself, relative to
+    // atlasUrl's own directory - no hook to append ?v= to those, so only
+    // the .txt/.json/.bytes above are cache-busted. Rename the folder
+    // (e.g. add a suffix) if a page image itself needs to bust cache.
     am.loadTextureAtlas(atlasUrl);
     if (isBinary) am.loadBinary(skeletonUrl); else am.loadJson(skeletonUrl);
     (function poll() {
@@ -814,7 +841,8 @@ function renderDetail() {
     addMeta(meta, '애니메이션', '있음 (진짜 Spine 스켈레톤) — 동작 버튼을 눌러보세요');
     addMeta(meta, '동작', activeSpine.animations.join(', '));
     if (c.spine.variants && c.spine.variants.length) addMeta(meta, '색상/장식', '기본 + ' + c.spine.variants.length + '종 — 위 탭에서 전환');
-    if (activeSpine.note) addMeta(meta, '주의', activeSpine.note);
+    if (c.spine.incomplete) addMeta(meta, '주의', c.spine.incomplete);
+    if (activeSpine.note) addMeta(meta, '메모', activeSpine.note);
   } else {
     var names = c.animationNames();
     addMeta(meta, '애니메이션', hasAnimation(c) ? '있음 — 동작 탭을 선택하세요' : '없음 — 정지 이미지');

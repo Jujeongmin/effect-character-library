@@ -84,11 +84,15 @@ def main(staging, library, dry_run=False):
             'width': e['width'], 'height': e['height'],
             'frameWidth': e['width'], 'frameHeight': e['height'],
             'frames': 1, 'cols': 1, 'rows': 1,
-            'source': e['source'], 'opaque': bool(e.get('opaque')),
+            'opaque': bool(e.get('opaque')),
         })
         added.append(uid)
 
     manifest['assets'].sort(key=lambda x: (x['category'], x['id']))
+    # The library is published: never ship internal studio paths. Staging keeps
+    # `source` (is_texture reads it above); the library manifest does not.
+    for a in manifest['assets']:
+        a.pop('source', None)
     if not dry_run:
         with open(lib_path, 'w', encoding='utf-8') as f:
             json.dump(manifest, f, ensure_ascii=False, indent=2)

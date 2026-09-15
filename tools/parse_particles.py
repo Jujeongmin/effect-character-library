@@ -25,9 +25,23 @@ import yaml
 DOC_RE = re.compile(r'^--- !u!(\d+) &(\d+)', re.M)
 PARTICLE_SYSTEM, PARTICLE_RENDERER, GAME_OBJECT = 198, 199, 1
 
-# ShapeModule.type - only the ones this art actually uses are named.
-SHAPES = {0: 'sphere', 1: 'sphere_shell', 2: 'hemisphere', 4: 'cone', 5: 'box',
-          7: 'circle', 10: 'edge', 15: 'cone_volume'}
+# ShapeModule.type is UnityEngine.ParticleSystemShapeType (checked against
+# UnityCsReference Modules/ParticleSystem/Managed/ParticleSystemEnums.cs).
+SHAPES = {0: 'sphere', 1: 'sphere_shell', 2: 'hemisphere', 3: 'hemisphere_shell',
+          4: 'cone', 5: 'box', 6: 'mesh', 7: 'cone_shell', 8: 'cone_volume',
+          9: 'cone_volume_shell', 10: 'circle', 11: 'circle_edge',
+          12: 'single_sided_edge', 13: 'mesh_renderer', 14: 'skinned_mesh_renderer',
+          15: 'box_shell', 16: 'box_edge', 17: 'donut', 18: 'rectangle',
+          19: 'sprite', 20: 'sprite_renderer'}
+
+# UnityEngine.Rendering.BlendMode values the web runtime cares about.
+BLEND_ONE, BLEND_SRC_ALPHA, BLEND_ONE_MINUS_SRC_ALPHA = 1, 5, 10
+# Shaders whose blend is driven by _SrcBlend/_DstBlend floats. Any other shader
+# (legacy "Particles/Additive", "Mobile/Particles/Alpha Blended", ...) hard-codes
+# its Blend line, and the floats on the material are stale leftovers - a new
+# material starts on Standard, which saves _SrcBlend 1 / _DstBlend 0 (One/Zero)
+# and keeps them after the shader is swapped. That is where 1/0 came from.
+FLOAT_BLEND_SHADERS = re.compile(r'standard|universal|urp|lwrp|hdrp|particles/(lit|unlit|simple ?lit)', re.I)
 RENDER_MODES = {0: 'billboard', 1: 'stretched', 2: 'horizontal', 3: 'vertical', 4: 'mesh'}
 
 
@@ -110,6 +124,37 @@ def gradient(mg):
     return {'stops': stops, 'alpha': alphas}
 
 
+def shader_name(ref, guids):
+    """Best available name for a material's m_Shader reference, or None.
+
+    Project/package shaders resolve through the guid map to a file path
+    (e.g. ".../Mobile-Particle-Add.shader"). Built-in shaders all share the
+    f000... guid and differ only by fileID, which is kept as "builtin:<id>"
+    rather than guessed at.
+    """
+    if not isinstance(ref, dict):
+        return None
+    guid = ref.get('guid') or ''
+    if guid and guid.strip('0f') == '' and ref.get('fileID'):
+        return 'builtin:%s' % ref.get('fileID')
+    path = guids.get(guid)
+    return os.path.splitext(os.path.basename(path))[0] if path else None
+
+
+def blend_mode(shader, src, dst):
+    """'additive' | 'alpha' | None. None means unknown - never a guess."""
+    if dst == BLEND_ONE_MINUS_SRC_ALPHA:
+        return 'alpha'
+    if dst == BLEND_ONE and src in (BLEND_ONE, BLEND_SRC_ALPHA):
+        return 'additive'
+    name = (shader or '').lower()
+    if re.search(r'add|glow', name):
+        return 'additive'
+    if re.search(r'alpha[ _-]?blend|blended|particle[ _-]?alpha|transparent', name):
+        return 'alpha'
+    return None
+
+
 def material_index(unity_dir, guids):
     """material GUID -> {texture pathname, tint, blend}.
 
@@ -145,9 +190,13 @@ def material_index(unity_dir, guids):
         for fl in saved.get('m_Floats') or []:
             if isinstance(fl, dict):
                 floats.update(fl)
+        shader = shader_name(mat.get('m_Shader'), guids)
         src, dst = floats.get('_SrcBlend'), floats.get('_DstBlend')
+        if not (shader and FLOAT_BLEND_SHADERS.search(shader)):
+            src = dst = None            # stale Standard defaults, not this shader's blend
         out[guid] = {
             'texture': guids.get(tex_guid or ''), 'tint': tint,
+            'shader': shader, 'blend': blend_mode(shader, src, dst),
             'srcBlend': src, 'dstBlend': dst,
         }
     # A material file may be referenced by the GUID in its own name.
@@ -218,6 +267,8 @@ def parse_prefab(path, mats, guids):
             'render': RENDER_MODES.get(rend.get('m_RenderMode') if rend else None, 'billboard'),
             'texture': os.path.splitext(os.path.basename(tex_path))[0] if tex_path else None,
             'tint': mat.get('tint'),
+            'shader': mat.get('shader'),
+            'blend': mat.get('blend'),
             'srcBlend': mat.get('srcBlend'),
             'dstBlend': mat.get('dstBlend'),
         }

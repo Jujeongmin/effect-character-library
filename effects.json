@@ -13,10 +13,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/fire_aura_64x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "c59b098e1a"
     },
     {
       "id": "fire_auraball",
@@ -29,10 +29,10 @@
       "frames": 8,
       "cols": 8,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/fire_auraball_60x140.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "6a05b32e16"
     },
     {
       "id": "fire_ring_01",
@@ -45,10 +45,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/260114_fire_ring_01_200x200.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "4bf33f19d0"
     },
     {
       "id": "mythic_heal",
@@ -61,10 +61,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/04_신화스킬/260805_mythic_heal_400x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "1b0e3666d3"
     },
     {
       "id": "mythic_repulse_aura",
@@ -77,10 +77,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/04_신화스킬/260805_mythic_repulse_aura_400x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "68d86a074b"
     },
     {
       "id": "repulse",
@@ -93,10 +93,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/repulse_100x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "2c4ec84649"
     },
     {
       "id": "repulse_2",
@@ -109,10 +109,10 @@
       "frames": 8,
       "cols": 3,
       "rows": 3,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/repulse_128x128.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "2bc974d553"
     },
     {
       "id": "repulse_3",
@@ -125,10 +125,10 @@
       "frames": 12,
       "cols": 12,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/repulse.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "b66f262ae3"
     },
     {
       "id": "ring",
@@ -141,11 +141,11 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/260114_ring.gif",
       "fps": 5,
       "opaque": false,
       "reference": false,
-      "note": "backdrop keyed out of the original opaque export"
+      "note": "backdrop keyed out of the original opaque export",
+      "hash": "58e186a81d"
     },
     {
       "id": "bomb_drop_1",
@@ -158,10 +158,10 @@
       "frames": 6,
       "cols": 3,
       "rows": 2,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/bomb_drop_1_128x128.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "09c97194a8"
     },
     {
       "id": "bomb_drop_1_2",
@@ -174,10 +174,10 @@
       "frames": 3,
       "cols": 3,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/bomb_drop_1_64x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "a77db94bb0"
     },
     {
       "id": "bomb_drop_2",
@@ -190,10 +190,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/bomb_drop_2_100x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "1eed31cf23"
     },
     {
       "id": "bomb_drop_2_2",
@@ -206,10 +206,10 @@
       "frames": 8,
       "cols": 3,
       "rows": 3,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/bomb_drop_2_128x128.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "051dc92fb5"
     },
     {
       "id": "bomb_drop_2_3",
@@ -222,10 +222,10 @@
       "frames": 16,
       "cols": 16,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/bomb_drop_2.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "82924119a6"
     },
     {
       "id": "explosion",
@@ -238,10 +238,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/explosion_100x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "f7d24d60a0"
     },
     {
       "id": "explosion_2",
@@ -254,10 +254,10 @@
       "frames": 8,
       "cols": 3,
       "rows": 3,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/explosion_128x128.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "10f4dc7bac"
     },
     {
       "id": "explosion_3",
@@ -270,10 +270,10 @@
       "frames": 8,
       "cols": 8,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/explosion_100x100.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "f6f916f470"
     },
     {
       "id": "mythic_bomb_drop_explode",
@@ -286,10 +286,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/04_신화스킬/260805_mythic_bomb_drop_explode_400x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "c2b319ab09"
     },
     {
       "id": "ny_explosion_01",
@@ -302,9 +302,9 @@
       "frames": 4,
       "cols": 2,
       "rows": 2,
-      "source": "unity/range_L_fire_explosion/2018_nekoyume/00_Materials/NY_explosion_01.png",
       "opaque": false,
-      "fps": 12
+      "fps": 12,
+      "hash": "815cd807f1"
     },
     {
       "id": "tyr_bomb",
@@ -317,11 +317,11 @@
       "frames": 6,
       "cols": 3,
       "rows": 2,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/tyr_bomb_400x400.png",
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "note": "backdrop keyed out of the original opaque export"
+      "note": "backdrop keyed out of the original opaque export",
+      "hash": "89d5ffadc2"
     },
     {
       "id": "deatheffect",
@@ -334,10 +334,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/03_피격/260108_deatheffect_60x60.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "f466d5d1c7"
     },
     {
       "id": "deatheffect_2",
@@ -350,10 +350,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/03_피격/260108_deatheffect.gif",
       "fps": 10,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "544574bd3d"
     },
     {
       "id": "drain",
@@ -366,10 +366,10 @@
       "frames": 8,
       "cols": 3,
       "rows": 3,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/drain_128 x 128.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "5e89d2be80"
     },
     {
       "id": "drain_2",
@@ -382,10 +382,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/drain_64x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "c12a2f88fa"
     },
     {
       "id": "drain_3",
@@ -398,10 +398,10 @@
       "frames": 9,
       "cols": 9,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/drain.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "029b2ced1b"
     },
     {
       "id": "frost",
@@ -414,10 +414,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/frost_100x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "0f4d781be0"
     },
     {
       "id": "frost_2",
@@ -430,10 +430,10 @@
       "frames": 8,
       "cols": 3,
       "rows": 3,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/frost_128x128.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "e13e069750"
     },
     {
       "id": "manaball_hit",
@@ -446,10 +446,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/03_피격/260108_manaball_hit_60x60.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "3de34a6174"
     },
     {
       "id": "manaball_hit_2",
@@ -462,10 +462,10 @@
       "frames": 5,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/03_피격/260108_manaball_hit.gif",
       "fps": 10,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "f10a5d3cf0"
     },
     {
       "id": "mythic_drain_on_hit",
@@ -478,10 +478,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/04_신화스킬/260805_mythic_drain_on_hit_256x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "550f296ad2"
     },
     {
       "id": "mythic_ricochet",
@@ -494,10 +494,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/04_신화스킬/260805_mythic_ricochet_256x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "153f5140ec"
     },
     {
       "id": "mythic_volatile_shot",
@@ -510,10 +510,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/04_신화스킬/260805_mythic_volatile_shot_256x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "18f61dc455"
     },
     {
       "id": "ny_attack_06_sprite",
@@ -526,9 +526,9 @@
       "frames": 40,
       "cols": 8,
       "rows": 5,
-      "source": "unity/Attack_scratch/2018_nekoyume/00_Materials/NY_attack_06_sprite.png",
       "opaque": false,
-      "fps": 12
+      "fps": 12,
+      "hash": "2650a32292"
     },
     {
       "id": "ny_attack_10_sprite",
@@ -541,9 +541,9 @@
       "frames": 10,
       "cols": 10,
       "rows": 1,
-      "source": "unity/240215_ShatterStrike/2018_nekoyume/00_Materials/NY_attack_10_sprite.png",
       "opaque": false,
-      "fps": 12
+      "fps": 12,
+      "hash": "06757c1b14"
     },
     {
       "id": "ny_sprites_blood",
@@ -556,9 +556,9 @@
       "frames": 7,
       "cols": 2,
       "rows": 4,
-      "source": "unity/191008_buff_lifesteal_magical/2018_nekoyume/00_Materials/NY_sprites_blood.png",
       "opaque": false,
-      "fps": 12
+      "fps": 12,
+      "hash": "0c84397055"
     },
     {
       "id": "ricochet",
@@ -571,10 +571,10 @@
       "frames": 6,
       "cols": 3,
       "rows": 2,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/ricochet_128x128.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "8101118f68"
     },
     {
       "id": "ricochet_2",
@@ -587,10 +587,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/ricochet_64x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "82e3fff7ce"
     },
     {
       "id": "ricochet_3",
@@ -603,10 +603,10 @@
       "frames": 7,
       "cols": 7,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/ricochet.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "41982b80c9"
     },
     {
       "id": "chain",
@@ -619,10 +619,10 @@
       "frames": 4,
       "cols": 2,
       "rows": 2,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/chain_64x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "58792ae188"
     },
     {
       "id": "lightning_2",
@@ -635,11 +635,11 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/lightning_85x480.png",
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "note": "backdrop keyed out of the original opaque export"
+      "note": "backdrop keyed out of the original opaque export",
+      "hash": "9e23824a59"
     },
     {
       "id": "ny_electric_01_sprite",
@@ -652,9 +652,9 @@
       "frames": 15,
       "cols": 4,
       "rows": 4,
-      "source": "unity/230808_aura_arena/2018_nekoyume/00_Materials/NY_Electric_01_sprite.png",
       "opaque": false,
-      "fps": 12
+      "fps": 12,
+      "hash": "654b508f92"
     },
     {
       "id": "ny_electric_03_sprite",
@@ -667,9 +667,9 @@
       "frames": 4,
       "cols": 2,
       "rows": 2,
-      "source": "unity/weapon_aura_10140001_all/2018_nekoyume/00_Materials/NY_Electric_03_sprite.png",
       "opaque": false,
-      "fps": 12
+      "fps": 12,
+      "hash": "87bbe85491"
     },
     {
       "id": "spark",
@@ -682,10 +682,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/260114_spark_150x150.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "0454cee4f8"
     },
     {
       "id": "spark_150",
@@ -698,10 +698,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/260114_spark_150.gif",
       "fps": 10,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "30170f38da"
     },
     {
       "id": "spark_3",
@@ -714,10 +714,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/spark_64x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "a920246c9c"
     },
     {
       "id": "spark_4",
@@ -730,10 +730,10 @@
       "frames": 8,
       "cols": 8,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/spark_85x85.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "11eb5ceafa"
     },
     {
       "id": "spark_7",
@@ -746,10 +746,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "effect_old/Nine Corporation/05_RB/04_UI/OLD/0402_resource/effect/spark_64x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "82e7af0d24"
     },
     {
       "id": "thor_lighting",
@@ -762,10 +762,10 @@
       "frames": 12,
       "cols": 12,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/thor/thor_lighting_100x172.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "3c705b482b"
     },
     {
       "id": "thor_lightning",
@@ -778,10 +778,10 @@
       "frames": 12,
       "cols": 12,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/thor/토르번개.gif",
       "fps": 10,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "981e371861"
     },
     {
       "id": "thor_thunder",
@@ -794,10 +794,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/thor-thunder_170x960.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "52043878f2"
     },
     {
       "id": "thunderstrike_wo_blur",
@@ -810,10 +810,10 @@
       "frames": 5,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/260226_Thunderstrike-wo-blur_60x400.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "5bbc0ebae4"
     },
     {
       "id": "thunderstrike_wo_blur_2",
@@ -826,10 +826,10 @@
       "frames": 5,
       "cols": 5,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/260226_Thunderstrike-wo-blur.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "085c863e3d"
     },
     {
       "id": "new_death",
@@ -842,10 +842,10 @@
       "frames": 6,
       "cols": 3,
       "rows": 2,
-      "source": "effect_old/Nine Corporation/05_RB/04_UI/OLD/0402_resource/effect/new-death_400x400.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "e7af2f2c46"
     },
     {
       "id": "ny_attack_02",
@@ -858,11 +858,11 @@
       "frames": 4,
       "cols": 4,
       "rows": 2,
-      "source": "unity/NY_battle_attack_01/2018_nekoyume/00_Materials/NY_attack_02.png",
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "note": "row 2 is the same animation in orange"
+      "note": "row 2 is the same animation in orange",
+      "hash": "58ea1fcfd4"
     },
     {
       "id": "ny_attack_04_sprite",
@@ -875,11 +875,11 @@
       "frames": 4,
       "cols": 4,
       "rows": 2,
-      "source": "unity/240215_TwinAttack/2018_nekoyume/00_Materials/NY_attack_04_sprite.png",
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "note": "row 2 is a second slash variant"
+      "note": "row 2 is a second slash variant",
+      "hash": "a0cd8d40b1"
     },
     {
       "id": "ny_attack_05_fire",
@@ -892,9 +892,9 @@
       "frames": 16,
       "cols": 4,
       "rows": 4,
-      "source": "unity/range_L_fire_magiccircle/2018_nekoyume/00_Materials/NY_attack_05_fire.png",
       "opaque": false,
-      "fps": 12
+      "fps": 12,
+      "hash": "d5537545f5"
     },
     {
       "id": "ny_attack_07_sprite",
@@ -907,10 +907,10 @@
       "frames": 5,
       "cols": 5,
       "rows": 1,
-      "source": "unity/Attack_scratch/2018_nekoyume/00_Materials/NY_attack_07_sprite.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "59a186f1a0"
     },
     {
       "id": "ny_attack_09_sprite",
@@ -923,10 +923,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "unity/240215_ShatterStrike/2018_nekoyume/00_Materials/NY_attack_09_sprite.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "abd4f30ffd"
     },
     {
       "id": "ny_electric_02_sprite",
@@ -939,10 +939,10 @@
       "frames": 16,
       "cols": 8,
       "rows": 2,
-      "source": "unity/231102_아우라_이지스_폭격_F/2018_nekoyume/00_Materials/NY_Electric_02_sprite.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "b93acc2396"
     },
     {
       "id": "ny_flash_05_sprite",
@@ -955,11 +955,11 @@
       "frames": 4,
       "cols": 4,
       "rows": 2,
-      "source": "unity/240215_TwinAttack/2018_nekoyume/00_Materials/NY_flash_05_sprite.png",
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "note": "row 2 is a second arc variant"
+      "note": "row 2 is a second arc variant",
+      "hash": "8215ac1124"
     },
     {
       "id": "ny_lines_01",
@@ -972,11 +972,11 @@
       "frames": 4,
       "cols": 4,
       "rows": 2,
-      "source": "unity/NY_battle_attack_01/2018_nekoyume/00_Materials/NY_lines_01.png",
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "note": "row 2 is a second streak variant"
+      "note": "row 2 is a second streak variant",
+      "hash": "5338f6aeeb"
     },
     {
       "id": "ny_smoke_04_fire_sprite",
@@ -989,9 +989,9 @@
       "frames": 64,
       "cols": 8,
       "rows": 8,
-      "source": "unity/UI_contents unlock/2018_nekoyume/00_Materials/NY_smoke_04_fire_sprite.png",
       "opaque": false,
-      "fps": 12
+      "fps": 12,
+      "hash": "e715d15cbe"
     },
     {
       "id": "ny_smoke_fire_sprite",
@@ -1004,9 +1004,9 @@
       "frames": 4,
       "cols": 2,
       "rows": 2,
-      "source": "unity/UI_combination/2018_nekoyume/00_Materials/NY_smoke_fire_sprite.png",
       "opaque": false,
-      "fps": 12
+      "fps": 12,
+      "hash": "83372bdb4d"
     },
     {
       "id": "scratch_jakeolpail",
@@ -1019,10 +1019,10 @@
       "frames": 5,
       "cols": 5,
       "rows": 1,
-      "source": "012_effect/07_특수공격/200702_펜릴특수/scratch_작업파일.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "b8bf77a511"
     },
     {
       "id": "ball_effect_01",
@@ -1035,10 +1035,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/ball-effect_01_30x30.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "128374ba77"
     },
     {
       "id": "manaball_attack",
@@ -1051,10 +1051,10 @@
       "frames": 4,
       "cols": 5,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/260108_manaball_attack_60x60.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "3fd40b4fac"
     },
     {
       "id": "manaball_attack_2",
@@ -1067,10 +1067,10 @@
       "frames": 4,
       "cols": 5,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/260108_manaball_attack.gif",
       "fps": 8,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "b0675a22ce"
     },
     {
       "id": "mythic_bomb_drop_fall",
@@ -1083,10 +1083,10 @@
       "frames": 3,
       "cols": 3,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/04_신화스킬/260805_mythic_bomb_drop_fall_192x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "4ee256b1e1"
     },
     {
       "id": "new_hit",
@@ -1099,10 +1099,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/new-hit_100x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "09bb8c2946"
     },
     {
       "id": "new_hit_2",
@@ -1115,10 +1115,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/new-hit_64x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "9ea36afdb1"
     },
     {
       "id": "pet_projectile",
@@ -1131,10 +1131,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/pet_projectile_100x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "58edc6127b"
     },
     {
       "id": "pet_projectile_2",
@@ -1147,10 +1147,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/pet_projectile_64x64.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "7b391db87c"
     },
     {
       "id": "skadi_arrow",
@@ -1163,10 +1163,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/images/스카디_화살_200x50.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "b359d9bd2c"
     },
     {
       "id": "skadi_arrow_2",
@@ -1179,10 +1179,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/images/스카디_화살_80x20.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "b65d72c3f5"
     },
     {
       "id": "thor_projectile",
@@ -1195,10 +1195,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/thor-projectile_100x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "bf5ccfe3d0"
     },
     {
       "id": "tyr_projectile",
@@ -1211,10 +1211,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/01_투사체/tyr-projectile_50x15.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "db526104a8"
     },
     {
       "id": "ny_arrowhead",
@@ -1227,8 +1227,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200203_victory/2018_nekoyume/00_Materials/NY_arrowhead.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "e23fa26864"
     },
     {
       "id": "ny_attack_01",
@@ -1241,8 +1241,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/181217_NY_battle_damage_01/2018_nekoyume/00_Materials/NY_attack_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "145b7f68fa"
     },
     {
       "id": "ny_attack_03",
@@ -1255,8 +1255,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/181217_NY_battle_damage_01/2018_nekoyume/00_Materials/NY_attack_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "39912a5672"
     },
     {
       "id": "ny_attack_05",
@@ -1269,8 +1269,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/02_신성아우라_동상/2018_nekoyume/00_Materials/NY_attack_05.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "bc38e55533"
     },
     {
       "id": "ny_aura",
@@ -1283,8 +1283,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/01_신성아우라_방패/2018_nekoyume/00_Materials/NY_aura.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "d85cec32cd"
     },
     {
       "id": "ny_aura_01_sprite",
@@ -1297,8 +1297,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/weapon_aura_10150000_all/2018_nekoyume/00_Materials/NY_aura_01_sprite.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "f05baa0476"
     },
     {
       "id": "ny_aura_adventure_01",
@@ -1311,8 +1311,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_adventure/2018_nekoyume/00_Materials/NY_aura_adventure_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "5de2c20208"
     },
     {
       "id": "ny_aura_adventure_02",
@@ -1325,8 +1325,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_adventure/2018_nekoyume/00_Materials/NY_aura_adventure_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "e829866685"
     },
     {
       "id": "ny_aura_adventure_03",
@@ -1339,8 +1339,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_adventure/2018_nekoyume/00_Materials/NY_aura_adventure_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "02d86fb8fc"
     },
     {
       "id": "ny_aura_adventure_04",
@@ -1353,8 +1353,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_adventure/2018_nekoyume/00_Materials/NY_aura_adventure_04.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "e720f0d4a3"
     },
     {
       "id": "ny_aura_adventure_05",
@@ -1367,8 +1367,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_adventure/2018_nekoyume/00_Materials/NY_aura_adventure_05.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "c38ae56562"
     },
     {
       "id": "ny_aura_adventure_06",
@@ -1381,8 +1381,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_adventure/2018_nekoyume/00_Materials/NY_aura_adventure_06.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "30390a036e"
     },
     {
       "id": "ny_aura_adventure_07",
@@ -1395,8 +1395,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_adventure/2018_nekoyume/00_Materials/NY_aura_adventure_07.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "87a005327c"
     },
     {
       "id": "ny_aura_adventure_08",
@@ -1409,8 +1409,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_adventure/2018_nekoyume/00_Materials/NY_aura_adventure_08.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "9404d84db2"
     },
     {
       "id": "ny_aura_adventure_09",
@@ -1423,8 +1423,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_adventure/2018_nekoyume/00_Materials/NY_aura_adventure_09.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "9be0dabb8a"
     },
     {
       "id": "ny_aura_adventure_10",
@@ -1437,8 +1437,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_adventure/2018_nekoyume/00_Materials/NY_aura_adventure_10.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "6070b8c05f"
     },
     {
       "id": "ny_aura_arena_01",
@@ -1451,8 +1451,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_arena/2018_nekoyume/00_Materials/NY_aura_arena_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "b96ca19b64"
     },
     {
       "id": "ny_aura_arena_02",
@@ -1465,8 +1465,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_arena/2018_nekoyume/00_Materials/NY_aura_arena_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "e30a3e9bc3"
     },
     {
       "id": "ny_aura_arena_02_line",
@@ -1479,8 +1479,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_arena/2018_nekoyume/00_Materials/NY_aura_arena_02_line.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "408c106f9e"
     },
     {
       "id": "ny_aura_arena_03",
@@ -1493,8 +1493,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_arena/2018_nekoyume/00_Materials/NY_aura_arena_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "2cc0038624"
     },
     {
       "id": "ny_aura_arena_04",
@@ -1507,8 +1507,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_arena/2018_nekoyume/00_Materials/NY_aura_arena_04.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "4665ddbd75"
     },
     {
       "id": "ny_aura_arena_05",
@@ -1521,8 +1521,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_arena/2018_nekoyume/00_Materials/NY_aura_arena_05.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "a1a49fff68"
     },
     {
       "id": "ny_aura_arena_07",
@@ -1535,8 +1535,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_arena/2018_nekoyume/00_Materials/NY_aura_arena_07.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "a43fb61133"
     },
     {
       "id": "ny_aura_event_01",
@@ -1549,8 +1549,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_event/2018_nekoyume/00_Materials/NY_aura_event_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "531740a2a8"
     },
     {
       "id": "ny_aura_event_03",
@@ -1563,8 +1563,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_event/2018_nekoyume/00_Materials/NY_aura_event_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "209cee5ef5"
     },
     {
       "id": "ny_aura_event_05",
@@ -1577,8 +1577,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_event/2018_nekoyume/00_Materials/NY_aura_event_05.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "1e4303c980"
     },
     {
       "id": "ny_brokenchain_03",
@@ -1591,8 +1591,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_combination_brokenchain_01_click/2018_nekoyume/00_Materials/NY_brokenchain_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "f423bc9fe2"
     },
     {
       "id": "ny_brokenchain_03_brown",
@@ -1605,8 +1605,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200709_조합자물쇠열리는_갈색/2018_nekoyume/00_Materials/NY_brokenchain_03_brown.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "1100661e5d"
     },
     {
       "id": "ny_brokenchain_04",
@@ -1619,8 +1619,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_combination_brokenchain_01_click/2018_nekoyume/00_Materials/NY_brokenchain_04.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "d90a11cfc7"
     },
     {
       "id": "ny_brokenchain_04_brown",
@@ -1633,8 +1633,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200709_조합자물쇠열리는_갈색/2018_nekoyume/00_Materials/NY_brokenchain_04_brown.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "c4be902d24"
     },
     {
       "id": "ny_brokenchain_06",
@@ -1647,8 +1647,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_combination_brokenchain_01_click/2018_nekoyume/00_Materials/NY_brokenchain_06.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "eaa6b65753"
     },
     {
       "id": "ny_brokenchain_06_brown",
@@ -1661,8 +1661,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200709_조합자물쇠열리는_갈색/2018_nekoyume/00_Materials/NY_brokenchain_06_brown.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "0b44ee93e8"
     },
     {
       "id": "ny_brokenchain_07",
@@ -1675,8 +1675,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_combination_brokenchain_01/2018_nekoyume/00_Materials/NY_brokenchain_07.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "b3ca296a99"
     },
     {
       "id": "ny_brokenchain_07_brown",
@@ -1689,8 +1689,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200709_조합자물쇠열리는_갈색/2018_nekoyume/00_Materials/NY_brokenchain_07_brown.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "e55547c071"
     },
     {
       "id": "ny_brokenchain_08",
@@ -1703,8 +1703,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200709_조합자물쇠열리는_갈색/2018_nekoyume/00_Materials/NY_brokenchain_08.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "847f9d7262"
     },
     {
       "id": "ny_brokenchain_08_brown",
@@ -1717,8 +1717,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200709_조합자물쇠열리는_갈색/2018_nekoyume/00_Materials/NY_brokenchain_08_brown.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "02369491e2"
     },
     {
       "id": "ny_chain_01",
@@ -1731,8 +1731,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_minus_attack_magical/2018_nekoyume/00_Materials/NY_chain_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "550f011e57"
     },
     {
       "id": "ny_chain_02",
@@ -1745,8 +1745,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_minus_attack_magical/2018_nekoyume/00_Materials/NY_chain_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "984d9eba67"
     },
     {
       "id": "ny_circle",
@@ -1759,8 +1759,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_lifesteal_magical/2018_nekoyume/00_Materials/NY_circle.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "3b00aafbe0"
     },
     {
       "id": "ny_dot_01",
@@ -1773,8 +1773,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200709_조합자물쇠열리는_갈색/2018_nekoyume/00_Materials/NY_dot_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "787166ac41"
     },
     {
       "id": "ny_dot_02",
@@ -1787,8 +1787,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200203_victory/2018_nekoyume/00_Materials/NY_dot_02.gif",
-      "opaque": false
+      "opaque": false,
+      "hash": "0c9b93af02"
     },
     {
       "id": "ny_dust_02",
@@ -1801,8 +1801,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/181217_NY_battle_damage_01/2018_nekoyume/00_Materials/NY_dust_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "1da14360ff"
     },
     {
       "id": "ny_dust_03",
@@ -1815,8 +1815,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_combination/2018_nekoyume/00_Materials/NY_dust_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "e56484062d"
     },
     {
       "id": "ny_effect_01",
@@ -1829,8 +1829,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/NY_battle_boss/2018_nekoyume/00_Materials/NY_effect_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "e4dd0699fa"
     },
     {
       "id": "ny_emotion_01",
@@ -1843,8 +1843,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/emotion_heart_01/2018_nekoyume/00_Materials/NY_emotion_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "0feca27ec9"
     },
     {
       "id": "ny_feather_01",
@@ -1857,8 +1857,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/240215_buff_dispel/2018_nekoyume/00_Materials/NY_feather_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "46611b85ad"
     },
     {
       "id": "ny_flash_01",
@@ -1871,8 +1871,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200709_조합자물쇠열리는_갈색/2018_nekoyume/00_Materials/NY_flash_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "6539e3a02e"
     },
     {
       "id": "ny_flash_02_fire",
@@ -1885,8 +1885,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/240215_TwinAttack/2018_nekoyume/00_Materials/NY_flash_02_fire.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "22d6130cf0"
     },
     {
       "id": "ny_flash_02_land",
@@ -1899,8 +1899,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/blow_M_land/2018_nekoyume/00_Materials/NY_flash_02_land.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "28aa424c6c"
     },
     {
       "id": "ny_flash_02_water",
@@ -1913,8 +1913,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/02_신성아우라_동상/2018_nekoyume/00_Materials/NY_flash_02_water.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "19551679ef"
     },
     {
       "id": "ny_flash_02_water_2",
@@ -1927,8 +1927,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/SkillEffectTestScene/Resources/VFX/MaterialsTextures/NY_flash_02_water.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "dcb00ecf13"
     },
     {
       "id": "ny_flash_02_wind",
@@ -1941,8 +1941,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/blow_M_wind/2018_nekoyume/00_Materials/NY_flash_02_wind.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "1c1d4576eb"
     },
     {
       "id": "ny_flash_03",
@@ -1955,8 +1955,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/240215_TwinAttack/2018_nekoyume/00_Materials/NY_flash_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "da2c7af425"
     },
     {
       "id": "ny_flash_04",
@@ -1969,8 +1969,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/NY_battle_boss/2018_nekoyume/00_Materials/NY_flash_04.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "e15c7daf9d"
     },
     {
       "id": "ny_flower_01",
@@ -1983,8 +1983,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_praise/2018_nekoyume/00_Materials/NY_flower_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "403b1da8f1"
     },
     {
       "id": "ny_flower_03",
@@ -1997,8 +1997,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_praise/2018_nekoyume/00_Materials/NY_flower_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "aaaf0d4dd7"
     },
     {
       "id": "ny_glow_01",
@@ -2011,8 +2011,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/00_신성아우라_기본/2018_nekoyume/00_Materials/NY_glow_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "ca5262eb21"
     },
     {
       "id": "ny_glow_02",
@@ -2025,8 +2025,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/01_신성아우라_방패/2018_nekoyume/00_Materials/NY_glow_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "37e415c414"
     },
     {
       "id": "ny_glow_03",
@@ -2039,8 +2039,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200203_victory/2018_nekoyume/00_Materials/NY_glow_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "295df82c71"
     },
     {
       "id": "ny_glow_fire",
@@ -2053,8 +2053,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/Attack_scratch/2018_nekoyume/00_Materials/NY_glow_fire.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "eb855de694"
     },
     {
       "id": "ny_glow_land",
@@ -2067,8 +2067,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/blow_M_land/2018_nekoyume/00_Materials/NY_glow_land.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "57a8373f15"
     },
     {
       "id": "ny_glow_water",
@@ -2081,8 +2081,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/bg_mimisbrunnr_01/2018_nekoyume/00_Materials/NY_glow_water.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "c72b292c33"
     },
     {
       "id": "ny_grab",
@@ -2095,8 +2095,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_minus_casting/2018_nekoyume/00_Materials/NY_grab.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "4c8967b773"
     },
     {
       "id": "ny_leaf",
@@ -2109,8 +2109,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_arena/2018_nekoyume/00_Materials/NY_leaf.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "940a8bc000"
     },
     {
       "id": "ny_leaf_01",
@@ -2123,8 +2123,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/blow_M_wind/2018_nekoyume/00_Materials/NY_leaf_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "5c7fc7e111"
     },
     {
       "id": "ny_leaf_03",
@@ -2137,8 +2137,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_arena/2018_nekoyume/00_Materials/NY_leaf_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "5a3480b244"
     },
     {
       "id": "ny_light_rainbow",
@@ -2151,9 +2151,9 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_reincarnation_magical/2018_nekoyume/00_Materials/NY_light_rainbow.png",
       "opaque": false,
-      "note": "backdrop keyed out of the original opaque export"
+      "note": "backdrop keyed out of the original opaque export",
+      "hash": "5c72b20ca3"
     },
     {
       "id": "ny_light_rainbow_2",
@@ -2166,8 +2166,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_reincarnation_magical/2018_nekoyume/00_Materials/NY_light_rainbow.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "6047c453a2"
     },
     {
       "id": "ny_lines_02",
@@ -2180,8 +2180,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/02_신성아우라_동상/2018_nekoyume/00_Materials/NY_lines_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "4df5aeb36b"
     },
     {
       "id": "ny_lines_03",
@@ -2194,8 +2194,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/01_신성아우라_방패/2018_nekoyume/00_Materials/NY_lines_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "3b7d95de39"
     },
     {
       "id": "ny_lines_04",
@@ -2208,8 +2208,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/240604_adventureboss_line/2018_nekoyume/00_Materials/NY_lines_04.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "a64f634219"
     },
     {
       "id": "ny_magiccircle_01",
@@ -2222,8 +2222,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/01_신성아우라_방패/2018_nekoyume/00_Materials/NY_magiccircle_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "9bda142ce0"
     },
     {
       "id": "ny_magiccircle_02",
@@ -2236,8 +2236,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/NY_battle_boss/2018_nekoyume/00_Materials/NY_magiccircle_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "6a1032104a"
     },
     {
       "id": "ny_magiccircle_03",
@@ -2250,8 +2250,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/231017_시즌패스/2018_nekoyume/00_Materials/NY_magiccircle_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "b674bdfd46"
     },
     {
       "id": "ny_magiccircle_04_fire",
@@ -2264,8 +2264,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/00_신성아우라_기본/2018_nekoyume/00_Materials/NY_magiccircle_04_fire.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "79177fb294"
     },
     {
       "id": "ny_magiccircle_04_land",
@@ -2278,8 +2278,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/00_신성아우라_기본/2018_nekoyume/00_Materials/NY_magiccircle_04_land.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "02912435b7"
     },
     {
       "id": "ny_magiccircle_04_water",
@@ -2292,8 +2292,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/00_신성아우라_기본/2018_nekoyume/00_Materials/NY_magiccircle_04_water.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "b637fe9261"
     },
     {
       "id": "ny_magiccircle_04_wind",
@@ -2306,8 +2306,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_reincarnation_magical/2018_nekoyume/00_Materials/NY_magiccircle_04_wind.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "c88e50bece"
     },
     {
       "id": "ny_magiccircle_05_fire",
@@ -2320,8 +2320,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/blow_M_fire/2018_nekoyume/00_Materials/NY_magiccircle_05_fire.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "12f9f9d825"
     },
     {
       "id": "ny_magiccircle_05_land",
@@ -2334,8 +2334,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_reincarnation_magical/2018_nekoyume/00_Materials/NY_magiccircle_05_land.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "48a12de880"
     },
     {
       "id": "ny_magiccircle_07",
@@ -2348,8 +2348,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_main/2018_nekoyume/00_Materials/NY_magiccircle_07.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "0353b19028"
     },
     {
       "id": "ny_magiccircle_08",
@@ -2362,8 +2362,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/weapon_aura_10130001_all/2018_nekoyume/00_Materials/NY_magiccircle_08.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "af81c9e1b8"
     },
     {
       "id": "ny_magiccircle_09",
@@ -2376,8 +2376,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_펫레벨업/2018_nekoyume/00_Materials/NY_magiccircle_09.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "6efc84f5d7"
     },
     {
       "id": "ny_ob_fire",
@@ -2390,8 +2390,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/blow_M_fire/2018_nekoyume/00_Materials/NY_ob_fire.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "5ba52ad33f"
     },
     {
       "id": "ny_ob_fire_02",
@@ -2404,8 +2404,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/range_L_fire_explosion/2018_nekoyume/00_Materials/NY_ob_fire_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "c91026427c"
     },
     {
       "id": "ny_ob_land",
@@ -2418,8 +2418,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/range_L_land_explosion/2018_nekoyume/00_Materials/NY_ob_land.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "50e78a52f3"
     },
     {
       "id": "ny_ob_land_02",
@@ -2432,8 +2432,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/range_L_land_magiccircle/2018_nekoyume/00_Materials/NY_ob_land_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "e42c5d9dc8"
     },
     {
       "id": "ny_ob_land_03",
@@ -2446,8 +2446,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/range_L_land_explosion/2018_nekoyume/00_Materials/NY_ob_land_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "c662085890"
     },
     {
       "id": "ny_ob_line",
@@ -2460,8 +2460,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/231128_buff_minus_stun/2018_nekoyume/00_Materials/NY_ob_line.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "9d48f4479e"
     },
     {
       "id": "ny_ob_water",
@@ -2474,8 +2474,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/blow_M_water/2018_nekoyume/00_Materials/NY_ob_water.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "d9fb9aa739"
     },
     {
       "id": "ny_ob_water_02",
@@ -2488,8 +2488,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_main/2018_nekoyume/00_Materials/NY_ob_water_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "5964d3d222"
     },
     {
       "id": "ny_ob_water_03",
@@ -2502,8 +2502,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/bg_mimisbrunnr_01/2018_nekoyume/00_Materials/NY_ob_water_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "5c9e3f8a36"
     },
     {
       "id": "ny_ob_wind",
@@ -2516,8 +2516,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/00_신성아우라_기본/2018_nekoyume/00_Materials/NY_ob_wind.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "6cd647dea0"
     },
     {
       "id": "ny_ray_01",
@@ -2530,8 +2530,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_praise/2018_nekoyume/00_Materials/NY_ray_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "d996895b8f"
     },
     {
       "id": "ny_ray_02",
@@ -2544,8 +2544,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_lifesteal_magical/2018_nekoyume/00_Materials/NY_ray_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "dfd7f1e699"
     },
     {
       "id": "ny_ray_02_2",
@@ -2558,8 +2558,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/230808_aura_event/2018_nekoyume/00_Materials/NY_ray_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "427d7ab99a"
     },
     {
       "id": "ny_ray_03",
@@ -2572,8 +2572,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/01_신성아우라_방패/2018_nekoyume/00_Materials/NY_ray_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "2adab4ec5c"
     },
     {
       "id": "ny_ray_04",
@@ -2586,8 +2586,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200203_victory/2018_nekoyume/00_Materials/NY_ray_04.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "9badcb937c"
     },
     {
       "id": "ny_ring",
@@ -2600,8 +2600,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/01_신성아우라_방패/2018_nekoyume/00_Materials/NY_ring.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "c815fff90d"
     },
     {
       "id": "ny_ring_01",
@@ -2614,8 +2614,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_lifesteal_magical/2018_nekoyume/00_Materials/NY_ring_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "c895b94f9d"
     },
     {
       "id": "ny_ring_02",
@@ -2628,8 +2628,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_minus_casting/2018_nekoyume/00_Materials/NY_ring_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "66bf4ec005"
     },
     {
       "id": "ny_smoke_02",
@@ -2642,8 +2642,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/UI_combination/2018_nekoyume/00_Materials/NY_smoke_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "c5d61312ab"
     },
     {
       "id": "ny_snow",
@@ -2656,8 +2656,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/00_신성아우라_기본/2018_nekoyume/00_Materials/NY_snow.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "35752ff0fe"
     },
     {
       "id": "ny_snow_ice_01",
@@ -2670,8 +2670,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/02_신성아우라_동상/2018_nekoyume/00_Materials/NY_snow_ice_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "db34b23555"
     },
     {
       "id": "ny_snow_ice_02",
@@ -2684,8 +2684,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/02_신성아우라_동상/2018_nekoyume/00_Materials/NY_snow_ice_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "b1ae240ed2"
     },
     {
       "id": "ny_snow_ice_03",
@@ -2698,8 +2698,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/02_신성아우라_동상/2018_nekoyume/00_Materials/NY_snow_ice_03.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "58f8247e4d"
     },
     {
       "id": "ny_snow_ice_shield",
@@ -2712,8 +2712,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/01_신성아우라_방패/2018_nekoyume/00_Materials/NY_snow_ice_shield.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "af47202af8"
     },
     {
       "id": "ny_snow_iceflake",
@@ -2726,8 +2726,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/00_신성아우라_기본/2018_nekoyume/00_Materials/NY_snow_iceflake.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "ffa7b5a4a0"
     },
     {
       "id": "ny_sparkle",
@@ -2740,8 +2740,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/01_신성아우라_방패/2018_nekoyume/00_Materials/NY_sparkle.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "488265f939"
     },
     {
       "id": "ny_star_01",
@@ -2754,8 +2754,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/181217_NY_battle_heal_01/2018_nekoyume/00_Materials/NY_star_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "3ba0c3582b"
     },
     {
       "id": "ny_star_02",
@@ -2768,8 +2768,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/181217_NY_battle_heal_01/2018_nekoyume/00_Materials/NY_star_02.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "d372a0202a"
     },
     {
       "id": "ny_star_03_water",
@@ -2782,8 +2782,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/200203_victory/2018_nekoyume/00_Materials/NY_star_03_water.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "dbe8a63bca"
     },
     {
       "id": "ny_star_04",
@@ -2796,8 +2796,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/191008_buff_heal_magical/2018_nekoyume/00_Materials/NY_star_04.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "8705c751d4"
     },
     {
       "id": "ny_twister_01",
@@ -2810,8 +2810,8 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "source": "unity/01_신성아우라_방패/2018_nekoyume/00_Materials/NY_twister_01.png",
-      "opaque": false
+      "opaque": false,
+      "hash": "0e219d780f"
     },
     {
       "id": "frost_zone",
@@ -2824,10 +2824,10 @@
       "frames": 15,
       "cols": 15,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/FROST_ZONE.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "ef3072f6c9"
     },
     {
       "id": "mythic_frost_zone",
@@ -2840,10 +2840,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/04_신화스킬/260805_mythic_frost_zone_400x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "2b3b886b59"
     },
     {
       "id": "mythic_poison_zone",
@@ -2856,10 +2856,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/04_신화스킬/260805_mythic_poison_zone_400x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "acc75a0c10"
     },
     {
       "id": "poison",
@@ -2872,10 +2872,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/260114_poison_150x150.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "02cdc01295"
     },
     {
       "id": "poison_2",
@@ -2888,10 +2888,10 @@
       "frames": 7,
       "cols": 8,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/260119_poison_200x200.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "5b939dbe00"
     },
     {
       "id": "poison_3",
@@ -2904,10 +2904,10 @@
       "frames": 8,
       "cols": 3,
       "rows": 3,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/poison_128x128.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "364988d747"
     },
     {
       "id": "poison_4",
@@ -2920,10 +2920,10 @@
       "frames": 8,
       "cols": 3,
       "rows": 3,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/poison_250x250.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "e3eb6b0c57"
     },
     {
       "id": "poison_5",
@@ -2936,10 +2936,10 @@
       "frames": 6,
       "cols": 6,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/260114_poison.gif",
       "fps": 5,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "ce3cbfb8fd"
     },
     {
       "id": "poison_7",
@@ -2952,10 +2952,10 @@
       "frames": 7,
       "cols": 7,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/260114_poison.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "b404abdc1b"
     },
     {
       "id": "poison_9",
@@ -2968,10 +2968,10 @@
       "frames": 8,
       "cols": 8,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/poison.psd",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "b53b7545cd"
     },
     {
       "id": "posion",
@@ -2984,10 +2984,10 @@
       "frames": 4,
       "cols": 4,
       "rows": 1,
-      "source": "06_effect/Nine Corporation/05_RB/06_effect/02_장판/posion_100x100.png",
       "fps": 12,
       "opaque": false,
-      "reference": false
+      "reference": false,
+      "hash": "04b2a70f08"
     }
   ]
 }
