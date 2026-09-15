@@ -40,6 +40,8 @@
   .field input[type=number] { width: 64px; background: #2a2a33; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 3px 5px; font: inherit; }
   .field input[type=text] { width: 100%; background: #2a2a33; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 4px 6px; font: inherit; }
   .field select { width: 100%; background: #2a2a33; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 4px 6px; font: inherit; }
+  .field .row button { background: #2a2a33; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 5px 10px; font: inherit; cursor: pointer; flex: 1; }
+  .field .row button:hover { background: #33333e; }
   .hint { color: #777; font-size: 11px; margin-top: 12px; line-height: 1.5; }
   .danger { color: #e88; cursor: pointer; text-decoration: underline; font-size: 12px; }
   #empty { padding: 24px; color: #888; text-align: center; }
@@ -414,10 +416,18 @@ function renderEditor() {
       <label>본 (bone)</label>
       <input type="text" id="f_bone" value="${state.json.slots.find(s=>s.name===slotName).bone}">
     </div>
+    <div class="field">
+      <label><span>그리는 순서 (앞/뒤)</span><span id="v_order">${state.json.slots.findIndex(s=>s.name===slotName) + 1} / ${state.json.slots.length}</span></label>
+      <div class="row">
+        <button id="orderBack" type="button" title="바로 뒤 슬롯과 순서 맞바꿈 (뒤로 = 다른 파츠에 가려짐)">◀ 뒤로</button>
+        <button id="orderFront" type="button" title="바로 앞 슬롯과 순서 맞바꿈 (앞으로 = 다른 파츠를 가림)">앞으로 ▶</button>
+      </div>
+    </div>
     <div class="hint">
       X: 0에 가까울수록 목/턱 쪽, 커질수록 정수리 쪥으로 올라갑니다 (head 본 기준).<br>
       Y: 음수는 뒤통수 쪽, 양수는 얼굴 앞쪽입니다.<br>
-      atlas 리전을 바꾸면(예: part_hair_02 → part_hair_05) 같은 슬롯에서 다른 그림으로 바로 바꿔볼 수 있습니다.
+      atlas 리전을 바꾸면(예: part_hair_02 → part_hair_05) 같은 슬롯에서 다른 그림으로 바로 바꿔볼 수 있습니다.<br>
+      그리는 순서: 목록 아래(번호 큰 쪽)일수록 화면 앞에 그려져서 다른 파츠를 덮습니다. "앞으로"를 누르면 바로 위 슬롯과 순서가 바뀌어 그 파츠를 가리게 됩니다.
     </div>
     <div class="danger" id="deleteSlot">이 슬롯 삭제</div>
   `;
@@ -480,6 +490,24 @@ function renderEditor() {
     buildSlotList();
     renderEditor();
   });
+
+  // draw order: slots later in state.json.slots render on top (spine draws
+  // the array front-to-back in list order). Swap with the true neighbor in
+  // the FULL array (not just the filtered "extras" view) since that's what
+  // actually controls rendering.
+  function moveSlot(delta) {
+    const arr = state.json.slots;
+    const i = arr.findIndex(s => s.name === slotName);
+    const j = i + delta;
+    if (i === -1 || j < 0 || j >= arr.length) return;
+    pushUndo();
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+    rebuildSkeleton();
+    buildSlotList();
+    renderEditor();
+  }
+  document.getElementById('orderBack').addEventListener('click', () => moveSlot(-1));
+  document.getElementById('orderFront').addEventListener('click', () => moveSlot(1));
 }
 
 // ---- add a brand new slot ----
