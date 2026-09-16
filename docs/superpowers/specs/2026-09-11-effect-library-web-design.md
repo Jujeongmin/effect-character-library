@@ -113,7 +113,7 @@ MSU 리소스 페이지 구조를 따른다.
 **직링크 복사** — GitHub Pages 가 PNG 를 그대로 서빙하므로 절대 URL 을 준다.
 
 ```
-https://jujeongmin.github.io/effect-library/effects/fire_aura.png
+https://jujeongmin.github.io/effect-library/effects/fire_aura.webp
 ```
 
 받는 사람은 이 URL 을 코드에 그대로 넣어 쓴다. 파일을 받을 필요가 없다.

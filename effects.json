@@ -5,7 +5,7 @@
     {
       "id": "fire_aura",
       "category": "aura",
-      "file": "effects/fire_aura.png",
+      "file": "effects/fire_aura.webp",
       "width": 256,
       "height": 64,
       "frameWidth": 64,
@@ -16,12 +16,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "c59b098e1a"
+      "hash": "a032c53ab3"
     },
     {
       "id": "fire_auraball",
       "category": "aura",
-      "file": "effects/fire_auraball.png",
+      "file": "effects/fire_auraball.webp",
       "width": 480,
       "height": 140,
       "frameWidth": 60,
@@ -32,12 +32,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "6a05b32e16"
+      "hash": "485543845c"
     },
     {
       "id": "fire_ring_01",
       "category": "aura",
-      "file": "effects/fire_ring_01.png",
+      "file": "effects/fire_ring_01.webp",
       "width": 1200,
       "height": 200,
       "frameWidth": 200,
@@ -48,12 +48,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "4bf33f19d0"
+      "hash": "c7f461e1a1"
     },
     {
       "id": "mythic_heal",
       "category": "aura",
-      "file": "effects/mythic_heal.png",
+      "file": "effects/mythic_heal.webp",
       "width": 400,
       "height": 100,
       "frameWidth": 100,
@@ -64,12 +64,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "1b0e3666d3"
+      "hash": "64e6452a28"
     },
     {
       "id": "mythic_repulse_aura",
       "category": "aura",
-      "file": "effects/mythic_repulse_aura.png",
+      "file": "effects/mythic_repulse_aura.webp",
       "width": 400,
       "height": 100,
       "frameWidth": 100,
@@ -80,12 +80,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "68d86a074b"
+      "hash": "9e5508d985"
     },
     {
       "id": "repulse",
       "category": "aura",
-      "file": "effects/repulse.png",
+      "file": "effects/repulse.webp",
       "width": 400,
       "height": 100,
       "frameWidth": 100,
@@ -96,12 +96,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "2c4ec84649"
+      "hash": "97029d79fa"
     },
     {
       "id": "repulse_2",
       "category": "aura",
-      "file": "effects/repulse_2.png",
+      "file": "effects/repulse_2.webp",
       "width": 384,
       "height": 384,
       "frameWidth": 128,
@@ -112,12 +112,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "2bc974d553"
+      "hash": "f0eeec1458"
     },
     {
       "id": "repulse_3",
       "category": "aura",
-      "file": "effects/repulse_3.png",
+      "file": "effects/repulse_3.webp",
       "width": 2400,
       "height": 200,
       "frameWidth": 200,
@@ -128,12 +128,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "b66f262ae3"
+      "hash": "78da49560b"
     },
     {
       "id": "ring",
       "category": "aura",
-      "file": "effects/ring.png",
+      "file": "effects/ring.webp",
       "width": 1200,
       "height": 200,
       "frameWidth": 200,
@@ -145,12 +145,12 @@
       "opaque": false,
       "reference": false,
       "note": "backdrop keyed out of the original opaque export",
-      "hash": "58e186a81d"
+      "hash": "1ce5fb748e"
     },
     {
       "id": "bomb_drop_1",
       "category": "explosion",
-      "file": "effects/bomb_drop_1.png",
+      "file": "effects/bomb_drop_1.webp",
       "width": 384,
       "height": 256,
       "frameWidth": 128,
@@ -161,12 +161,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "09c97194a8"
+      "hash": "26acc6baf3"
     },
     {
       "id": "bomb_drop_1_2",
       "category": "explosion",
-      "file": "effects/bomb_drop_1_2.png",
+      "file": "effects/bomb_drop_1_2.webp",
       "width": 192,
       "height": 64,
       "frameWidth": 64,
@@ -177,12 +177,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "a77db94bb0"
+      "hash": "f7611d02e4"
     },
     {
       "id": "bomb_drop_2",
       "category": "explosion",
-      "file": "effects/bomb_drop_2.png",
+      "file": "effects/bomb_drop_2.webp",
       "width": 400,
       "height": 100,
       "frameWidth": 100,
@@ -193,12 +193,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "1eed31cf23"
+      "hash": "3594c3b74c"
     },
     {
       "id": "bomb_drop_2_2",
       "category": "explosion",
-      "file": "effects/bomb_drop_2_2.png",
+      "file": "effects/bomb_drop_2_2.webp",
       "width": 384,
       "height": 384,
       "frameWidth": 128,
@@ -209,12 +209,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "051dc92fb5"
+      "hash": "cada3ed4b3"
     },
     {
       "id": "bomb_drop_2_3",
       "category": "explosion",
-      "file": "effects/bomb_drop_2_3.png",
+      "file": "effects/bomb_drop_2_3.webp",
       "width": 3200,
       "height": 200,
       "frameWidth": 200,
@@ -225,12 +225,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "82924119a6"
+      "hash": "076f19a71f"
     },
     {
       "id": "explosion",
       "category": "explosion",
-      "file": "effects/explosion.png",
+      "file": "effects/explosion.webp",
       "width": 400,
       "height": 100,
       "frameWidth": 100,
@@ -241,12 +241,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "f7d24d60a0"
+      "hash": "fdbf794f0c"
     },
     {
       "id": "explosion_2",
       "category": "explosion",
-      "file": "effects/explosion_2.png",
+      "file": "effects/explosion_2.webp",
       "width": 384,
       "height": 384,
       "frameWidth": 128,
@@ -257,12 +257,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "10f4dc7bac"
+      "hash": "e6918aa909"
     },
     {
       "id": "explosion_3",
       "category": "explosion",
-      "file": "effects/explosion_3.png",
+      "file": "effects/explosion_3.webp",
       "width": 800,
       "height": 100,
       "frameWidth": 100,
@@ -273,12 +273,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "f6f916f470"
+      "hash": "fe4b2b0ddd"
     },
     {
       "id": "mythic_bomb_drop_explode",
       "category": "explosion",
-      "file": "effects/mythic_bomb_drop_explode.png",
+      "file": "effects/mythic_bomb_drop_explode.webp",
       "width": 400,
       "height": 100,
       "frameWidth": 100,
@@ -289,12 +289,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "c2b319ab09"
+      "hash": "6299d7e221"
     },
     {
       "id": "ny_explosion_01",
       "category": "explosion",
-      "file": "effects/ny_explosion_01.png",
+      "file": "effects/ny_explosion_01.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 128,
@@ -304,12 +304,12 @@
       "rows": 2,
       "opaque": false,
       "fps": 12,
-      "hash": "815cd807f1"
+      "hash": "1db4bb3106"
     },
     {
       "id": "tyr_bomb",
       "category": "explosion",
-      "file": "effects/tyr_bomb.png",
+      "file": "effects/tyr_bomb.webp",
       "width": 1200,
       "height": 800,
       "frameWidth": 400,
@@ -321,12 +321,12 @@
       "opaque": false,
       "reference": false,
       "note": "backdrop keyed out of the original opaque export",
-      "hash": "89d5ffadc2"
+      "hash": "d3dfe58942"
     },
     {
       "id": "deatheffect",
       "category": "impact",
-      "file": "effects/deatheffect.png",
+      "file": "effects/deatheffect.webp",
       "width": 240,
       "height": 60,
       "frameWidth": 60,
@@ -337,12 +337,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "f466d5d1c7"
+      "hash": "b3af0e1605"
     },
     {
       "id": "deatheffect_2",
       "category": "impact",
-      "file": "effects/deatheffect_2.png",
+      "file": "effects/deatheffect_2.webp",
       "width": 240,
       "height": 60,
       "frameWidth": 60,
@@ -353,12 +353,12 @@
       "fps": 10,
       "opaque": false,
       "reference": false,
-      "hash": "544574bd3d"
+      "hash": "cfa3c62fd6"
     },
     {
       "id": "drain",
       "category": "impact",
-      "file": "effects/drain.png",
+      "file": "effects/drain.webp",
       "width": 384,
       "height": 384,
       "frameWidth": 128,
@@ -369,12 +369,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "5e89d2be80"
+      "hash": "7afed68551"
     },
     {
       "id": "drain_2",
       "category": "impact",
-      "file": "effects/drain_2.png",
+      "file": "effects/drain_2.webp",
       "width": 256,
       "height": 64,
       "frameWidth": 64,
@@ -385,12 +385,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "c12a2f88fa"
+      "hash": "338f1f5da0"
     },
     {
       "id": "drain_3",
       "category": "impact",
-      "file": "effects/drain_3.png",
+      "file": "effects/drain_3.webp",
       "width": 1800,
       "height": 200,
       "frameWidth": 200,
@@ -401,12 +401,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "029b2ced1b"
+      "hash": "47a8c8dec0"
     },
     {
       "id": "frost",
       "category": "impact",
-      "file": "effects/frost.png",
+      "file": "effects/frost.webp",
       "width": 400,
       "height": 100,
       "frameWidth": 100,
@@ -417,12 +417,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "0f4d781be0"
+      "hash": "133cc80b72"
     },
     {
       "id": "frost_2",
       "category": "impact",
-      "file": "effects/frost_2.png",
+      "file": "effects/frost_2.webp",
       "width": 384,
       "height": 384,
       "frameWidth": 128,
@@ -433,12 +433,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "e13e069750"
+      "hash": "cc7d244c9e"
     },
     {
       "id": "manaball_hit",
       "category": "impact",
-      "file": "effects/manaball_hit.png",
+      "file": "effects/manaball_hit.webp",
       "width": 360,
       "height": 60,
       "frameWidth": 60,
@@ -449,12 +449,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "3de34a6174"
+      "hash": "da3d362470"
     },
     {
       "id": "manaball_hit_2",
       "category": "impact",
-      "file": "effects/manaball_hit_2.png",
+      "file": "effects/manaball_hit_2.webp",
       "width": 360,
       "height": 60,
       "frameWidth": 60,
@@ -465,12 +465,12 @@
       "fps": 10,
       "opaque": false,
       "reference": false,
-      "hash": "f10a5d3cf0"
+      "hash": "9b52555269"
     },
     {
       "id": "mythic_drain_on_hit",
       "category": "impact",
-      "file": "effects/mythic_drain_on_hit.png",
+      "file": "effects/mythic_drain_on_hit.webp",
       "width": 256,
       "height": 64,
       "frameWidth": 64,
@@ -481,12 +481,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "550f296ad2"
+      "hash": "42ff29d268"
     },
     {
       "id": "mythic_ricochet",
       "category": "impact",
-      "file": "effects/mythic_ricochet.png",
+      "file": "effects/mythic_ricochet.webp",
       "width": 256,
       "height": 64,
       "frameWidth": 64,
@@ -497,12 +497,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "153f5140ec"
+      "hash": "9108c600dc"
     },
     {
       "id": "mythic_volatile_shot",
       "category": "impact",
-      "file": "effects/mythic_volatile_shot.png",
+      "file": "effects/mythic_volatile_shot.webp",
       "width": 256,
       "height": 64,
       "frameWidth": 64,
@@ -513,12 +513,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "18f61dc455"
+      "hash": "5dc5bb444d"
     },
     {
       "id": "ny_attack_06_sprite",
       "category": "impact",
-      "file": "effects/ny_attack_06_sprite.png",
+      "file": "effects/ny_attack_06_sprite.webp",
       "width": 1024,
       "height": 585,
       "frameWidth": 128,
@@ -528,12 +528,12 @@
       "rows": 5,
       "opaque": false,
       "fps": 12,
-      "hash": "2650a32292"
+      "hash": "28fbb39e11"
     },
     {
       "id": "ny_attack_10_sprite",
       "category": "impact",
-      "file": "effects/ny_attack_10_sprite.png",
+      "file": "effects/ny_attack_10_sprite.webp",
       "width": 2500,
       "height": 417,
       "frameWidth": 250,
@@ -543,12 +543,12 @@
       "rows": 1,
       "opaque": false,
       "fps": 12,
-      "hash": "06757c1b14"
+      "hash": "e580562994"
     },
     {
       "id": "ny_sprites_blood",
       "category": "impact",
-      "file": "effects/ny_sprites_blood.png",
+      "file": "effects/ny_sprites_blood.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 128,
@@ -558,12 +558,12 @@
       "rows": 4,
       "opaque": false,
       "fps": 12,
-      "hash": "0c84397055"
+      "hash": "de79da5897"
     },
     {
       "id": "ricochet",
       "category": "impact",
-      "file": "effects/ricochet.png",
+      "file": "effects/ricochet.webp",
       "width": 384,
       "height": 256,
       "frameWidth": 128,
@@ -574,12 +574,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "8101118f68"
+      "hash": "088518aec3"
     },
     {
       "id": "ricochet_2",
       "category": "impact",
-      "file": "effects/ricochet_2.png",
+      "file": "effects/ricochet_2.webp",
       "width": 256,
       "height": 64,
       "frameWidth": 64,
@@ -590,12 +590,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "82e3fff7ce"
+      "hash": "d637033672"
     },
     {
       "id": "ricochet_3",
       "category": "impact",
-      "file": "effects/ricochet_3.png",
+      "file": "effects/ricochet_3.webp",
       "width": 1050,
       "height": 150,
       "frameWidth": 150,
@@ -606,12 +606,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "41982b80c9"
+      "hash": "0a0a9db466"
     },
     {
       "id": "chain",
       "category": "lightning",
-      "file": "effects/chain.png",
+      "file": "effects/chain.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 64,
@@ -622,12 +622,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "58792ae188"
+      "hash": "1d030a396e"
     },
     {
       "id": "lightning_2",
       "category": "lightning",
-      "file": "effects/lightning_2.png",
+      "file": "effects/lightning_2.webp",
       "width": 510,
       "height": 480,
       "frameWidth": 85,
@@ -639,12 +639,12 @@
       "opaque": false,
       "reference": false,
       "note": "backdrop keyed out of the original opaque export",
-      "hash": "9e23824a59"
+      "hash": "f88f559e31"
     },
     {
       "id": "ny_electric_01_sprite",
       "category": "lightning",
-      "file": "effects/ny_electric_01_sprite.png",
+      "file": "effects/ny_electric_01_sprite.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 64,
@@ -654,12 +654,12 @@
       "rows": 4,
       "opaque": false,
       "fps": 12,
-      "hash": "654b508f92"
+      "hash": "cd014bbf2d"
     },
     {
       "id": "ny_electric_03_sprite",
       "category": "lightning",
-      "file": "effects/ny_electric_03_sprite.png",
+      "file": "effects/ny_electric_03_sprite.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 64,
@@ -669,12 +669,12 @@
       "rows": 2,
       "opaque": false,
       "fps": 12,
-      "hash": "87bbe85491"
+      "hash": "15c2d12876"
     },
     {
       "id": "spark",
       "category": "lightning",
-      "file": "effects/spark.png",
+      "file": "effects/spark.webp",
       "width": 900,
       "height": 150,
       "frameWidth": 150,
@@ -685,12 +685,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "0454cee4f8"
+      "hash": "550e1e3cc0"
     },
     {
       "id": "spark_150",
       "category": "lightning",
-      "file": "effects/spark_150.png",
+      "file": "effects/spark_150.webp",
       "width": 900,
       "height": 150,
       "frameWidth": 150,
@@ -701,12 +701,12 @@
       "fps": 10,
       "opaque": false,
       "reference": false,
-      "hash": "30170f38da"
+      "hash": "d712bf28eb"
     },
     {
       "id": "spark_3",
       "category": "lightning",
-      "file": "effects/spark_3.png",
+      "file": "effects/spark_3.webp",
       "width": 256,
       "height": 64,
       "frameWidth": 64,
@@ -717,12 +717,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "a920246c9c"
+      "hash": "830a4d1e9c"
     },
     {
       "id": "spark_4",
       "category": "lightning",
-      "file": "effects/spark_4.png",
+      "file": "effects/spark_4.webp",
       "width": 680,
       "height": 85,
       "frameWidth": 85,
@@ -733,12 +733,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "11eb5ceafa"
+      "hash": "b2b9fbc2e2"
     },
     {
       "id": "spark_7",
       "category": "lightning",
-      "file": "effects/spark_7.png",
+      "file": "effects/spark_7.webp",
       "width": 256,
       "height": 64,
       "frameWidth": 64,
@@ -749,12 +749,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "82e7af0d24"
+      "hash": "ff8c81a66c"
     },
     {
       "id": "thor_lighting",
       "category": "lightning",
-      "file": "effects/thor_lighting.png",
+      "file": "effects/thor_lighting.webp",
       "width": 1200,
       "height": 172,
       "frameWidth": 100,
@@ -765,12 +765,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "3c705b482b"
+      "hash": "68da2ff25b"
     },
     {
       "id": "thor_lightning",
       "category": "lightning",
-      "file": "effects/thor_lightning.png",
+      "file": "effects/thor_lightning.webp",
       "width": 720,
       "height": 103,
       "frameWidth": 60,
@@ -781,12 +781,12 @@
       "fps": 10,
       "opaque": false,
       "reference": false,
-      "hash": "981e371861"
+      "hash": "c390cbb819"
     },
     {
       "id": "thor_thunder",
       "category": "lightning",
-      "file": "effects/thor_thunder.png",
+      "file": "effects/thor_thunder.webp",
       "width": 1020,
       "height": 960,
       "frameWidth": 170,
@@ -797,12 +797,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "52043878f2"
+      "hash": "86f7b6f44c"
     },
     {
       "id": "thunderstrike_wo_blur",
       "category": "lightning",
-      "file": "effects/thunderstrike_wo_blur.png",
+      "file": "effects/thunderstrike_wo_blur.webp",
       "width": 360,
       "height": 400,
       "frameWidth": 60,
@@ -813,12 +813,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "5bbc0ebae4"
+      "hash": "cfcff997dd"
     },
     {
       "id": "thunderstrike_wo_blur_2",
       "category": "lightning",
-      "file": "effects/thunderstrike_wo_blur_2.png",
+      "file": "effects/thunderstrike_wo_blur_2.webp",
       "width": 300,
       "height": 400,
       "frameWidth": 60,
@@ -829,12 +829,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "085c863e3d"
+      "hash": "8486651404"
     },
     {
       "id": "new_death",
       "category": "misc",
-      "file": "effects/new_death.png",
+      "file": "effects/new_death.webp",
       "width": 1200,
       "height": 800,
       "frameWidth": 400,
@@ -845,12 +845,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "e7af2f2c46"
+      "hash": "435e1eaf08"
     },
     {
       "id": "ny_attack_02",
       "category": "misc",
-      "file": "effects/ny_attack_02.png",
+      "file": "effects/ny_attack_02.webp",
       "width": 256,
       "height": 128,
       "frameWidth": 64,
@@ -862,12 +862,12 @@
       "opaque": false,
       "reference": false,
       "note": "row 2 is the same animation in orange",
-      "hash": "58ea1fcfd4"
+      "hash": "5d5e71f362"
     },
     {
       "id": "ny_attack_04_sprite",
       "category": "misc",
-      "file": "effects/ny_attack_04_sprite.png",
+      "file": "effects/ny_attack_04_sprite.webp",
       "width": 512,
       "height": 256,
       "frameWidth": 128,
@@ -879,12 +879,12 @@
       "opaque": false,
       "reference": false,
       "note": "row 2 is a second slash variant",
-      "hash": "a0cd8d40b1"
+      "hash": "a3d02141a6"
     },
     {
       "id": "ny_attack_05_fire",
       "category": "misc",
-      "file": "effects/ny_attack_05_fire.png",
+      "file": "effects/ny_attack_05_fire.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 64,
@@ -894,12 +894,12 @@
       "rows": 4,
       "opaque": false,
       "fps": 12,
-      "hash": "d5537545f5"
+      "hash": "eca18cc476"
     },
     {
       "id": "ny_attack_07_sprite",
       "category": "misc",
-      "file": "effects/ny_attack_07_sprite.png",
+      "file": "effects/ny_attack_07_sprite.webp",
       "width": 1280,
       "height": 256,
       "frameWidth": 256,
@@ -910,12 +910,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "59a186f1a0"
+      "hash": "a0b7c43163"
     },
     {
       "id": "ny_attack_09_sprite",
       "category": "misc",
-      "file": "effects/ny_attack_09_sprite.png",
+      "file": "effects/ny_attack_09_sprite.webp",
       "width": 512,
       "height": 128,
       "frameWidth": 128,
@@ -926,12 +926,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "abd4f30ffd"
+      "hash": "2d725a5239"
     },
     {
       "id": "ny_electric_02_sprite",
       "category": "misc",
-      "file": "effects/ny_electric_02_sprite.png",
+      "file": "effects/ny_electric_02_sprite.webp",
       "width": 512,
       "height": 128,
       "frameWidth": 64,
@@ -942,12 +942,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "b93acc2396"
+      "hash": "0a17635264"
     },
     {
       "id": "ny_flash_05_sprite",
       "category": "misc",
-      "file": "effects/ny_flash_05_sprite.png",
+      "file": "effects/ny_flash_05_sprite.webp",
       "width": 1024,
       "height": 512,
       "frameWidth": 256,
@@ -959,12 +959,12 @@
       "opaque": false,
       "reference": false,
       "note": "row 2 is a second arc variant",
-      "hash": "8215ac1124"
+      "hash": "ce8ca2b1f1"
     },
     {
       "id": "ny_lines_01",
       "category": "misc",
-      "file": "effects/ny_lines_01.png",
+      "file": "effects/ny_lines_01.webp",
       "width": 256,
       "height": 128,
       "frameWidth": 64,
@@ -976,12 +976,12 @@
       "opaque": false,
       "reference": false,
       "note": "row 2 is a second streak variant",
-      "hash": "5338f6aeeb"
+      "hash": "e5b58cd65d"
     },
     {
       "id": "ny_smoke_04_fire_sprite",
       "category": "misc",
-      "file": "effects/ny_smoke_04_fire_sprite.png",
+      "file": "effects/ny_smoke_04_fire_sprite.webp",
       "width": 512,
       "height": 512,
       "frameWidth": 64,
@@ -991,12 +991,12 @@
       "rows": 8,
       "opaque": false,
       "fps": 12,
-      "hash": "e715d15cbe"
+      "hash": "04708bbe67"
     },
     {
       "id": "ny_smoke_fire_sprite",
       "category": "misc",
-      "file": "effects/ny_smoke_fire_sprite.png",
+      "file": "effects/ny_smoke_fire_sprite.webp",
       "width": 210,
       "height": 210,
       "frameWidth": 105,
@@ -1006,12 +1006,12 @@
       "rows": 2,
       "opaque": false,
       "fps": 12,
-      "hash": "83372bdb4d"
+      "hash": "9a8d2f1cd3"
     },
     {
       "id": "scratch_jakeolpail",
       "category": "misc",
-      "file": "effects/scratch_jakeolpail.png",
+      "file": "effects/scratch_jakeolpail.webp",
       "width": 1280,
       "height": 256,
       "frameWidth": 256,
@@ -1022,12 +1022,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "b8bf77a511"
+      "hash": "85cf3a7e26"
     },
     {
       "id": "ball_effect_01",
       "category": "projectile",
-      "file": "effects/ball_effect_01.png",
+      "file": "effects/ball_effect_01.webp",
       "width": 120,
       "height": 30,
       "frameWidth": 30,
@@ -1038,12 +1038,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "128374ba77"
+      "hash": "082651f1e8"
     },
     {
       "id": "manaball_attack",
       "category": "projectile",
-      "file": "effects/manaball_attack.png",
+      "file": "effects/manaball_attack.webp",
       "width": 300,
       "height": 60,
       "frameWidth": 60,
@@ -1054,12 +1054,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "3fd40b4fac"
+      "hash": "cbaca665b8"
     },
     {
       "id": "manaball_attack_2",
       "category": "projectile",
-      "file": "effects/manaball_attack_2.png",
+      "file": "effects/manaball_attack_2.webp",
       "width": 300,
       "height": 60,
       "frameWidth": 60,
@@ -1070,12 +1070,12 @@
       "fps": 8,
       "opaque": false,
       "reference": false,
-      "hash": "b0675a22ce"
+      "hash": "b48b297f90"
     },
     {
       "id": "mythic_bomb_drop_fall",
       "category": "projectile",
-      "file": "effects/mythic_bomb_drop_fall.png",
+      "file": "effects/mythic_bomb_drop_fall.webp",
       "width": 192,
       "height": 64,
       "frameWidth": 64,
@@ -1086,12 +1086,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "4ee256b1e1"
+      "hash": "1cccc97e61"
     },
     {
       "id": "new_hit",
       "category": "projectile",
-      "file": "effects/new_hit.png",
+      "file": "effects/new_hit.webp",
       "width": 600,
       "height": 100,
       "frameWidth": 100,
@@ -1102,12 +1102,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "09bb8c2946"
+      "hash": "9830f1b96d"
     },
     {
       "id": "new_hit_2",
       "category": "projectile",
-      "file": "effects/new_hit_2.png",
+      "file": "effects/new_hit_2.webp",
       "width": 384,
       "height": 64,
       "frameWidth": 64,
@@ -1118,12 +1118,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "9ea36afdb1"
+      "hash": "7075baea69"
     },
     {
       "id": "pet_projectile",
       "category": "projectile",
-      "file": "effects/pet_projectile.png",
+      "file": "effects/pet_projectile.webp",
       "width": 600,
       "height": 100,
       "frameWidth": 100,
@@ -1134,12 +1134,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "58edc6127b"
+      "hash": "d77a22d3ed"
     },
     {
       "id": "pet_projectile_2",
       "category": "projectile",
-      "file": "effects/pet_projectile_2.png",
+      "file": "effects/pet_projectile_2.webp",
       "width": 256,
       "height": 64,
       "frameWidth": 64,
@@ -1150,12 +1150,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "7b391db87c"
+      "hash": "99e2f6171a"
     },
     {
       "id": "skadi_arrow",
       "category": "projectile",
-      "file": "effects/skadi_arrow.png",
+      "file": "effects/skadi_arrow.webp",
       "width": 800,
       "height": 50,
       "frameWidth": 200,
@@ -1166,12 +1166,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "b359d9bd2c"
+      "hash": "88bd906183"
     },
     {
       "id": "skadi_arrow_2",
       "category": "projectile",
-      "file": "effects/skadi_arrow_2.png",
+      "file": "effects/skadi_arrow_2.webp",
       "width": 320,
       "height": 20,
       "frameWidth": 80,
@@ -1182,12 +1182,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "b65d72c3f5"
+      "hash": "1ca100b00a"
     },
     {
       "id": "thor_projectile",
       "category": "projectile",
-      "file": "effects/thor_projectile.png",
+      "file": "effects/thor_projectile.webp",
       "width": 600,
       "height": 100,
       "frameWidth": 100,
@@ -1198,12 +1198,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "bf5ccfe3d0"
+      "hash": "ef7f79d581"
     },
     {
       "id": "tyr_projectile",
       "category": "projectile",
-      "file": "effects/tyr_projectile.png",
+      "file": "effects/tyr_projectile.webp",
       "width": 200,
       "height": 15,
       "frameWidth": 50,
@@ -1214,12 +1214,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "db526104a8"
+      "hash": "760821ce5e"
     },
     {
       "id": "ny_arrowhead",
       "category": "single",
-      "file": "singles/ny_arrowhead.png",
+      "file": "singles/ny_arrowhead.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1228,12 +1228,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "e23fa26864"
+      "hash": "62fb4889e2"
     },
     {
       "id": "ny_attack_01",
       "category": "single",
-      "file": "singles/ny_attack_01.png",
+      "file": "singles/ny_attack_01.webp",
       "width": 104,
       "height": 108,
       "frameWidth": 104,
@@ -1242,12 +1242,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "145b7f68fa"
+      "hash": "a256dc830c"
     },
     {
       "id": "ny_attack_03",
       "category": "single",
-      "file": "singles/ny_attack_03.png",
+      "file": "singles/ny_attack_03.webp",
       "width": 92,
       "height": 86,
       "frameWidth": 92,
@@ -1256,12 +1256,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "39912a5672"
+      "hash": "5478aa6dfe"
     },
     {
       "id": "ny_attack_05",
       "category": "single",
-      "file": "singles/ny_attack_05.png",
+      "file": "singles/ny_attack_05.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1270,12 +1270,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "bc38e55533"
+      "hash": "685a1a4551"
     },
     {
       "id": "ny_aura",
       "category": "single",
-      "file": "singles/ny_aura.png",
+      "file": "singles/ny_aura.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1284,12 +1284,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "d85cec32cd"
+      "hash": "0721d86d55"
     },
     {
       "id": "ny_aura_01_sprite",
       "category": "single",
-      "file": "singles/ny_aura_01_sprite.png",
+      "file": "singles/ny_aura_01_sprite.webp",
       "width": 32,
       "height": 32,
       "frameWidth": 32,
@@ -1298,12 +1298,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "f05baa0476"
+      "hash": "2b063c4129"
     },
     {
       "id": "ny_aura_adventure_01",
       "category": "single",
-      "file": "singles/ny_aura_adventure_01.png",
+      "file": "singles/ny_aura_adventure_01.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1312,12 +1312,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "5de2c20208"
+      "hash": "8f72dce88f"
     },
     {
       "id": "ny_aura_adventure_02",
       "category": "single",
-      "file": "singles/ny_aura_adventure_02.png",
+      "file": "singles/ny_aura_adventure_02.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1326,12 +1326,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "e829866685"
+      "hash": "7f18539a9c"
     },
     {
       "id": "ny_aura_adventure_03",
       "category": "single",
-      "file": "singles/ny_aura_adventure_03.png",
+      "file": "singles/ny_aura_adventure_03.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1340,12 +1340,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "02d86fb8fc"
+      "hash": "b5a5875b30"
     },
     {
       "id": "ny_aura_adventure_04",
       "category": "single",
-      "file": "singles/ny_aura_adventure_04.png",
+      "file": "singles/ny_aura_adventure_04.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1354,12 +1354,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "e720f0d4a3"
+      "hash": "7ac9ca2044"
     },
     {
       "id": "ny_aura_adventure_05",
       "category": "single",
-      "file": "singles/ny_aura_adventure_05.png",
+      "file": "singles/ny_aura_adventure_05.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1368,12 +1368,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "c38ae56562"
+      "hash": "7d8b53953d"
     },
     {
       "id": "ny_aura_adventure_06",
       "category": "single",
-      "file": "singles/ny_aura_adventure_06.png",
+      "file": "singles/ny_aura_adventure_06.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1382,12 +1382,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "30390a036e"
+      "hash": "0eebac406c"
     },
     {
       "id": "ny_aura_adventure_07",
       "category": "single",
-      "file": "singles/ny_aura_adventure_07.png",
+      "file": "singles/ny_aura_adventure_07.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1396,12 +1396,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "87a005327c"
+      "hash": "0541d27a3a"
     },
     {
       "id": "ny_aura_adventure_08",
       "category": "single",
-      "file": "singles/ny_aura_adventure_08.png",
+      "file": "singles/ny_aura_adventure_08.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1410,12 +1410,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "9404d84db2"
+      "hash": "3f0ab1a657"
     },
     {
       "id": "ny_aura_adventure_09",
       "category": "single",
-      "file": "singles/ny_aura_adventure_09.png",
+      "file": "singles/ny_aura_adventure_09.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1424,12 +1424,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "9be0dabb8a"
+      "hash": "0f3bb7f72d"
     },
     {
       "id": "ny_aura_adventure_10",
       "category": "single",
-      "file": "singles/ny_aura_adventure_10.png",
+      "file": "singles/ny_aura_adventure_10.webp",
       "width": 32,
       "height": 32,
       "frameWidth": 32,
@@ -1438,12 +1438,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "6070b8c05f"
+      "hash": "ea032f3938"
     },
     {
       "id": "ny_aura_arena_01",
       "category": "single",
-      "file": "singles/ny_aura_arena_01.png",
+      "file": "singles/ny_aura_arena_01.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1452,12 +1452,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "b96ca19b64"
+      "hash": "3664388468"
     },
     {
       "id": "ny_aura_arena_02",
       "category": "single",
-      "file": "singles/ny_aura_arena_02.png",
+      "file": "singles/ny_aura_arena_02.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1466,12 +1466,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "e30a3e9bc3"
+      "hash": "015b5594cb"
     },
     {
       "id": "ny_aura_arena_02_line",
       "category": "single",
-      "file": "singles/ny_aura_arena_02_line.png",
+      "file": "singles/ny_aura_arena_02_line.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1480,12 +1480,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "408c106f9e"
+      "hash": "122f79ff90"
     },
     {
       "id": "ny_aura_arena_03",
       "category": "single",
-      "file": "singles/ny_aura_arena_03.png",
+      "file": "singles/ny_aura_arena_03.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1494,12 +1494,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "2cc0038624"
+      "hash": "8320279cfc"
     },
     {
       "id": "ny_aura_arena_04",
       "category": "single",
-      "file": "singles/ny_aura_arena_04.png",
+      "file": "singles/ny_aura_arena_04.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1508,12 +1508,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "4665ddbd75"
+      "hash": "e76016328d"
     },
     {
       "id": "ny_aura_arena_05",
       "category": "single",
-      "file": "singles/ny_aura_arena_05.png",
+      "file": "singles/ny_aura_arena_05.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1522,12 +1522,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "a1a49fff68"
+      "hash": "e041ca8312"
     },
     {
       "id": "ny_aura_arena_07",
       "category": "single",
-      "file": "singles/ny_aura_arena_07.png",
+      "file": "singles/ny_aura_arena_07.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1536,12 +1536,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "a43fb61133"
+      "hash": "10e3ae0bbe"
     },
     {
       "id": "ny_aura_event_01",
       "category": "single",
-      "file": "singles/ny_aura_event_01.png",
+      "file": "singles/ny_aura_event_01.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1550,12 +1550,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "531740a2a8"
+      "hash": "c47a035f87"
     },
     {
       "id": "ny_aura_event_03",
       "category": "single",
-      "file": "singles/ny_aura_event_03.png",
+      "file": "singles/ny_aura_event_03.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1564,12 +1564,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "209cee5ef5"
+      "hash": "05f28fdbe4"
     },
     {
       "id": "ny_aura_event_05",
       "category": "single",
-      "file": "singles/ny_aura_event_05.png",
+      "file": "singles/ny_aura_event_05.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1578,12 +1578,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "1e4303c980"
+      "hash": "713f983edf"
     },
     {
       "id": "ny_brokenchain_03",
       "category": "single",
-      "file": "singles/ny_brokenchain_03.png",
+      "file": "singles/ny_brokenchain_03.webp",
       "width": 58,
       "height": 51,
       "frameWidth": 58,
@@ -1592,12 +1592,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "f423bc9fe2"
+      "hash": "a72f4cf25b"
     },
     {
       "id": "ny_brokenchain_03_brown",
       "category": "single",
-      "file": "singles/ny_brokenchain_03_brown.png",
+      "file": "singles/ny_brokenchain_03_brown.webp",
       "width": 58,
       "height": 51,
       "frameWidth": 58,
@@ -1606,12 +1606,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "1100661e5d"
+      "hash": "3e3c79bd43"
     },
     {
       "id": "ny_brokenchain_04",
       "category": "single",
-      "file": "singles/ny_brokenchain_04.png",
+      "file": "singles/ny_brokenchain_04.webp",
       "width": 73,
       "height": 76,
       "frameWidth": 73,
@@ -1620,12 +1620,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "d90a11cfc7"
+      "hash": "bb1b42edd0"
     },
     {
       "id": "ny_brokenchain_04_brown",
       "category": "single",
-      "file": "singles/ny_brokenchain_04_brown.png",
+      "file": "singles/ny_brokenchain_04_brown.webp",
       "width": 73,
       "height": 76,
       "frameWidth": 73,
@@ -1634,12 +1634,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "c4be902d24"
+      "hash": "0ef3d33246"
     },
     {
       "id": "ny_brokenchain_06",
       "category": "single",
-      "file": "singles/ny_brokenchain_06.png",
+      "file": "singles/ny_brokenchain_06.webp",
       "width": 100,
       "height": 98,
       "frameWidth": 100,
@@ -1648,12 +1648,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "eaa6b65753"
+      "hash": "c7cbcd1b22"
     },
     {
       "id": "ny_brokenchain_06_brown",
       "category": "single",
-      "file": "singles/ny_brokenchain_06_brown.png",
+      "file": "singles/ny_brokenchain_06_brown.webp",
       "width": 100,
       "height": 98,
       "frameWidth": 100,
@@ -1662,12 +1662,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "0b44ee93e8"
+      "hash": "456a96c9e1"
     },
     {
       "id": "ny_brokenchain_07",
       "category": "single",
-      "file": "singles/ny_brokenchain_07.png",
+      "file": "singles/ny_brokenchain_07.webp",
       "width": 96,
       "height": 98,
       "frameWidth": 96,
@@ -1676,12 +1676,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "b3ca296a99"
+      "hash": "44e0414e7b"
     },
     {
       "id": "ny_brokenchain_07_brown",
       "category": "single",
-      "file": "singles/ny_brokenchain_07_brown.png",
+      "file": "singles/ny_brokenchain_07_brown.webp",
       "width": 96,
       "height": 98,
       "frameWidth": 96,
@@ -1690,12 +1690,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "e55547c071"
+      "hash": "22db4f5ba7"
     },
     {
       "id": "ny_brokenchain_08",
       "category": "single",
-      "file": "singles/ny_brokenchain_08.png",
+      "file": "singles/ny_brokenchain_08.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1704,12 +1704,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "847f9d7262"
+      "hash": "748ab8c986"
     },
     {
       "id": "ny_brokenchain_08_brown",
       "category": "single",
-      "file": "singles/ny_brokenchain_08_brown.png",
+      "file": "singles/ny_brokenchain_08_brown.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1718,12 +1718,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "02369491e2"
+      "hash": "2e25365561"
     },
     {
       "id": "ny_chain_01",
       "category": "single",
-      "file": "singles/ny_chain_01.png",
+      "file": "singles/ny_chain_01.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1732,12 +1732,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "550f011e57"
+      "hash": "0b9f761ee4"
     },
     {
       "id": "ny_chain_02",
       "category": "single",
-      "file": "singles/ny_chain_02.png",
+      "file": "singles/ny_chain_02.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1746,12 +1746,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "984d9eba67"
+      "hash": "1fab5cf447"
     },
     {
       "id": "ny_circle",
       "category": "single",
-      "file": "singles/ny_circle.png",
+      "file": "singles/ny_circle.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1760,12 +1760,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "3b00aafbe0"
+      "hash": "233a28165b"
     },
     {
       "id": "ny_dot_01",
       "category": "single",
-      "file": "singles/ny_dot_01.png",
+      "file": "singles/ny_dot_01.webp",
       "width": 128,
       "height": 64,
       "frameWidth": 128,
@@ -1774,12 +1774,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "787166ac41"
+      "hash": "fb800a1eed"
     },
     {
       "id": "ny_dot_02",
       "category": "single",
-      "file": "singles/ny_dot_02.png",
+      "file": "singles/ny_dot_02.webp",
       "width": 32,
       "height": 32,
       "frameWidth": 32,
@@ -1788,12 +1788,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "0c9b93af02"
+      "hash": "95822c3cc8"
     },
     {
       "id": "ny_dust_02",
       "category": "single",
-      "file": "singles/ny_dust_02.png",
+      "file": "singles/ny_dust_02.webp",
       "width": 33,
       "height": 85,
       "frameWidth": 33,
@@ -1802,12 +1802,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "1da14360ff"
+      "hash": "eb70fb0c1f"
     },
     {
       "id": "ny_dust_03",
       "category": "single",
-      "file": "singles/ny_dust_03.png",
+      "file": "singles/ny_dust_03.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1816,12 +1816,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "e56484062d"
+      "hash": "94d4d41b65"
     },
     {
       "id": "ny_effect_01",
       "category": "single",
-      "file": "singles/ny_effect_01.png",
+      "file": "singles/ny_effect_01.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 256,
@@ -1830,12 +1830,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "e4dd0699fa"
+      "hash": "dd897b97b4"
     },
     {
       "id": "ny_emotion_01",
       "category": "single",
-      "file": "singles/ny_emotion_01.png",
+      "file": "singles/ny_emotion_01.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1844,12 +1844,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "0feca27ec9"
+      "hash": "30fa794d11"
     },
     {
       "id": "ny_feather_01",
       "category": "single",
-      "file": "singles/ny_feather_01.png",
+      "file": "singles/ny_feather_01.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1858,12 +1858,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "46611b85ad"
+      "hash": "08d3b2654e"
     },
     {
       "id": "ny_flash_01",
       "category": "single",
-      "file": "singles/ny_flash_01.png",
+      "file": "singles/ny_flash_01.webp",
       "width": 256,
       "height": 64,
       "frameWidth": 256,
@@ -1872,12 +1872,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "6539e3a02e"
+      "hash": "2b42a1489f"
     },
     {
       "id": "ny_flash_02_fire",
       "category": "single",
-      "file": "singles/ny_flash_02_fire.png",
+      "file": "singles/ny_flash_02_fire.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1886,12 +1886,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "22d6130cf0"
+      "hash": "7629171a62"
     },
     {
       "id": "ny_flash_02_land",
       "category": "single",
-      "file": "singles/ny_flash_02_land.png",
+      "file": "singles/ny_flash_02_land.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1900,12 +1900,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "28aa424c6c"
+      "hash": "b04e40edd5"
     },
     {
       "id": "ny_flash_02_water",
       "category": "single",
-      "file": "singles/ny_flash_02_water.png",
+      "file": "singles/ny_flash_02_water.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1914,12 +1914,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "19551679ef"
+      "hash": "1b905838bd"
     },
     {
       "id": "ny_flash_02_water_2",
       "category": "single",
-      "file": "singles/ny_flash_02_water_2.png",
+      "file": "singles/ny_flash_02_water_2.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -1928,12 +1928,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "dcb00ecf13"
+      "hash": "9a415afc25"
     },
     {
       "id": "ny_flash_02_wind",
       "category": "single",
-      "file": "singles/ny_flash_02_wind.png",
+      "file": "singles/ny_flash_02_wind.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -1942,12 +1942,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "1c1d4576eb"
+      "hash": "bdaedb1fa4"
     },
     {
       "id": "ny_flash_03",
       "category": "single",
-      "file": "singles/ny_flash_03.png",
+      "file": "singles/ny_flash_03.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 256,
@@ -1956,12 +1956,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "da2c7af425"
+      "hash": "dfac50555f"
     },
     {
       "id": "ny_flash_04",
       "category": "single",
-      "file": "singles/ny_flash_04.png",
+      "file": "singles/ny_flash_04.webp",
       "width": 512,
       "height": 512,
       "frameWidth": 512,
@@ -1970,12 +1970,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "e15c7daf9d"
+      "hash": "7890c7a943"
     },
     {
       "id": "ny_flower_01",
       "category": "single",
-      "file": "singles/ny_flower_01.png",
+      "file": "singles/ny_flower_01.webp",
       "width": 32,
       "height": 32,
       "frameWidth": 32,
@@ -1984,12 +1984,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "403b1da8f1"
+      "hash": "141369c6ac"
     },
     {
       "id": "ny_flower_03",
       "category": "single",
-      "file": "singles/ny_flower_03.png",
+      "file": "singles/ny_flower_03.webp",
       "width": 32,
       "height": 32,
       "frameWidth": 32,
@@ -1998,12 +1998,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "aaaf0d4dd7"
+      "hash": "99c71d0cbe"
     },
     {
       "id": "ny_glow_01",
       "category": "single",
-      "file": "singles/ny_glow_01.png",
+      "file": "singles/ny_glow_01.webp",
       "width": 32,
       "height": 32,
       "frameWidth": 32,
@@ -2012,12 +2012,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "ca5262eb21"
+      "hash": "723925c337"
     },
     {
       "id": "ny_glow_02",
       "category": "single",
-      "file": "singles/ny_glow_02.png",
+      "file": "singles/ny_glow_02.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2026,12 +2026,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "37e415c414"
+      "hash": "b3f28cd508"
     },
     {
       "id": "ny_glow_03",
       "category": "single",
-      "file": "singles/ny_glow_03.png",
+      "file": "singles/ny_glow_03.webp",
       "width": 63,
       "height": 63,
       "frameWidth": 63,
@@ -2040,12 +2040,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "295df82c71"
+      "hash": "d32219a289"
     },
     {
       "id": "ny_glow_fire",
       "category": "single",
-      "file": "singles/ny_glow_fire.png",
+      "file": "singles/ny_glow_fire.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2054,12 +2054,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "eb855de694"
+      "hash": "c060125499"
     },
     {
       "id": "ny_glow_land",
       "category": "single",
-      "file": "singles/ny_glow_land.png",
+      "file": "singles/ny_glow_land.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2068,12 +2068,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "57a8373f15"
+      "hash": "2ec5685f22"
     },
     {
       "id": "ny_glow_water",
       "category": "single",
-      "file": "singles/ny_glow_water.png",
+      "file": "singles/ny_glow_water.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2082,12 +2082,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "c72b292c33"
+      "hash": "e77fe7713d"
     },
     {
       "id": "ny_grab",
       "category": "single",
-      "file": "singles/ny_grab.png",
+      "file": "singles/ny_grab.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2096,12 +2096,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "4c8967b773"
+      "hash": "b64b048227"
     },
     {
       "id": "ny_leaf",
       "category": "single",
-      "file": "singles/ny_leaf.png",
+      "file": "singles/ny_leaf.webp",
       "width": 96,
       "height": 96,
       "frameWidth": 96,
@@ -2110,12 +2110,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "940a8bc000"
+      "hash": "bb93911ef2"
     },
     {
       "id": "ny_leaf_01",
       "category": "single",
-      "file": "singles/ny_leaf_01.png",
+      "file": "singles/ny_leaf_01.webp",
       "width": 48,
       "height": 48,
       "frameWidth": 48,
@@ -2124,12 +2124,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "5c7fc7e111"
+      "hash": "ac12513a91"
     },
     {
       "id": "ny_leaf_03",
       "category": "single",
-      "file": "singles/ny_leaf_03.png",
+      "file": "singles/ny_leaf_03.webp",
       "width": 48,
       "height": 48,
       "frameWidth": 48,
@@ -2138,12 +2138,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "5a3480b244"
+      "hash": "777a029a43"
     },
     {
       "id": "ny_light_rainbow",
       "category": "single",
-      "file": "singles/ny_light_rainbow.png",
+      "file": "singles/ny_light_rainbow.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2153,12 +2153,12 @@
       "rows": 1,
       "opaque": false,
       "note": "backdrop keyed out of the original opaque export",
-      "hash": "5c72b20ca3"
+      "hash": "e76d05953f"
     },
     {
       "id": "ny_light_rainbow_2",
       "category": "single",
-      "file": "singles/ny_light_rainbow_2.png",
+      "file": "singles/ny_light_rainbow_2.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2167,12 +2167,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "6047c453a2"
+      "hash": "52facbf6ff"
     },
     {
       "id": "ny_lines_02",
       "category": "single",
-      "file": "singles/ny_lines_02.png",
+      "file": "singles/ny_lines_02.webp",
       "width": 256,
       "height": 128,
       "frameWidth": 256,
@@ -2181,12 +2181,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "4df5aeb36b"
+      "hash": "5cd1705834"
     },
     {
       "id": "ny_lines_03",
       "category": "single",
-      "file": "singles/ny_lines_03.png",
+      "file": "singles/ny_lines_03.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2195,12 +2195,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "3b7d95de39"
+      "hash": "312c746f02"
     },
     {
       "id": "ny_lines_04",
       "category": "single",
-      "file": "singles/ny_lines_04.png",
+      "file": "singles/ny_lines_04.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2209,12 +2209,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "a64f634219"
+      "hash": "767f22fa30"
     },
     {
       "id": "ny_magiccircle_01",
       "category": "single",
-      "file": "singles/ny_magiccircle_01.png",
+      "file": "singles/ny_magiccircle_01.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2223,12 +2223,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "9bda142ce0"
+      "hash": "61bf19e5fb"
     },
     {
       "id": "ny_magiccircle_02",
       "category": "single",
-      "file": "singles/ny_magiccircle_02.png",
+      "file": "singles/ny_magiccircle_02.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 256,
@@ -2237,12 +2237,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "6a1032104a"
+      "hash": "43bc964002"
     },
     {
       "id": "ny_magiccircle_03",
       "category": "single",
-      "file": "singles/ny_magiccircle_03.png",
+      "file": "singles/ny_magiccircle_03.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2251,12 +2251,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "b674bdfd46"
+      "hash": "6e5b4aca86"
     },
     {
       "id": "ny_magiccircle_04_fire",
       "category": "single",
-      "file": "singles/ny_magiccircle_04_fire.png",
+      "file": "singles/ny_magiccircle_04_fire.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2265,12 +2265,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "79177fb294"
+      "hash": "b8a2eba748"
     },
     {
       "id": "ny_magiccircle_04_land",
       "category": "single",
-      "file": "singles/ny_magiccircle_04_land.png",
+      "file": "singles/ny_magiccircle_04_land.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2279,12 +2279,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "02912435b7"
+      "hash": "2d4ae3ad57"
     },
     {
       "id": "ny_magiccircle_04_water",
       "category": "single",
-      "file": "singles/ny_magiccircle_04_water.png",
+      "file": "singles/ny_magiccircle_04_water.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2293,12 +2293,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "b637fe9261"
+      "hash": "2803b808df"
     },
     {
       "id": "ny_magiccircle_04_wind",
       "category": "single",
-      "file": "singles/ny_magiccircle_04_wind.png",
+      "file": "singles/ny_magiccircle_04_wind.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2307,12 +2307,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "c88e50bece"
+      "hash": "b6a340ffc3"
     },
     {
       "id": "ny_magiccircle_05_fire",
       "category": "single",
-      "file": "singles/ny_magiccircle_05_fire.png",
+      "file": "singles/ny_magiccircle_05_fire.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2321,12 +2321,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "12f9f9d825"
+      "hash": "d1220f8628"
     },
     {
       "id": "ny_magiccircle_05_land",
       "category": "single",
-      "file": "singles/ny_magiccircle_05_land.png",
+      "file": "singles/ny_magiccircle_05_land.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2335,12 +2335,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "48a12de880"
+      "hash": "26ee24be85"
     },
     {
       "id": "ny_magiccircle_07",
       "category": "single",
-      "file": "singles/ny_magiccircle_07.png",
+      "file": "singles/ny_magiccircle_07.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2349,12 +2349,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "0353b19028"
+      "hash": "0c4a9eaf3a"
     },
     {
       "id": "ny_magiccircle_08",
       "category": "single",
-      "file": "singles/ny_magiccircle_08.png",
+      "file": "singles/ny_magiccircle_08.webp",
       "width": 129,
       "height": 128,
       "frameWidth": 129,
@@ -2363,12 +2363,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "af81c9e1b8"
+      "hash": "22ba53c9b2"
     },
     {
       "id": "ny_magiccircle_09",
       "category": "single",
-      "file": "singles/ny_magiccircle_09.png",
+      "file": "singles/ny_magiccircle_09.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2377,12 +2377,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "6efc84f5d7"
+      "hash": "58e3f47bef"
     },
     {
       "id": "ny_ob_fire",
       "category": "single",
-      "file": "singles/ny_ob_fire.png",
+      "file": "singles/ny_ob_fire.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2391,12 +2391,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "5ba52ad33f"
+      "hash": "7ffde49e29"
     },
     {
       "id": "ny_ob_fire_02",
       "category": "single",
-      "file": "singles/ny_ob_fire_02.png",
+      "file": "singles/ny_ob_fire_02.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2405,12 +2405,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "c91026427c"
+      "hash": "6cd65d937d"
     },
     {
       "id": "ny_ob_land",
       "category": "single",
-      "file": "singles/ny_ob_land.png",
+      "file": "singles/ny_ob_land.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2419,12 +2419,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "50e78a52f3"
+      "hash": "da229779b8"
     },
     {
       "id": "ny_ob_land_02",
       "category": "single",
-      "file": "singles/ny_ob_land_02.png",
+      "file": "singles/ny_ob_land_02.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2433,12 +2433,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "e42c5d9dc8"
+      "hash": "41cff737af"
     },
     {
       "id": "ny_ob_land_03",
       "category": "single",
-      "file": "singles/ny_ob_land_03.png",
+      "file": "singles/ny_ob_land_03.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2447,12 +2447,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "c662085890"
+      "hash": "07ed4ef809"
     },
     {
       "id": "ny_ob_line",
       "category": "single",
-      "file": "singles/ny_ob_line.png",
+      "file": "singles/ny_ob_line.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2461,12 +2461,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "9d48f4479e"
+      "hash": "a537e38225"
     },
     {
       "id": "ny_ob_water",
       "category": "single",
-      "file": "singles/ny_ob_water.png",
+      "file": "singles/ny_ob_water.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2475,12 +2475,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "d9fb9aa739"
+      "hash": "2ca5e7a386"
     },
     {
       "id": "ny_ob_water_02",
       "category": "single",
-      "file": "singles/ny_ob_water_02.png",
+      "file": "singles/ny_ob_water_02.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2489,12 +2489,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "5964d3d222"
+      "hash": "95071173db"
     },
     {
       "id": "ny_ob_water_03",
       "category": "single",
-      "file": "singles/ny_ob_water_03.png",
+      "file": "singles/ny_ob_water_03.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2503,12 +2503,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "5c9e3f8a36"
+      "hash": "433cd7449d"
     },
     {
       "id": "ny_ob_wind",
       "category": "single",
-      "file": "singles/ny_ob_wind.png",
+      "file": "singles/ny_ob_wind.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2517,12 +2517,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "6cd647dea0"
+      "hash": "ecf97bd437"
     },
     {
       "id": "ny_ray_01",
       "category": "single",
-      "file": "singles/ny_ray_01.png",
+      "file": "singles/ny_ray_01.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2531,12 +2531,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "d996895b8f"
+      "hash": "4eae108acc"
     },
     {
       "id": "ny_ray_02",
       "category": "single",
-      "file": "singles/ny_ray_02.png",
+      "file": "singles/ny_ray_02.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2545,12 +2545,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "dfd7f1e699"
+      "hash": "8c0d29d348"
     },
     {
       "id": "ny_ray_02_2",
       "category": "single",
-      "file": "singles/ny_ray_02_2.png",
+      "file": "singles/ny_ray_02_2.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2559,12 +2559,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "427d7ab99a"
+      "hash": "f08926e533"
     },
     {
       "id": "ny_ray_03",
       "category": "single",
-      "file": "singles/ny_ray_03.png",
+      "file": "singles/ny_ray_03.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2573,12 +2573,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "2adab4ec5c"
+      "hash": "a649e28e9e"
     },
     {
       "id": "ny_ray_04",
       "category": "single",
-      "file": "singles/ny_ray_04.png",
+      "file": "singles/ny_ray_04.webp",
       "width": 123,
       "height": 128,
       "frameWidth": 123,
@@ -2587,12 +2587,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "9badcb937c"
+      "hash": "5fe58fa731"
     },
     {
       "id": "ny_ring",
       "category": "single",
-      "file": "singles/ny_ring.png",
+      "file": "singles/ny_ring.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2601,12 +2601,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "c815fff90d"
+      "hash": "a6ca52e1ac"
     },
     {
       "id": "ny_ring_01",
       "category": "single",
-      "file": "singles/ny_ring_01.png",
+      "file": "singles/ny_ring_01.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2615,12 +2615,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "c895b94f9d"
+      "hash": "f41fc1291d"
     },
     {
       "id": "ny_ring_02",
       "category": "single",
-      "file": "singles/ny_ring_02.png",
+      "file": "singles/ny_ring_02.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2629,12 +2629,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "66bf4ec005"
+      "hash": "1de5797380"
     },
     {
       "id": "ny_smoke_02",
       "category": "single",
-      "file": "singles/ny_smoke_02.png",
+      "file": "singles/ny_smoke_02.webp",
       "width": 68,
       "height": 61,
       "frameWidth": 68,
@@ -2643,12 +2643,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "c5d61312ab"
+      "hash": "302418dc19"
     },
     {
       "id": "ny_snow",
       "category": "single",
-      "file": "singles/ny_snow.png",
+      "file": "singles/ny_snow.webp",
       "width": 32,
       "height": 32,
       "frameWidth": 32,
@@ -2657,12 +2657,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "35752ff0fe"
+      "hash": "fd3410bf0d"
     },
     {
       "id": "ny_snow_ice_01",
       "category": "single",
-      "file": "singles/ny_snow_ice_01.png",
+      "file": "singles/ny_snow_ice_01.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 256,
@@ -2671,12 +2671,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "db34b23555"
+      "hash": "0e6d69ad90"
     },
     {
       "id": "ny_snow_ice_02",
       "category": "single",
-      "file": "singles/ny_snow_ice_02.png",
+      "file": "singles/ny_snow_ice_02.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 256,
@@ -2685,12 +2685,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "b1ae240ed2"
+      "hash": "be33900b5a"
     },
     {
       "id": "ny_snow_ice_03",
       "category": "single",
-      "file": "singles/ny_snow_ice_03.png",
+      "file": "singles/ny_snow_ice_03.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 256,
@@ -2699,12 +2699,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "58f8247e4d"
+      "hash": "898ddba9f2"
     },
     {
       "id": "ny_snow_ice_shield",
       "category": "single",
-      "file": "singles/ny_snow_ice_shield.png",
+      "file": "singles/ny_snow_ice_shield.webp",
       "width": 256,
       "height": 256,
       "frameWidth": 256,
@@ -2713,12 +2713,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "af47202af8"
+      "hash": "b9279741e3"
     },
     {
       "id": "ny_snow_iceflake",
       "category": "single",
-      "file": "singles/ny_snow_iceflake.png",
+      "file": "singles/ny_snow_iceflake.webp",
       "width": 128,
       "height": 128,
       "frameWidth": 128,
@@ -2727,12 +2727,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "ffa7b5a4a0"
+      "hash": "af848cf085"
     },
     {
       "id": "ny_sparkle",
       "category": "single",
-      "file": "singles/ny_sparkle.png",
+      "file": "singles/ny_sparkle.webp",
       "width": 96,
       "height": 96,
       "frameWidth": 96,
@@ -2741,12 +2741,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "488265f939"
+      "hash": "3bdefe9cba"
     },
     {
       "id": "ny_star_01",
       "category": "single",
-      "file": "singles/ny_star_01.png",
+      "file": "singles/ny_star_01.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2755,12 +2755,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "3ba0c3582b"
+      "hash": "19759afddf"
     },
     {
       "id": "ny_star_02",
       "category": "single",
-      "file": "singles/ny_star_02.png",
+      "file": "singles/ny_star_02.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2769,12 +2769,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "d372a0202a"
+      "hash": "b81007def3"
     },
     {
       "id": "ny_star_03_water",
       "category": "single",
-      "file": "singles/ny_star_03_water.png",
+      "file": "singles/ny_star_03_water.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2783,12 +2783,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "dbe8a63bca"
+      "hash": "bc013d37a7"
     },
     {
       "id": "ny_star_04",
       "category": "single",
-      "file": "singles/ny_star_04.png",
+      "file": "singles/ny_star_04.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2797,12 +2797,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "8705c751d4"
+      "hash": "ac7b035488"
     },
     {
       "id": "ny_twister_01",
       "category": "single",
-      "file": "singles/ny_twister_01.png",
+      "file": "singles/ny_twister_01.webp",
       "width": 64,
       "height": 64,
       "frameWidth": 64,
@@ -2811,12 +2811,12 @@
       "cols": 1,
       "rows": 1,
       "opaque": false,
-      "hash": "0e219d780f"
+      "hash": "8a1203358c"
     },
     {
       "id": "frost_zone",
       "category": "zone",
-      "file": "effects/frost_zone.png",
+      "file": "effects/frost_zone.webp",
       "width": 3000,
       "height": 200,
       "frameWidth": 200,
@@ -2827,12 +2827,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "ef3072f6c9"
+      "hash": "4d74f23025"
     },
     {
       "id": "mythic_frost_zone",
       "category": "zone",
-      "file": "effects/mythic_frost_zone.png",
+      "file": "effects/mythic_frost_zone.webp",
       "width": 400,
       "height": 100,
       "frameWidth": 100,
@@ -2843,12 +2843,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "2b3b886b59"
+      "hash": "b219f9e7a4"
     },
     {
       "id": "mythic_poison_zone",
       "category": "zone",
-      "file": "effects/mythic_poison_zone.png",
+      "file": "effects/mythic_poison_zone.webp",
       "width": 400,
       "height": 100,
       "frameWidth": 100,
@@ -2859,12 +2859,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "acc75a0c10"
+      "hash": "1a8d4d7b10"
     },
     {
       "id": "poison",
       "category": "zone",
-      "file": "effects/poison.png",
+      "file": "effects/poison.webp",
       "width": 900,
       "height": 150,
       "frameWidth": 150,
@@ -2875,12 +2875,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "02cdc01295"
+      "hash": "1049c8555d"
     },
     {
       "id": "poison_2",
       "category": "zone",
-      "file": "effects/poison_2.png",
+      "file": "effects/poison_2.webp",
       "width": 1600,
       "height": 200,
       "frameWidth": 200,
@@ -2891,12 +2891,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "5b939dbe00"
+      "hash": "a1e5289377"
     },
     {
       "id": "poison_3",
       "category": "zone",
-      "file": "effects/poison_3.png",
+      "file": "effects/poison_3.webp",
       "width": 384,
       "height": 384,
       "frameWidth": 128,
@@ -2907,12 +2907,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "364988d747"
+      "hash": "b16bad64e2"
     },
     {
       "id": "poison_4",
       "category": "zone",
-      "file": "effects/poison_4.png",
+      "file": "effects/poison_4.webp",
       "width": 750,
       "height": 750,
       "frameWidth": 250,
@@ -2923,12 +2923,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "e3eb6b0c57"
+      "hash": "895e81eb08"
     },
     {
       "id": "poison_5",
       "category": "zone",
-      "file": "effects/poison_5.png",
+      "file": "effects/poison_5.webp",
       "width": 900,
       "height": 150,
       "frameWidth": 150,
@@ -2939,12 +2939,12 @@
       "fps": 5,
       "opaque": false,
       "reference": false,
-      "hash": "ce3cbfb8fd"
+      "hash": "19dd8c340e"
     },
     {
       "id": "poison_7",
       "category": "zone",
-      "file": "effects/poison_7.png",
+      "file": "effects/poison_7.webp",
       "width": 1050,
       "height": 150,
       "frameWidth": 150,
@@ -2955,12 +2955,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "b404abdc1b"
+      "hash": "b00af8e7a6"
     },
     {
       "id": "poison_9",
       "category": "zone",
-      "file": "effects/poison_9.png",
+      "file": "effects/poison_9.webp",
       "width": 3088,
       "height": 386,
       "frameWidth": 386,
@@ -2971,12 +2971,12 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "b53b7545cd"
+      "hash": "14a3141b81"
     },
     {
       "id": "posion",
       "category": "zone",
-      "file": "effects/posion.png",
+      "file": "effects/posion.webp",
       "width": 400,
       "height": 100,
       "frameWidth": 100,
@@ -2987,7 +2987,7 @@
       "fps": 12,
       "opaque": false,
       "reference": false,
-      "hash": "04b2a70f08"
+      "hash": "c6e9ffc029"
     }
   ]
 }

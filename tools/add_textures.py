@@ -15,8 +15,9 @@ import hashlib
 import json
 import os
 import re
-import shutil
 import sys
+
+from PIL import Image
 
 # Only these parts of the Unity trees hold particle material.
 VFX_DIRS = ('00_Materials', 'VFX/MaterialsTextures', 'VFX/Prefabs')
@@ -76,9 +77,9 @@ def main(staging, library, dry_run=False):
             uid = '%s_%d' % (e['id'], n)
         taken_ids.add(uid)
 
-        rel = 'singles/%s.png' % uid
+        rel = 'singles/%s.webp' % uid
         if not dry_run:
-            shutil.copy2(src, os.path.join(library, rel))
+            Image.open(src).save(os.path.join(library, rel), lossless=True, exact=True)
         manifest['assets'].append({
             'id': uid, 'category': 'single', 'file': rel,
             'width': e['width'], 'height': e['height'],

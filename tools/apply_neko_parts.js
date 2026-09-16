@@ -2,7 +2,7 @@
 // Applies the neko_boy_casual hair/ear/eye/eyebrow/mouth/tail template to
 // another neko_boy-family character that shares the same rig (same head
 // bone length/rotation, same 8 *_BoneFollower bones, same lack of a hair
-// atlas). Copies the already-premultiplied part PNGs, extends atlas.txt,
+// atlas). Copies the already-premultiplied part images, extends atlas.txt,
 // and wires new slots + attachments into the character's own used skin.
 const fs = require('fs');
 const path = require('path');
@@ -52,13 +52,13 @@ function applyTo(charId, skinName) {
 
   fs.mkdirSync(partsDir, { recursive: true });
   for (const name of Object.keys(PART_SIZES)) {
-    fs.copyFileSync(path.join(SRC_PARTS, name + '.png'), path.join(partsDir, name + '.png'));
+    fs.copyFileSync(path.join(SRC_PARTS, name + '.webp'), path.join(partsDir, name + '.webp'));
   }
 
   let atlas = fs.readFileSync(atlasPath, 'utf8').replace(/\s+$/, '');
   let add = '';
   for (const [name, [w, h]] of Object.entries(PART_SIZES)) {
-    add += `\n\nparts/${name}.png\nsize:${w},${h}\nfilter:Linear,Linear\npma:false\npart_${name}\nbounds:0,0,${w},${h}`;
+    add += `\n\nparts/${name}.webp\nsize:${w},${h}\nfilter:Linear,Linear\npma:false\npart_${name}\nbounds:0,0,${w},${h}`;
   }
   fs.writeFileSync(atlasPath, atlas + add + '\n');
 

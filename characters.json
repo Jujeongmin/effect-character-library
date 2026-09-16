@@ -16,7 +16,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/animal/craft_cat_dvergr.png",
+          "file": "characters/animal/craft_cat_dvergr.webp",
           "width": 900,
           "height": 763,
           "frameWidth": 900,
@@ -24,10 +24,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "bca886edf8"
+          "hash": "d1a3b77197"
         },
         "expr1": {
-          "file": "characters/animal/craft_cat_dvergr_expr1.png",
+          "file": "characters/animal/craft_cat_dvergr_expr1.webp",
           "width": 900,
           "height": 763,
           "frameWidth": 900,
@@ -35,10 +35,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "7c0d9917db"
+          "hash": "927a87d24e"
         },
         "expr2": {
-          "file": "characters/animal/craft_cat_dvergr_expr2.png",
+          "file": "characters/animal/craft_cat_dvergr_expr2.webp",
           "width": 900,
           "height": 604,
           "frameWidth": 900,
@@ -46,10 +46,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "038ed11038"
+          "hash": "f2b34ddc0e"
         },
         "expr3": {
-          "file": "characters/animal/craft_cat_dvergr_expr3.png",
+          "file": "characters/animal/craft_cat_dvergr_expr3.webp",
           "width": 900,
           "height": 675,
           "frameWidth": 900,
@@ -57,10 +57,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a70683df10"
+          "hash": "5a5f4fed74"
         },
         "expr4": {
-          "file": "characters/animal/craft_cat_dvergr_expr4.png",
+          "file": "characters/animal/craft_cat_dvergr_expr4.webp",
           "width": 900,
           "height": 675,
           "frameWidth": 900,
@@ -68,7 +68,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "c2b359d263"
+          "hash": "6618069504"
         }
       },
       "spine": {
@@ -91,7 +91,7 @@
           "Touch"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "981c14ae47"
+        "hash": "0909b685f6"
       }
     },
     {
@@ -101,7 +101,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/animal/glasses_cat_alex.png",
+          "file": "characters/animal/glasses_cat_alex.webp",
           "width": 900,
           "height": 751,
           "frameWidth": 900,
@@ -109,10 +109,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "870ebf8582"
+          "hash": "fd52dad9c3"
         },
         "expr1": {
-          "file": "characters/animal/glasses_cat_alex_expr1.png",
+          "file": "characters/animal/glasses_cat_alex_expr1.webp",
           "width": 900,
           "height": 751,
           "frameWidth": 900,
@@ -120,10 +120,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "487eb223e0"
+          "hash": "f8e7aaca7c"
         },
         "expr2": {
-          "file": "characters/animal/glasses_cat_alex_expr2.png",
+          "file": "characters/animal/glasses_cat_alex_expr2.webp",
           "width": 900,
           "height": 765,
           "frameWidth": 900,
@@ -131,7 +131,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "83667b678b"
+          "hash": "f5c16f41e8"
         }
       },
       "spine": {
@@ -148,14 +148,14 @@
           "Touch"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "2e97546542"
+        "hash": "47a2317f93"
       }
     },
     {
       "id": "parrot_npc",
       "name": "앵무새",
       "category": "animal",
-      "file": "characters/animal/parrot_npc.png",
+      "file": "characters/animal/parrot_npc.webp",
       "width": 387,
       "height": 694,
       "frameWidth": 387,
@@ -174,9 +174,9 @@
           "Idle"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "7244b43589"
+        "hash": "3133db8217"
       },
-      "hash": "5270c4095e"
+      "hash": "a92029e548"
     },
     {
       "id": "pet_black_cat",
@@ -185,7 +185,7 @@
       "defaultAnimation": "default",
       "animations": {
         "2": {
-          "file": "characters/animal/pet_black_cat_2.png",
+          "file": "characters/animal/pet_black_cat_2.webp",
           "width": 162,
           "height": 160,
           "frameWidth": 162,
@@ -193,10 +193,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "58e3ec56a3"
+          "hash": "28a01d8027"
         },
         "3": {
-          "file": "characters/animal/pet_black_cat_3.png",
+          "file": "characters/animal/pet_black_cat_3.webp",
           "width": 155,
           "height": 160,
           "frameWidth": 155,
@@ -204,10 +204,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "d9193e2585"
+          "hash": "2199f5d2c0"
         },
         "default": {
-          "file": "characters/animal/pet_black_cat.png",
+          "file": "characters/animal/pet_black_cat.webp",
           "width": 155,
           "height": 160,
           "frameWidth": 155,
@@ -215,7 +215,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "05534c1d81"
+          "hash": "924c8e7f59"
         }
       },
       "clipNotes": {
@@ -234,14 +234,14 @@
           "Special",
           "BattleEnd"
         ],
-        "hash": "1c0d0a79b2"
+        "hash": "bde3c59caf"
       }
     },
     {
       "id": "praise_cat_maya",
       "name": "칭찬 고양이 (마야)",
       "category": "animal",
-      "file": "characters/animal/praise_cat_maya.png",
+      "file": "characters/animal/praise_cat_maya.webp",
       "width": 415,
       "height": 735,
       "frameWidth": 415,
@@ -263,9 +263,9 @@
           "Talking"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "4cc6d35a88"
+        "hash": "006082ae86"
       },
-      "hash": "761545273a"
+      "hash": "c25f0b9022"
     },
     {
       "id": "ranking_cat_devon",
@@ -274,7 +274,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/animal/ranking_cat_devon.png",
+          "file": "characters/animal/ranking_cat_devon.webp",
           "width": 523,
           "height": 900,
           "frameWidth": 523,
@@ -282,10 +282,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a755435ab2"
+          "hash": "52b7b1743c"
         },
         "expr1": {
-          "file": "characters/animal/ranking_cat_devon_expr1.png",
+          "file": "characters/animal/ranking_cat_devon_expr1.webp",
           "width": 523,
           "height": 900,
           "frameWidth": 523,
@@ -293,10 +293,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a265cc8bb2"
+          "hash": "5839942af1"
         },
         "expr2": {
-          "file": "characters/animal/ranking_cat_devon_expr2.png",
+          "file": "characters/animal/ranking_cat_devon_expr2.webp",
           "width": 523,
           "height": 900,
           "frameWidth": 523,
@@ -304,7 +304,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "3358935c9f"
+          "hash": "3eae08bb4b"
         }
       },
       "spine": {
@@ -320,7 +320,7 @@
           "Touch"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "66b691b48e"
+        "hash": "7f3ca66ab5"
       }
     },
     {
@@ -330,7 +330,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/animal/shop_cat_jade.png",
+          "file": "characters/animal/shop_cat_jade.webp",
           "width": 900,
           "height": 900,
           "frameWidth": 900,
@@ -338,10 +338,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "d4d8ac1bec"
+          "hash": "6c6fa34315"
         },
         "side": {
-          "file": "characters/animal/shop_cat_jade_side.png",
+          "file": "characters/animal/shop_cat_jade_side.webp",
           "width": 900,
           "height": 900,
           "frameWidth": 900,
@@ -349,10 +349,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "6bba7e4811"
+          "hash": "301d945c86"
         },
         "expr1": {
-          "file": "characters/animal/shop_cat_jade_expr1.png",
+          "file": "characters/animal/shop_cat_jade_expr1.webp",
           "width": 900,
           "height": 900,
           "frameWidth": 900,
@@ -360,10 +360,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "2f00032fb7"
+          "hash": "76bed14cd5"
         },
         "expr2": {
-          "file": "characters/animal/shop_cat_jade_expr2.png",
+          "file": "characters/animal/shop_cat_jade_expr2.webp",
           "width": 900,
           "height": 900,
           "frameWidth": 900,
@@ -371,10 +371,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "7fa6c5897b"
+          "hash": "1dabf59b9a"
         },
         "expr3": {
-          "file": "characters/animal/shop_cat_jade_expr3.png",
+          "file": "characters/animal/shop_cat_jade_expr3.webp",
           "width": 900,
           "height": 900,
           "frameWidth": 900,
@@ -382,10 +382,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "2b8ca64224"
+          "hash": "91bd607cbd"
         },
         "expr4": {
-          "file": "characters/animal/shop_cat_jade_expr4.png",
+          "file": "characters/animal/shop_cat_jade_expr4.webp",
           "width": 900,
           "height": 900,
           "frameWidth": 900,
@@ -393,10 +393,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "cec4ba8751"
+          "hash": "23e655028c"
         },
         "expr5": {
-          "file": "characters/animal/shop_cat_jade_expr5.png",
+          "file": "characters/animal/shop_cat_jade_expr5.webp",
           "width": 900,
           "height": 900,
           "frameWidth": 900,
@@ -404,7 +404,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "5049de8730"
+          "hash": "d76b0f9cf5"
         }
       },
       "spine": {
@@ -420,14 +420,14 @@
           "Touch"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "6da00dc637"
+        "hash": "afc3b76377"
       }
     },
     {
       "id": "abyssal_fenrir",
       "name": "심연의 펜리르 (월드보스)",
       "category": "beast",
-      "file": "characters/beast/abyssal_fenrir.png",
+      "file": "characters/beast/abyssal_fenrir.webp",
       "width": 900,
       "height": 812,
       "frameWidth": 900,
@@ -435,13 +435,13 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "371468543c"
+      "hash": "fbc30a26d9"
     },
     {
       "id": "boar_chief",
       "name": "멧돼지 대장 (해골 장식)",
       "category": "beast",
-      "file": "characters/beast/boar_chief.png",
+      "file": "characters/beast/boar_chief.webp",
       "width": 801,
       "height": 593,
       "frameWidth": 801,
@@ -470,15 +470,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "ed74f8a1bd"
+        "hash": "d7b9a4a97e"
       },
-      "hash": "d4b442a8ac"
+      "hash": "ea7c623241"
     },
     {
       "id": "boar_club",
       "name": "멧돼지 전사 (몽둥이)",
       "category": "beast",
-      "file": "characters/beast/boar_club.png",
+      "file": "characters/beast/boar_club.webp",
       "width": 238,
       "height": 172,
       "frameWidth": 238,
@@ -500,15 +500,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "c1ee11010e"
+        "hash": "eec72f7358"
       },
-      "hash": "2bbdfcd502"
+      "hash": "194d678563"
     },
     {
       "id": "boar_demon_mace",
       "name": "멧돼지 전사 (악마 철퇴)",
       "category": "beast",
-      "file": "characters/beast/boar_demon_mace.png",
+      "file": "characters/beast/boar_demon_mace.webp",
       "width": 482,
       "height": 292,
       "frameWidth": 482,
@@ -531,15 +531,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "8c255b10a0"
+        "hash": "7b8fca9e15"
       },
-      "hash": "db626eb461"
+      "hash": "e9880822a1"
     },
     {
       "id": "boar_gauntlet",
       "name": "멧돼지 전사 (황금 건틀렛)",
       "category": "beast",
-      "file": "characters/beast/boar_gauntlet.png",
+      "file": "characters/beast/boar_gauntlet.webp",
       "width": 455,
       "height": 330,
       "frameWidth": 455,
@@ -561,15 +561,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "fbce3a32e3"
+        "hash": "bc16df13a4"
       },
-      "hash": "2af44ade59"
+      "hash": "8b979636e9"
     },
     {
       "id": "boar_hammer",
       "name": "멧돼지 전사 (마법 망치)",
       "category": "beast",
-      "file": "characters/beast/boar_hammer.png",
+      "file": "characters/beast/boar_hammer.webp",
       "width": 312,
       "height": 268,
       "frameWidth": 312,
@@ -592,15 +592,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "757c2c99a7"
+        "hash": "9d668cf3e9"
       },
-      "hash": "663e07774c"
+      "hash": "8f4459b6cd"
     },
     {
       "id": "boar_spiked_club",
       "name": "멧돼지 전사 (가시 몽둥이)",
       "category": "beast",
-      "file": "characters/beast/boar_spiked_club.png",
+      "file": "characters/beast/boar_spiked_club.webp",
       "width": 233,
       "height": 200,
       "frameWidth": 233,
@@ -622,15 +622,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "1f1799f602"
+        "hash": "66c4bdb6ac"
       },
-      "hash": "d706d31527"
+      "hash": "7fbdeeea38"
     },
     {
       "id": "boar_tribal",
       "name": "멧돼지 전사 (부족 깃발)",
       "category": "beast",
-      "file": "characters/beast/boar_tribal.png",
+      "file": "characters/beast/boar_tribal.webp",
       "width": 469,
       "height": 317,
       "frameWidth": 469,
@@ -653,15 +653,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "0675dd65c0"
+        "hash": "bf9873a475"
       },
-      "hash": "7f5c48e82a"
+      "hash": "f69e537631"
     },
     {
       "id": "boar_undead_mage",
       "name": "멧돼지 전사 (해골 지팡이)",
       "category": "beast",
-      "file": "characters/beast/boar_undead_mage.png",
+      "file": "characters/beast/boar_undead_mage.webp",
       "width": 437,
       "height": 315,
       "frameWidth": 437,
@@ -683,15 +683,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "b07da54438"
+        "hash": "884e08937f"
       },
-      "hash": "115f68eff0"
+      "hash": "e5ed81c262"
     },
     {
       "id": "fox_warrior_axe",
       "name": "여우 전사 (도끼)",
       "category": "beast",
-      "file": "characters/beast/fox_warrior_axe.png",
+      "file": "characters/beast/fox_warrior_axe.webp",
       "width": 243,
       "height": 196,
       "frameWidth": 243,
@@ -713,15 +713,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "ba179698ad"
+        "hash": "85bae3e9ca"
       },
-      "hash": "3a9ec0b72d"
+      "hash": "55c66f869a"
     },
     {
       "id": "fox_warrior_chief",
       "name": "여우 전사 대장 (대형 창)",
       "category": "beast",
-      "file": "characters/beast/fox_warrior_chief.png",
+      "file": "characters/beast/fox_warrior_chief.webp",
       "width": 900,
       "height": 495,
       "frameWidth": 900,
@@ -748,15 +748,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "7718a87a9e"
+        "hash": "77077c8e4d"
       },
-      "hash": "bec35208ed"
+      "hash": "38ccaad9fb"
     },
     {
       "id": "fox_warrior_daggers",
       "name": "여우 전사 (쌍검)",
       "category": "beast",
-      "file": "characters/beast/fox_warrior_daggers.png",
+      "file": "characters/beast/fox_warrior_daggers.webp",
       "width": 143,
       "height": 153,
       "frameWidth": 143,
@@ -778,15 +778,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "4dd41e6035"
+        "hash": "62779d595b"
       },
-      "hash": "bae1e9edde"
+      "hash": "fa77f35eb9"
     },
     {
       "id": "fox_warrior_hookaxe",
       "name": "여우 전사 (갈고리도끼)",
       "category": "beast",
-      "file": "characters/beast/fox_warrior_hookaxe.png",
+      "file": "characters/beast/fox_warrior_hookaxe.webp",
       "width": 322,
       "height": 277,
       "frameWidth": 322,
@@ -808,15 +808,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "b01e177cc0"
+        "hash": "f856660c53"
       },
-      "hash": "39d93a5694"
+      "hash": "7486e98155"
     },
     {
       "id": "fox_warrior_lantern",
       "name": "여우 전사 (유령 등불 동반)",
       "category": "beast",
-      "file": "characters/beast/fox_warrior_lantern.png",
+      "file": "characters/beast/fox_warrior_lantern.webp",
       "width": 437,
       "height": 265,
       "frameWidth": 437,
@@ -838,15 +838,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "dd226b2275"
+        "hash": "3ae01b7071"
       },
-      "hash": "7abdaeb661"
+      "hash": "9555efa5e5"
     },
     {
       "id": "fox_warrior_skull",
       "name": "여우 전사 (해골 장식)",
       "category": "beast",
-      "file": "characters/beast/fox_warrior_skull.png",
+      "file": "characters/beast/fox_warrior_skull.webp",
       "width": 372,
       "height": 345,
       "frameWidth": 372,
@@ -868,15 +868,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "8289441447"
+        "hash": "71daa65b40"
       },
-      "hash": "0c8e8f5987"
+      "hash": "64402fbf51"
     },
     {
       "id": "fox_warrior_sword",
       "name": "여우 전사 (한손검)",
       "category": "beast",
-      "file": "characters/beast/fox_warrior_sword.png",
+      "file": "characters/beast/fox_warrior_sword.webp",
       "width": 356,
       "height": 257,
       "frameWidth": 356,
@@ -898,15 +898,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "76cfc0aaac"
+        "hash": "a0524ef00b"
       },
-      "hash": "f6577a8a5e"
+      "hash": "9d1f232081"
     },
     {
       "id": "fox_warrior_twinblade",
       "name": "여우 전사 (쌍칼·모피)",
       "category": "beast",
-      "file": "characters/beast/fox_warrior_twinblade.png",
+      "file": "characters/beast/fox_warrior_twinblade.webp",
       "width": 521,
       "height": 296,
       "frameWidth": 521,
@@ -928,15 +928,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "6360db093b"
+        "hash": "21d765373c"
       },
-      "hash": "c26747a5fc"
+      "hash": "f075bf52c0"
     },
     {
       "id": "ghost_knight_wolf_mount",
       "name": "유령 늑대 탈것",
       "category": "beast",
-      "file": "characters/beast/ghost_knight_wolf_mount.png",
+      "file": "characters/beast/ghost_knight_wolf_mount.webp",
       "width": 900,
       "height": 589,
       "frameWidth": 900,
@@ -967,15 +967,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "4656a60af6"
+        "hash": "e82fd6ff3c"
       },
-      "hash": "91c8832bda"
+      "hash": "d000317ab9"
     },
     {
       "id": "jelly_spirit_shadow_wolf",
       "name": "그림자 늑대",
       "category": "beast",
-      "file": "characters/beast/jelly_spirit_shadow_wolf.png",
+      "file": "characters/beast/jelly_spirit_shadow_wolf.webp",
       "width": 900,
       "height": 647,
       "frameWidth": 900,
@@ -997,15 +997,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "b4be193d33"
+        "hash": "b33e8585cf"
       },
-      "hash": "c377088832"
+      "hash": "f92304b5d8"
     },
     {
       "id": "jelly_spirit_snow_beast",
       "name": "설원 야수",
       "category": "beast",
-      "file": "characters/beast/jelly_spirit_snow_beast.png",
+      "file": "characters/beast/jelly_spirit_snow_beast.webp",
       "width": 900,
       "height": 539,
       "frameWidth": 900,
@@ -1031,15 +1031,15 @@
           "StandingToIdle"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "68d462baef"
+        "hash": "3f69b1f92a"
       },
-      "hash": "7c0875bdbb"
+      "hash": "eb2f5a8501"
     },
     {
       "id": "jelly_spirit_warrior",
       "name": "설인 전사",
       "category": "beast",
-      "file": "characters/beast/jelly_spirit_warrior.png",
+      "file": "characters/beast/jelly_spirit_warrior.webp",
       "width": 874,
       "height": 741,
       "frameWidth": 874,
@@ -1061,15 +1061,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "c16361a8d5"
+        "hash": "f682a0a827"
       },
-      "hash": "b4301a25f0"
+      "hash": "03023b5dd6"
     },
     {
       "id": "jelly_spirit_wolf_warrior",
       "name": "늑대 전사",
       "category": "beast",
-      "file": "characters/beast/jelly_spirit_wolf_warrior.png",
+      "file": "characters/beast/jelly_spirit_wolf_warrior.webp",
       "width": 900,
       "height": 792,
       "frameWidth": 900,
@@ -1091,15 +1091,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "7d4c18cbde"
+        "hash": "87e7806cce"
       },
-      "hash": "87af429173"
+      "hash": "880c10fe04"
     },
     {
       "id": "jormungandr",
       "name": "요르문간드 (어드벤처 보스)",
       "category": "beast",
-      "file": "characters/beast/jormungandr.png",
+      "file": "characters/beast/jormungandr.webp",
       "width": 900,
       "height": 540,
       "frameWidth": 900,
@@ -1108,13 +1108,13 @@
       "cols": 1,
       "rows": 1,
       "note": "PSD에서 캐릭터 레이어만 뽑아냄",
-      "hash": "b1091a6697"
+      "hash": "2ead3675da"
     },
     {
       "id": "lizard_warrior_flame_scythe",
       "name": "도마뱀 전사 (화염낫)",
       "category": "beast",
-      "file": "characters/beast/lizard_warrior_flame_scythe.png",
+      "file": "characters/beast/lizard_warrior_flame_scythe.webp",
       "width": 684,
       "height": 443,
       "frameWidth": 684,
@@ -1136,15 +1136,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "9e2fed9fdf"
+        "hash": "d190f48a00"
       },
-      "hash": "770d967575"
+      "hash": "9db5b6434a"
     },
     {
       "id": "lizard_warrior_horned",
       "name": "도마뱀 전사 (뿔)",
       "category": "beast",
-      "file": "characters/beast/lizard_warrior_horned.png",
+      "file": "characters/beast/lizard_warrior_horned.webp",
       "width": 392,
       "height": 391,
       "frameWidth": 392,
@@ -1167,15 +1167,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "e9b2f45434"
+        "hash": "2aec8dfc58"
       },
-      "hash": "f750695a69"
+      "hash": "a2803ad0d0"
     },
     {
       "id": "lizard_warrior_inferno",
       "name": "도마뱀 거인 (불꽃)",
       "category": "beast",
-      "file": "characters/beast/lizard_warrior_inferno.png",
+      "file": "characters/beast/lizard_warrior_inferno.webp",
       "width": 900,
       "height": 507,
       "frameWidth": 900,
@@ -1203,15 +1203,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "a56a915555"
+        "hash": "720261b178"
       },
-      "hash": "8ea4f13931"
+      "hash": "f8d0541a27"
     },
     {
       "id": "lizard_warrior_scimitar",
       "name": "도마뱀 전사 (곡도)",
       "category": "beast",
-      "file": "characters/beast/lizard_warrior_scimitar.png",
+      "file": "characters/beast/lizard_warrior_scimitar.webp",
       "width": 464,
       "height": 355,
       "frameWidth": 464,
@@ -1233,15 +1233,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "aeaeaba639"
+        "hash": "34031b6cbd"
       },
-      "hash": "d503fe9404"
+      "hash": "a6f226f1fc"
     },
     {
       "id": "lizard_warrior_shield",
       "name": "도마뱀 전사 (방패)",
       "category": "beast",
-      "file": "characters/beast/lizard_warrior_shield.png",
+      "file": "characters/beast/lizard_warrior_shield.webp",
       "width": 352,
       "height": 245,
       "frameWidth": 352,
@@ -1263,15 +1263,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "940291982a"
+        "hash": "42baacd2df"
       },
-      "hash": "ee648b0341"
+      "hash": "3b72edfce9"
     },
     {
       "id": "lizard_warrior_spear",
       "name": "도마뱀 전사 (창)",
       "category": "beast",
-      "file": "characters/beast/lizard_warrior_spear.png",
+      "file": "characters/beast/lizard_warrior_spear.webp",
       "width": 421,
       "height": 298,
       "frameWidth": 421,
@@ -1293,15 +1293,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "bd83cad91c"
+        "hash": "b491e6914d"
       },
-      "hash": "da1c3fe810"
+      "hash": "305538dddb"
     },
     {
       "id": "lizard_warrior_tailblade",
       "name": "도마뱀 전사 (칼꼬리)",
       "category": "beast",
-      "file": "characters/beast/lizard_warrior_tailblade.png",
+      "file": "characters/beast/lizard_warrior_tailblade.webp",
       "width": 291,
       "height": 217,
       "frameWidth": 291,
@@ -1323,15 +1323,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "122a338a56"
+        "hash": "97f068e216"
       },
-      "hash": "51c3dbf8db"
+      "hash": "508f4d61f5"
     },
     {
       "id": "lizard_warrior_tongue",
       "name": "도마뱀 전사 (독혀)",
       "category": "beast",
-      "file": "characters/beast/lizard_warrior_tongue.png",
+      "file": "characters/beast/lizard_warrior_tongue.webp",
       "width": 447,
       "height": 407,
       "frameWidth": 447,
@@ -1353,15 +1353,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "6f8b43e3da"
+        "hash": "1bbb48dc75"
       },
-      "hash": "04cf1c0d52"
+      "hash": "d517af9793"
     },
     {
       "id": "mole_beast_flame",
       "name": "두더지 짐승 (불)",
       "category": "beast",
-      "file": "characters/beast/mole_beast_flame.png",
+      "file": "characters/beast/mole_beast_flame.webp",
       "width": 190,
       "height": 188,
       "frameWidth": 190,
@@ -1383,15 +1383,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "73a44aae81"
+        "hash": "654f600cc0"
       },
-      "hash": "5d79d5b664"
+      "hash": "15e88f151d"
     },
     {
       "id": "mole_beast_leaf",
       "name": "두더지 짐승 (잎)",
       "category": "beast",
-      "file": "characters/beast/mole_beast_leaf.png",
+      "file": "characters/beast/mole_beast_leaf.webp",
       "width": 178,
       "height": 164,
       "frameWidth": 178,
@@ -1413,15 +1413,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "164086a218"
+        "hash": "3d25190fd3"
       },
-      "hash": "bdcd03b645"
+      "hash": "52d36f0496"
     },
     {
       "id": "mole_beast_rock",
       "name": "두더지 짐승 (돌)",
       "category": "beast",
-      "file": "characters/beast/mole_beast_rock.png",
+      "file": "characters/beast/mole_beast_rock.webp",
       "width": 192,
       "height": 194,
       "frameWidth": 192,
@@ -1443,15 +1443,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "f1fb69c408"
+        "hash": "aee3465d93"
       },
-      "hash": "94e0c65a80"
+      "hash": "3614718859"
     },
     {
       "id": "mole_beast_water",
       "name": "두더지 짐승 (물)",
       "category": "beast",
-      "file": "characters/beast/mole_beast_water.png",
+      "file": "characters/beast/mole_beast_water.webp",
       "width": 191,
       "height": 169,
       "frameWidth": 191,
@@ -1473,15 +1473,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "ee873ef3f4"
+        "hash": "e67ff9468c"
       },
-      "hash": "d5a48184c4"
+      "hash": "34afdcd63b"
     },
     {
       "id": "mole_beast_wind",
       "name": "두더지 짐승 (바람)",
       "category": "beast",
-      "file": "characters/beast/mole_beast_wind.png",
+      "file": "characters/beast/mole_beast_wind.webp",
       "width": 180,
       "height": 174,
       "frameWidth": 180,
@@ -1503,9 +1503,9 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "9af796a49a"
+        "hash": "c823205f02"
       },
-      "hash": "4eacd33226"
+      "hash": "2821c9297b"
     },
     {
       "id": "monster_210003",
@@ -1514,7 +1514,7 @@
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/210003_idle.png",
+          "file": "characters/beast/210003_idle.webp",
           "width": 2416,
           "height": 1526,
           "frameWidth": 302,
@@ -1523,10 +1523,10 @@
           "cols": 8,
           "rows": 7,
           "fps": 33.33,
-          "hash": "f32591d04d"
+          "hash": "e390c02956"
         },
         "run": {
-          "file": "characters/beast/210003_run.png",
+          "file": "characters/beast/210003_run.webp",
           "width": 2784,
           "height": 1776,
           "frameWidth": 348,
@@ -1535,10 +1535,10 @@
           "cols": 8,
           "rows": 8,
           "fps": 33.33,
-          "hash": "9d2aab3e6e"
+          "hash": "7acf9bbd80"
         },
         "attack": {
-          "file": "characters/beast/210003_attack.png",
+          "file": "characters/beast/210003_attack.webp",
           "width": 3710,
           "height": 2212,
           "frameWidth": 530,
@@ -1547,10 +1547,10 @@
           "cols": 7,
           "rows": 7,
           "fps": 33.33,
-          "hash": "b70d186594"
+          "hash": "ebb7f93563"
         },
         "casting": {
-          "file": "characters/beast/210003_casting.png",
+          "file": "characters/beast/210003_casting.webp",
           "width": 2394,
           "height": 1668,
           "frameWidth": 342,
@@ -1559,10 +1559,10 @@
           "cols": 7,
           "rows": 6,
           "fps": 33.33,
-          "hash": "4b8f46363d"
+          "hash": "b5b9bbcff9"
         },
         "hit": {
-          "file": "characters/beast/210003_hit.png",
+          "file": "characters/beast/210003_hit.webp",
           "width": 1854,
           "height": 1200,
           "frameWidth": 309,
@@ -1571,10 +1571,10 @@
           "cols": 6,
           "rows": 5,
           "fps": 33.33,
-          "hash": "0a35b93f19"
+          "hash": "9ef6c7c4aa"
         },
         "die": {
-          "file": "characters/beast/210003_die.png",
+          "file": "characters/beast/210003_die.webp",
           "width": 2548,
           "height": 1946,
           "frameWidth": 364,
@@ -1583,7 +1583,7 @@
           "cols": 7,
           "rows": 7,
           "fps": 33.33,
-          "hash": "d574274232"
+          "hash": "bcb63658d0"
         }
       }
     },
@@ -1594,7 +1594,7 @@
       "defaultAnimation": "default",
       "animations": {
         "2": {
-          "file": "characters/beast/pet_little_fenrir_2.png",
+          "file": "characters/beast/pet_little_fenrir_2.webp",
           "width": 311,
           "height": 261,
           "frameWidth": 311,
@@ -1602,10 +1602,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "48134340d3"
+          "hash": "672af4ce57"
         },
         "3": {
-          "file": "characters/beast/pet_little_fenrir_3.png",
+          "file": "characters/beast/pet_little_fenrir_3.webp",
           "width": 311,
           "height": 261,
           "frameWidth": 311,
@@ -1613,10 +1613,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "64e297e94d"
+          "hash": "aced3a0f6b"
         },
         "default": {
-          "file": "characters/beast/pet_little_fenrir.png",
+          "file": "characters/beast/pet_little_fenrir.webp",
           "width": 297,
           "height": 270,
           "frameWidth": 297,
@@ -1624,7 +1624,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "0f4de5ac3e"
+          "hash": "151c036bf3"
         }
       },
       "clipNotes": {
@@ -1643,14 +1643,14 @@
           "Special",
           "BattleEnd"
         ],
-        "hash": "af8fe86330"
+        "hash": "cfda35826c"
       }
     },
     {
       "id": "scarecrow_chained_wolf",
       "name": "사슬 늑대",
       "category": "beast",
-      "file": "characters/beast/scarecrow_chained_wolf.png",
+      "file": "characters/beast/scarecrow_chained_wolf.webp",
       "width": 563,
       "height": 529,
       "frameWidth": 563,
@@ -1672,15 +1672,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "77f182f7d3"
+        "hash": "2092bb769a"
       },
-      "hash": "b60863df35"
+      "hash": "c5055336b6"
     },
     {
       "id": "scarecrow_deer_spirit",
       "name": "사슴 정령",
       "category": "beast",
-      "file": "characters/beast/scarecrow_deer_spirit.png",
+      "file": "characters/beast/scarecrow_deer_spirit.webp",
       "width": 542,
       "height": 477,
       "frameWidth": 542,
@@ -1702,15 +1702,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "e16f07864c"
+        "hash": "f9128dc932"
       },
-      "hash": "de24906c98"
+      "hash": "44f71fabdf"
     },
     {
       "id": "scarecrow_yeti",
       "name": "설인",
       "category": "beast",
-      "file": "characters/beast/scarecrow_yeti.png",
+      "file": "characters/beast/scarecrow_yeti.webp",
       "width": 739,
       "height": 535,
       "frameWidth": 739,
@@ -1732,15 +1732,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "175c6be220"
+        "hash": "4780eb01c5"
       },
-      "hash": "e89ca649ab"
+      "hash": "f87f60d56c"
     },
     {
       "id": "shell_crab",
       "name": "게딱지 등딱지 (대지)",
       "category": "beast",
-      "file": "characters/beast/shell_crab.png",
+      "file": "characters/beast/shell_crab.webp",
       "width": 112,
       "height": 85,
       "frameWidth": 112,
@@ -1762,15 +1762,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "6932244acd"
+        "hash": "d038916c73"
       },
-      "hash": "906b08a10b"
+      "hash": "d8573d1f60"
     },
     {
       "id": "shell_flame",
       "name": "불타는 등딱지",
       "category": "beast",
-      "file": "characters/beast/shell_flame.png",
+      "file": "characters/beast/shell_flame.webp",
       "width": 108,
       "height": 115,
       "frameWidth": 108,
@@ -1792,15 +1792,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "ba61e98ba5"
+        "hash": "cec41e89f5"
       },
-      "hash": "f357f5c3ad"
+      "hash": "197e1c3783"
     },
     {
       "id": "shell_leaf",
       "name": "나뭇잎 등딱지",
       "category": "beast",
-      "file": "characters/beast/shell_leaf.png",
+      "file": "characters/beast/shell_leaf.webp",
       "width": 103,
       "height": 88,
       "frameWidth": 103,
@@ -1822,15 +1822,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "2c8a4339f8"
+        "hash": "b91c43eaca"
       },
-      "hash": "b00dec1900"
+      "hash": "98d3f9e2f7"
     },
     {
       "id": "shell_water",
       "name": "물방울 등딱지",
       "category": "beast",
-      "file": "characters/beast/shell_water.png",
+      "file": "characters/beast/shell_water.webp",
       "width": 108,
       "height": 87,
       "frameWidth": 108,
@@ -1852,15 +1852,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "731feeba41"
+        "hash": "e070a26223"
       },
-      "hash": "a674c53e86"
+      "hash": "a333090396"
     },
     {
       "id": "shell_wind",
       "name": "회오리 등딱지",
       "category": "beast",
-      "file": "characters/beast/shell_wind.png",
+      "file": "characters/beast/shell_wind.webp",
       "width": 119,
       "height": 89,
       "frameWidth": 119,
@@ -1882,15 +1882,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "4a0bfaf3c9"
+        "hash": "8d689d976b"
       },
-      "hash": "10eaf26a2f"
+      "hash": "e548f12d3d"
     },
     {
       "id": "spike_hedgehog_flame",
       "name": "가시 고슴도치 (불)",
       "category": "beast",
-      "file": "characters/beast/spike_hedgehog_flame.png",
+      "file": "characters/beast/spike_hedgehog_flame.webp",
       "width": 82,
       "height": 86,
       "frameWidth": 82,
@@ -1912,15 +1912,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "85dd1ff6c4"
+        "hash": "d58a79f216"
       },
-      "hash": "8197f50a5b"
+      "hash": "f9203b9a61"
     },
     {
       "id": "spike_hedgehog_leaf",
       "name": "가시 고슴도치 (잎)",
       "category": "beast",
-      "file": "characters/beast/spike_hedgehog_leaf.png",
+      "file": "characters/beast/spike_hedgehog_leaf.webp",
       "width": 89,
       "height": 74,
       "frameWidth": 89,
@@ -1942,15 +1942,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "e7544d6237"
+        "hash": "e94af27749"
       },
-      "hash": "2841698309"
+      "hash": "cb94119f6b"
     },
     {
       "id": "spike_hedgehog_rock",
       "name": "가시 고슴도치 (돌)",
       "category": "beast",
-      "file": "characters/beast/spike_hedgehog_rock.png",
+      "file": "characters/beast/spike_hedgehog_rock.webp",
       "width": 82,
       "height": 55,
       "frameWidth": 82,
@@ -1972,15 +1972,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "fb18420889"
+        "hash": "5d2974ca8f"
       },
-      "hash": "0ce302d326"
+      "hash": "3dbba8e57a"
     },
     {
       "id": "spike_hedgehog_water",
       "name": "가시 고슴도치 (물)",
       "category": "beast",
-      "file": "characters/beast/spike_hedgehog_water.png",
+      "file": "characters/beast/spike_hedgehog_water.webp",
       "width": 103,
       "height": 78,
       "frameWidth": 103,
@@ -2002,15 +2002,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "e55ca684bf"
+        "hash": "9e6178cd14"
       },
-      "hash": "e595bd1c02"
+      "hash": "e5a6029a58"
     },
     {
       "id": "spike_hedgehog_wind",
       "name": "가시 고슴도치 (바람)",
       "category": "beast",
-      "file": "characters/beast/spike_hedgehog_wind.png",
+      "file": "characters/beast/spike_hedgehog_wind.webp",
       "width": 79,
       "height": 98,
       "frameWidth": 79,
@@ -2032,15 +2032,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "b2a5caec52"
+        "hash": "8752028170"
       },
-      "hash": "f4bdd85564"
+      "hash": "c68a419416"
     },
     {
       "id": "treant_beast",
       "name": "트렌트 야수",
       "category": "beast",
-      "file": "characters/beast/treant_beast.png",
+      "file": "characters/beast/treant_beast.webp",
       "width": 900,
       "height": 798,
       "frameWidth": 900,
@@ -2062,15 +2062,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "49e026e29a"
+        "hash": "bf2e8a60ce"
       },
-      "hash": "672a3ce3b4"
+      "hash": "dc344ff58a"
     },
     {
       "id": "treant_butterfly_beast",
       "name": "나비 트렌트 야수",
       "category": "beast",
-      "file": "characters/beast/treant_butterfly_beast.png",
+      "file": "characters/beast/treant_butterfly_beast.webp",
       "width": 900,
       "height": 712,
       "frameWidth": 900,
@@ -2092,15 +2092,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "7ce06d6d15"
+        "hash": "385d3a9261"
       },
-      "hash": "f02089ada4"
+      "hash": "b7087f4c0d"
     },
     {
       "id": "treant_scorpion",
       "name": "전갈 트렌트",
       "category": "beast",
-      "file": "characters/beast/treant_scorpion.png",
+      "file": "characters/beast/treant_scorpion.webp",
       "width": 900,
       "height": 635,
       "frameWidth": 900,
@@ -2122,15 +2122,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "f9b7b62edd"
+        "hash": "c407ebc488"
       },
-      "hash": "1b3bb932bd"
+      "hash": "4db42d65f8"
     },
     {
       "id": "treant_teal_beast",
       "name": "청록 트렌트 야수",
       "category": "beast",
-      "file": "characters/beast/treant_teal_beast.png",
+      "file": "characters/beast/treant_teal_beast.webp",
       "width": 900,
       "height": 624,
       "frameWidth": 900,
@@ -2152,15 +2152,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "9563763da0"
+        "hash": "d0533b348a"
       },
-      "hash": "14feacd136"
+      "hash": "0488164e18"
     },
     {
       "id": "anniversary_wizard",
       "name": "1주년 기념 마법사 소년",
       "category": "humanoid",
-      "file": "characters/humanoid/anniversary_wizard.png",
+      "file": "characters/humanoid/anniversary_wizard.webp",
       "width": 635,
       "height": 900,
       "frameWidth": 635,
@@ -2207,12 +2207,12 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "fbc9c02541"
+            "hash": "0212b71308"
           }
         ],
-        "hash": "6c837870de"
+        "hash": "87e7caaeb0"
       },
-      "hash": "c89704b15b"
+      "hash": "b064568b83"
     },
     {
       "id": "archer",
@@ -2221,7 +2221,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/archer.png",
+          "file": "characters/humanoid/archer.webp",
           "width": 800,
           "height": 845,
           "frameWidth": 800,
@@ -2229,10 +2229,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "2e75911b48"
+          "hash": "1fcd466566"
         },
         "expr_00": {
-          "file": "characters/humanoid/archer_expr_00.png",
+          "file": "characters/humanoid/archer_expr_00.webp",
           "width": 500,
           "height": 450,
           "frameWidth": 500,
@@ -2240,10 +2240,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "14deed443d"
+          "hash": "c5fa900f69"
         },
         "expr_01": {
-          "file": "characters/humanoid/archer_expr_01.png",
+          "file": "characters/humanoid/archer_expr_01.webp",
           "width": 500,
           "height": 442,
           "frameWidth": 500,
@@ -2251,10 +2251,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "d930dd3e62"
+          "hash": "182459e2cd"
         },
         "expr_02": {
-          "file": "characters/humanoid/archer_expr_02.png",
+          "file": "characters/humanoid/archer_expr_02.webp",
           "width": 500,
           "height": 448,
           "frameWidth": 500,
@@ -2262,10 +2262,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "fe4f6a4ad6"
+          "hash": "2191763229"
         },
         "expr_03": {
-          "file": "characters/humanoid/archer_expr_03.png",
+          "file": "characters/humanoid/archer_expr_03.webp",
           "width": 500,
           "height": 440,
           "frameWidth": 500,
@@ -2273,10 +2273,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e7ed56369e"
+          "hash": "a3114c2085"
         },
         "expr_04": {
-          "file": "characters/humanoid/archer_expr_04.png",
+          "file": "characters/humanoid/archer_expr_04.webp",
           "width": 500,
           "height": 462,
           "frameWidth": 500,
@@ -2284,10 +2284,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "57f85f9526"
+          "hash": "19a10e8f51"
         },
         "expr_05": {
-          "file": "characters/humanoid/archer_expr_05.png",
+          "file": "characters/humanoid/archer_expr_05.webp",
           "width": 271,
           "height": 500,
           "frameWidth": 271,
@@ -2295,10 +2295,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e392154181"
+          "hash": "96e93d0fb4"
         },
         "expr_06": {
-          "file": "characters/humanoid/archer_expr_06.png",
+          "file": "characters/humanoid/archer_expr_06.webp",
           "width": 500,
           "height": 454,
           "frameWidth": 500,
@@ -2306,10 +2306,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "c306de608c"
+          "hash": "15fef0ef35"
         },
         "expr_07": {
-          "file": "characters/humanoid/archer_expr_07.png",
+          "file": "characters/humanoid/archer_expr_07.webp",
           "width": 500,
           "height": 456,
           "frameWidth": 500,
@@ -2317,7 +2317,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "2e1af396c2"
+          "hash": "fe20f71110"
         }
       },
       "clipNotes": {
@@ -2350,14 +2350,14 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터. 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음.",
-        "hash": "9e1bfcf769"
+        "hash": "393a08532b"
       }
     },
     {
       "id": "archer_cherryblossom",
       "name": "궁수 (벚꽃놀이)",
       "category": "humanoid",
-      "file": "characters/humanoid/archer_cherryblossom.png",
+      "file": "characters/humanoid/archer_cherryblossom.webp",
       "width": 800,
       "height": 845,
       "frameWidth": 800,
@@ -2386,15 +2386,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터. 바이너리(.skel) 내보내기.",
-        "hash": "e5a4900c17"
+        "hash": "80dff2a558"
       },
-      "hash": "7914aaad5c"
+      "hash": "07a7f25e65"
     },
     {
       "id": "archer_goblin",
       "name": "궁수 (도깨비)",
       "category": "humanoid",
-      "file": "characters/humanoid/archer_goblin.png",
+      "file": "characters/humanoid/archer_goblin.webp",
       "width": 800,
       "height": 845,
       "frameWidth": 800,
@@ -2423,15 +2423,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터. 바이너리(.skel) 내보내기.",
-        "hash": "e1ec642766"
+        "hash": "449299da79"
       },
-      "hash": "40efa624db"
+      "hash": "3978d435a0"
     },
     {
       "id": "archer_summerbeach",
       "name": "궁수 (여름해변)",
       "category": "humanoid",
-      "file": "characters/humanoid/archer_summerbeach.png",
+      "file": "characters/humanoid/archer_summerbeach.webp",
       "width": 800,
       "height": 845,
       "frameWidth": 800,
@@ -2460,15 +2460,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터. 바이너리(.skel) 내보내기.",
-        "hash": "24b8ac62b7"
+        "hash": "f3e642f601"
       },
-      "hash": "931ea67df7"
+      "hash": "2e8e01ed1d"
     },
     {
       "id": "balder",
       "name": "발두르",
       "category": "humanoid",
-      "file": "characters/humanoid/balder.png",
+      "file": "characters/humanoid/balder.webp",
       "width": 700,
       "height": 900,
       "frameWidth": 700,
@@ -2476,13 +2476,13 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "23af6c8d5a"
+      "hash": "33ac09cf4e"
     },
     {
       "id": "catkin",
       "name": "고양이수인",
       "category": "humanoid",
-      "file": "characters/humanoid/catkin.png",
+      "file": "characters/humanoid/catkin.webp",
       "width": 871,
       "height": 900,
       "frameWidth": 871,
@@ -2490,7 +2490,7 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "f7016436b8"
+      "hash": "f3d18ee6af"
     },
     {
       "id": "christmas_girl",
@@ -2499,7 +2499,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/christmas_girl.png",
+          "file": "characters/humanoid/christmas_girl.webp",
           "width": 900,
           "height": 755,
           "frameWidth": 900,
@@ -2507,10 +2507,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "f3fbb59f80"
+          "hash": "6e1a280f53"
         },
         "expr_00": {
-          "file": "characters/humanoid/christmas_girl_expr_00.png",
+          "file": "characters/humanoid/christmas_girl_expr_00.webp",
           "width": 496,
           "height": 436,
           "frameWidth": 496,
@@ -2518,10 +2518,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "3a71225327"
+          "hash": "ae0cbc5c56"
         },
         "expr_01": {
-          "file": "characters/humanoid/christmas_girl_expr_01.png",
+          "file": "characters/humanoid/christmas_girl_expr_01.webp",
           "width": 497,
           "height": 435,
           "frameWidth": 497,
@@ -2529,10 +2529,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "353b59690f"
+          "hash": "c05911c0d4"
         },
         "expr_02": {
-          "file": "characters/humanoid/christmas_girl_expr_02.png",
+          "file": "characters/humanoid/christmas_girl_expr_02.webp",
           "width": 498,
           "height": 437,
           "frameWidth": 498,
@@ -2540,10 +2540,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "b9c1b6a8d2"
+          "hash": "3cb16d0221"
         },
         "expr_03": {
-          "file": "characters/humanoid/christmas_girl_expr_03.png",
+          "file": "characters/humanoid/christmas_girl_expr_03.webp",
           "width": 468,
           "height": 500,
           "frameWidth": 468,
@@ -2551,10 +2551,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "88ddd93aac"
+          "hash": "0b47c98954"
         },
         "expr_04": {
-          "file": "characters/humanoid/christmas_girl_expr_04.png",
+          "file": "characters/humanoid/christmas_girl_expr_04.webp",
           "width": 262,
           "height": 500,
           "frameWidth": 262,
@@ -2562,10 +2562,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "d8a6d83caf"
+          "hash": "96562a57a7"
         },
         "expr_05": {
-          "file": "characters/humanoid/christmas_girl_expr_05.png",
+          "file": "characters/humanoid/christmas_girl_expr_05.webp",
           "width": 466,
           "height": 500,
           "frameWidth": 466,
@@ -2573,10 +2573,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "b64e0f1924"
+          "hash": "342836dbf9"
         },
         "expr_06": {
-          "file": "characters/humanoid/christmas_girl_expr_06.png",
+          "file": "characters/humanoid/christmas_girl_expr_06.webp",
           "width": 470,
           "height": 500,
           "frameWidth": 470,
@@ -2584,7 +2584,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "1acf9c44ea"
+          "hash": "e103c177d6"
         }
       },
       "clipNotes": {
@@ -2639,17 +2639,17 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "06bff4706a"
+            "hash": "ce2c4967a3"
           }
         ],
-        "hash": "0b5b3c912e"
+        "hash": "c8a6c85c01"
       }
     },
     {
       "id": "crystal_cat_krystal",
       "name": "크리스탈 고양이 (크리스탈, 예명)",
       "category": "humanoid",
-      "file": "characters/humanoid/crystal_cat_krystal.png",
+      "file": "characters/humanoid/crystal_cat_krystal.webp",
       "width": 515,
       "height": 518,
       "frameWidth": 515,
@@ -2657,13 +2657,13 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "7ce6e9cf02"
+      "hash": "80d894a6b1"
     },
     {
       "id": "custom_npc_tom",
       "name": "커스텀 NPC 톰",
       "category": "humanoid",
-      "file": "characters/humanoid/custom_npc_tom.png",
+      "file": "characters/humanoid/custom_npc_tom.webp",
       "width": 648,
       "height": 900,
       "frameWidth": 648,
@@ -2671,7 +2671,7 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "78345b33dc"
+      "hash": "bc9b55ec61"
     },
     {
       "id": "dagr",
@@ -2680,7 +2680,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/dagr.png",
+          "file": "characters/humanoid/dagr.webp",
           "width": 900,
           "height": 838,
           "frameWidth": 900,
@@ -2688,10 +2688,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "fff2ce919f"
+          "hash": "88b4efdfb3"
         },
         "expr_00": {
-          "file": "characters/humanoid/dagr_expr_00.png",
+          "file": "characters/humanoid/dagr_expr_00.webp",
           "width": 464,
           "height": 500,
           "frameWidth": 464,
@@ -2699,10 +2699,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "1946a33b4a"
+          "hash": "a014415510"
         },
         "expr_01": {
-          "file": "characters/humanoid/dagr_expr_01.png",
+          "file": "characters/humanoid/dagr_expr_01.webp",
           "width": 464,
           "height": 500,
           "frameWidth": 464,
@@ -2710,10 +2710,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "3b2d8ab484"
+          "hash": "f86412cd90"
         },
         "expr_02": {
-          "file": "characters/humanoid/dagr_expr_02.png",
+          "file": "characters/humanoid/dagr_expr_02.webp",
           "width": 464,
           "height": 500,
           "frameWidth": 464,
@@ -2721,10 +2721,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "abb9a3e7b9"
+          "hash": "94fcb3bc6a"
         },
         "expr_03": {
-          "file": "characters/humanoid/dagr_expr_03.png",
+          "file": "characters/humanoid/dagr_expr_03.webp",
           "width": 227,
           "height": 500,
           "frameWidth": 227,
@@ -2732,10 +2732,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "d7cacc7682"
+          "hash": "a09ab7756c"
         },
         "expr_04": {
-          "file": "characters/humanoid/dagr_expr_04.png",
+          "file": "characters/humanoid/dagr_expr_04.webp",
           "width": 464,
           "height": 500,
           "frameWidth": 464,
@@ -2743,10 +2743,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e50605750c"
+          "hash": "e197d41792"
         },
         "expr_05": {
-          "file": "characters/humanoid/dagr_expr_05.png",
+          "file": "characters/humanoid/dagr_expr_05.webp",
           "width": 464,
           "height": 500,
           "frameWidth": 464,
@@ -2754,10 +2754,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e599f95349"
+          "hash": "9acdc8c150"
         },
         "expr_06": {
-          "file": "characters/humanoid/dagr_expr_06.png",
+          "file": "characters/humanoid/dagr_expr_06.webp",
           "width": 464,
           "height": 500,
           "frameWidth": 464,
@@ -2765,10 +2765,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a9b3b2e618"
+          "hash": "b59dd31e37"
         },
         "expr_07": {
-          "file": "characters/humanoid/dagr_expr_07.png",
+          "file": "characters/humanoid/dagr_expr_07.webp",
           "width": 464,
           "height": 500,
           "frameWidth": 464,
@@ -2776,7 +2776,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "23db407eff"
+          "hash": "68b74b41cd"
         }
       },
       "clipNotes": {
@@ -2809,14 +2809,14 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "9d8be84408"
+        "hash": "ad7258abdc"
       }
     },
     {
       "id": "fairy",
       "name": "페어리",
       "category": "humanoid",
-      "file": "characters/humanoid/fairy.png",
+      "file": "characters/humanoid/fairy.webp",
       "width": 774,
       "height": 900,
       "frameWidth": 774,
@@ -2844,15 +2844,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "7d1ce7c415"
+        "hash": "02e465337b"
       },
-      "hash": "a369ac34ae"
+      "hash": "c46cccb1f7"
     },
     {
       "id": "fairy_ice",
       "name": "페어리 (얼음요정)",
       "category": "humanoid",
-      "file": "characters/humanoid/fairy_ice.png",
+      "file": "characters/humanoid/fairy_ice.webp",
       "width": 788,
       "height": 900,
       "frameWidth": 788,
@@ -2881,15 +2881,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "161cdd4250"
+        "hash": "c014752240"
       },
-      "hash": "e6ad9a48e2"
+      "hash": "e1c415bfac"
     },
     {
       "id": "fairy_midnight",
       "name": "페어리 (미드나잇)",
       "category": "humanoid",
-      "file": "characters/humanoid/fairy_midnight.png",
+      "file": "characters/humanoid/fairy_midnight.webp",
       "width": 788,
       "height": 900,
       "frameWidth": 788,
@@ -2918,15 +2918,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "3f19f544d8"
+        "hash": "fb8ac8009b"
       },
-      "hash": "94f754e633"
+      "hash": "9c6085edf1"
     },
     {
       "id": "fairy_tropical",
       "name": "페어리 (트로피컬)",
       "category": "humanoid",
-      "file": "characters/humanoid/fairy_tropical.png",
+      "file": "characters/humanoid/fairy_tropical.webp",
       "width": 788,
       "height": 900,
       "frameWidth": 788,
@@ -2955,15 +2955,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "34bfe5e0f0"
+        "hash": "95306240b6"
       },
-      "hash": "c958b0d9be"
+      "hash": "ee29770693"
     },
     {
       "id": "forest_swordswoman",
       "name": "숲의 검사",
       "category": "humanoid",
-      "file": "characters/humanoid/forest_swordswoman.png",
+      "file": "characters/humanoid/forest_swordswoman.webp",
       "width": 830,
       "height": 900,
       "frameWidth": 830,
@@ -2972,13 +2972,13 @@
       "cols": 1,
       "rows": 1,
       "note": "이름 미상 — 대충 지은 이름",
-      "hash": "2cd7f6c2bf"
+      "hash": "0d1b2f8c80"
     },
     {
       "id": "freyja",
       "name": "프레이야",
       "category": "humanoid",
-      "file": "characters/humanoid/freyja.png",
+      "file": "characters/humanoid/freyja.webp",
       "width": 458,
       "height": 900,
       "frameWidth": 458,
@@ -2986,13 +2986,13 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "8b7a6b74ea"
+      "hash": "c4e185f688"
     },
     {
       "id": "gemini_mage",
       "name": "쌍둥이자리 마법사",
       "category": "humanoid",
-      "file": "characters/humanoid/gemini_mage.png",
+      "file": "characters/humanoid/gemini_mage.webp",
       "width": 634,
       "height": 900,
       "frameWidth": 634,
@@ -3001,13 +3001,13 @@
       "cols": 1,
       "rows": 1,
       "note": "이름 미상 — 대충 지은 이름",
-      "hash": "0c77a06489"
+      "hash": "208bfc9629"
     },
     {
       "id": "hela_phantom",
       "name": "헬라의 환영",
       "category": "humanoid",
-      "file": "characters/humanoid/hela_phantom.png",
+      "file": "characters/humanoid/hela_phantom.webp",
       "width": 433,
       "height": 321,
       "frameWidth": 433,
@@ -3036,15 +3036,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "d38860e276"
+        "hash": "bf144f426e"
       },
-      "hash": "9b617a445e"
+      "hash": "a01f3e1c2a"
     },
     {
       "id": "loki",
       "name": "로키",
       "category": "humanoid",
-      "file": "characters/humanoid/loki.png",
+      "file": "characters/humanoid/loki.webp",
       "width": 402,
       "height": 900,
       "frameWidth": 402,
@@ -3052,7 +3052,7 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "cc794854a7"
+      "hash": "3046daa48c"
     },
     {
       "id": "lucy",
@@ -3101,7 +3101,7 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "b0c423fd2a"
+            "hash": "6a495911ac"
           },
           {
             "key": "radiant",
@@ -3125,15 +3125,15 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "dd395c392b"
+            "hash": "46bb60b8e6"
           }
         ],
-        "hash": "3c01535908"
+        "hash": "4eb8494e30"
       },
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/lucy.png",
+          "file": "characters/humanoid/lucy.webp",
           "width": 698,
           "height": 900,
           "frameWidth": 698,
@@ -3141,10 +3141,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "3e83d6d502"
+          "hash": "03acaba2e3"
         },
         "obsidian": {
-          "file": "characters/humanoid/lucie_swordswoman.png",
+          "file": "characters/humanoid/lucie_swordswoman.webp",
           "width": 701,
           "height": 900,
           "frameWidth": 701,
@@ -3152,10 +3152,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "879b039e9a"
+          "hash": "5e65d385ad"
         },
         "radiant": {
-          "file": "characters/humanoid/lucie_swordswoman_radiant.png",
+          "file": "characters/humanoid/lucie_swordswoman_radiant.webp",
           "width": 702,
           "height": 900,
           "frameWidth": 702,
@@ -3163,7 +3163,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "ae487b473c"
+          "hash": "b09db483a8"
         }
       },
       "clipNotes": {
@@ -3175,7 +3175,7 @@
       "id": "lucy_blueknight",
       "name": "루시 (청기사)",
       "category": "humanoid",
-      "file": "characters/humanoid/lucy_blueknight.png",
+      "file": "characters/humanoid/lucy_blueknight.webp",
       "width": 693,
       "height": 900,
       "frameWidth": 693,
@@ -3204,9 +3204,9 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터. 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음.",
-        "hash": "a7ee9ef701"
+        "hash": "4174ab7fc1"
       },
-      "hash": "9adc79a255"
+      "hash": "4dbe64f266"
     },
     {
       "id": "mage",
@@ -3215,7 +3215,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/mage.png",
+          "file": "characters/humanoid/mage.webp",
           "width": 569,
           "height": 900,
           "frameWidth": 569,
@@ -3223,10 +3223,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "707b93b24e"
+          "hash": "69fd8e2c43"
         },
         "expr_idle": {
-          "file": "characters/humanoid/mage_expr_idle.png",
+          "file": "characters/humanoid/mage_expr_idle.webp",
           "width": 377,
           "height": 301,
           "frameWidth": 377,
@@ -3234,10 +3234,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a0ce7457b8"
+          "hash": "089ea5f505"
         },
         "expr_attack": {
-          "file": "characters/humanoid/mage_expr_attack.png",
+          "file": "characters/humanoid/mage_expr_attack.webp",
           "width": 377,
           "height": 283,
           "frameWidth": 377,
@@ -3245,10 +3245,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "570359e7c2"
+          "hash": "d430ce9b5f"
         },
         "expr_turnover": {
-          "file": "characters/humanoid/mage_expr_turnover.png",
+          "file": "characters/humanoid/mage_expr_turnover.webp",
           "width": 377,
           "height": 300,
           "frameWidth": 377,
@@ -3256,10 +3256,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "08fddbe682"
+          "hash": "7f5ed542ad"
         },
         "expr_win": {
-          "file": "characters/humanoid/mage_expr_win.png",
+          "file": "characters/humanoid/mage_expr_win.webp",
           "width": 377,
           "height": 288,
           "frameWidth": 377,
@@ -3267,10 +3267,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "744dfe00bd"
+          "hash": "92b39ac1b7"
         },
         "expr_win_alt1": {
-          "file": "characters/humanoid/mage_expr_win_alt1.png",
+          "file": "characters/humanoid/mage_expr_win_alt1.webp",
           "width": 489,
           "height": 298,
           "frameWidth": 489,
@@ -3278,10 +3278,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "1043fb6135"
+          "hash": "4b62f0abcf"
         },
         "expr_casting": {
-          "file": "characters/humanoid/mage_expr_casting.png",
+          "file": "characters/humanoid/mage_expr_casting.webp",
           "width": 377,
           "height": 297,
           "frameWidth": 377,
@@ -3289,10 +3289,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "60e79e39c4"
+          "hash": "0f7a321b2b"
         },
         "expr_die": {
-          "file": "characters/humanoid/mage_expr_die.png",
+          "file": "characters/humanoid/mage_expr_die.webp",
           "width": 362,
           "height": 301,
           "frameWidth": 362,
@@ -3300,10 +3300,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a739af7d2d"
+          "hash": "c5cfbad25b"
         },
         "expr_hit": {
-          "file": "characters/humanoid/mage_expr_hit.png",
+          "file": "characters/humanoid/mage_expr_hit.webp",
           "width": 377,
           "height": 286,
           "frameWidth": 377,
@@ -3311,10 +3311,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "47bdcf3c96"
+          "hash": "cb83e38cc7"
         },
         "expr_run": {
-          "file": "characters/humanoid/mage_expr_run.png",
+          "file": "characters/humanoid/mage_expr_run.webp",
           "width": 377,
           "height": 290,
           "frameWidth": 377,
@@ -3322,7 +3322,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "2b0c24781f"
+          "hash": "5800351b0c"
         }
       },
       "clipNotes": {
@@ -3356,14 +3356,14 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "73649e9665"
+        "hash": "f12a752ce3"
       }
     },
     {
       "id": "mage_angel",
       "name": "마법사 (천사)",
       "category": "humanoid",
-      "file": "characters/humanoid/mage_angel.png",
+      "file": "characters/humanoid/mage_angel.webp",
       "width": 569,
       "height": 900,
       "frameWidth": 569,
@@ -3392,15 +3392,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "d7a7e2f947"
+        "hash": "02996a810f"
       },
-      "hash": "ea63740efc"
+      "hash": "0b92d30a0a"
     },
     {
       "id": "mage_demon",
       "name": "마법사 (악마)",
       "category": "humanoid",
-      "file": "characters/humanoid/mage_demon.png",
+      "file": "characters/humanoid/mage_demon.webp",
       "width": 569,
       "height": 900,
       "frameWidth": 569,
@@ -3409,13 +3409,13 @@
       "cols": 1,
       "rows": 1,
       "note": "마법사 스킨",
-      "hash": "ba0628bd81"
+      "hash": "5f84d6aed3"
     },
     {
       "id": "mage_yellowhair",
       "name": "마법사 (노란머리)",
       "category": "humanoid",
-      "file": "characters/humanoid/mage_yellowhair.png",
+      "file": "characters/humanoid/mage_yellowhair.webp",
       "width": 156,
       "height": 275,
       "frameWidth": 156,
@@ -3444,9 +3444,9 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "6b0f48ae75"
+        "hash": "c66f0f8495"
       },
-      "hash": "18b95d6c3b"
+      "hash": "1fbd6145a6"
     },
     {
       "id": "nad",
@@ -3455,7 +3455,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/nad.png",
+          "file": "characters/humanoid/nad.webp",
           "width": 900,
           "height": 576,
           "frameWidth": 900,
@@ -3463,10 +3463,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "0166846e98"
+          "hash": "20cd69f4d6"
         },
         "expr_00": {
-          "file": "characters/humanoid/nad_expr_00.png",
+          "file": "characters/humanoid/nad_expr_00.webp",
           "width": 438,
           "height": 500,
           "frameWidth": 438,
@@ -3474,10 +3474,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "35bdabde26"
+          "hash": "70ccaaeb86"
         },
         "expr_01": {
-          "file": "characters/humanoid/nad_expr_01.png",
+          "file": "characters/humanoid/nad_expr_01.webp",
           "width": 445,
           "height": 500,
           "frameWidth": 445,
@@ -3485,10 +3485,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "79072996c2"
+          "hash": "5c09cbaeb7"
         },
         "expr_02": {
-          "file": "characters/humanoid/nad_expr_02.png",
+          "file": "characters/humanoid/nad_expr_02.webp",
           "width": 436,
           "height": 500,
           "frameWidth": 436,
@@ -3496,10 +3496,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e82c5a2a31"
+          "hash": "00738a208d"
         },
         "expr_03": {
-          "file": "characters/humanoid/nad_expr_03.png",
+          "file": "characters/humanoid/nad_expr_03.webp",
           "width": 440,
           "height": 500,
           "frameWidth": 440,
@@ -3507,10 +3507,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "eef5405cd0"
+          "hash": "0684043cc7"
         },
         "expr_04": {
-          "file": "characters/humanoid/nad_expr_04.png",
+          "file": "characters/humanoid/nad_expr_04.webp",
           "width": 438,
           "height": 500,
           "frameWidth": 438,
@@ -3518,10 +3518,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "93af17b89f"
+          "hash": "70465a570e"
         },
         "expr_05": {
-          "file": "characters/humanoid/nad_expr_05.png",
+          "file": "characters/humanoid/nad_expr_05.webp",
           "width": 444,
           "height": 500,
           "frameWidth": 444,
@@ -3529,10 +3529,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "906a3829d0"
+          "hash": "c3c4005e30"
         },
         "expr_06": {
-          "file": "characters/humanoid/nad_expr_06.png",
+          "file": "characters/humanoid/nad_expr_06.webp",
           "width": 440,
           "height": 500,
           "frameWidth": 440,
@@ -3540,10 +3540,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "7b637a00d2"
+          "hash": "6f6b1a7b67"
         },
         "expr_07": {
-          "file": "characters/humanoid/nad_expr_07.png",
+          "file": "characters/humanoid/nad_expr_07.webp",
           "width": 440,
           "height": 500,
           "frameWidth": 440,
@@ -3551,7 +3551,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "48f93a09ed"
+          "hash": "ea0dbc0a50"
         }
       },
       "clipNotes": {
@@ -3584,14 +3584,14 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "5c0fcefb52"
+        "hash": "a19267d0d3"
       }
     },
     {
       "id": "neko_boy_casual",
       "name": "고양이수인 소년 (평상복)",
       "category": "humanoid",
-      "file": "characters/humanoid/neko_boy_casual.png",
+      "file": "characters/humanoid/neko_boy_casual.webp",
       "width": 693,
       "height": 893,
       "frameWidth": 693,
@@ -3619,9 +3619,9 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 4.1 리깅 데이터. 이 export엔 머리카락/귀/꼬리/눈/눈썹/입 아틀라스가 빠져있었는데, 원본 소스 폴더(10200000)에서 낱장 파츠를 찾아 head/Center 본에 직접 붙였음 — 머리카락 6장(hair_01~06), 고양이 귀 2장, 꼬리 1장, 눈/눈썹/입. 위치는 tools/part_editor.html 로 눈대중 맞춘 값이라 다른 스킨(-1/-2/-3)엔 안 맞을 수 있음 — 그 에디터로 다시 맞추면 됨.",
-        "hash": "0831a49e86"
+        "hash": "4d3f157ac3"
       },
-      "hash": "d81cc5bbd8"
+      "hash": "18741a07a0"
     },
     {
       "id": "neko_boy_dark_armor",
@@ -3630,7 +3630,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/neko_boy_dark_armor.png",
+          "file": "characters/humanoid/neko_boy_dark_armor.webp",
           "width": 687,
           "height": 900,
           "frameWidth": 687,
@@ -3638,10 +3638,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a350a5848c"
+          "hash": "59ea823367"
         },
         "tag1": {
-          "file": "characters/humanoid/neko_boy_dark_armor_tag1.png",
+          "file": "characters/humanoid/neko_boy_dark_armor_tag1.webp",
           "width": 685,
           "height": 900,
           "frameWidth": 685,
@@ -3649,10 +3649,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "886dd39b14"
+          "hash": "119fda79d2"
         },
         "tag2": {
-          "file": "characters/humanoid/neko_boy_dark_armor_tag2.png",
+          "file": "characters/humanoid/neko_boy_dark_armor_tag2.webp",
           "width": 685,
           "height": 900,
           "frameWidth": 685,
@@ -3660,10 +3660,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a826d103d8"
+          "hash": "9a0a752ca4"
         },
         "tag3": {
-          "file": "characters/humanoid/neko_boy_dark_armor_tag3.png",
+          "file": "characters/humanoid/neko_boy_dark_armor_tag3.webp",
           "width": 685,
           "height": 900,
           "frameWidth": 685,
@@ -3671,10 +3671,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "aa11ecde11"
+          "hash": "ea82ffb4ec"
         },
         "tag4": {
-          "file": "characters/humanoid/neko_boy_dark_armor_tag4.png",
+          "file": "characters/humanoid/neko_boy_dark_armor_tag4.webp",
           "width": 685,
           "height": 900,
           "frameWidth": 685,
@@ -3682,10 +3682,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "7c90f01c09"
+          "hash": "6e6595822e"
         },
         "alt": {
-          "file": "characters/humanoid/neko_boy_dark_armor_alt.png",
+          "file": "characters/humanoid/neko_boy_dark_armor_alt.webp",
           "width": 661,
           "height": 900,
           "frameWidth": 661,
@@ -3693,10 +3693,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "3c95ba9afd"
+          "hash": "67f6e48356"
         },
         "alt_tag1": {
-          "file": "characters/humanoid/neko_boy_dark_armor_alt_tag1.png",
+          "file": "characters/humanoid/neko_boy_dark_armor_alt_tag1.webp",
           "width": 661,
           "height": 900,
           "frameWidth": 661,
@@ -3704,10 +3704,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "afc9963098"
+          "hash": "7177d247ca"
         },
         "alt_tag2": {
-          "file": "characters/humanoid/neko_boy_dark_armor_alt_tag2.png",
+          "file": "characters/humanoid/neko_boy_dark_armor_alt_tag2.webp",
           "width": 661,
           "height": 900,
           "frameWidth": 661,
@@ -3715,10 +3715,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e4ab4895a4"
+          "hash": "7f22dec8b2"
         },
         "alt_tag3": {
-          "file": "characters/humanoid/neko_boy_dark_armor_alt_tag3.png",
+          "file": "characters/humanoid/neko_boy_dark_armor_alt_tag3.webp",
           "width": 661,
           "height": 900,
           "frameWidth": 661,
@@ -3726,10 +3726,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "27b0c8da94"
+          "hash": "3f8cf2dac9"
         },
         "alt_tag4": {
-          "file": "characters/humanoid/neko_boy_dark_armor_alt_tag4.png",
+          "file": "characters/humanoid/neko_boy_dark_armor_alt_tag4.webp",
           "width": 661,
           "height": 900,
           "frameWidth": 661,
@@ -3737,7 +3737,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a1b7551735"
+          "hash": "d2f35f87f5"
         }
       },
       "clipNotes": {
@@ -3761,7 +3761,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/neko_boy_demon_armor.png",
+          "file": "characters/humanoid/neko_boy_demon_armor.webp",
           "width": 637,
           "height": 900,
           "frameWidth": 637,
@@ -3769,10 +3769,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "ca721aa1ed"
+          "hash": "12a88f8a3d"
         },
         "tag1": {
-          "file": "characters/humanoid/neko_boy_demon_armor_tag1.png",
+          "file": "characters/humanoid/neko_boy_demon_armor_tag1.webp",
           "width": 637,
           "height": 900,
           "frameWidth": 637,
@@ -3780,10 +3780,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "21bcdafee4"
+          "hash": "4e4518194e"
         },
         "tag2": {
-          "file": "characters/humanoid/neko_boy_demon_armor_tag2.png",
+          "file": "characters/humanoid/neko_boy_demon_armor_tag2.webp",
           "width": 637,
           "height": 900,
           "frameWidth": 637,
@@ -3791,10 +3791,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "46fb072759"
+          "hash": "2ac3c4f39e"
         },
         "tag3": {
-          "file": "characters/humanoid/neko_boy_demon_armor_tag3.png",
+          "file": "characters/humanoid/neko_boy_demon_armor_tag3.webp",
           "width": 637,
           "height": 900,
           "frameWidth": 637,
@@ -3802,10 +3802,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "6240f6dd23"
+          "hash": "e0f16a712e"
         },
         "tag4": {
-          "file": "characters/humanoid/neko_boy_demon_armor_tag4.png",
+          "file": "characters/humanoid/neko_boy_demon_armor_tag4.webp",
           "width": 637,
           "height": 900,
           "frameWidth": 637,
@@ -3813,10 +3813,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "082952674d"
+          "hash": "92af9edcdc"
         },
         "alt": {
-          "file": "characters/humanoid/neko_boy_demon_armor_alt.png",
+          "file": "characters/humanoid/neko_boy_demon_armor_alt.webp",
           "width": 668,
           "height": 900,
           "frameWidth": 668,
@@ -3824,10 +3824,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "2c2e29d55b"
+          "hash": "8981c97ad0"
         },
         "alt_tag1": {
-          "file": "characters/humanoid/neko_boy_demon_armor_alt_tag1.png",
+          "file": "characters/humanoid/neko_boy_demon_armor_alt_tag1.webp",
           "width": 687,
           "height": 900,
           "frameWidth": 687,
@@ -3835,10 +3835,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "562cb72200"
+          "hash": "969bb645ef"
         },
         "alt_tag2": {
-          "file": "characters/humanoid/neko_boy_demon_armor_alt_tag2.png",
+          "file": "characters/humanoid/neko_boy_demon_armor_alt_tag2.webp",
           "width": 668,
           "height": 900,
           "frameWidth": 668,
@@ -3846,10 +3846,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "96cc32c04d"
+          "hash": "2ff0ada6c3"
         },
         "alt_tag3": {
-          "file": "characters/humanoid/neko_boy_demon_armor_alt_tag3.png",
+          "file": "characters/humanoid/neko_boy_demon_armor_alt_tag3.webp",
           "width": 668,
           "height": 900,
           "frameWidth": 668,
@@ -3857,10 +3857,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "cb1eb3f432"
+          "hash": "a861311ff3"
         },
         "alt_tag4": {
-          "file": "characters/humanoid/neko_boy_demon_armor_alt_tag4.png",
+          "file": "characters/humanoid/neko_boy_demon_armor_alt_tag4.webp",
           "width": 668,
           "height": 900,
           "frameWidth": 668,
@@ -3868,7 +3868,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "419127b4e6"
+          "hash": "47039c79db"
         }
       },
       "clipNotes": {
@@ -3924,10 +3924,10 @@
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
             "skin": "10240001-0",
-            "hash": "4e597b3278"
+            "hash": "3d9a8ef8db"
           }
         ],
-        "hash": "f82d34e599"
+        "hash": "f93bc1b3d5"
       }
     },
     {
@@ -3937,7 +3937,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/neko_boy_gold_knight.png",
+          "file": "characters/humanoid/neko_boy_gold_knight.webp",
           "width": 900,
           "height": 699,
           "frameWidth": 900,
@@ -3945,10 +3945,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "2c943b4769"
+          "hash": "2dfef96f7a"
         },
         "tag1": {
-          "file": "characters/humanoid/neko_boy_gold_knight_tag1.png",
+          "file": "characters/humanoid/neko_boy_gold_knight_tag1.webp",
           "width": 900,
           "height": 699,
           "frameWidth": 900,
@@ -3956,10 +3956,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "cbcf907c61"
+          "hash": "4c69d08017"
         },
         "tag2": {
-          "file": "characters/humanoid/neko_boy_gold_knight_tag2.png",
+          "file": "characters/humanoid/neko_boy_gold_knight_tag2.webp",
           "width": 900,
           "height": 699,
           "frameWidth": 900,
@@ -3967,10 +3967,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "9ce661cb09"
+          "hash": "30defbe946"
         },
         "tag3": {
-          "file": "characters/humanoid/neko_boy_gold_knight_tag3.png",
+          "file": "characters/humanoid/neko_boy_gold_knight_tag3.webp",
           "width": 900,
           "height": 699,
           "frameWidth": 900,
@@ -3978,10 +3978,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "42b988ba18"
+          "hash": "a7db045b32"
         },
         "tag4": {
-          "file": "characters/humanoid/neko_boy_gold_knight_tag4.png",
+          "file": "characters/humanoid/neko_boy_gold_knight_tag4.webp",
           "width": 900,
           "height": 699,
           "frameWidth": 900,
@@ -3989,7 +3989,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "3d0a98cedd"
+          "hash": "726020ad97"
         }
       },
       "clipNotes": {
@@ -4018,7 +4018,7 @@
         ],
         "note": "원본 게임사가 만든 진짜 Spine 4.1 리깅 데이터. 이 export엔 머리카락/귀/꼬리/눈/눈썹/입 아틀라스가 빠져있었는데, neko_boy_casual 에서 찾은 낱장 파츠(같은 rig 공유 - head/Center 본 구조 동일 확인함)를 그대로 재사용해 붙였음 — 위치는 neko_boy_casual 에서 맞춘 값 그대로, 캐릭터별 미세 조정은 안 했음. tools/part_editor.html 로 손볼 수 있음.",
         "skin": "10270000-0",
-        "hash": "4c01a50203"
+        "hash": "c751b82b7d"
       }
     },
     {
@@ -4028,7 +4028,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/neko_boy_paladin_armor.png",
+          "file": "characters/humanoid/neko_boy_paladin_armor.webp",
           "width": 637,
           "height": 900,
           "frameWidth": 637,
@@ -4036,10 +4036,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "344b59b7d7"
+          "hash": "1901fe16c0"
         },
         "tag1": {
-          "file": "characters/humanoid/neko_boy_paladin_armor_tag1.png",
+          "file": "characters/humanoid/neko_boy_paladin_armor_tag1.webp",
           "width": 637,
           "height": 900,
           "frameWidth": 637,
@@ -4047,10 +4047,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "0e3ab2b884"
+          "hash": "a83c36ff09"
         },
         "tag2": {
-          "file": "characters/humanoid/neko_boy_paladin_armor_tag2.png",
+          "file": "characters/humanoid/neko_boy_paladin_armor_tag2.webp",
           "width": 637,
           "height": 900,
           "frameWidth": 637,
@@ -4058,10 +4058,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "b598fce17a"
+          "hash": "98e155e7c8"
         },
         "tag3": {
-          "file": "characters/humanoid/neko_boy_paladin_armor_tag3.png",
+          "file": "characters/humanoid/neko_boy_paladin_armor_tag3.webp",
           "width": 637,
           "height": 900,
           "frameWidth": 637,
@@ -4069,10 +4069,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "582f0f1cb0"
+          "hash": "694776653e"
         },
         "tag4": {
-          "file": "characters/humanoid/neko_boy_paladin_armor_tag4.png",
+          "file": "characters/humanoid/neko_boy_paladin_armor_tag4.webp",
           "width": 637,
           "height": 900,
           "frameWidth": 637,
@@ -4080,10 +4080,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "124d34f37e"
+          "hash": "10d91a212d"
         },
         "alt": {
-          "file": "characters/humanoid/neko_boy_paladin_armor_alt.png",
+          "file": "characters/humanoid/neko_boy_paladin_armor_alt.webp",
           "width": 721,
           "height": 900,
           "frameWidth": 721,
@@ -4091,10 +4091,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "0ab00a5b1c"
+          "hash": "2a372adfa6"
         },
         "alt_tag1": {
-          "file": "characters/humanoid/neko_boy_paladin_armor_alt_tag1.png",
+          "file": "characters/humanoid/neko_boy_paladin_armor_alt_tag1.webp",
           "width": 721,
           "height": 900,
           "frameWidth": 721,
@@ -4102,10 +4102,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "ae7ea6f1a0"
+          "hash": "4969075418"
         },
         "alt_tag2": {
-          "file": "characters/humanoid/neko_boy_paladin_armor_alt_tag2.png",
+          "file": "characters/humanoid/neko_boy_paladin_armor_alt_tag2.webp",
           "width": 721,
           "height": 900,
           "frameWidth": 721,
@@ -4113,10 +4113,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a421dedc07"
+          "hash": "db81d0fa9d"
         },
         "alt_tag3": {
-          "file": "characters/humanoid/neko_boy_paladin_armor_alt_tag3.png",
+          "file": "characters/humanoid/neko_boy_paladin_armor_alt_tag3.webp",
           "width": 721,
           "height": 900,
           "frameWidth": 721,
@@ -4124,10 +4124,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "9ededaa6f9"
+          "hash": "241f7fd17a"
         },
         "alt_tag4": {
-          "file": "characters/humanoid/neko_boy_paladin_armor_alt_tag4.png",
+          "file": "characters/humanoid/neko_boy_paladin_armor_alt_tag4.webp",
           "width": 721,
           "height": 900,
           "frameWidth": 721,
@@ -4135,7 +4135,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "1a679ed762"
+          "hash": "eecf39c615"
         }
       },
       "clipNotes": {
@@ -4169,7 +4169,7 @@
         ],
         "note": "원본 게임사가 만든 진짜 Spine 4.1 리깅 데이터. 이 export엔 머리카락/귀/꼬리/눈/눈썹/입 아틀라스가 빠져있었는데, neko_boy_casual 에서 찾은 낱장 파츠(같은 rig 공유 - head/Center 본 구조 동일 확인함)를 그대로 재사용해 붙였음 — 위치는 neko_boy_casual 에서 맞춘 값 그대로, 캐릭터별 미세 조정은 안 했음. tools/part_editor.html 로 손볼 수 있음.",
         "skin": "10250000-0",
-        "hash": "48d5febdb0"
+        "hash": "45cce76b5b"
       }
     },
     {
@@ -4179,7 +4179,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/neko_boy_silver_armor.png",
+          "file": "characters/humanoid/neko_boy_silver_armor.webp",
           "width": 668,
           "height": 900,
           "frameWidth": 668,
@@ -4187,10 +4187,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e56a22cba3"
+          "hash": "607446552f"
         },
         "tag1": {
-          "file": "characters/humanoid/neko_boy_silver_armor_tag1.png",
+          "file": "characters/humanoid/neko_boy_silver_armor_tag1.webp",
           "width": 668,
           "height": 900,
           "frameWidth": 668,
@@ -4198,10 +4198,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "fa338a799b"
+          "hash": "77399f5564"
         },
         "tag2": {
-          "file": "characters/humanoid/neko_boy_silver_armor_tag2.png",
+          "file": "characters/humanoid/neko_boy_silver_armor_tag2.webp",
           "width": 668,
           "height": 900,
           "frameWidth": 668,
@@ -4209,10 +4209,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "1518107927"
+          "hash": "1b93d85381"
         },
         "tag3": {
-          "file": "characters/humanoid/neko_boy_silver_armor_tag3.png",
+          "file": "characters/humanoid/neko_boy_silver_armor_tag3.webp",
           "width": 668,
           "height": 900,
           "frameWidth": 668,
@@ -4220,10 +4220,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e22bef497c"
+          "hash": "4c88f692af"
         },
         "tag4": {
-          "file": "characters/humanoid/neko_boy_silver_armor_tag4.png",
+          "file": "characters/humanoid/neko_boy_silver_armor_tag4.webp",
           "width": 668,
           "height": 900,
           "frameWidth": 668,
@@ -4231,7 +4231,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "6b4da36887"
+          "hash": "255f69d9ca"
         }
       },
       "clipNotes": {
@@ -4260,7 +4260,7 @@
         ],
         "note": "원본 게임사가 만든 진짜 Spine 4.1 리깅 데이터. 이 export엔 머리카락/귀/꼬리/눈/눈썹/입 아틀라스가 빠져있었는데, neko_boy_casual 에서 찾은 낱장 파츠(같은 rig 공유 - head/Center 본 구조 동일 확인함)를 그대로 재사용해 붙였음 — 위치는 neko_boy_casual 에서 맞춘 값 그대로, 캐릭터별 미세 조정은 안 했음. tools/part_editor.html 로 손볼 수 있음.",
         "skin": "10220000-0",
-        "hash": "b9ace39738"
+        "hash": "07f40f97bd"
       }
     },
     {
@@ -4270,7 +4270,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/neko_boy_traveler.png",
+          "file": "characters/humanoid/neko_boy_traveler.webp",
           "width": 749,
           "height": 893,
           "frameWidth": 749,
@@ -4278,10 +4278,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a24a847edc"
+          "hash": "cdb8bdb800"
         },
         "tag1": {
-          "file": "characters/humanoid/neko_boy_traveler_tag1.png",
+          "file": "characters/humanoid/neko_boy_traveler_tag1.webp",
           "width": 749,
           "height": 893,
           "frameWidth": 749,
@@ -4289,10 +4289,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "75f3819e39"
+          "hash": "fc6c038a18"
         },
         "tag2": {
-          "file": "characters/humanoid/neko_boy_traveler_tag2.png",
+          "file": "characters/humanoid/neko_boy_traveler_tag2.webp",
           "width": 749,
           "height": 893,
           "frameWidth": 749,
@@ -4300,10 +4300,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "bc22cc79b6"
+          "hash": "cd9949704d"
         },
         "tag3": {
-          "file": "characters/humanoid/neko_boy_traveler_tag3.png",
+          "file": "characters/humanoid/neko_boy_traveler_tag3.webp",
           "width": 749,
           "height": 893,
           "frameWidth": 749,
@@ -4311,10 +4311,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "0a016d31ee"
+          "hash": "87796f0aca"
         },
         "tag4": {
-          "file": "characters/humanoid/neko_boy_traveler_tag4.png",
+          "file": "characters/humanoid/neko_boy_traveler_tag4.webp",
           "width": 749,
           "height": 893,
           "frameWidth": 749,
@@ -4322,10 +4322,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "0dd9c0a201"
+          "hash": "36b973d3a4"
         },
         "turnsout": {
-          "file": "characters/humanoid/neko_boy_traveler_turnsout.png",
+          "file": "characters/humanoid/neko_boy_traveler_turnsout.webp",
           "width": 737,
           "height": 900,
           "frameWidth": 737,
@@ -4333,7 +4333,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "8d4ea48020"
+          "hash": "a25dcf990f"
         }
       },
       "clipNotes": {
@@ -4363,14 +4363,14 @@
         ],
         "note": "원본 게임사가 만든 진짜 Spine 4.1 리깅 데이터. 이 export엔 머리카락/귀/꼬리/눈/눈썹/입 아틀라스가 빠져있었는데, neko_boy_casual 에서 찾은 낱장 파츠(같은 rig 공유 - head/Center 본 구조 동일 확인함)를 그대로 재사용해 붙였음 — 위치는 neko_boy_casual 에서 맞춘 값 그대로, 캐릭터별 미세 조정은 안 했음. tools/part_editor.html 로 손볼 수 있음.",
         "skin": "10210000-0",
-        "hash": "9bd9f14999"
+        "hash": "cdfd1dd76e"
       }
     },
     {
       "id": "odin",
       "name": "오딘",
       "category": "humanoid",
-      "file": "characters/humanoid/odin.png",
+      "file": "characters/humanoid/odin.webp",
       "width": 591,
       "height": 900,
       "frameWidth": 591,
@@ -4378,7 +4378,7 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "072a155480"
+      "hash": "df747df3be"
     },
     {
       "id": "pet_valkyrie",
@@ -4387,7 +4387,7 @@
       "defaultAnimation": "default",
       "animations": {
         "2": {
-          "file": "characters/humanoid/pet_valkyrie_2.png",
+          "file": "characters/humanoid/pet_valkyrie_2.webp",
           "width": 296,
           "height": 289,
           "frameWidth": 296,
@@ -4395,10 +4395,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "7bc1ef9e8e"
+          "hash": "e428ed6e0f"
         },
         "3": {
-          "file": "characters/humanoid/pet_valkyrie_3.png",
+          "file": "characters/humanoid/pet_valkyrie_3.webp",
           "width": 296,
           "height": 289,
           "frameWidth": 296,
@@ -4406,10 +4406,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "64863d6b94"
+          "hash": "c9444ed77f"
         },
         "default": {
-          "file": "characters/humanoid/pet_valkyrie.png",
+          "file": "characters/humanoid/pet_valkyrie.webp",
           "width": 296,
           "height": 289,
           "frameWidth": 296,
@@ -4417,7 +4417,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "572d2eb3ca"
+          "hash": "7df0455283"
         }
       },
       "clipNotes": {
@@ -4436,14 +4436,14 @@
           "Special",
           "BattleEnd"
         ],
-        "hash": "0581bf722e"
+        "hash": "82fb701750"
       }
     },
     {
       "id": "protagonist_npc",
       "name": "주인공",
       "category": "humanoid",
-      "file": "characters/humanoid/protagonist_npc.png",
+      "file": "characters/humanoid/protagonist_npc.webp",
       "width": 544,
       "height": 900,
       "frameWidth": 544,
@@ -4451,7 +4451,7 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "61a826d040"
+      "hash": "dd5c5a0e6e"
     },
     {
       "id": "rui",
@@ -4500,7 +4500,7 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "423cd97549"
+            "hash": "5b40f0efc3"
           },
           {
             "key": "flame",
@@ -4524,15 +4524,15 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "5c3b19570d"
+            "hash": "205ea1a56a"
           }
         ],
-        "hash": "dba00b9860"
+        "hash": "40eedeec3e"
       },
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/rui.png",
+          "file": "characters/humanoid/rui.webp",
           "width": 711,
           "height": 900,
           "frameWidth": 711,
@@ -4540,10 +4540,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "36407d5561"
+          "hash": "a5bb641116"
         },
         "glacier": {
-          "file": "characters/humanoid/lui_spear_warrior.png",
+          "file": "characters/humanoid/lui_spear_warrior.webp",
           "width": 257,
           "height": 325,
           "frameWidth": 257,
@@ -4551,10 +4551,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "11149e88ca"
+          "hash": "1e559a595a"
         },
         "flame": {
-          "file": "characters/humanoid/lui_spear_warrior_fire.png",
+          "file": "characters/humanoid/lui_spear_warrior_fire.webp",
           "width": 254,
           "height": 323,
           "frameWidth": 254,
@@ -4562,7 +4562,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "6bf2f7239d"
+          "hash": "694ad5939a"
         }
       },
       "clipNotes": {
@@ -4574,7 +4574,7 @@
       "id": "rui_blueknight",
       "name": "루이 (청기사)",
       "category": "humanoid",
-      "file": "characters/humanoid/rui_blueknight.png",
+      "file": "characters/humanoid/rui_blueknight.webp",
       "width": 713,
       "height": 900,
       "frameWidth": 713,
@@ -4603,15 +4603,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "93bc6fe659"
+        "hash": "aafa174e09"
       },
-      "hash": "bf1623d7cf"
+      "hash": "7adba9445c"
     },
     {
       "id": "sea_god_ran",
       "name": "바다의 신 란",
       "category": "humanoid",
-      "file": "characters/humanoid/sea_god_ran.png",
+      "file": "characters/humanoid/sea_god_ran.webp",
       "width": 900,
       "height": 723,
       "frameWidth": 900,
@@ -4639,15 +4639,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "49493746d3"
+        "hash": "d6b855f65d"
       },
-      "hash": "2856761821"
+      "hash": "399ce6da69"
     },
     {
       "id": "skuld",
       "name": "스쿨드",
       "category": "humanoid",
-      "file": "characters/humanoid/skuld.png",
+      "file": "characters/humanoid/skuld.webp",
       "width": 900,
       "height": 648,
       "frameWidth": 900,
@@ -4675,9 +4675,9 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "b0933e87e0"
+        "hash": "623797797c"
       },
-      "hash": "58b89d09b7"
+      "hash": "7e75098cbb"
     },
     {
       "id": "sorcerer",
@@ -4686,7 +4686,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/sorcerer.png",
+          "file": "characters/humanoid/sorcerer.webp",
           "width": 773,
           "height": 900,
           "frameWidth": 773,
@@ -4694,10 +4694,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "d7d4153af0"
+          "hash": "83f3707e72"
         },
         "expr_00": {
-          "file": "characters/humanoid/sorcerer_expr_00.png",
+          "file": "characters/humanoid/sorcerer_expr_00.webp",
           "width": 448,
           "height": 489,
           "frameWidth": 448,
@@ -4705,10 +4705,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "25df0f34ed"
+          "hash": "6cf591aeb6"
         },
         "expr_01": {
-          "file": "characters/humanoid/sorcerer_expr_01.png",
+          "file": "characters/humanoid/sorcerer_expr_01.webp",
           "width": 448,
           "height": 489,
           "frameWidth": 448,
@@ -4716,10 +4716,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "9bf84f838d"
+          "hash": "cc2de25c78"
         },
         "expr_02": {
-          "file": "characters/humanoid/sorcerer_expr_02.png",
+          "file": "characters/humanoid/sorcerer_expr_02.webp",
           "width": 448,
           "height": 489,
           "frameWidth": 448,
@@ -4727,10 +4727,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "fadd728632"
+          "hash": "430c060f98"
         },
         "expr_03": {
-          "file": "characters/humanoid/sorcerer_expr_03.png",
+          "file": "characters/humanoid/sorcerer_expr_03.webp",
           "width": 448,
           "height": 489,
           "frameWidth": 448,
@@ -4738,10 +4738,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "b2dc93ff1c"
+          "hash": "15b4a7660b"
         },
         "expr_04": {
-          "file": "characters/humanoid/sorcerer_expr_04.png",
+          "file": "characters/humanoid/sorcerer_expr_04.webp",
           "width": 448,
           "height": 489,
           "frameWidth": 448,
@@ -4749,10 +4749,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "03d0dbe3a7"
+          "hash": "7537183694"
         },
         "expr_05": {
-          "file": "characters/humanoid/sorcerer_expr_05.png",
+          "file": "characters/humanoid/sorcerer_expr_05.webp",
           "width": 448,
           "height": 489,
           "frameWidth": 448,
@@ -4760,10 +4760,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "62d1ba184b"
+          "hash": "97b933082a"
         },
         "expr_06": {
-          "file": "characters/humanoid/sorcerer_expr_06.png",
+          "file": "characters/humanoid/sorcerer_expr_06.webp",
           "width": 448,
           "height": 489,
           "frameWidth": 448,
@@ -4771,7 +4771,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "1fb0261d6d"
+          "hash": "fc87068f63"
         }
       },
       "clipNotes": {
@@ -4803,14 +4803,14 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "b176e580f7"
+        "hash": "e04a474756"
       }
     },
     {
       "id": "sorcerer_white",
       "name": "마도사 (백마도사)",
       "category": "humanoid",
-      "file": "characters/humanoid/sorcerer_white.png",
+      "file": "characters/humanoid/sorcerer_white.webp",
       "width": 773,
       "height": 900,
       "frameWidth": 773,
@@ -4839,15 +4839,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터. 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음.",
-        "hash": "9b5a628f26"
+        "hash": "84d155f6ef"
       },
-      "hash": "8fd147a29a"
+      "hash": "be6f5a4ffe"
     },
     {
       "id": "thor_npc",
       "name": "토르",
       "category": "humanoid",
-      "file": "characters/humanoid/thor_npc.png",
+      "file": "characters/humanoid/thor_npc.webp",
       "width": 488,
       "height": 900,
       "frameWidth": 488,
@@ -4855,13 +4855,13 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "bb62143ccc"
+      "hash": "93ac6c0825"
     },
     {
       "id": "urd",
       "name": "울드",
       "category": "humanoid",
-      "file": "characters/humanoid/urd.png",
+      "file": "characters/humanoid/urd.webp",
       "width": 364,
       "height": 348,
       "frameWidth": 364,
@@ -4889,9 +4889,9 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "d55d548643"
+        "hash": "351b9d935c"
       },
-      "hash": "de0cd6f04c"
+      "hash": "ed8386ad16"
     },
     {
       "id": "valkyrie",
@@ -4900,7 +4900,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/valkyrie.png",
+          "file": "characters/humanoid/valkyrie.webp",
           "width": 711,
           "height": 900,
           "frameWidth": 711,
@@ -4908,10 +4908,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "1bf4953f8d"
+          "hash": "2226a37f1f"
         },
         "black": {
-          "file": "characters/humanoid/valkyrie_black.png",
+          "file": "characters/humanoid/valkyrie_black.webp",
           "width": 705,
           "height": 900,
           "frameWidth": 705,
@@ -4919,10 +4919,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e94d8edc92"
+          "hash": "a1bcd6fb44"
         },
         "brown": {
-          "file": "characters/humanoid/valkyrie_brown.png",
+          "file": "characters/humanoid/valkyrie_brown.webp",
           "width": 716,
           "height": 900,
           "frameWidth": 716,
@@ -4930,10 +4930,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "d1e16537e0"
+          "hash": "eecc63c61d"
         },
         "whitegold": {
-          "file": "characters/humanoid/valkyrie_whitegold.png",
+          "file": "characters/humanoid/valkyrie_whitegold.webp",
           "width": 733,
           "height": 900,
           "frameWidth": 733,
@@ -4941,7 +4941,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "f409005b57"
+          "hash": "8345728a62"
         }
       },
       "clipNotes": {
@@ -4993,7 +4993,7 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "0b7881ae3d"
+            "hash": "02287d59cf"
           },
           {
             "key": "brown",
@@ -5018,7 +5018,7 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "1e540bdbe7"
+            "hash": "9ce86a1c5e"
           },
           {
             "key": "whitegold",
@@ -5043,17 +5043,17 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "65e37a1c22"
+            "hash": "7ad97f0f79"
           }
         ],
-        "hash": "e33f0f5bb7"
+        "hash": "d6c0411f85"
       }
     },
     {
       "id": "verdandi",
       "name": "베르단디",
       "category": "humanoid",
-      "file": "characters/humanoid/verdandi.png",
+      "file": "characters/humanoid/verdandi.webp",
       "width": 900,
       "height": 838,
       "frameWidth": 900,
@@ -5081,15 +5081,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "43090dd6f8"
+        "hash": "a1c090a9c8"
       },
-      "hash": "6bc86bf5aa"
+      "hash": "16a68e4657"
     },
     {
       "id": "white_lion_knight",
       "name": "백사자 (수인 기사)",
       "category": "humanoid",
-      "file": "characters/humanoid/white_lion_knight.png",
+      "file": "characters/humanoid/white_lion_knight.webp",
       "width": 713,
       "height": 900,
       "frameWidth": 713,
@@ -5118,15 +5118,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "20acfd9a97"
+        "hash": "9ceb246c42"
       },
-      "hash": "49dd3ac7f8"
+      "hash": "30d72b95ef"
     },
     {
       "id": "white_lion_knight_blackghost",
       "name": "백사자 (블랙유령)",
       "category": "humanoid",
-      "file": "characters/humanoid/white_lion_knight_blackghost.png",
+      "file": "characters/humanoid/white_lion_knight_blackghost.webp",
       "width": 702,
       "height": 900,
       "frameWidth": 702,
@@ -5156,15 +5156,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터. 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음.",
-        "hash": "4aef99fe75"
+        "hash": "3ec49416ec"
       },
-      "hash": "ee89250c1d"
+      "hash": "1415fc75ec"
     },
     {
       "id": "white_lion_knight_fire",
       "name": "백사자 (불의 화신)",
       "category": "humanoid",
-      "file": "characters/humanoid/white_lion_knight_fire.png",
+      "file": "characters/humanoid/white_lion_knight_fire.webp",
       "width": 702,
       "height": 900,
       "frameWidth": 702,
@@ -5194,15 +5194,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터. 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음.",
-        "hash": "c595305148"
+        "hash": "4981714d04"
       },
-      "hash": "02f7cde786"
+      "hash": "5096827b6b"
     },
     {
       "id": "white_raven",
       "name": "흰까마귀",
       "category": "humanoid",
-      "file": "characters/humanoid/white_raven.png",
+      "file": "characters/humanoid/white_raven.webp",
       "width": 779,
       "height": 900,
       "frameWidth": 779,
@@ -5249,18 +5249,18 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "3e7f9dda3a"
+            "hash": "7f94532828"
           }
         ],
-        "hash": "c79deb02a4"
+        "hash": "7c3bdd9591"
       },
-      "hash": "5df0d3692e"
+      "hash": "0e9d772efe"
     },
     {
       "id": "white_raven_blackstar",
       "name": "흰까마귀 (블랙스타테마)",
       "category": "humanoid",
-      "file": "characters/humanoid/white_raven_blackstar.png",
+      "file": "characters/humanoid/white_raven_blackstar.webp",
       "width": 833,
       "height": 900,
       "frameWidth": 833,
@@ -5287,9 +5287,9 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터. 바이너리(.skel) 내보내기라 실제 동작 목록은 다를 수 있음.",
-        "hash": "4dfdad43c4"
+        "hash": "ee04e2ce36"
       },
-      "hash": "b41610d539"
+      "hash": "e5ae52fe7a"
     },
     {
       "id": "witch",
@@ -5298,7 +5298,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/witch.png",
+          "file": "characters/humanoid/witch.webp",
           "width": 900,
           "height": 736,
           "frameWidth": 900,
@@ -5306,10 +5306,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "77b72a3421"
+          "hash": "0484e1e8ef"
         },
         "expr_00": {
-          "file": "characters/humanoid/witch_expr_00.png",
+          "file": "characters/humanoid/witch_expr_00.webp",
           "width": 456,
           "height": 442,
           "frameWidth": 456,
@@ -5317,10 +5317,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "6bb6c70252"
+          "hash": "d52474524c"
         },
         "expr_01": {
-          "file": "characters/humanoid/witch_expr_01.png",
+          "file": "characters/humanoid/witch_expr_01.webp",
           "width": 456,
           "height": 440,
           "frameWidth": 456,
@@ -5328,10 +5328,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "6bd4942c17"
+          "hash": "96b0d4df5f"
         },
         "expr_02": {
-          "file": "characters/humanoid/witch_expr_02.png",
+          "file": "characters/humanoid/witch_expr_02.webp",
           "width": 463,
           "height": 437,
           "frameWidth": 463,
@@ -5339,10 +5339,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e1949d59bb"
+          "hash": "74fdbe4f6d"
         },
         "expr_03": {
-          "file": "characters/humanoid/witch_expr_03.png",
+          "file": "characters/humanoid/witch_expr_03.webp",
           "width": 456,
           "height": 437,
           "frameWidth": 456,
@@ -5350,10 +5350,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "8b53dc3b6d"
+          "hash": "abe881b435"
         },
         "expr_04": {
-          "file": "characters/humanoid/witch_expr_04.png",
+          "file": "characters/humanoid/witch_expr_04.webp",
           "width": 460,
           "height": 437,
           "frameWidth": 460,
@@ -5361,10 +5361,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "a7e8f4c38b"
+          "hash": "58ef87c825"
         },
         "expr_05": {
-          "file": "characters/humanoid/witch_expr_05.png",
+          "file": "characters/humanoid/witch_expr_05.webp",
           "width": 236,
           "height": 500,
           "frameWidth": 236,
@@ -5372,10 +5372,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "678c9a10b8"
+          "hash": "23cf58cc34"
         },
         "expr_06": {
-          "file": "characters/humanoid/witch_expr_06.png",
+          "file": "characters/humanoid/witch_expr_06.webp",
           "width": 457,
           "height": 440,
           "frameWidth": 457,
@@ -5383,10 +5383,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e9b96a15d6"
+          "hash": "a7e388980b"
         },
         "expr_07": {
-          "file": "characters/humanoid/witch_expr_07.png",
+          "file": "characters/humanoid/witch_expr_07.webp",
           "width": 455,
           "height": 442,
           "frameWidth": 455,
@@ -5394,7 +5394,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "3e6b2132d4"
+          "hash": "3d67b45735"
         }
       },
       "clipNotes": {
@@ -5427,14 +5427,14 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "cd2b4a9bbf"
+        "hash": "2d0f56c20f"
       }
     },
     {
       "id": "witch_red",
       "name": "마녀 (레드테마)",
       "category": "humanoid",
-      "file": "characters/humanoid/witch_red.png",
+      "file": "characters/humanoid/witch_red.webp",
       "width": 900,
       "height": 736,
       "frameWidth": 900,
@@ -5463,9 +5463,9 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "e55e1d7d7f"
+        "hash": "a258bb81e5"
       },
-      "hash": "d861c03546"
+      "hash": "193cab3d9c"
     },
     {
       "id": "item_10200000",
@@ -5474,7 +5474,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_10200000.png",
+          "file": "characters/items/item_10200000.webp",
           "width": 450,
           "height": 184,
           "frameWidth": 450,
@@ -5482,7 +5482,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "10c74e7e92"
+          "hash": "cd8e6cba4e"
         }
       },
       "note": "10200000 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5494,7 +5494,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_10210000.png",
+          "file": "characters/items/item_10210000.webp",
           "width": 509,
           "height": 198,
           "frameWidth": 509,
@@ -5502,7 +5502,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "d05fe04bcd"
+          "hash": "502c7ac628"
         }
       },
       "note": "10210000_10214000 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5514,7 +5514,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100003.png",
+          "file": "characters/items/item_40100003.webp",
           "width": 642,
           "height": 509,
           "frameWidth": 642,
@@ -5522,7 +5522,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "f249466ace"
+          "hash": "be86959556"
         }
       },
       "note": "40100003_검은발키리 캐릭터 PSD의 sword 레이어에서 분리 추출"
@@ -5534,7 +5534,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100007.png",
+          "file": "characters/items/item_40100007.webp",
           "width": 465,
           "height": 302,
           "frameWidth": 465,
@@ -5542,7 +5542,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "91fa342291"
+          "hash": "b49655f667"
         }
       },
       "note": "40100007_마법사_천사 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5554,7 +5554,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100008.png",
+          "file": "characters/items/item_40100008.webp",
           "width": 465,
           "height": 302,
           "frameWidth": 465,
@@ -5562,7 +5562,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "47e55b065d"
+          "hash": "159eff7d7c"
         }
       },
       "note": "40100008_마법사_노말 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5574,7 +5574,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100012.png",
+          "file": "characters/items/item_40100012.webp",
           "width": 699,
           "height": 478,
           "frameWidth": 699,
@@ -5582,7 +5582,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "bba1e099fe"
+          "hash": "9af464f7c6"
         }
       },
       "note": "40100012_나드 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5594,7 +5594,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100013.png",
+          "file": "characters/items/item_40100013.webp",
           "width": 642,
           "height": 512,
           "frameWidth": 642,
@@ -5602,7 +5602,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "10a2ebdcc4"
+          "hash": "7c8b40ac11"
         }
       },
       "note": "40100013_갈색발키리 캐릭터 PSD의 sword 레이어에서 분리 추출"
@@ -5614,7 +5614,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100014.png",
+          "file": "characters/items/item_40100014.webp",
           "width": 642,
           "height": 512,
           "frameWidth": 642,
@@ -5622,7 +5622,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "6adf64f4ff"
+          "hash": "805440af91"
         }
       },
       "note": "40100014_발키리흰금 캐릭터 PSD의 sword 레이어에서 분리 추출"
@@ -5634,7 +5634,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100018.png",
+          "file": "characters/items/item_40100018.webp",
           "width": 700,
           "height": 262,
           "frameWidth": 700,
@@ -5642,7 +5642,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "791aefcdd6"
+          "hash": "08a3805b2d"
         }
       },
       "note": "40100018_마녀 캐릭터 PSD의 staff 레이어에서 분리 추출"
@@ -5654,7 +5654,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100018_cape.png",
+          "file": "characters/items/item_40100018_cape.webp",
           "width": 491,
           "height": 377,
           "frameWidth": 491,
@@ -5662,7 +5662,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "859a13f5bc"
+          "hash": "3328412e1a"
         }
       },
       "note": "40100018_마녀 캐릭터 PSD의 cape* 레이어들을 합쳐서 추출"
@@ -5674,7 +5674,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100018_hat.png",
+          "file": "characters/items/item_40100018_hat.webp",
           "width": 927,
           "height": 431,
           "frameWidth": 927,
@@ -5682,7 +5682,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "6e91ff934d"
+          "hash": "3f0b2db97a"
         }
       },
       "note": "40100018_마녀 캐릭터 PSD의 hat 레이어에서 분리 추출"
@@ -5694,7 +5694,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100020.png",
+          "file": "characters/items/item_40100020.webp",
           "width": 700,
           "height": 549,
           "frameWidth": 700,
@@ -5702,7 +5702,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "b5629901ca"
+          "hash": "50fdfe67e9"
         }
       },
       "note": "40100020_표범 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5714,7 +5714,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100021.png",
+          "file": "characters/items/item_40100021.webp",
           "width": 376,
           "height": 700,
           "frameWidth": 376,
@@ -5722,7 +5722,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "f897d9541e"
+          "hash": "e20a19b339"
         }
       },
       "note": "40100021_청기사 루시 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5734,7 +5734,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100025.png",
+          "file": "characters/items/item_40100025.webp",
           "width": 624,
           "height": 248,
           "frameWidth": 624,
@@ -5742,7 +5742,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "7eed0cafb4"
+          "hash": "7214d8dcdd"
         }
       },
       "note": "40100025_크리스마스 코스튬 기존 코스튬 색베리 캐릭터 PSD의 sword_0007 레이어에서 분리 추출"
@@ -5754,7 +5754,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100027.png",
+          "file": "characters/items/item_40100027.webp",
           "width": 700,
           "height": 335,
           "frameWidth": 700,
@@ -5762,7 +5762,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "cb53526b07"
+          "hash": "e7d7bfceae"
         }
       },
       "note": "40100027 캐릭터 PSD의 staff 레이어에서 분리 추출"
@@ -5774,7 +5774,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100028.png",
+          "file": "characters/items/item_40100028.webp",
           "width": 624,
           "height": 248,
           "frameWidth": 624,
@@ -5782,7 +5782,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "0b162b17d2"
+          "hash": "fb2b93daed"
         }
       },
       "note": "40100028 캐릭터 PSD의 sword_0007 레이어에서 분리 추출"
@@ -5794,7 +5794,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100029.png",
+          "file": "characters/items/item_40100029.webp",
           "width": 699,
           "height": 201,
           "frameWidth": 699,
@@ -5802,7 +5802,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "408b4d0932"
+          "hash": "84e7ae5edd"
         }
       },
       "note": "40100029 캐릭터 PSD의 sword 레이어에서 분리 추출"
@@ -5814,7 +5814,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100030.png",
+          "file": "characters/items/item_40100030.webp",
           "width": 497,
           "height": 700,
           "frameWidth": 497,
@@ -5822,7 +5822,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "b31d2037b5"
+          "hash": "db653618cf"
         }
       },
       "note": "40100030_궁수 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5834,7 +5834,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100031.png",
+          "file": "characters/items/item_40100031.webp",
           "width": 218,
           "height": 208,
           "frameWidth": 218,
@@ -5842,7 +5842,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "3ef9e5bc2b"
+          "hash": "d60bdb7393"
         }
       },
       "note": "40100031_페어리 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5854,7 +5854,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100032.png",
+          "file": "characters/items/item_40100032.webp",
           "width": 497,
           "height": 700,
           "frameWidth": 497,
@@ -5862,7 +5862,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "3912b3868d"
+          "hash": "0c07602ad2"
         }
       },
       "note": "40100032_궁수_도깨비 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5874,7 +5874,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100033.png",
+          "file": "characters/items/item_40100033.webp",
           "width": 497,
           "height": 700,
           "frameWidth": 497,
@@ -5882,7 +5882,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "f5e4eef256"
+          "hash": "ebab39d995"
         }
       },
       "note": "40100033_궁수_벚꽃놀이 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5894,7 +5894,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100034.png",
+          "file": "characters/items/item_40100034.webp",
           "width": 497,
           "height": 700,
           "frameWidth": 497,
@@ -5902,7 +5902,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "89cf9f99b4"
+          "hash": "8cfb0daf12"
         }
       },
       "note": "40100034_궁수_여름해변 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5914,7 +5914,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100035.png",
+          "file": "characters/items/item_40100035.webp",
           "width": 218,
           "height": 208,
           "frameWidth": 218,
@@ -5922,7 +5922,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "f902a325f8"
+          "hash": "5e47903e68"
         }
       },
       "note": "40100035_페어리_미드나잇 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5934,7 +5934,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100036.png",
+          "file": "characters/items/item_40100036.webp",
           "width": 218,
           "height": 208,
           "frameWidth": 218,
@@ -5942,7 +5942,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "34c5336847"
+          "hash": "2b6e47d62f"
         }
       },
       "note": "40100036_페어리_트로피컬 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5954,7 +5954,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100037.png",
+          "file": "characters/items/item_40100037.webp",
           "width": 218,
           "height": 208,
           "frameWidth": 218,
@@ -5962,7 +5962,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "7f0726b975"
+          "hash": "8291e425bb"
         }
       },
       "note": "40100037_페어리_얼음요정 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5974,7 +5974,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100042.png",
+          "file": "characters/items/item_40100042.webp",
           "width": 700,
           "height": 456,
           "frameWidth": 700,
@@ -5982,7 +5982,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "7544d2eadb"
+          "hash": "549db996fe"
         }
       },
       "note": "40100042_1주년 기념 스킨 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -5994,7 +5994,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100044.png",
+          "file": "characters/items/item_40100044.webp",
           "width": 700,
           "height": 386,
           "frameWidth": 700,
@@ -6002,7 +6002,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "35521bad1f"
+          "hash": "09e1f0f3ba"
         }
       },
       "note": "40100044_바다의 신 란(RAN) 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -6014,7 +6014,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100045.png",
+          "file": "characters/items/item_40100045.webp",
           "width": 700,
           "height": 532,
           "frameWidth": 700,
@@ -6022,7 +6022,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "67ce531d89"
+          "hash": "d80e324939"
         }
       },
       "note": "40100045_다그 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -6034,7 +6034,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100046.png",
+          "file": "characters/items/item_40100046.webp",
           "width": 700,
           "height": 396,
           "frameWidth": 700,
@@ -6042,7 +6042,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "510acdde8f"
+          "hash": "7a5baea653"
         }
       },
       "note": "40100046_베르단디 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -6054,7 +6054,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100048.png",
+          "file": "characters/items/item_40100048.webp",
           "width": 692,
           "height": 700,
           "frameWidth": 692,
@@ -6062,7 +6062,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "588a7ff7e5"
+          "hash": "397c3bbb19"
         }
       },
       "note": "40100048_울드 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -6074,7 +6074,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100051.png",
+          "file": "characters/items/item_40100051.webp",
           "width": 700,
           "height": 395,
           "frameWidth": 700,
@@ -6082,7 +6082,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "c04b7ea73d"
+          "hash": "2b1aa29956"
         }
       },
       "note": "40100051_solblade 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -6094,7 +6094,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100055.png",
+          "file": "characters/items/item_40100055.webp",
           "width": 589,
           "height": 700,
           "frameWidth": 589,
@@ -6102,7 +6102,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "fb22053e28"
+          "hash": "ae950ad4f5"
         }
       },
       "note": "40100055_Glacielle Lui 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -6114,7 +6114,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100056.png",
+          "file": "characters/items/item_40100056.webp",
           "width": 589,
           "height": 700,
           "frameWidth": 589,
@@ -6122,7 +6122,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e0ed31bcd2"
+          "hash": "292febfe5c"
         }
       },
       "note": "40100056_Blazefell Lui 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -6134,7 +6134,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100057.png",
+          "file": "characters/items/item_40100057.webp",
           "width": 568,
           "height": 700,
           "frameWidth": 568,
@@ -6142,7 +6142,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "edd1198c64"
+          "hash": "a6cf7f1c0a"
         }
       },
       "note": "40100057_Obsidian Lucie 캐릭터 PSD의 weapon_L+R 레이어에서 분리 추출"
@@ -6154,7 +6154,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100058.png",
+          "file": "characters/items/item_40100058.webp",
           "width": 571,
           "height": 700,
           "frameWidth": 571,
@@ -6162,7 +6162,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "026bdfdf5a"
+          "hash": "dcdcf22328"
         }
       },
       "note": "40100058_Radiant Lucie 캐릭터 PSD의 weapon_L+R 레이어에서 분리 추출"
@@ -6174,7 +6174,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100059.png",
+          "file": "characters/items/item_40100059.webp",
           "width": 700,
           "height": 242,
           "frameWidth": 700,
@@ -6182,7 +6182,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e92765f567"
+          "hash": "3044a58f4b"
         }
       },
       "note": "40100059 캐릭터 PSD의 weapon 레이어에서 분리 추출"
@@ -6194,7 +6194,7 @@
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/items/item_40100061.png",
+          "file": "characters/items/item_40100061.webp",
           "width": 624,
           "height": 248,
           "frameWidth": 624,
@@ -6202,7 +6202,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "f2c53145eb"
+          "hash": "e7a586c8b9"
         }
       },
       "note": "40100061 캐릭터 PSD의 sword_0007 레이어에서 분리 추출"
@@ -6211,7 +6211,7 @@
       "id": "ghost_knight_dagger",
       "name": "유령 암살자 (단검)",
       "category": "monster",
-      "file": "characters/monster/ghost_knight_dagger.png",
+      "file": "characters/monster/ghost_knight_dagger.webp",
       "width": 227,
       "height": 254,
       "frameWidth": 227,
@@ -6233,15 +6233,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "618a8bdc2b"
+        "hash": "e5a2da582a"
       },
-      "hash": "0e8b57a398"
+      "hash": "5601dd2da3"
     },
     {
       "id": "ghost_knight_gold",
       "name": "유령 기사 (황금 장식)",
       "category": "monster",
-      "file": "characters/monster/ghost_knight_gold.png",
+      "file": "characters/monster/ghost_knight_gold.webp",
       "width": 196,
       "height": 431,
       "frameWidth": 196,
@@ -6263,15 +6263,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "0dd2c0216c"
+        "hash": "c8badc7307"
       },
-      "hash": "f689153f6d"
+      "hash": "a75a7e5368"
     },
     {
       "id": "ghost_knight_greatsword",
       "name": "유령 기사 (대검)",
       "category": "monster",
-      "file": "characters/monster/ghost_knight_greatsword.png",
+      "file": "characters/monster/ghost_knight_greatsword.webp",
       "width": 449,
       "height": 439,
       "frameWidth": 449,
@@ -6293,15 +6293,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "1e1bf43fc7"
+        "hash": "6f23cd9147"
       },
-      "hash": "2374f84ce8"
+      "hash": "e39764e27c"
     },
     {
       "id": "ghost_knight_lancer",
       "name": "유령 창기사",
       "category": "monster",
-      "file": "characters/monster/ghost_knight_lancer.png",
+      "file": "characters/monster/ghost_knight_lancer.webp",
       "width": 275,
       "height": 383,
       "frameWidth": 275,
@@ -6323,15 +6323,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "ea2d16eb8c"
+        "hash": "0712203d97"
       },
-      "hash": "01d5db3f08"
+      "hash": "16e7232ab9"
     },
     {
       "id": "ghost_knight_rider",
       "name": "유령 마상기사",
       "category": "monster",
-      "file": "characters/monster/ghost_knight_rider.png",
+      "file": "characters/monster/ghost_knight_rider.webp",
       "width": 427,
       "height": 425,
       "frameWidth": 427,
@@ -6353,15 +6353,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "7add6c97e5"
+        "hash": "54b4c44b55"
       },
-      "hash": "b399e2ea95"
+      "hash": "c3b6348e59"
     },
     {
       "id": "ghost_knight_sword",
       "name": "유령 기사 (검)",
       "category": "monster",
-      "file": "characters/monster/ghost_knight_sword.png",
+      "file": "characters/monster/ghost_knight_sword.webp",
       "width": 290,
       "height": 296,
       "frameWidth": 290,
@@ -6383,15 +6383,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "089cc1eecc"
+        "hash": "0faaf7116f"
       },
-      "hash": "7eba4bcd34"
+      "hash": "013fe526d3"
     },
     {
       "id": "ghost_knight_wisp",
       "name": "작은 유령",
       "category": "monster",
-      "file": "characters/monster/ghost_knight_wisp.png",
+      "file": "characters/monster/ghost_knight_wisp.webp",
       "width": 101,
       "height": 134,
       "frameWidth": 101,
@@ -6413,15 +6413,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "427f726c85"
+        "hash": "d32f0388ab"
       },
-      "hash": "d50e5a3c73"
+      "hash": "6a00130fd9"
     },
     {
       "id": "hel",
       "name": "헬 (어드벤처 보스)",
       "category": "monster",
-      "file": "characters/monster/hel.png",
+      "file": "characters/monster/hel.webp",
       "width": 703,
       "height": 900,
       "frameWidth": 703,
@@ -6430,13 +6430,13 @@
       "cols": 1,
       "rows": 1,
       "note": "PSD에서 캐릭터 레이어만 뽑아냄",
-      "hash": "5f4f132073"
+      "hash": "d9f8390240"
     },
     {
       "id": "jelly_spirit_crystal_golem",
       "name": "수정 골렘",
       "category": "monster",
-      "file": "characters/monster/jelly_spirit_crystal_golem.png",
+      "file": "characters/monster/jelly_spirit_crystal_golem.webp",
       "width": 567,
       "height": 900,
       "frameWidth": 567,
@@ -6458,15 +6458,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "de05446ed1"
+        "hash": "ec6a7e825c"
       },
-      "hash": "3d92f5cfa7"
+      "hash": "9d2186fb74"
     },
     {
       "id": "jelly_spirit_ice_plant",
       "name": "얼음 식물 젤리",
       "category": "monster",
-      "file": "characters/monster/jelly_spirit_ice_plant.png",
+      "file": "characters/monster/jelly_spirit_ice_plant.webp",
       "width": 792,
       "height": 900,
       "frameWidth": 792,
@@ -6488,15 +6488,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "eb6bc08f8b"
+        "hash": "3ab4d182e8"
       },
-      "hash": "0912ee509d"
+      "hash": "797c637f8d"
     },
     {
       "id": "jelly_spirit_leaf",
       "name": "나뭇잎 젤리",
       "category": "monster",
-      "file": "characters/monster/jelly_spirit_leaf.png",
+      "file": "characters/monster/jelly_spirit_leaf.webp",
       "width": 320,
       "height": 365,
       "frameWidth": 320,
@@ -6518,15 +6518,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "8655858dfd"
+        "hash": "588614bfe7"
       },
-      "hash": "52bf9cf39b"
+      "hash": "19d6ba9a8b"
     },
     {
       "id": "jelly_spirit_priestess",
       "name": "얼음 사제",
       "category": "monster",
-      "file": "characters/monster/jelly_spirit_priestess.png",
+      "file": "characters/monster/jelly_spirit_priestess.webp",
       "width": 662,
       "height": 900,
       "frameWidth": 662,
@@ -6548,15 +6548,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "325f51ccbb"
+        "hash": "ae0d969046"
       },
-      "hash": "8a0c8959e4"
+      "hash": "acd607c692"
     },
     {
       "id": "laufey",
       "name": "라우페이 (어드벤처 보스)",
       "category": "monster",
-      "file": "characters/monster/laufey.png",
+      "file": "characters/monster/laufey.webp",
       "width": 726,
       "height": 900,
       "frameWidth": 726,
@@ -6565,13 +6565,13 @@
       "cols": 1,
       "rows": 1,
       "note": "PSD에서 캐릭터 레이어만 뽑아냄",
-      "hash": "c7bbf56320"
+      "hash": "c1b7afe46c"
     },
     {
       "id": "ogre_archer",
       "name": "오우거 (활)",
       "category": "monster",
-      "file": "characters/monster/ogre_archer.png",
+      "file": "characters/monster/ogre_archer.webp",
       "width": 393,
       "height": 354,
       "frameWidth": 393,
@@ -6593,15 +6593,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "83726f07b8"
+        "hash": "6813c2c6bb"
       },
-      "hash": "098151bd1f"
+      "hash": "3f92d97ce9"
     },
     {
       "id": "ogre_bomber",
       "name": "오우거 (폭탄)",
       "category": "monster",
-      "file": "characters/monster/ogre_bomber.png",
+      "file": "characters/monster/ogre_bomber.webp",
       "width": 417,
       "height": 393,
       "frameWidth": 417,
@@ -6623,15 +6623,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "7d6b7b8317"
+        "hash": "b4ab7378da"
       },
-      "hash": "94bed6e1e6"
+      "hash": "4f8eda3efe"
     },
     {
       "id": "ogre_chief",
       "name": "오우거 대장",
       "category": "monster",
-      "file": "characters/monster/ogre_chief.png",
+      "file": "characters/monster/ogre_chief.webp",
       "width": 509,
       "height": 509,
       "frameWidth": 509,
@@ -6653,15 +6653,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "f5c055ba90"
+        "hash": "7589d5504e"
       },
-      "hash": "6b820a959b"
+      "hash": "0441942ce6"
     },
     {
       "id": "ogre_club",
       "name": "오우거 (몽둥이)",
       "category": "monster",
-      "file": "characters/monster/ogre_club.png",
+      "file": "characters/monster/ogre_club.webp",
       "width": 326,
       "height": 290,
       "frameWidth": 326,
@@ -6683,15 +6683,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "0d78dc16d4"
+        "hash": "bddd4418d5"
       },
-      "hash": "0a64b2fd38"
+      "hash": "adc13c4b4d"
     },
     {
       "id": "ogre_greatsword",
       "name": "오우거 (대검)",
       "category": "monster",
-      "file": "characters/monster/ogre_greatsword.png",
+      "file": "characters/monster/ogre_greatsword.webp",
       "width": 576,
       "height": 455,
       "frameWidth": 576,
@@ -6713,15 +6713,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "f1484feaf8"
+        "hash": "5990aa41c1"
       },
-      "hash": "447f0d2223"
+      "hash": "f56765a5c6"
     },
     {
       "id": "ogre_warrior_woman",
       "name": "오우거 여전사",
       "category": "monster",
-      "file": "characters/monster/ogre_warrior_woman.png",
+      "file": "characters/monster/ogre_warrior_woman.webp",
       "width": 277,
       "height": 428,
       "frameWidth": 277,
@@ -6743,15 +6743,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "d16eb91add"
+        "hash": "8ae089ecb9"
       },
-      "hash": "059e48c26d"
+      "hash": "982d699349"
     },
     {
       "id": "ogre_will_o_wisp",
       "name": "오우거 (도깨비불 동반)",
       "category": "monster",
-      "file": "characters/monster/ogre_will_o_wisp.png",
+      "file": "characters/monster/ogre_will_o_wisp.webp",
       "width": 279,
       "height": 338,
       "frameWidth": 279,
@@ -6773,15 +6773,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "fd9e56b7e1"
+        "hash": "8ea164824d"
       },
-      "hash": "4234084b7a"
+      "hash": "a076515fff"
     },
     {
       "id": "ogre_witch",
       "name": "오우거 마녀",
       "category": "monster",
-      "file": "characters/monster/ogre_witch.png",
+      "file": "characters/monster/ogre_witch.webp",
       "width": 705,
       "height": 874,
       "frameWidth": 705,
@@ -6809,9 +6809,9 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "6924841bc6"
+        "hash": "e2cd007b2f"
       },
-      "hash": "b8634fe4b2"
+      "hash": "0a38004285"
     },
     {
       "id": "pet_roundy",
@@ -6820,7 +6820,7 @@
       "defaultAnimation": "default",
       "animations": {
         "2": {
-          "file": "characters/monster/pet_roundy_2.png",
+          "file": "characters/monster/pet_roundy_2.webp",
           "width": 134,
           "height": 158,
           "frameWidth": 134,
@@ -6828,10 +6828,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "fe984bfdef"
+          "hash": "492a2b4261"
         },
         "3": {
-          "file": "characters/monster/pet_roundy_3.png",
+          "file": "characters/monster/pet_roundy_3.webp",
           "width": 134,
           "height": 158,
           "frameWidth": 134,
@@ -6839,10 +6839,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "6e723388e5"
+          "hash": "579af700bb"
         },
         "default": {
-          "file": "characters/monster/pet_roundy.png",
+          "file": "characters/monster/pet_roundy.webp",
           "width": 134,
           "height": 158,
           "frameWidth": 134,
@@ -6850,7 +6850,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "adadcecc31"
+          "hash": "8b3b05a7ea"
         }
       },
       "clipNotes": {
@@ -6869,14 +6869,14 @@
           "Special",
           "BattleEnd"
         ],
-        "hash": "67701bcc41"
+        "hash": "9272770c40"
       }
     },
     {
       "id": "scarecrow_dark_witch",
       "name": "어둠의 마녀",
       "category": "monster",
-      "file": "characters/monster/scarecrow_dark_witch.png",
+      "file": "characters/monster/scarecrow_dark_witch.webp",
       "width": 505,
       "height": 645,
       "frameWidth": 505,
@@ -6904,15 +6904,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "5110e1e675"
+        "hash": "be7e146818"
       },
-      "hash": "6b99c0f1c8"
+      "hash": "447c0e42a1"
     },
     {
       "id": "scarecrow_doll",
       "name": "저주받은 인형",
       "category": "monster",
-      "file": "characters/monster/scarecrow_doll.png",
+      "file": "characters/monster/scarecrow_doll.webp",
       "width": 298,
       "height": 347,
       "frameWidth": 298,
@@ -6934,15 +6934,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "14cacc2e7b"
+        "hash": "d53fdba12e"
       },
-      "hash": "29dac39c69"
+      "hash": "57e65e0554"
     },
     {
       "id": "scarecrow_duelist",
       "name": "허수아비 검객",
       "category": "monster",
-      "file": "characters/monster/scarecrow_duelist.png",
+      "file": "characters/monster/scarecrow_duelist.webp",
       "width": 441,
       "height": 359,
       "frameWidth": 441,
@@ -6964,15 +6964,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "15666ff859"
+        "hash": "efbf019e25"
       },
-      "hash": "6b72f82c21"
+      "hash": "434d822f2d"
     },
     {
       "id": "scarecrow_ice_swordsman",
       "name": "얼음 검사",
       "category": "monster",
-      "file": "characters/monster/scarecrow_ice_swordsman.png",
+      "file": "characters/monster/scarecrow_ice_swordsman.webp",
       "width": 900,
       "height": 579,
       "frameWidth": 900,
@@ -6994,15 +6994,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "7ed3e9c592"
+        "hash": "d65b303c32"
       },
-      "hash": "d025c03e8d"
+      "hash": "558ab879d1"
     },
     {
       "id": "scarecrow_ice_warrior",
       "name": "얼음 전사",
       "category": "monster",
-      "file": "characters/monster/scarecrow_ice_warrior.png",
+      "file": "characters/monster/scarecrow_ice_warrior.webp",
       "width": 450,
       "height": 404,
       "frameWidth": 450,
@@ -7024,15 +7024,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "633d51f047"
+        "hash": "61c47751d6"
       },
-      "hash": "43ee141998"
+      "hash": "a8798defa3"
     },
     {
       "id": "sprite_nut_berry",
       "name": "빨간열매 정령",
       "category": "monster",
-      "file": "characters/monster/sprite_nut_berry.png",
+      "file": "characters/monster/sprite_nut_berry.webp",
       "width": 88,
       "height": 108,
       "frameWidth": 88,
@@ -7054,15 +7054,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "181e96d09c"
+        "hash": "e809550f87"
       },
-      "hash": "b956f033c1"
+      "hash": "b1a094b520"
     },
     {
       "id": "sprite_nut_bloom",
       "name": "만개한 꽃정령",
       "category": "monster",
-      "file": "characters/monster/sprite_nut_bloom.png",
+      "file": "characters/monster/sprite_nut_bloom.webp",
       "width": 243,
       "height": 354,
       "frameWidth": 243,
@@ -7084,15 +7084,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "06bb90ce74"
+        "hash": "4a7285dbdb"
       },
-      "hash": "9a8e0adfb5"
+      "hash": "dac957a89e"
     },
     {
       "id": "sprite_nut_bouquet",
       "name": "꽃다발 정령",
       "category": "monster",
-      "file": "characters/monster/sprite_nut_bouquet.png",
+      "file": "characters/monster/sprite_nut_bouquet.webp",
       "width": 543,
       "height": 527,
       "frameWidth": 543,
@@ -7119,15 +7119,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "3e9d161e62"
+        "hash": "907886de1b"
       },
-      "hash": "93301aca1b"
+      "hash": "e0c239f334"
     },
     {
       "id": "sprite_nut_crystal",
       "name": "수정열매 정령",
       "category": "monster",
-      "file": "characters/monster/sprite_nut_crystal.png",
+      "file": "characters/monster/sprite_nut_crystal.webp",
       "width": 87,
       "height": 111,
       "frameWidth": 87,
@@ -7149,15 +7149,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "5ef0719183"
+        "hash": "3b133d1b0b"
       },
-      "hash": "9ef3dc7e1b"
+      "hash": "86e4cd559f"
     },
     {
       "id": "sprite_nut_grey",
       "name": "회색 열매정령",
       "category": "monster",
-      "file": "characters/monster/sprite_nut_grey.png",
+      "file": "characters/monster/sprite_nut_grey.webp",
       "width": 88,
       "height": 72,
       "frameWidth": 88,
@@ -7166,13 +7166,13 @@
       "cols": 1,
       "rows": 1,
       "note": "이름 미상 — 대충 지은 이름",
-      "hash": "d659675227"
+      "hash": "d67c0c87bd"
     },
     {
       "id": "sprite_nut_mushroom",
       "name": "버섯 정령",
       "category": "monster",
-      "file": "characters/monster/sprite_nut_mushroom.png",
+      "file": "characters/monster/sprite_nut_mushroom.webp",
       "width": 409,
       "height": 337,
       "frameWidth": 409,
@@ -7194,15 +7194,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "305a8ffa29"
+        "hash": "066942a69e"
       },
-      "hash": "1a0bfa60b3"
+      "hash": "94bc167008"
     },
     {
       "id": "sprite_nut_spikyleaf",
       "name": "가시잎 정령",
       "category": "monster",
-      "file": "characters/monster/sprite_nut_spikyleaf.png",
+      "file": "characters/monster/sprite_nut_spikyleaf.webp",
       "width": 159,
       "height": 151,
       "frameWidth": 159,
@@ -7224,15 +7224,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "ac114b5c92"
+        "hash": "73f45c96e2"
       },
-      "hash": "ed2773a719"
+      "hash": "e5c0b7e2fd"
     },
     {
       "id": "sprite_nut_teal",
       "name": "청록잎 정령",
       "category": "monster",
-      "file": "characters/monster/sprite_nut_teal.png",
+      "file": "characters/monster/sprite_nut_teal.webp",
       "width": 87,
       "height": 124,
       "frameWidth": 87,
@@ -7254,15 +7254,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "551b5339df"
+        "hash": "80be188916"
       },
-      "hash": "d1995d2ba8"
+      "hash": "def3945f03"
     },
     {
       "id": "sprite_nut_thornvine",
       "name": "가시넝쿨 정령",
       "category": "monster",
-      "file": "characters/monster/sprite_nut_thornvine.png",
+      "file": "characters/monster/sprite_nut_thornvine.webp",
       "width": 417,
       "height": 333,
       "frameWidth": 417,
@@ -7284,15 +7284,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "0660baea07"
+        "hash": "2aef0bbb13"
       },
-      "hash": "03ae432914"
+      "hash": "2fee8f1018"
     },
     {
       "id": "surtr",
       "name": "수르트 (어드벤처 보스)",
       "category": "monster",
-      "file": "characters/monster/surtr.png",
+      "file": "characters/monster/surtr.webp",
       "width": 900,
       "height": 491,
       "frameWidth": 900,
@@ -7300,13 +7300,13 @@
       "frames": 1,
       "cols": 1,
       "rows": 1,
-      "hash": "33ce9521b8"
+      "hash": "794f0ce002"
     },
     {
       "id": "treant_dryad",
       "name": "나무 요정",
       "category": "monster",
-      "file": "characters/monster/treant_dryad.png",
+      "file": "characters/monster/treant_dryad.webp",
       "width": 900,
       "height": 831,
       "frameWidth": 900,
@@ -7328,15 +7328,15 @@
           "Run"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "b018ebd88a"
+        "hash": "2fb82475d1"
       },
-      "hash": "7e6311b24b"
+      "hash": "0ddaf213d8"
     },
     {
       "id": "treant_santa",
       "name": "산타 트렌트",
       "category": "monster",
-      "file": "characters/monster/treant_santa.png",
+      "file": "characters/monster/treant_santa.webp",
       "width": 498,
       "height": 314,
       "frameWidth": 498,
@@ -7345,13 +7345,13 @@
       "cols": 1,
       "rows": 1,
       "note": "이름 미상 — 대충 지은 이름",
-      "hash": "09b3d744bb"
+      "hash": "b5c7ada098"
     },
     {
       "id": "treant_sprout",
       "name": "새싹 트렌트",
       "category": "monster",
-      "file": "characters/monster/treant_sprout.png",
+      "file": "characters/monster/treant_sprout.webp",
       "width": 350,
       "height": 251,
       "frameWidth": 350,
@@ -7360,13 +7360,13 @@
       "cols": 1,
       "rows": 1,
       "note": "이름 미상 — 대충 지은 이름",
-      "hash": "bd5947ca9f"
+      "hash": "94613e85b0"
     },
     {
       "id": "treant_swarm",
       "name": "트렌트 무리",
       "category": "monster",
-      "file": "characters/monster/treant_swarm.png",
+      "file": "characters/monster/treant_swarm.webp",
       "width": 900,
       "height": 414,
       "frameWidth": 900,
@@ -7375,13 +7375,13 @@
       "cols": 1,
       "rows": 1,
       "note": "이름 미상 — 대충 지은 이름",
-      "hash": "7a078f165e"
+      "hash": "403cdd55bd"
     },
     {
       "id": "world_boss_unnamed",
       "name": "월드보스 (이름 미상)",
       "category": "monster",
-      "file": "characters/monster/world_boss_unnamed.png",
+      "file": "characters/monster/world_boss_unnamed.webp",
       "width": 900,
       "height": 849,
       "frameWidth": 900,
@@ -7390,7 +7390,7 @@
       "cols": 1,
       "rows": 1,
       "note": "이름 미상 — 대충 지은 이름",
-      "hash": "a8646ecea0"
+      "hash": "8dde6d6694"
     },
     {
       "id": "horn_reaper",
@@ -7415,7 +7415,7 @@
               "Idle"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "c2ab5e3042"
+            "hash": "54df388bb4"
           },
           {
             "key": "blood",
@@ -7427,7 +7427,7 @@
               "Idle"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "2a0b4248df"
+            "hash": "32b07f6c63"
           },
           {
             "key": "sol",
@@ -7439,7 +7439,7 @@
               "Idle"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "e99b9ac2cf"
+            "hash": "f0cb1b68a8"
           },
           {
             "key": "void",
@@ -7451,15 +7451,15 @@
               "Idle"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "7617e6f567"
+            "hash": "85aa78c71f"
           }
         ],
-        "hash": "2c0f15b07b"
+        "hash": "4ed60b6671"
       },
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/horn_reaper.png",
+          "file": "characters/humanoid/horn_reaper.webp",
           "width": 317,
           "height": 271,
           "frameWidth": 317,
@@ -7467,10 +7467,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e31f326485"
+          "hash": "e753933dbb"
         },
         "gold": {
-          "file": "characters/humanoid/horn_demon_girl.png",
+          "file": "characters/humanoid/horn_demon_girl.webp",
           "width": 900,
           "height": 821,
           "frameWidth": 900,
@@ -7478,10 +7478,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "482ca6c93e"
+          "hash": "5278c6c320"
         },
         "blood": {
-          "file": "characters/humanoid/horn_demon_girl_blood.png",
+          "file": "characters/humanoid/horn_demon_girl_blood.webp",
           "width": 900,
           "height": 821,
           "frameWidth": 900,
@@ -7489,10 +7489,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "637a2a66fc"
+          "hash": "977d667ee5"
         },
         "sol": {
-          "file": "characters/humanoid/sun_void_swordsman.png",
+          "file": "characters/humanoid/sun_void_swordsman.webp",
           "width": 900,
           "height": 696,
           "frameWidth": 900,
@@ -7500,10 +7500,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "0635d3e9bb"
+          "hash": "a46e4cd23e"
         },
         "void": {
-          "file": "characters/humanoid/sun_void_swordsman_void.png",
+          "file": "characters/humanoid/sun_void_swordsman_void.webp",
           "width": 900,
           "height": 699,
           "frameWidth": 900,
@@ -7511,7 +7511,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "f7ee41119f"
+          "hash": "0a0efe634e"
         }
       },
       "clipNotes": {
@@ -7556,7 +7556,7 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "c6caeec4cb"
+            "hash": "469db09212"
           },
           {
             "key": "nocturne",
@@ -7580,15 +7580,15 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "fe3bfe066b"
+            "hash": "cad90855d4"
           }
         ],
-        "hash": "2a1cdb2420"
+        "hash": "bbd880a432"
       },
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/leopard_warrior.png",
+          "file": "characters/humanoid/leopard_warrior.webp",
           "width": 304,
           "height": 349,
           "frameWidth": 304,
@@ -7596,10 +7596,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "e736e8a1fe"
+          "hash": "6bd6c5580e"
         },
         "aurelia": {
-          "file": "characters/humanoid/howl_swordswoman.png",
+          "file": "characters/humanoid/howl_swordswoman.webp",
           "width": 262,
           "height": 286,
           "frameWidth": 262,
@@ -7607,10 +7607,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "808858f5c3"
+          "hash": "7c000640d3"
         },
         "nocturne": {
-          "file": "characters/humanoid/howl_swordswoman_shadow.png",
+          "file": "characters/humanoid/howl_swordswoman_shadow.webp",
           "width": 262,
           "height": 286,
           "frameWidth": 262,
@@ -7618,7 +7618,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "77f8bec373"
+          "hash": "73bc774ade"
         }
       },
       "clipNotes": {
@@ -7673,15 +7673,15 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "bb9fb5b8b4"
+            "hash": "5ec60d49df"
           }
         ],
-        "hash": "e61c97b278"
+        "hash": "bb1efb9bf4"
       },
       "defaultAnimation": "default",
       "animations": {
         "default": {
-          "file": "characters/humanoid/brown_skin_warrior.png",
+          "file": "characters/humanoid/brown_skin_warrior.webp",
           "width": 393,
           "height": 271,
           "frameWidth": 393,
@@ -7689,10 +7689,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "619eb49444"
+          "hash": "149281cae4"
         },
         "expr_00": {
-          "file": "characters/humanoid/tan_warrior_woman_expr_00.png",
+          "file": "characters/humanoid/tan_warrior_woman_expr_00.webp",
           "width": 500,
           "height": 441,
           "frameWidth": 500,
@@ -7700,10 +7700,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "d295d24a3d"
+          "hash": "6c372c9d85"
         },
         "expr_01": {
-          "file": "characters/humanoid/tan_warrior_woman_expr_01.png",
+          "file": "characters/humanoid/tan_warrior_woman_expr_01.webp",
           "width": 500,
           "height": 449,
           "frameWidth": 500,
@@ -7711,10 +7711,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "6a4d75f681"
+          "hash": "1e5d9ae21e"
         },
         "expr_02": {
-          "file": "characters/humanoid/tan_warrior_woman_expr_02.png",
+          "file": "characters/humanoid/tan_warrior_woman_expr_02.webp",
           "width": 500,
           "height": 440,
           "frameWidth": 500,
@@ -7722,10 +7722,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "8259796f31"
+          "hash": "21e6bfe599"
         },
         "expr_03": {
-          "file": "characters/humanoid/tan_warrior_woman_expr_03.png",
+          "file": "characters/humanoid/tan_warrior_woman_expr_03.webp",
           "width": 259,
           "height": 500,
           "frameWidth": 259,
@@ -7733,10 +7733,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "c9ca911a8b"
+          "hash": "d16ee4e55b"
         },
         "expr_04": {
-          "file": "characters/humanoid/tan_warrior_woman_expr_04.png",
+          "file": "characters/humanoid/tan_warrior_woman_expr_04.webp",
           "width": 500,
           "height": 500,
           "frameWidth": 500,
@@ -7744,10 +7744,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "f7d002782c"
+          "hash": "f28667afd2"
         },
         "expr_05": {
-          "file": "characters/humanoid/tan_warrior_woman_expr_05.png",
+          "file": "characters/humanoid/tan_warrior_woman_expr_05.webp",
           "width": 500,
           "height": 460,
           "frameWidth": 500,
@@ -7755,10 +7755,10 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "d83f7abde6"
+          "hash": "ceaf3f0c09"
         },
         "gold": {
-          "file": "characters/humanoid/tan_warrior_woman_gold.png",
+          "file": "characters/humanoid/tan_warrior_woman_gold.webp",
           "width": 900,
           "height": 687,
           "frameWidth": 900,
@@ -7766,7 +7766,7 @@
           "frames": 1,
           "cols": 1,
           "rows": 1,
-          "hash": "7a7ab6e12d"
+          "hash": "319dbbb1c4"
         }
       },
       "clipNotes": {
@@ -7783,7 +7783,7 @@
       "id": "blunt_warrior",
       "name": "둔기 여전사",
       "category": "humanoid",
-      "file": "characters/humanoid/blunt_warrior.png",
+      "file": "characters/humanoid/blunt_warrior.webp",
       "width": 270,
       "height": 326,
       "frameWidth": 270,
@@ -7834,7 +7834,7 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "2ae89ad0bf"
+            "hash": "8a47ae7efc"
           },
           {
             "key": "blue_lemonade",
@@ -7858,18 +7858,18 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "b59e5b8413"
+            "hash": "d281cc1449"
           }
         ],
-        "hash": "3d0dda85e5"
+        "hash": "ec824e6377"
       },
-      "hash": "dbad3ad24f"
+      "hash": "994619cb91"
     },
     {
       "id": "anniversary_2nd",
       "name": "2주년 기념 캐릭터",
       "category": "humanoid",
-      "file": "characters/humanoid/anniversary_2nd.png",
+      "file": "characters/humanoid/anniversary_2nd.webp",
       "width": 370,
       "height": 330,
       "frameWidth": 370,
@@ -7895,15 +7895,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터. 이름 미상 — 대충 지은 이름.",
-        "hash": "7543c6b0bd"
+        "hash": "423466fec1"
       },
-      "hash": "60f8dddfad"
+      "hash": "4d552688ff"
     },
     {
       "id": "raven_ascended",
       "name": "초월신성까마귀",
       "category": "humanoid",
-      "file": "characters/humanoid/raven_ascended.png",
+      "file": "characters/humanoid/raven_ascended.webp",
       "width": 322,
       "height": 309,
       "frameWidth": 322,
@@ -7929,15 +7929,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "717e48ecca"
+        "hash": "b576f56e65"
       },
-      "hash": "4700357068"
+      "hash": "7ed0266c6d"
     },
     {
       "id": "raven_fallen",
       "name": "초월타락까마귀",
       "category": "humanoid",
-      "file": "characters/humanoid/raven_fallen.png",
+      "file": "characters/humanoid/raven_fallen.webp",
       "width": 322,
       "height": 309,
       "frameWidth": 322,
@@ -7963,15 +7963,15 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-        "hash": "88d185b962"
+        "hash": "7a0db38f29"
       },
-      "hash": "b960e235f9"
+      "hash": "4b33ec46be"
     },
     {
       "id": "lion_warrior",
       "name": "라이온 전사",
       "category": "humanoid",
-      "file": "characters/humanoid/lion_warrior.png",
+      "file": "characters/humanoid/lion_warrior.webp",
       "width": 311,
       "height": 381,
       "frameWidth": 311,
@@ -8024,7 +8024,7 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "f1b3b129bc"
+            "hash": "c49ee1922c"
           },
           {
             "key": "green",
@@ -8049,7 +8049,7 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "357169751e"
+            "hash": "911235250b"
           },
           {
             "key": "ember",
@@ -8074,18 +8074,18 @@
               "Win"
             ],
             "note": "원본 게임사가 만든 진짜 Spine 리깅 데이터.",
-            "hash": "74ff5b00f5"
+            "hash": "0258819a30"
           }
         ],
-        "hash": "518c359234"
+        "hash": "f9d78087fd"
       },
-      "hash": "9313240464"
+      "hash": "0287700632"
     },
     {
       "id": "wing_knight",
       "name": "날개 기사",
       "category": "humanoid",
-      "file": "characters/humanoid/wing_knight.png",
+      "file": "characters/humanoid/wing_knight.webp",
       "width": 534,
       "height": 409,
       "frameWidth": 534,
@@ -8112,9 +8112,9 @@
           "Win"
         ],
         "note": "원본 게임사가 만든 진짜 Spine 4.1 리깅 데이터. 이 export엔 머리카락/귀/꼬리/눈/눈썹/입 아틀라스가 빠져있었는데, neko_boy_casual 에서 찾은 낱장 파츠(같은 rig 공유 - head/Center 본 구조 동일 확인함)를 그대로 재사용해 붙였음 — 위치는 neko_boy_casual 에서 맞춘 값 그대로, 캐릭터별 미세 조정은 안 했음. tools/part_editor.html 로 손볼 수 있음.",
-        "hash": "0ebe298e4b"
+        "hash": "9f24d55bab"
       },
-      "hash": "4a8617404b"
+      "hash": "12296c2575"
     }
   ]
 }

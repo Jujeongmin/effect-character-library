@@ -16,7 +16,7 @@ const port = Number(process.argv[2]) || 8934;
 
 const mime = {
   '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json',
-  '.png': 'image/png', '.txt': 'text/plain', '.css': 'text/css',
+  '.png': 'image/png', '.webp': 'image/webp', '.txt': 'text/plain', '.css': 'text/css',
   '.svg': 'image/svg+xml', '.woff2': 'font/woff2',
 };
 

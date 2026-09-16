@@ -641,7 +641,7 @@ function registerSpine(key, spineSpec, baseUrl, ctx2d) {
   if (spineDataCache[skeletonUrl]) {
     add(spineDataCache[skeletonUrl]);
   } else {
-    // spine-webgl resolves each atlas page (the .png) itself, relative to
+    // spine-webgl resolves each atlas page (the .webp) itself, relative to
     // atlasUrl's own directory - no hook to append ?v= to those, so only
     // the .txt/.json/.bytes above are cache-busted. Rename the folder
     // (e.g. add a suffix) if a page image itself needs to bust cache.

@@ -2,8 +2,8 @@
 """Convert raw Nine Corporation effect assets into a web-ready sprite library.
 
 Output layout:
-  web/effects/<id>.png    animation spritesheets (horizontal strip or grid)
-  web/textures/<id>.png   single, non-animated images (incl. Unity particle textures)
+  web/effects/<id>.webp   animation spritesheets (horizontal strip or grid)
+  web/textures/<id>.webp  single, non-animated images (incl. Unity particle textures)
   web/effects.json        manifest consumed by web/loader.js
 """
 import hashlib
@@ -243,8 +243,9 @@ def main():
         seen_id[uid] = True
 
         kind = 'effects' if nframes > 1 else 'textures'
-        out_rel = '%s/%s.png' % (kind, uid)
-        sheet.save(os.path.join(OUT, out_rel), optimize=True)
+        out_rel = '%s/%s.webp' % (kind, uid)
+        # lossless+exact: identical pixels, including RGB under alpha=0
+        sheet.save(os.path.join(OUT, out_rel), lossless=True, exact=True)
         seen_hash[digest] = uid
         stats['sheet' if nframes > 1 else 'texture'] += 1
 

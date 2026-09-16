@@ -375,7 +375,7 @@ var io = new IntersectionObserver(function(entries){
     var rec = e.target.__rec;
     if (!rec) return;
     rec.visible = e.isIntersecting;
-    if (e.isIntersecting && rec.kind === 'sprite') sheetOf(rec.a);   // PNG 는 여기서 처음 요청된다
+    if (e.isIntersecting && rec.kind === 'sprite') sheetOf(rec.a);   // 시트는 여기서 처음 요청된다
   });
 }, { rootMargin: '120px' });
 
@@ -797,9 +797,10 @@ function buildDetail(){
   acts.appendChild(pb);
 
   if (kind === 'sprite') {
-    var dl = node('a', 'btn', 'PNG 받기');
+    var ext = a.file.slice(a.file.lastIndexOf('.') + 1);
+    var dl = node('a', 'btn', ext.toUpperCase() + ' 받기');
     dl.href = a.file;
-    dl.setAttribute('download', a.id + '.png');
+    dl.setAttribute('download', a.id + '.' + ext);
     acts.appendChild(dl);
   }
   detail.appendChild(acts);
@@ -836,7 +837,7 @@ function setupPrompt(){
     '스프라이트 201개',
     '  매니페스트: ' + base + 'effects.json',
     '    항목마다 id, file, frameWidth, frameHeight, frames, cols, rows, fps, category',
-    '  PNG: 베이스 + 항목의 file    예: ' + base + 'effects/frost_zone.png',
+    '  이미지: 베이스 + 항목의 file    예: ' + base + 'effects/frost_zone.webp',
     '  로더: ' + base + 'loader.js',
     "    const lib = await EffectLib.load('" + base + "effects.json');",
     "    await lib.preload(['<id>']);",
@@ -853,7 +854,7 @@ function setupPrompt(){
     "    const burst = fx.spawn('<id>', { x, y });",
     '    burst.update(dt);  burst.draw(ctx);   // 매 프레임, dt 는 초',
     '  텍스처 이름은 소문자·언더바로 바꾸면 파일명이다.',
-    '    예: NY_glow_01 -> ' + base + 'singles/ny_glow_01.png',
+    '    예: NY_glow_01 -> ' + base + 'singles/ny_glow_01.webp',
     '',
     '이 내용을 프로젝트 규칙 파일에 적어 둬 — 쓰는 도구에 맞게',
     '(CLAUDE.md / AGENTS.md / .cursorrules / .github/copilot-instructions.md 등).',
