@@ -6,7 +6,8 @@
     "beast": "야수형",
     "animal": "동물형",
     "monster": "몬스터형",
-    "item": "아이템"
+    "item": "아이템",
+    "pixel": "픽셀"
   },
   "assets": [
     {
@@ -8119,11 +8120,11 @@
     {
       "id": "dh_knight",
       "name": "기사",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_knight_idle.webp",
+          "file": "characters/pixel/dh_knight_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8135,7 +8136,7 @@
           "hash": "7fc102571a"
         },
         "attack": {
-          "file": "characters/humanoid/dh_knight_attack.webp",
+          "file": "characters/pixel/dh_knight_attack.webp",
           "width": 532,
           "height": 76,
           "frameWidth": 76,
@@ -8147,7 +8148,7 @@
           "hash": "1d5d76d2bd"
         },
         "death": {
-          "file": "characters/humanoid/dh_knight_death.webp",
+          "file": "characters/pixel/dh_knight_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8164,11 +8165,11 @@
     {
       "id": "dh_archer",
       "name": "궁수",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_archer_idle.webp",
+          "file": "characters/pixel/dh_archer_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8180,7 +8181,7 @@
           "hash": "4d8f0ead53"
         },
         "attack": {
-          "file": "characters/humanoid/dh_archer_attack.webp",
+          "file": "characters/pixel/dh_archer_attack.webp",
           "width": 532,
           "height": 76,
           "frameWidth": 76,
@@ -8192,7 +8193,7 @@
           "hash": "5ab516812b"
         },
         "death": {
-          "file": "characters/humanoid/dh_archer_death.webp",
+          "file": "characters/pixel/dh_archer_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8209,11 +8210,11 @@
     {
       "id": "dh_priest",
       "name": "성직자",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_priest_idle.webp",
+          "file": "characters/pixel/dh_priest_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8225,7 +8226,7 @@
           "hash": "1aee8002dc"
         },
         "attack": {
-          "file": "characters/humanoid/dh_priest_attack.webp",
+          "file": "characters/pixel/dh_priest_attack.webp",
           "width": 532,
           "height": 76,
           "frameWidth": 76,
@@ -8237,7 +8238,7 @@
           "hash": "08e6a6c335"
         },
         "death": {
-          "file": "characters/humanoid/dh_priest_death.webp",
+          "file": "characters/pixel/dh_priest_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8254,11 +8255,11 @@
     {
       "id": "dh_thief",
       "name": "도적",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_thief_idle.webp",
+          "file": "characters/pixel/dh_thief_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8270,7 +8271,7 @@
           "hash": "fd1faf9698"
         },
         "attack": {
-          "file": "characters/humanoid/dh_thief_attack.webp",
+          "file": "characters/pixel/dh_thief_attack.webp",
           "width": 532,
           "height": 76,
           "frameWidth": 76,
@@ -8282,7 +8283,7 @@
           "hash": "1d984a6635"
         },
         "death": {
-          "file": "characters/humanoid/dh_thief_death.webp",
+          "file": "characters/pixel/dh_thief_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8299,11 +8300,11 @@
     {
       "id": "dh_lancer",
       "name": "창병",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_lancer_idle.webp",
+          "file": "characters/pixel/dh_lancer_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8315,7 +8316,7 @@
           "hash": "e5c8a8ad7c"
         },
         "attack": {
-          "file": "characters/humanoid/dh_lancer_attack.webp",
+          "file": "characters/pixel/dh_lancer_attack.webp",
           "width": 532,
           "height": 76,
           "frameWidth": 76,
@@ -8327,7 +8328,7 @@
           "hash": "274d221278"
         },
         "death": {
-          "file": "characters/humanoid/dh_lancer_death.webp",
+          "file": "characters/pixel/dh_lancer_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8344,11 +8345,11 @@
     {
       "id": "dh_mage",
       "name": "마법사",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_mage_idle.webp",
+          "file": "characters/pixel/dh_mage_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8360,7 +8361,7 @@
           "hash": "3c9c2e9b0c"
         },
         "attack": {
-          "file": "characters/humanoid/dh_mage_attack.webp",
+          "file": "characters/pixel/dh_mage_attack.webp",
           "width": 532,
           "height": 76,
           "frameWidth": 76,
@@ -8372,7 +8373,7 @@
           "hash": "48c02ba0ed"
         },
         "death": {
-          "file": "characters/humanoid/dh_mage_death.webp",
+          "file": "characters/pixel/dh_mage_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8389,11 +8390,11 @@
     {
       "id": "dh_paladin",
       "name": "성기사",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_paladin_idle.webp",
+          "file": "characters/pixel/dh_paladin_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8405,7 +8406,7 @@
           "hash": "ca4010d15b"
         },
         "attack": {
-          "file": "characters/humanoid/dh_paladin_attack.webp",
+          "file": "characters/pixel/dh_paladin_attack.webp",
           "width": 532,
           "height": 76,
           "frameWidth": 76,
@@ -8417,7 +8418,7 @@
           "hash": "5ab2907a1b"
         },
         "death": {
-          "file": "characters/humanoid/dh_paladin_death.webp",
+          "file": "characters/pixel/dh_paladin_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8434,11 +8435,11 @@
     {
       "id": "dh_captain",
       "name": "용사단장",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_captain_idle.webp",
+          "file": "characters/pixel/dh_captain_idle.webp",
           "width": 368,
           "height": 92,
           "frameWidth": 92,
@@ -8450,7 +8451,7 @@
           "hash": "a622d47d2f"
         },
         "attack": {
-          "file": "characters/humanoid/dh_captain_attack.webp",
+          "file": "characters/pixel/dh_captain_attack.webp",
           "width": 728,
           "height": 104,
           "frameWidth": 104,
@@ -8462,7 +8463,7 @@
           "hash": "a2758809ed"
         },
         "death": {
-          "file": "characters/humanoid/dh_captain_death.webp",
+          "file": "characters/pixel/dh_captain_death.webp",
           "width": 644,
           "height": 92,
           "frameWidth": 92,
@@ -8479,11 +8480,11 @@
     {
       "id": "dh_deathknight",
       "name": "데스 나이트",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_deathknight_idle.webp",
+          "file": "characters/pixel/dh_deathknight_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8495,7 +8496,7 @@
           "hash": "24b0742de8"
         },
         "attack": {
-          "file": "characters/humanoid/dh_deathknight_attack.webp",
+          "file": "characters/pixel/dh_deathknight_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8507,7 +8508,7 @@
           "hash": "042886328f"
         },
         "death": {
-          "file": "characters/humanoid/dh_deathknight_death.webp",
+          "file": "characters/pixel/dh_deathknight_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8524,11 +8525,11 @@
     {
       "id": "dh_vampire",
       "name": "흡혈귀",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_vampire_idle.webp",
+          "file": "characters/pixel/dh_vampire_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8540,7 +8541,7 @@
           "hash": "eed22aaa6d"
         },
         "attack": {
-          "file": "characters/humanoid/dh_vampire_attack.webp",
+          "file": "characters/pixel/dh_vampire_attack.webp",
           "width": 532,
           "height": 76,
           "frameWidth": 76,
@@ -8552,7 +8553,7 @@
           "hash": "44f48aeb5f"
         },
         "death": {
-          "file": "characters/humanoid/dh_vampire_death.webp",
+          "file": "characters/pixel/dh_vampire_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8569,11 +8570,11 @@
     {
       "id": "dh_necro",
       "name": "네크로맨서",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_necro_idle.webp",
+          "file": "characters/pixel/dh_necro_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8585,7 +8586,7 @@
           "hash": "8ede3f1a02"
         },
         "attack": {
-          "file": "characters/humanoid/dh_necro_attack.webp",
+          "file": "characters/pixel/dh_necro_attack.webp",
           "width": 504,
           "height": 72,
           "frameWidth": 72,
@@ -8597,7 +8598,7 @@
           "hash": "fe82e52d1c"
         },
         "death": {
-          "file": "characters/humanoid/dh_necro_death.webp",
+          "file": "characters/pixel/dh_necro_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8614,11 +8615,11 @@
     {
       "id": "dh_necro_lich",
       "name": "리치 왕",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_necro_lich_idle.webp",
+          "file": "characters/pixel/dh_necro_lich_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8630,7 +8631,7 @@
           "hash": "a7f8468cc7"
         },
         "attack": {
-          "file": "characters/humanoid/dh_necro_lich_attack.webp",
+          "file": "characters/pixel/dh_necro_lich_attack.webp",
           "width": 560,
           "height": 80,
           "frameWidth": 80,
@@ -8642,7 +8643,7 @@
           "hash": "b9eeabdb63"
         },
         "death": {
-          "file": "characters/humanoid/dh_necro_lich_death.webp",
+          "file": "characters/pixel/dh_necro_lich_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8659,11 +8660,11 @@
     {
       "id": "dh_necro_bone",
       "name": "뼈 갑옷 네크로맨서",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_necro_bone_idle.webp",
+          "file": "characters/pixel/dh_necro_bone_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -8675,7 +8676,7 @@
           "hash": "3b321ae8e3"
         },
         "attack": {
-          "file": "characters/humanoid/dh_necro_bone_attack.webp",
+          "file": "characters/pixel/dh_necro_bone_attack.webp",
           "width": 504,
           "height": 72,
           "frameWidth": 72,
@@ -8687,7 +8688,7 @@
           "hash": "c0dc79d6e1"
         },
         "death": {
-          "file": "characters/humanoid/dh_necro_bone_death.webp",
+          "file": "characters/pixel/dh_necro_bone_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -8704,11 +8705,11 @@
     {
       "id": "dh_lord",
       "name": "마왕",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_lord_idle.webp",
+          "file": "characters/pixel/dh_lord_idle.webp",
           "width": 384,
           "height": 96,
           "frameWidth": 96,
@@ -8720,7 +8721,7 @@
           "hash": "3f1a6c3888"
         },
         "attack": {
-          "file": "characters/humanoid/dh_lord_attack.webp",
+          "file": "characters/pixel/dh_lord_attack.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -8732,7 +8733,7 @@
           "hash": "a6c3fd9514"
         },
         "death": {
-          "file": "characters/humanoid/dh_lord_death.webp",
+          "file": "characters/pixel/dh_lord_death.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -8749,11 +8750,11 @@
     {
       "id": "dh_lord_demon",
       "name": "마왕 (악마)",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_lord_demon_idle.webp",
+          "file": "characters/pixel/dh_lord_demon_idle.webp",
           "width": 368,
           "height": 92,
           "frameWidth": 92,
@@ -8765,7 +8766,7 @@
           "hash": "0a74d261b1"
         },
         "attack": {
-          "file": "characters/humanoid/dh_lord_demon_attack.webp",
+          "file": "characters/pixel/dh_lord_demon_attack.webp",
           "width": 868,
           "height": 124,
           "frameWidth": 124,
@@ -8777,7 +8778,7 @@
           "hash": "15d504edf6"
         },
         "death": {
-          "file": "characters/humanoid/dh_lord_demon_death.webp",
+          "file": "characters/pixel/dh_lord_demon_death.webp",
           "width": 644,
           "height": 92,
           "frameWidth": 92,
@@ -8794,11 +8795,11 @@
     {
       "id": "dh_lord_emperor",
       "name": "마왕 (황제)",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_lord_emperor_idle.webp",
+          "file": "characters/pixel/dh_lord_emperor_idle.webp",
           "width": 384,
           "height": 96,
           "frameWidth": 96,
@@ -8810,7 +8811,7 @@
           "hash": "77a5fab318"
         },
         "attack": {
-          "file": "characters/humanoid/dh_lord_emperor_attack.webp",
+          "file": "characters/pixel/dh_lord_emperor_attack.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -8822,7 +8823,7 @@
           "hash": "a8661b1e1c"
         },
         "death": {
-          "file": "characters/humanoid/dh_lord_emperor_death.webp",
+          "file": "characters/pixel/dh_lord_emperor_death.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -8839,11 +8840,11 @@
     {
       "id": "dh_lord_lich",
       "name": "마왕 (리치)",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_lord_lich_idle.webp",
+          "file": "characters/pixel/dh_lord_lich_idle.webp",
           "width": 384,
           "height": 96,
           "frameWidth": 96,
@@ -8855,7 +8856,7 @@
           "hash": "05f53352c7"
         },
         "attack": {
-          "file": "characters/monster/dh_lord_lich_attack.webp",
+          "file": "characters/pixel/dh_lord_lich_attack.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -8867,7 +8868,7 @@
           "hash": "2427da171d"
         },
         "death": {
-          "file": "characters/monster/dh_lord_lich_death.webp",
+          "file": "characters/pixel/dh_lord_lich_death.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -8884,11 +8885,11 @@
     {
       "id": "dh_lord_abyss",
       "name": "마왕 (심연)",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_lord_abyss_idle.webp",
+          "file": "characters/pixel/dh_lord_abyss_idle.webp",
           "width": 384,
           "height": 96,
           "frameWidth": 96,
@@ -8900,7 +8901,7 @@
           "hash": "9271f22480"
         },
         "attack": {
-          "file": "characters/monster/dh_lord_abyss_attack.webp",
+          "file": "characters/pixel/dh_lord_abyss_attack.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -8912,7 +8913,7 @@
           "hash": "8424fdcd7c"
         },
         "death": {
-          "file": "characters/monster/dh_lord_abyss_death.webp",
+          "file": "characters/pixel/dh_lord_abyss_death.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -8929,11 +8930,11 @@
     {
       "id": "dh_lord_lava",
       "name": "마왕 (용암)",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_lord_lava_idle.webp",
+          "file": "characters/pixel/dh_lord_lava_idle.webp",
           "width": 384,
           "height": 96,
           "frameWidth": 96,
@@ -8945,7 +8946,7 @@
           "hash": "24f94d5557"
         },
         "attack": {
-          "file": "characters/monster/dh_lord_lava_attack.webp",
+          "file": "characters/pixel/dh_lord_lava_attack.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -8957,7 +8958,7 @@
           "hash": "01e9044d74"
         },
         "death": {
-          "file": "characters/monster/dh_lord_lava_death.webp",
+          "file": "characters/pixel/dh_lord_lava_death.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -8974,11 +8975,11 @@
     {
       "id": "dh_lord_dragon",
       "name": "마왕 (용)",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/dh_lord_dragon_idle.webp",
+          "file": "characters/pixel/dh_lord_dragon_idle.webp",
           "width": 480,
           "height": 96,
           "frameWidth": 96,
@@ -8990,7 +8991,7 @@
           "hash": "a32d104661"
         },
         "attack": {
-          "file": "characters/beast/dh_lord_dragon_attack.webp",
+          "file": "characters/pixel/dh_lord_dragon_attack.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -9002,7 +9003,7 @@
           "hash": "b627b23af7"
         },
         "death": {
-          "file": "characters/beast/dh_lord_dragon_death.webp",
+          "file": "characters/pixel/dh_lord_dragon_death.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -9019,11 +9020,11 @@
     {
       "id": "dh_lord_hydra",
       "name": "마왕 (히드라)",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/dh_lord_hydra_idle.webp",
+          "file": "characters/pixel/dh_lord_hydra_idle.webp",
           "width": 384,
           "height": 96,
           "frameWidth": 96,
@@ -9035,7 +9036,7 @@
           "hash": "ef84546375"
         },
         "attack": {
-          "file": "characters/beast/dh_lord_hydra_attack.webp",
+          "file": "characters/pixel/dh_lord_hydra_attack.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -9047,7 +9048,7 @@
           "hash": "9aef9186a7"
         },
         "death": {
-          "file": "characters/beast/dh_lord_hydra_death.webp",
+          "file": "characters/pixel/dh_lord_hydra_death.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -9064,11 +9065,11 @@
     {
       "id": "dh_lord_spend1",
       "name": "마왕 외형 A",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_lord_spend1_idle.webp",
+          "file": "characters/pixel/dh_lord_spend1_idle.webp",
           "width": 384,
           "height": 96,
           "frameWidth": 96,
@@ -9080,7 +9081,7 @@
           "hash": "6c52826d6b"
         },
         "attack": {
-          "file": "characters/humanoid/dh_lord_spend1_attack.webp",
+          "file": "characters/pixel/dh_lord_spend1_attack.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -9092,7 +9093,7 @@
           "hash": "b128cac0c4"
         },
         "death": {
-          "file": "characters/humanoid/dh_lord_spend1_death.webp",
+          "file": "characters/pixel/dh_lord_spend1_death.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -9109,11 +9110,11 @@
     {
       "id": "dh_lord_summon1",
       "name": "마왕 외형 B",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/dh_lord_summon1_idle.webp",
+          "file": "characters/pixel/dh_lord_summon1_idle.webp",
           "width": 384,
           "height": 96,
           "frameWidth": 96,
@@ -9125,7 +9126,7 @@
           "hash": "13f6064a09"
         },
         "attack": {
-          "file": "characters/humanoid/dh_lord_summon1_attack.webp",
+          "file": "characters/pixel/dh_lord_summon1_attack.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -9137,7 +9138,7 @@
           "hash": "3f2e61b149"
         },
         "death": {
-          "file": "characters/humanoid/dh_lord_summon1_death.webp",
+          "file": "characters/pixel/dh_lord_summon1_death.webp",
           "width": 672,
           "height": 96,
           "frameWidth": 96,
@@ -9154,11 +9155,11 @@
     {
       "id": "dh_werewolf",
       "name": "늑대인간",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/dh_werewolf_idle.webp",
+          "file": "characters/pixel/dh_werewolf_idle.webp",
           "width": 360,
           "height": 72,
           "frameWidth": 72,
@@ -9170,7 +9171,7 @@
           "hash": "d30a953fca"
         },
         "attack": {
-          "file": "characters/beast/dh_werewolf_attack.webp",
+          "file": "characters/pixel/dh_werewolf_attack.webp",
           "width": 1152,
           "height": 72,
           "frameWidth": 128,
@@ -9182,7 +9183,7 @@
           "hash": "e5423dd0ca"
         },
         "death": {
-          "file": "characters/beast/dh_werewolf_death.webp",
+          "file": "characters/pixel/dh_werewolf_death.webp",
           "width": 504,
           "height": 72,
           "frameWidth": 72,
@@ -9199,11 +9200,11 @@
     {
       "id": "dh_dragon",
       "name": "새끼 용",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/dh_dragon_idle.webp",
+          "file": "characters/pixel/dh_dragon_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9215,7 +9216,7 @@
           "hash": "31d1d715f4"
         },
         "attack": {
-          "file": "characters/beast/dh_dragon_attack.webp",
+          "file": "characters/pixel/dh_dragon_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9227,7 +9228,7 @@
           "hash": "ba9ff6dfe3"
         },
         "death": {
-          "file": "characters/beast/dh_dragon_death.webp",
+          "file": "characters/pixel/dh_dragon_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9244,11 +9245,11 @@
     {
       "id": "dh_dragon_knight",
       "name": "기사 용",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/dh_dragon_knight_idle.webp",
+          "file": "characters/pixel/dh_dragon_knight_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9260,7 +9261,7 @@
           "hash": "6c9ebcd9ed"
         },
         "attack": {
-          "file": "characters/beast/dh_dragon_knight_attack.webp",
+          "file": "characters/pixel/dh_dragon_knight_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9272,7 +9273,7 @@
           "hash": "e3388b990d"
         },
         "death": {
-          "file": "characters/beast/dh_dragon_knight_death.webp",
+          "file": "characters/pixel/dh_dragon_knight_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9289,11 +9290,11 @@
     {
       "id": "dh_dragon_royal",
       "name": "왕실 용",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/dh_dragon_royal_idle.webp",
+          "file": "characters/pixel/dh_dragon_royal_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9305,7 +9306,7 @@
           "hash": "41d7fe3044"
         },
         "attack": {
-          "file": "characters/beast/dh_dragon_royal_attack.webp",
+          "file": "characters/pixel/dh_dragon_royal_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9317,7 +9318,7 @@
           "hash": "153e8bd752"
         },
         "death": {
-          "file": "characters/beast/dh_dragon_royal_death.webp",
+          "file": "characters/pixel/dh_dragon_royal_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9334,11 +9335,11 @@
     {
       "id": "dh_spider",
       "name": "거미",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/dh_spider_idle.webp",
+          "file": "characters/pixel/dh_spider_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9350,7 +9351,7 @@
           "hash": "26e95821e2"
         },
         "attack": {
-          "file": "characters/beast/dh_spider_attack.webp",
+          "file": "characters/pixel/dh_spider_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9362,7 +9363,7 @@
           "hash": "cc4164fa6c"
         },
         "death": {
-          "file": "characters/beast/dh_spider_death.webp",
+          "file": "characters/pixel/dh_spider_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9379,11 +9380,11 @@
     {
       "id": "dh_spider_iron",
       "name": "강철 거미",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/dh_spider_iron_idle.webp",
+          "file": "characters/pixel/dh_spider_iron_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9395,7 +9396,7 @@
           "hash": "e706180112"
         },
         "attack": {
-          "file": "characters/beast/dh_spider_iron_attack.webp",
+          "file": "characters/pixel/dh_spider_iron_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9407,7 +9408,7 @@
           "hash": "47e395a961"
         },
         "death": {
-          "file": "characters/beast/dh_spider_iron_death.webp",
+          "file": "characters/pixel/dh_spider_iron_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9424,11 +9425,11 @@
     {
       "id": "dh_spider_crown",
       "name": "거미 여왕",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/dh_spider_crown_idle.webp",
+          "file": "characters/pixel/dh_spider_crown_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9440,7 +9441,7 @@
           "hash": "dca5b707c0"
         },
         "attack": {
-          "file": "characters/beast/dh_spider_crown_attack.webp",
+          "file": "characters/pixel/dh_spider_crown_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9452,7 +9453,7 @@
           "hash": "f85f254c2f"
         },
         "death": {
-          "file": "characters/beast/dh_spider_crown_death.webp",
+          "file": "characters/pixel/dh_spider_crown_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9469,11 +9470,11 @@
     {
       "id": "dh_slime",
       "name": "슬라임",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_slime_idle.webp",
+          "file": "characters/pixel/dh_slime_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9485,7 +9486,7 @@
           "hash": "22bbf79c95"
         },
         "attack": {
-          "file": "characters/monster/dh_slime_attack.webp",
+          "file": "characters/pixel/dh_slime_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9497,7 +9498,7 @@
           "hash": "868dd8796d"
         },
         "death": {
-          "file": "characters/monster/dh_slime_death.webp",
+          "file": "characters/pixel/dh_slime_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9514,11 +9515,11 @@
     {
       "id": "dh_slime_helm",
       "name": "기사 슬라임",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_slime_helm_idle.webp",
+          "file": "characters/pixel/dh_slime_helm_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9530,7 +9531,7 @@
           "hash": "a60ad41c05"
         },
         "attack": {
-          "file": "characters/monster/dh_slime_helm_attack.webp",
+          "file": "characters/pixel/dh_slime_helm_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9542,7 +9543,7 @@
           "hash": "29630ca1f8"
         },
         "death": {
-          "file": "characters/monster/dh_slime_helm_death.webp",
+          "file": "characters/pixel/dh_slime_helm_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9559,11 +9560,11 @@
     {
       "id": "dh_slime_crown",
       "name": "슬라임 왕",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_slime_crown_idle.webp",
+          "file": "characters/pixel/dh_slime_crown_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9575,7 +9576,7 @@
           "hash": "c174dc90e2"
         },
         "attack": {
-          "file": "characters/monster/dh_slime_crown_attack.webp",
+          "file": "characters/pixel/dh_slime_crown_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9587,7 +9588,7 @@
           "hash": "6d915ca664"
         },
         "death": {
-          "file": "characters/monster/dh_slime_crown_death.webp",
+          "file": "characters/pixel/dh_slime_crown_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9604,11 +9605,11 @@
     {
       "id": "dh_skeleton",
       "name": "해골병",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_skeleton_idle.webp",
+          "file": "characters/pixel/dh_skeleton_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9620,7 +9621,7 @@
           "hash": "2093359960"
         },
         "attack": {
-          "file": "characters/monster/dh_skeleton_attack.webp",
+          "file": "characters/pixel/dh_skeleton_attack.webp",
           "width": 532,
           "height": 76,
           "frameWidth": 76,
@@ -9632,7 +9633,7 @@
           "hash": "adc075c900"
         },
         "death": {
-          "file": "characters/monster/dh_skeleton_death.webp",
+          "file": "characters/pixel/dh_skeleton_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9649,11 +9650,11 @@
     {
       "id": "dh_skeleton_royal",
       "name": "해골 왕",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_skeleton_royal_idle.webp",
+          "file": "characters/pixel/dh_skeleton_royal_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9665,7 +9666,7 @@
           "hash": "64bb849f04"
         },
         "attack": {
-          "file": "characters/monster/dh_skeleton_royal_attack.webp",
+          "file": "characters/pixel/dh_skeleton_royal_attack.webp",
           "width": 560,
           "height": 80,
           "frameWidth": 80,
@@ -9677,7 +9678,7 @@
           "hash": "5541344515"
         },
         "death": {
-          "file": "characters/monster/dh_skeleton_royal_death.webp",
+          "file": "characters/pixel/dh_skeleton_royal_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9694,11 +9695,11 @@
     {
       "id": "dh_skeleton_dread",
       "name": "공포의 갑옷",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_skeleton_dread_idle.webp",
+          "file": "characters/pixel/dh_skeleton_dread_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9710,7 +9711,7 @@
           "hash": "cd94828a5d"
         },
         "attack": {
-          "file": "characters/monster/dh_skeleton_dread_attack.webp",
+          "file": "characters/pixel/dh_skeleton_dread_attack.webp",
           "width": 588,
           "height": 84,
           "frameWidth": 84,
@@ -9722,7 +9723,7 @@
           "hash": "7cfeb427f3"
         },
         "death": {
-          "file": "characters/monster/dh_skeleton_dread_death.webp",
+          "file": "characters/pixel/dh_skeleton_dread_death.webp",
           "width": 588,
           "height": 84,
           "frameWidth": 84,
@@ -9739,11 +9740,11 @@
     {
       "id": "dh_imp",
       "name": "임프",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_imp_idle.webp",
+          "file": "characters/pixel/dh_imp_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9755,7 +9756,7 @@
           "hash": "da8671ab6a"
         },
         "attack": {
-          "file": "characters/monster/dh_imp_attack.webp",
+          "file": "characters/pixel/dh_imp_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9767,7 +9768,7 @@
           "hash": "1a88be545a"
         },
         "death": {
-          "file": "characters/monster/dh_imp_death.webp",
+          "file": "characters/pixel/dh_imp_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9784,11 +9785,11 @@
     {
       "id": "dh_imp_king",
       "name": "임프 왕",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_imp_king_idle.webp",
+          "file": "characters/pixel/dh_imp_king_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9800,7 +9801,7 @@
           "hash": "3051093ca3"
         },
         "attack": {
-          "file": "characters/monster/dh_imp_king_attack.webp",
+          "file": "characters/pixel/dh_imp_king_attack.webp",
           "width": 532,
           "height": 76,
           "frameWidth": 76,
@@ -9812,7 +9813,7 @@
           "hash": "31654e1615"
         },
         "death": {
-          "file": "characters/monster/dh_imp_king_death.webp",
+          "file": "characters/pixel/dh_imp_king_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9829,11 +9830,11 @@
     {
       "id": "dh_imp_warlock",
       "name": "흑마법사 임프",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_imp_warlock_idle.webp",
+          "file": "characters/pixel/dh_imp_warlock_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9845,7 +9846,7 @@
           "hash": "10babe9444"
         },
         "attack": {
-          "file": "characters/monster/dh_imp_warlock_attack.webp",
+          "file": "characters/pixel/dh_imp_warlock_attack.webp",
           "width": 560,
           "height": 80,
           "frameWidth": 80,
@@ -9857,7 +9858,7 @@
           "hash": "7735e433e1"
         },
         "death": {
-          "file": "characters/monster/dh_imp_warlock_death.webp",
+          "file": "characters/pixel/dh_imp_warlock_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9874,11 +9875,11 @@
     {
       "id": "dh_golem",
       "name": "돌 골렘",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_golem_idle.webp",
+          "file": "characters/pixel/dh_golem_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9890,7 +9891,7 @@
           "hash": "6de8c6e867"
         },
         "attack": {
-          "file": "characters/monster/dh_golem_attack.webp",
+          "file": "characters/pixel/dh_golem_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9902,7 +9903,7 @@
           "hash": "37e2b10f33"
         },
         "death": {
-          "file": "characters/monster/dh_golem_death.webp",
+          "file": "characters/pixel/dh_golem_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9919,11 +9920,11 @@
     {
       "id": "dh_banshee",
       "name": "밴시",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_banshee_idle.webp",
+          "file": "characters/pixel/dh_banshee_idle.webp",
           "width": 272,
           "height": 68,
           "frameWidth": 68,
@@ -9935,7 +9936,7 @@
           "hash": "c0018c4498"
         },
         "attack": {
-          "file": "characters/monster/dh_banshee_attack.webp",
+          "file": "characters/pixel/dh_banshee_attack.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9947,7 +9948,7 @@
           "hash": "9f2f7bfaa4"
         },
         "death": {
-          "file": "characters/monster/dh_banshee_death.webp",
+          "file": "characters/pixel/dh_banshee_death.webp",
           "width": 476,
           "height": 68,
           "frameWidth": 68,
@@ -9964,11 +9965,11 @@
     {
       "id": "dh_mushroom",
       "name": "역병 버섯",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_mushroom_idle.webp",
+          "file": "characters/pixel/dh_mushroom_idle.webp",
           "width": 360,
           "height": 72,
           "frameWidth": 72,
@@ -9980,7 +9981,7 @@
           "hash": "148975c7e4"
         },
         "attack": {
-          "file": "characters/monster/dh_mushroom_attack.webp",
+          "file": "characters/pixel/dh_mushroom_attack.webp",
           "width": 504,
           "height": 72,
           "frameWidth": 72,
@@ -9992,7 +9993,7 @@
           "hash": "5ca731ec52"
         },
         "death": {
-          "file": "characters/monster/dh_mushroom_death.webp",
+          "file": "characters/pixel/dh_mushroom_death.webp",
           "width": 504,
           "height": 72,
           "frameWidth": 72,
@@ -10009,11 +10010,11 @@
     {
       "id": "dh_eye",
       "name": "심연의 눈",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/dh_eye_idle.webp",
+          "file": "characters/pixel/dh_eye_idle.webp",
           "width": 360,
           "height": 72,
           "frameWidth": 72,
@@ -10025,7 +10026,7 @@
           "hash": "bf081c3701"
         },
         "attack": {
-          "file": "characters/monster/dh_eye_attack.webp",
+          "file": "characters/pixel/dh_eye_attack.webp",
           "width": 504,
           "height": 72,
           "frameWidth": 72,
@@ -10037,7 +10038,7 @@
           "hash": "0938adae0b"
         },
         "death": {
-          "file": "characters/monster/dh_eye_death.webp",
+          "file": "characters/pixel/dh_eye_death.webp",
           "width": 504,
           "height": 72,
           "frameWidth": 72,
@@ -10054,11 +10055,11 @@
     {
       "id": "mt_paper_slime",
       "name": "서류 슬라임",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_paper_slime_idle.webp",
+          "file": "characters/pixel/mt_paper_slime_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10070,7 +10071,7 @@
           "hash": "3bf24a269f"
         },
         "hurt": {
-          "file": "characters/monster/mt_paper_slime_hurt.webp",
+          "file": "characters/pixel/mt_paper_slime_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10082,7 +10083,7 @@
           "hash": "245b22d256"
         },
         "death": {
-          "file": "characters/monster/mt_paper_slime_death.webp",
+          "file": "characters/pixel/mt_paper_slime_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10099,11 +10100,11 @@
     {
       "id": "mt_stapler_bat",
       "name": "스테이플러 박쥐",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_stapler_bat_idle.webp",
+          "file": "characters/pixel/mt_stapler_bat_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10115,7 +10116,7 @@
           "hash": "26e6fd27cc"
         },
         "hurt": {
-          "file": "characters/beast/mt_stapler_bat_hurt.webp",
+          "file": "characters/pixel/mt_stapler_bat_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10127,7 +10128,7 @@
           "hash": "5b0d59f048"
         },
         "death": {
-          "file": "characters/beast/mt_stapler_bat_death.webp",
+          "file": "characters/pixel/mt_stapler_bat_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10144,11 +10145,11 @@
     {
       "id": "mt_clip_rat",
       "name": "클립 쥐",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_clip_rat_idle.webp",
+          "file": "characters/pixel/mt_clip_rat_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10160,7 +10161,7 @@
           "hash": "c4ba04c44c"
         },
         "hurt": {
-          "file": "characters/beast/mt_clip_rat_hurt.webp",
+          "file": "characters/pixel/mt_clip_rat_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10172,7 +10173,7 @@
           "hash": "7b802db284"
         },
         "death": {
-          "file": "characters/beast/mt_clip_rat_death.webp",
+          "file": "characters/pixel/mt_clip_rat_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10189,11 +10190,11 @@
     {
       "id": "mt_baek_bujang",
       "name": "야근 좀비 백부장",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_baek_bujang_idle.webp",
+          "file": "characters/pixel/mt_baek_bujang_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10205,7 +10206,7 @@
           "hash": "6758220880"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_baek_bujang_hurt.webp",
+          "file": "characters/pixel/mt_baek_bujang_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10217,7 +10218,7 @@
           "hash": "065a795293"
         },
         "death": {
-          "file": "characters/humanoid/mt_baek_bujang_death.webp",
+          "file": "characters/pixel/mt_baek_bujang_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10234,11 +10235,11 @@
     {
       "id": "mt_gangsi_sangmu",
       "name": "결재 강시 총무 상무",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_gangsi_sangmu_idle.webp",
+          "file": "characters/pixel/mt_gangsi_sangmu_idle.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -10250,7 +10251,7 @@
           "hash": "9b590a4aae"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_gangsi_sangmu_hurt.webp",
+          "file": "characters/pixel/mt_gangsi_sangmu_hurt.webp",
           "width": 160,
           "height": 80,
           "frameWidth": 80,
@@ -10262,7 +10263,7 @@
           "hash": "abe5b7b2e7"
         },
         "death": {
-          "file": "characters/humanoid/mt_gangsi_sangmu_death.webp",
+          "file": "characters/pixel/mt_gangsi_sangmu_death.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -10279,11 +10280,11 @@
     {
       "id": "mt_sticky_moth",
       "name": "포스트잇 나방",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_sticky_moth_idle.webp",
+          "file": "characters/pixel/mt_sticky_moth_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10295,7 +10296,7 @@
           "hash": "0bcc37d571"
         },
         "hurt": {
-          "file": "characters/beast/mt_sticky_moth_hurt.webp",
+          "file": "characters/pixel/mt_sticky_moth_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10307,7 +10308,7 @@
           "hash": "874c47dc0f"
         },
         "death": {
-          "file": "characters/beast/mt_sticky_moth_death.webp",
+          "file": "characters/pixel/mt_sticky_moth_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10324,11 +10325,11 @@
     {
       "id": "mt_necktie_snake",
       "name": "넥타이 뱀",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_necktie_snake_idle.webp",
+          "file": "characters/pixel/mt_necktie_snake_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10340,7 +10341,7 @@
           "hash": "80883ae44f"
         },
         "hurt": {
-          "file": "characters/beast/mt_necktie_snake_hurt.webp",
+          "file": "characters/pixel/mt_necktie_snake_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10352,7 +10353,7 @@
           "hash": "baed1f55e9"
         },
         "death": {
-          "file": "characters/beast/mt_necktie_snake_death.webp",
+          "file": "characters/pixel/mt_necktie_snake_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10369,11 +10370,11 @@
     {
       "id": "mt_sales_goblin",
       "name": "영업 고블린",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_sales_goblin_idle.webp",
+          "file": "characters/pixel/mt_sales_goblin_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10385,7 +10386,7 @@
           "hash": "a160a5bbee"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_sales_goblin_hurt.webp",
+          "file": "characters/pixel/mt_sales_goblin_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10397,7 +10398,7 @@
           "hash": "0623b86b32"
         },
         "death": {
-          "file": "characters/humanoid/mt_sales_goblin_death.webp",
+          "file": "characters/pixel/mt_sales_goblin_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10414,11 +10415,11 @@
     {
       "id": "mt_phone_imp",
       "name": "전화 임프",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_phone_imp_idle.webp",
+          "file": "characters/pixel/mt_phone_imp_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10430,7 +10431,7 @@
           "hash": "63de7df2dc"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_phone_imp_hurt.webp",
+          "file": "characters/pixel/mt_phone_imp_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10442,7 +10443,7 @@
           "hash": "313766dceb"
         },
         "death": {
-          "file": "characters/humanoid/mt_phone_imp_death.webp",
+          "file": "characters/pixel/mt_phone_imp_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10459,11 +10460,11 @@
     {
       "id": "mt_silijeok_timjang",
       "name": "실적귀 영업팀장",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_silijeok_timjang_idle.webp",
+          "file": "characters/pixel/mt_silijeok_timjang_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10475,7 +10476,7 @@
           "hash": "cfdeb47aba"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_silijeok_timjang_hurt.webp",
+          "file": "characters/pixel/mt_silijeok_timjang_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10487,7 +10488,7 @@
           "hash": "67b178766b"
         },
         "death": {
-          "file": "characters/humanoid/mt_silijeok_timjang_death.webp",
+          "file": "characters/pixel/mt_silijeok_timjang_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10504,11 +10505,11 @@
     {
       "id": "mt_golf_sangmu",
       "name": "골프광 영업 상무",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_golf_sangmu_idle.webp",
+          "file": "characters/pixel/mt_golf_sangmu_idle.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -10520,7 +10521,7 @@
           "hash": "d765d3777b"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_golf_sangmu_hurt.webp",
+          "file": "characters/pixel/mt_golf_sangmu_hurt.webp",
           "width": 160,
           "height": 80,
           "frameWidth": 80,
@@ -10532,7 +10533,7 @@
           "hash": "32b41b8bc5"
         },
         "death": {
-          "file": "characters/humanoid/mt_golf_sangmu_death.webp",
+          "file": "characters/pixel/mt_golf_sangmu_death.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -10549,11 +10550,11 @@
     {
       "id": "mt_card_pixie",
       "name": "명함 종이학",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_card_pixie_idle.webp",
+          "file": "characters/pixel/mt_card_pixie_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10565,7 +10566,7 @@
           "hash": "36372ad29d"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_card_pixie_hurt.webp",
+          "file": "characters/pixel/mt_card_pixie_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10577,7 +10578,7 @@
           "hash": "9981452790"
         },
         "death": {
-          "file": "characters/humanoid/mt_card_pixie_death.webp",
+          "file": "characters/pixel/mt_card_pixie_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10594,11 +10595,11 @@
     {
       "id": "mt_contract_ghost",
       "name": "계약서 유령",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_contract_ghost_idle.webp",
+          "file": "characters/pixel/mt_contract_ghost_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10610,7 +10611,7 @@
           "hash": "b514aa6b4a"
         },
         "hurt": {
-          "file": "characters/monster/mt_contract_ghost_hurt.webp",
+          "file": "characters/pixel/mt_contract_ghost_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10622,7 +10623,7 @@
           "hash": "3a27dba125"
         },
         "death": {
-          "file": "characters/monster/mt_contract_ghost_death.webp",
+          "file": "characters/pixel/mt_contract_ghost_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10639,11 +10640,11 @@
     {
       "id": "mt_stamp_crab",
       "name": "인감 크랩",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_stamp_crab_idle.webp",
+          "file": "characters/pixel/mt_stamp_crab_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10655,7 +10656,7 @@
           "hash": "d0ec55580f"
         },
         "hurt": {
-          "file": "characters/beast/mt_stamp_crab_hurt.webp",
+          "file": "characters/pixel/mt_stamp_crab_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10667,7 +10668,7 @@
           "hash": "1f934cdf36"
         },
         "death": {
-          "file": "characters/beast/mt_stamp_crab_death.webp",
+          "file": "characters/pixel/mt_stamp_crab_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10684,11 +10685,11 @@
     {
       "id": "mt_lawbook_mimic",
       "name": "법전 미믹",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_lawbook_mimic_idle.webp",
+          "file": "characters/pixel/mt_lawbook_mimic_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10700,7 +10701,7 @@
           "hash": "c9a60271fc"
         },
         "hurt": {
-          "file": "characters/monster/mt_lawbook_mimic_hurt.webp",
+          "file": "characters/pixel/mt_lawbook_mimic_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10712,7 +10713,7 @@
           "hash": "f85c9d2e95"
         },
         "death": {
-          "file": "characters/monster/mt_lawbook_mimic_death.webp",
+          "file": "characters/pixel/mt_lawbook_mimic_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10729,11 +10730,11 @@
     {
       "id": "mt_sosong_timjang",
       "name": "소송 흡혈귀 법무팀장",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_sosong_timjang_idle.webp",
+          "file": "characters/pixel/mt_sosong_timjang_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10745,7 +10746,7 @@
           "hash": "d9c7c24801"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_sosong_timjang_hurt.webp",
+          "file": "characters/pixel/mt_sosong_timjang_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10757,7 +10758,7 @@
           "hash": "27a72a5074"
         },
         "death": {
-          "file": "characters/humanoid/mt_sosong_timjang_death.webp",
+          "file": "characters/pixel/mt_sosong_timjang_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10774,11 +10775,11 @@
     {
       "id": "mt_judge_lich",
       "name": "법무 상무 리치",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_judge_lich_idle.webp",
+          "file": "characters/pixel/mt_judge_lich_idle.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -10790,7 +10791,7 @@
           "hash": "7b5490c9cd"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_judge_lich_hurt.webp",
+          "file": "characters/pixel/mt_judge_lich_hurt.webp",
           "width": 160,
           "height": 80,
           "frameWidth": 80,
@@ -10802,7 +10803,7 @@
           "hash": "8919eaab26"
         },
         "death": {
-          "file": "characters/humanoid/mt_judge_lich_death.webp",
+          "file": "characters/pixel/mt_judge_lich_death.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -10819,11 +10820,11 @@
     {
       "id": "mt_redtape_worm",
       "name": "레드테이프 웜",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_redtape_worm_idle.webp",
+          "file": "characters/pixel/mt_redtape_worm_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10835,7 +10836,7 @@
           "hash": "518261dca5"
         },
         "hurt": {
-          "file": "characters/beast/mt_redtape_worm_hurt.webp",
+          "file": "characters/pixel/mt_redtape_worm_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10847,7 +10848,7 @@
           "hash": "a2448085ba"
         },
         "death": {
-          "file": "characters/beast/mt_redtape_worm_death.webp",
+          "file": "characters/pixel/mt_redtape_worm_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10864,11 +10865,11 @@
     {
       "id": "mt_bug_beetle",
       "name": "버그 딱정벌레",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_bug_beetle_idle.webp",
+          "file": "characters/pixel/mt_bug_beetle_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10880,7 +10881,7 @@
           "hash": "bf54bc0505"
         },
         "hurt": {
-          "file": "characters/beast/mt_bug_beetle_hurt.webp",
+          "file": "characters/pixel/mt_bug_beetle_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10892,7 +10893,7 @@
           "hash": "53b66d766c"
         },
         "death": {
-          "file": "characters/beast/mt_bug_beetle_death.webp",
+          "file": "characters/pixel/mt_bug_beetle_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10909,11 +10910,11 @@
     {
       "id": "mt_keyboard_mimic",
       "name": "키보드 미믹",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_keyboard_mimic_idle.webp",
+          "file": "characters/pixel/mt_keyboard_mimic_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10925,7 +10926,7 @@
           "hash": "51cfdfe784"
         },
         "hurt": {
-          "file": "characters/monster/mt_keyboard_mimic_hurt.webp",
+          "file": "characters/pixel/mt_keyboard_mimic_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10937,7 +10938,7 @@
           "hash": "6946ef861f"
         },
         "death": {
-          "file": "characters/monster/mt_keyboard_mimic_death.webp",
+          "file": "characters/pixel/mt_keyboard_mimic_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10954,11 +10955,11 @@
     {
       "id": "mt_overtime_ghost",
       "name": "야근 유령",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_overtime_ghost_idle.webp",
+          "file": "characters/pixel/mt_overtime_ghost_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10970,7 +10971,7 @@
           "hash": "6f96b56f73"
         },
         "hurt": {
-          "file": "characters/monster/mt_overtime_ghost_hurt.webp",
+          "file": "characters/pixel/mt_overtime_ghost_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -10982,7 +10983,7 @@
           "hash": "ff41fab4da"
         },
         "death": {
-          "file": "characters/monster/mt_overtime_ghost_death.webp",
+          "file": "characters/pixel/mt_overtime_ghost_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -10999,11 +11000,11 @@
     {
       "id": "mt_deadline_timjang",
       "name": "데드라인 좀비 개발팀장",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_deadline_timjang_idle.webp",
+          "file": "characters/pixel/mt_deadline_timjang_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11015,7 +11016,7 @@
           "hash": "383a4eb183"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_deadline_timjang_hurt.webp",
+          "file": "characters/pixel/mt_deadline_timjang_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11027,7 +11028,7 @@
           "hash": "dd8a4f3209"
         },
         "death": {
-          "file": "characters/humanoid/mt_deadline_timjang_death.webp",
+          "file": "characters/pixel/mt_deadline_timjang_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11044,11 +11045,11 @@
     {
       "id": "mt_legacy_sangmu",
       "name": "레거시 사이보그 개발 상무",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_legacy_sangmu_idle.webp",
+          "file": "characters/pixel/mt_legacy_sangmu_idle.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -11060,7 +11061,7 @@
           "hash": "9ff8d25178"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_legacy_sangmu_hurt.webp",
+          "file": "characters/pixel/mt_legacy_sangmu_hurt.webp",
           "width": 160,
           "height": 80,
           "frameWidth": 80,
@@ -11072,7 +11073,7 @@
           "hash": "8dcca486fd"
         },
         "death": {
-          "file": "characters/humanoid/mt_legacy_sangmu_death.webp",
+          "file": "characters/pixel/mt_legacy_sangmu_death.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -11089,11 +11090,11 @@
     {
       "id": "mt_cable_spider",
       "name": "케이블 거미",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_cable_spider_idle.webp",
+          "file": "characters/pixel/mt_cable_spider_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11105,7 +11106,7 @@
           "hash": "506f573137"
         },
         "hurt": {
-          "file": "characters/beast/mt_cable_spider_hurt.webp",
+          "file": "characters/pixel/mt_cable_spider_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11117,7 +11118,7 @@
           "hash": "00e7465b04"
         },
         "death": {
-          "file": "characters/beast/mt_cable_spider_death.webp",
+          "file": "characters/pixel/mt_cable_spider_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11134,11 +11135,11 @@
     {
       "id": "mt_coin_slime",
       "name": "동전 슬라임",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_coin_slime_idle.webp",
+          "file": "characters/pixel/mt_coin_slime_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11150,7 +11151,7 @@
           "hash": "701647663a"
         },
         "hurt": {
-          "file": "characters/monster/mt_coin_slime_hurt.webp",
+          "file": "characters/pixel/mt_coin_slime_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11162,7 +11163,7 @@
           "hash": "7ec4c493ea"
         },
         "death": {
-          "file": "characters/monster/mt_coin_slime_death.webp",
+          "file": "characters/pixel/mt_coin_slime_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11179,11 +11180,11 @@
     {
       "id": "mt_calc_crab",
       "name": "계산기 크랩",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_calc_crab_idle.webp",
+          "file": "characters/pixel/mt_calc_crab_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11195,7 +11196,7 @@
           "hash": "7d62b11eec"
         },
         "hurt": {
-          "file": "characters/beast/mt_calc_crab_hurt.webp",
+          "file": "characters/pixel/mt_calc_crab_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11207,7 +11208,7 @@
           "hash": "047ad98b3f"
         },
         "death": {
-          "file": "characters/beast/mt_calc_crab_death.webp",
+          "file": "characters/pixel/mt_calc_crab_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11224,11 +11225,11 @@
     {
       "id": "mt_receipt_mummy",
       "name": "영수증 미라",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_receipt_mummy_idle.webp",
+          "file": "characters/pixel/mt_receipt_mummy_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11240,7 +11241,7 @@
           "hash": "73c2d9e0d3"
         },
         "hurt": {
-          "file": "characters/monster/mt_receipt_mummy_hurt.webp",
+          "file": "characters/pixel/mt_receipt_mummy_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11252,7 +11253,7 @@
           "hash": "2d83d430ac"
         },
         "death": {
-          "file": "characters/monster/mt_receipt_mummy_death.webp",
+          "file": "characters/pixel/mt_receipt_mummy_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11269,11 +11270,11 @@
     {
       "id": "mt_jeoseung_timjang",
       "name": "저승사자 재무팀장",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_jeoseung_timjang_idle.webp",
+          "file": "characters/pixel/mt_jeoseung_timjang_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11285,7 +11286,7 @@
           "hash": "696abeedb6"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_jeoseung_timjang_hurt.webp",
+          "file": "characters/pixel/mt_jeoseung_timjang_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11297,7 +11298,7 @@
           "hash": "3612efd9fd"
         },
         "death": {
-          "file": "characters/humanoid/mt_jeoseung_timjang_death.webp",
+          "file": "characters/pixel/mt_jeoseung_timjang_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11314,11 +11315,11 @@
     {
       "id": "mt_sujeonno_sangmu",
       "name": "황금 수전노 재무 상무",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_sujeonno_sangmu_idle.webp",
+          "file": "characters/pixel/mt_sujeonno_sangmu_idle.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -11330,7 +11331,7 @@
           "hash": "141ac00f3b"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_sujeonno_sangmu_hurt.webp",
+          "file": "characters/pixel/mt_sujeonno_sangmu_hurt.webp",
           "width": 160,
           "height": 80,
           "frameWidth": 80,
@@ -11342,7 +11343,7 @@
           "hash": "fda7d75a7c"
         },
         "death": {
-          "file": "characters/humanoid/mt_sujeonno_sangmu_death.webp",
+          "file": "characters/pixel/mt_sujeonno_sangmu_death.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -11359,11 +11360,11 @@
     {
       "id": "mt_piggy_boar",
       "name": "저금통 멧돼지",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_piggy_boar_idle.webp",
+          "file": "characters/pixel/mt_piggy_boar_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11375,7 +11376,7 @@
           "hash": "fc6803c5ec"
         },
         "hurt": {
-          "file": "characters/beast/mt_piggy_boar_hurt.webp",
+          "file": "characters/pixel/mt_piggy_boar_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11387,7 +11388,7 @@
           "hash": "d52581be71"
         },
         "death": {
-          "file": "characters/beast/mt_piggy_boar_death.webp",
+          "file": "characters/pixel/mt_piggy_boar_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11404,11 +11405,11 @@
     {
       "id": "mt_board_mimic",
       "name": "결재판 미믹",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_board_mimic_idle.webp",
+          "file": "characters/pixel/mt_board_mimic_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11420,7 +11421,7 @@
           "hash": "00e223b93a"
         },
         "hurt": {
-          "file": "characters/monster/mt_board_mimic_hurt.webp",
+          "file": "characters/pixel/mt_board_mimic_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11432,7 +11433,7 @@
           "hash": "bb770277fc"
         },
         "death": {
-          "file": "characters/monster/mt_board_mimic_death.webp",
+          "file": "characters/pixel/mt_board_mimic_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11449,11 +11450,11 @@
     {
       "id": "mt_coffee_golem",
       "name": "커피 골렘",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_coffee_golem_idle.webp",
+          "file": "characters/pixel/mt_coffee_golem_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11465,7 +11466,7 @@
           "hash": "49daf3294a"
         },
         "hurt": {
-          "file": "characters/monster/mt_coffee_golem_hurt.webp",
+          "file": "characters/pixel/mt_coffee_golem_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11477,7 +11478,7 @@
           "hash": "c012c859be"
         },
         "death": {
-          "file": "characters/monster/mt_coffee_golem_death.webp",
+          "file": "characters/pixel/mt_coffee_golem_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11494,11 +11495,11 @@
     {
       "id": "mt_card_bat",
       "name": "법인카드 박쥐",
-      "category": "beast",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/beast/mt_card_bat_idle.webp",
+          "file": "characters/pixel/mt_card_bat_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11510,7 +11511,7 @@
           "hash": "f7f9f508de"
         },
         "hurt": {
-          "file": "characters/beast/mt_card_bat_hurt.webp",
+          "file": "characters/pixel/mt_card_bat_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11522,7 +11523,7 @@
           "hash": "ae47a4fdd2"
         },
         "death": {
-          "file": "characters/beast/mt_card_bat_death.webp",
+          "file": "characters/pixel/mt_card_bat_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11539,11 +11540,11 @@
     {
       "id": "mt_nakhasan_jeonmu",
       "name": "낙하산 전무",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_nakhasan_jeonmu_idle.webp",
+          "file": "characters/pixel/mt_nakhasan_jeonmu_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11555,7 +11556,7 @@
           "hash": "009747bfb1"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_nakhasan_jeonmu_hurt.webp",
+          "file": "characters/pixel/mt_nakhasan_jeonmu_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11567,7 +11568,7 @@
           "hash": "54c03c068f"
         },
         "death": {
-          "file": "characters/humanoid/mt_nakhasan_jeonmu_death.webp",
+          "file": "characters/pixel/mt_nakhasan_jeonmu_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11584,11 +11585,11 @@
     {
       "id": "mt_chairman_demon_king",
       "name": "부회장 마왕",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_chairman_demon_king_idle.webp",
+          "file": "characters/pixel/mt_chairman_demon_king_idle.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -11600,7 +11601,7 @@
           "hash": "4764021cb6"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_chairman_demon_king_hurt.webp",
+          "file": "characters/pixel/mt_chairman_demon_king_hurt.webp",
           "width": 160,
           "height": 80,
           "frameWidth": 80,
@@ -11612,7 +11613,7 @@
           "hash": "7443908fd7"
         },
         "death": {
-          "file": "characters/humanoid/mt_chairman_demon_king_death.webp",
+          "file": "characters/pixel/mt_chairman_demon_king_death.webp",
           "width": 320,
           "height": 80,
           "frameWidth": 80,
@@ -11629,11 +11630,11 @@
     {
       "id": "mt_golfball_wisp",
       "name": "골프공 도깨비불",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_golfball_wisp_idle.webp",
+          "file": "characters/pixel/mt_golfball_wisp_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11645,7 +11646,7 @@
           "hash": "40c7fbd19f"
         },
         "hurt": {
-          "file": "characters/monster/mt_golfball_wisp_hurt.webp",
+          "file": "characters/pixel/mt_golfball_wisp_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11657,7 +11658,7 @@
           "hash": "19247f15f7"
         },
         "death": {
-          "file": "characters/monster/mt_golfball_wisp_death.webp",
+          "file": "characters/pixel/mt_golfball_wisp_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11674,11 +11675,11 @@
     {
       "id": "mt_cone_slime",
       "name": "고깔 슬라임",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_cone_slime_idle.webp",
+          "file": "characters/pixel/mt_cone_slime_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11690,7 +11691,7 @@
           "hash": "6f6b01f341"
         },
         "hurt": {
-          "file": "characters/monster/mt_cone_slime_hurt.webp",
+          "file": "characters/pixel/mt_cone_slime_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11702,7 +11703,7 @@
           "hash": "e85a83866c"
         },
         "death": {
-          "file": "characters/monster/mt_cone_slime_death.webp",
+          "file": "characters/pixel/mt_cone_slime_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11719,11 +11720,11 @@
     {
       "id": "mt_tire_golem",
       "name": "타이어 골렘",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_tire_golem_idle.webp",
+          "file": "characters/pixel/mt_tire_golem_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11735,7 +11736,7 @@
           "hash": "fb5f737fae"
         },
         "hurt": {
-          "file": "characters/monster/mt_tire_golem_hurt.webp",
+          "file": "characters/pixel/mt_tire_golem_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11747,7 +11748,7 @@
           "hash": "5ff3f69f58"
         },
         "death": {
-          "file": "characters/monster/mt_tire_golem_death.webp",
+          "file": "characters/pixel/mt_tire_golem_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11764,11 +11765,11 @@
     {
       "id": "mt_ticket_ghost",
       "name": "주차딱지 유령",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_ticket_ghost_idle.webp",
+          "file": "characters/pixel/mt_ticket_ghost_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11780,7 +11781,7 @@
           "hash": "7225093e4d"
         },
         "hurt": {
-          "file": "characters/monster/mt_ticket_ghost_hurt.webp",
+          "file": "characters/pixel/mt_ticket_ghost_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11792,7 +11793,7 @@
           "hash": "2470d1fa58"
         },
         "death": {
-          "file": "characters/monster/mt_ticket_ghost_death.webp",
+          "file": "characters/pixel/mt_ticket_ghost_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11809,11 +11810,11 @@
     {
       "id": "mt_car_mimic",
       "name": "경차 미믹",
-      "category": "monster",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/monster/mt_car_mimic_idle.webp",
+          "file": "characters/pixel/mt_car_mimic_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11825,7 +11826,7 @@
           "hash": "d053a90e75"
         },
         "hurt": {
-          "file": "characters/monster/mt_car_mimic_hurt.webp",
+          "file": "characters/pixel/mt_car_mimic_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11837,7 +11838,7 @@
           "hash": "e28dd75701"
         },
         "death": {
-          "file": "characters/monster/mt_car_mimic_death.webp",
+          "file": "characters/pixel/mt_car_mimic_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11854,11 +11855,11 @@
     {
       "id": "mt_lee_ceo",
       "name": "명품 두른 이대표",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_lee_ceo_idle.webp",
+          "file": "characters/pixel/mt_lee_ceo_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11870,7 +11871,7 @@
           "hash": "aa7a2a95f5"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_lee_ceo_hurt.webp",
+          "file": "characters/pixel/mt_lee_ceo_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11882,7 +11883,7 @@
           "hash": "2873acbfca"
         },
         "death": {
-          "file": "characters/humanoid/mt_lee_ceo_death.webp",
+          "file": "characters/pixel/mt_lee_ceo_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11899,11 +11900,11 @@
     {
       "id": "mt_card_audit_bujang",
       "name": "법카 감사 부장",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_card_audit_bujang_idle.webp",
+          "file": "characters/pixel/mt_card_audit_bujang_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11915,7 +11916,7 @@
           "hash": "0418c02fba"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_card_audit_bujang_hurt.webp",
+          "file": "characters/pixel/mt_card_audit_bujang_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11927,7 +11928,7 @@
           "hash": "0140d0ca5e"
         },
         "death": {
-          "file": "characters/humanoid/mt_card_audit_bujang_death.webp",
+          "file": "characters/pixel/mt_card_audit_bujang_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11944,11 +11945,11 @@
     {
       "id": "mt_third_year_jooim",
       "name": "호흡 장인 주임",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_third_year_jooim_idle.webp",
+          "file": "characters/pixel/mt_third_year_jooim_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11960,7 +11961,7 @@
           "hash": "04de85d40b"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_third_year_jooim_hurt.webp",
+          "file": "characters/pixel/mt_third_year_jooim_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -11972,7 +11973,7 @@
           "hash": "87e1d3940b"
         },
         "death": {
-          "file": "characters/humanoid/mt_third_year_jooim_death.webp",
+          "file": "characters/pixel/mt_third_year_jooim_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -11989,11 +11990,11 @@
     {
       "id": "mt_ppeongtwigi_gwajang",
       "name": "뻥튀기 과장",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_ppeongtwigi_gwajang_idle.webp",
+          "file": "characters/pixel/mt_ppeongtwigi_gwajang_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -12005,7 +12006,7 @@
           "hash": "51fb14ad72"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_ppeongtwigi_gwajang_hurt.webp",
+          "file": "characters/pixel/mt_ppeongtwigi_gwajang_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -12017,7 +12018,7 @@
           "hash": "60a95b4380"
         },
         "death": {
-          "file": "characters/humanoid/mt_ppeongtwigi_gwajang_death.webp",
+          "file": "characters/pixel/mt_ppeongtwigi_gwajang_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -12034,11 +12035,11 @@
     {
       "id": "mt_mz_sawon",
       "name": "MZ사원",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_mz_sawon_idle.webp",
+          "file": "characters/pixel/mt_mz_sawon_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -12050,7 +12051,7 @@
           "hash": "16c0130243"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_mz_sawon_hurt.webp",
+          "file": "characters/pixel/mt_mz_sawon_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -12062,7 +12063,7 @@
           "hash": "e7543e8924"
         },
         "death": {
-          "file": "characters/humanoid/mt_mz_sawon_death.webp",
+          "file": "characters/pixel/mt_mz_sawon_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -12079,11 +12080,11 @@
     {
       "id": "mt_love_daeri",
       "name": "억울한 사랑꾼 대리",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_love_daeri_idle.webp",
+          "file": "characters/pixel/mt_love_daeri_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -12095,7 +12096,7 @@
           "hash": "c5d44ca856"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_love_daeri_hurt.webp",
+          "file": "characters/pixel/mt_love_daeri_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -12107,7 +12108,7 @@
           "hash": "e031e938ef"
         },
         "death": {
-          "file": "characters/humanoid/mt_love_daeri_death.webp",
+          "file": "characters/pixel/mt_love_daeri_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -12124,11 +12125,11 @@
     {
       "id": "mt_airpod_mz",
       "name": "에어팟 MZ사원",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_airpod_mz_idle.webp",
+          "file": "characters/pixel/mt_airpod_mz_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -12140,7 +12141,7 @@
           "hash": "19d1e599bd"
         },
         "hurt": {
-          "file": "characters/humanoid/mt_airpod_mz_hurt.webp",
+          "file": "characters/pixel/mt_airpod_mz_hurt.webp",
           "width": 128,
           "height": 64,
           "frameWidth": 64,
@@ -12152,7 +12153,7 @@
           "hash": "9416663700"
         },
         "death": {
-          "file": "characters/humanoid/mt_airpod_mz_death.webp",
+          "file": "characters/pixel/mt_airpod_mz_death.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -12169,11 +12170,11 @@
     {
       "id": "mt_park",
       "name": "박부장",
-      "category": "humanoid",
+      "category": "pixel",
       "defaultAnimation": "idle",
       "animations": {
         "idle": {
-          "file": "characters/humanoid/mt_park_idle.webp",
+          "file": "characters/pixel/mt_park_idle.webp",
           "width": 256,
           "height": 64,
           "frameWidth": 64,
@@ -12185,7 +12186,7 @@
           "hash": "d4d94c0f70"
         },
         "walk": {
-          "file": "characters/humanoid/mt_park_walk.webp",
+          "file": "characters/pixel/mt_park_walk.webp",
           "width": 384,
           "height": 64,
           "frameWidth": 64,
@@ -12197,7 +12198,7 @@
           "hash": "b3f00d1345"
         },
         "attack": {
-          "file": "characters/humanoid/mt_park_attack.webp",
+          "file": "characters/pixel/mt_park_attack.webp",
           "width": 512,
           "height": 64,
           "frameWidth": 64,

@@ -18,7 +18,8 @@ from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# day-hero-night-demon: id -> (Korean name, category). Names come from the game's ko strings.
+# day-hero-night-demon: id -> (Korean name, shape guess). Everything lands in the `pixel` category;
+# the shape guess is only kept for reference. Names come from the game's ko strings.
 DH = {
     'knight': ('기사', 'humanoid'), 'archer': ('궁수', 'humanoid'), 'priest': ('성직자', 'humanoid'),
     'thief': ('도적', 'humanoid'), 'lancer': ('창병', 'humanoid'), 'mage': ('마법사', 'humanoid'),
@@ -43,7 +44,7 @@ DH = {
 }
 DH_FPS = {'idle': 6, 'attack': 12, 'death': 10}
 
-# myeongtoe-hero monsters: body shape decides the category, same rule as the rest of the library.
+# myeongtoe-hero monsters: shape guess, unused now that everything is `pixel`.
 MT_CATEGORY = {
     'humanoid': ['baek_bujang', 'gangsi_sangmu', 'silijeok_timjang', 'golf_sangmu', 'sosong_timjang', 'judge_lich',
                  'deadline_timjang', 'legacy_sangmu', 'jeoseung_timjang', 'sujeonno_sangmu', 'nakhasan_jeonmu',
@@ -77,7 +78,7 @@ def clip(rel, size, fw, fh, frames, fps):
 
 
 def entry(cid, name, cat, anims, note):
-    return {'id': cid, 'name': name, 'category': cat,
+    return {'id': cid, 'name': name, 'category': 'pixel',
             'defaultAnimation': 'idle', 'animations': anims, 'note': note}
 
 
@@ -91,7 +92,7 @@ def main(dh_dir, mt_dir):
             src = os.path.join(dh_dir, 'public/sprites', f'{uid}_{a}.png')
             if not meta or not os.path.exists(src):
                 continue
-            rel = f'characters/{cat}/dh_{uid}_{a}.webp'
+            rel = f'characters/pixel/dh_{uid}_{a}.webp'
             size = webp(src, os.path.join(ROOT, rel))
             anims[a] = clip(rel, size, meta['w'], meta['h'], meta['frames'], DH_FPS[a])
         if anims:
@@ -105,7 +106,7 @@ def main(dh_dir, mt_dir):
         anims = {}
         for a, spec in m['animations'].items():
             src = os.path.join(mt_dir, 'art/monsters', spec['file'])
-            rel = f'characters/{cat}/mt_{mid}_{a}.webp'
+            rel = f'characters/pixel/mt_{mid}_{a}.webp'
             size = webp(src, os.path.join(ROOT, rel))
             anims[a] = clip(rel, size, m['frameWidth'], m['frameHeight'], spec['frameCount'],
                             round(1000 / spec['frameDurationMs']))
@@ -115,7 +116,7 @@ def main(dh_dir, mt_dir):
     anims = {}
     for a, n in PARK_FRAMES.items():
         src = os.path.join(mt_dir, f'art/park/{a}_strip.png')
-        rel = f'characters/humanoid/mt_park_{a}.webp'
+        rel = f'characters/pixel/mt_park_{a}.webp'
         size = webp(src, os.path.join(ROOT, rel))
         anims[a] = clip(rel, size, 64, 64, n, PARK_FPS[a])
     new.append(entry('mt_park', '박부장', 'humanoid', anims,
@@ -131,6 +132,7 @@ def main(dh_dir, mt_dir):
                 p = os.path.join(ROOT, c['file'])
                 if os.path.exists(p) and c['file'] not in {x['file'] for e in new for x in e['animations'].values()}:
                     os.remove(p)
+    data['categories']['pixel'] = '픽셀'
     data['assets'] = keep + new
     open(path, 'w', encoding='utf-8').write(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     print(len(new), 'characters added;', len(data['assets']), 'total')
