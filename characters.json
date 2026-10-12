@@ -12211,6 +12211,1914 @@
         }
       },
       "note": "명퇴용사 박부장 (myeongtoe-hero) 주인공. 오른쪽을 보고 있다. 장비/의상 파츠(art/parts)는 안 넣었다."
+    },
+    {
+      "id": "dh_lord_demon_v1",
+      "name": "마왕 (악마) (이전 버전)",
+      "category": "pixel",
+      "defaultAnimation": "attack",
+      "animations": {
+        "attack": {
+          "file": "characters/pixel/dh_lord_demon_v1_attack.webp",
+          "width": 868,
+          "height": 124,
+          "frameWidth": 124,
+          "frameHeight": 124,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 12,
+          "hash": "7ae67a2cf1"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — 지금 게임에 쓰는 것 이전의 애니메이션 프레임(art/frames/*_v1)."
+    },
+    {
+      "id": "dh_lord_dragon_v1",
+      "name": "마왕 (용) (이전 버전)",
+      "category": "pixel",
+      "defaultAnimation": "death",
+      "animations": {
+        "death": {
+          "file": "characters/pixel/dh_lord_dragon_v1_death.webp",
+          "width": 672,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "6f7ac17018"
+        },
+        "idle": {
+          "file": "characters/pixel/dh_lord_dragon_v1_idle.webp",
+          "width": 384,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 4,
+          "cols": 4,
+          "rows": 1,
+          "fps": 6,
+          "hash": "7d6a493a20"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — 지금 게임에 쓰는 것 이전의 애니메이션 프레임(art/frames/*_v1)."
+    },
+    {
+      "id": "dh_lord_hydra_v1",
+      "name": "마왕 (히드라) (이전 버전)",
+      "category": "pixel",
+      "defaultAnimation": "attack",
+      "animations": {
+        "attack": {
+          "file": "characters/pixel/dh_lord_hydra_v1_attack.webp",
+          "width": 672,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 12,
+          "hash": "5a73799191"
+        },
+        "death": {
+          "file": "characters/pixel/dh_lord_hydra_v1_death.webp",
+          "width": 672,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "77bbb58b04"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — 지금 게임에 쓰는 것 이전의 애니메이션 프레임(art/frames/*_v1)."
+    },
+    {
+      "id": "dh_lord_lich_v1",
+      "name": "마왕 (리치) (이전 버전)",
+      "category": "pixel",
+      "defaultAnimation": "death",
+      "animations": {
+        "death": {
+          "file": "characters/pixel/dh_lord_lich_v1_death.webp",
+          "width": 672,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "745a9eeaed"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — 지금 게임에 쓰는 것 이전의 애니메이션 프레임(art/frames/*_v1)."
+    },
+    {
+      "id": "dh_lord_spend1_v1",
+      "name": "마왕 외형 A (이전 버전)",
+      "category": "pixel",
+      "defaultAnimation": "death",
+      "animations": {
+        "death": {
+          "file": "characters/pixel/dh_lord_spend1_v1_death.webp",
+          "width": 672,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "84f87c573e"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — 지금 게임에 쓰는 것 이전의 애니메이션 프레임(art/frames/*_v1)."
+    },
+    {
+      "id": "dh_lord_summon1_v1",
+      "name": "마왕 외형 B (이전 버전)",
+      "category": "pixel",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/pixel/dh_lord_summon1_v1_idle.webp",
+          "width": 384,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 4,
+          "cols": 4,
+          "rows": 1,
+          "fps": 6,
+          "hash": "3dc0b4e370"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — 지금 게임에 쓰는 것 이전의 애니메이션 프레임(art/frames/*_v1)."
+    },
+    {
+      "id": "dh_skeleton_dread_v1",
+      "name": "공포의 갑옷 (이전 버전)",
+      "category": "pixel",
+      "defaultAnimation": "death",
+      "animations": {
+        "death": {
+          "file": "characters/pixel/dh_skeleton_dread_v1_death.webp",
+          "width": 476,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "59fa905d6b"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — 지금 게임에 쓰는 것 이전의 애니메이션 프레임(art/frames/*_v1)."
+    },
+    {
+      "id": "dh_werewolf_draft",
+      "name": "늑대인간 (시안)",
+      "category": "pixel",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/pixel/dh_werewolf_draft_idle.webp",
+          "width": 320,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 5,
+          "cols": 5,
+          "rows": 1,
+          "fps": 6,
+          "hash": "bd9ab52200"
+        },
+        "attack": {
+          "file": "characters/pixel/dh_werewolf_draft_attack.webp",
+          "width": 448,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 12,
+          "hash": "fa13ba7d8b"
+        },
+        "death": {
+          "file": "characters/pixel/dh_werewolf_draft_death.webp",
+          "width": 448,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "fa57298415"
+        },
+        "attack2": {
+          "file": "characters/pixel/dh_werewolf_draft_attack2.webp",
+          "width": 576,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 9,
+          "cols": 9,
+          "rows": 1,
+          "fps": 12,
+          "hash": "7eaa86211a"
+        },
+        "attack3": {
+          "file": "characters/pixel/dh_werewolf_draft_attack3.webp",
+          "width": 864,
+          "height": 64,
+          "frameWidth": 96,
+          "frameHeight": 64,
+          "frames": 9,
+          "cols": 9,
+          "rows": 1,
+          "fps": 12,
+          "hash": "319c3d0ffe"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters/new3 의 초안 프레임과 대체 모션(공격2·3, 사망2 등)."
+    },
+    {
+      "id": "dh_mushroom_draft",
+      "name": "역병 버섯 (시안)",
+      "category": "pixel",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/pixel/dh_mushroom_draft_idle.webp",
+          "width": 320,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 5,
+          "cols": 5,
+          "rows": 1,
+          "fps": 6,
+          "hash": "2e98ae20fa"
+        },
+        "attack": {
+          "file": "characters/pixel/dh_mushroom_draft_attack.webp",
+          "width": 448,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 12,
+          "hash": "ed12e5a8ee"
+        },
+        "death": {
+          "file": "characters/pixel/dh_mushroom_draft_death.webp",
+          "width": 448,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "91d81e70fb"
+        },
+        "death2": {
+          "file": "characters/pixel/dh_mushroom_draft_death2.webp",
+          "width": 448,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "75c0b823f8"
+        },
+        "mud": {
+          "file": "characters/pixel/dh_mushroom_draft_mud.webp",
+          "width": 448,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 12,
+          "hash": "75c0b823f8"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters/new3 의 초안 프레임과 대체 모션(공격2·3, 사망2 등)."
+    },
+    {
+      "id": "dh_eye_draft",
+      "name": "심연의 눈 (시안)",
+      "category": "pixel",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/pixel/dh_eye_draft_idle.webp",
+          "width": 320,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 5,
+          "cols": 5,
+          "rows": 1,
+          "fps": 6,
+          "hash": "a9ea7fdfc9"
+        },
+        "attack": {
+          "file": "characters/pixel/dh_eye_draft_attack.webp",
+          "width": 448,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 12,
+          "hash": "216ac06e20"
+        },
+        "death": {
+          "file": "characters/pixel/dh_eye_draft_death.webp",
+          "width": 448,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "2c49c1b3ee"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters/new3 의 초안 프레임과 대체 모션(공격2·3, 사망2 등)."
+    },
+    {
+      "id": "dh_knight_sample",
+      "name": "기사 (샘플)",
+      "category": "pixel",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/pixel/dh_knight_sample_idle.webp",
+          "width": 272,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 4,
+          "cols": 4,
+          "rows": 1,
+          "fps": 6,
+          "hash": "7fc102571a"
+        },
+        "attack": {
+          "file": "characters/pixel/dh_knight_sample_attack.webp",
+          "width": 532,
+          "height": 76,
+          "frameWidth": 76,
+          "frameHeight": 76,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 12,
+          "hash": "1d5d76d2bd"
+        },
+        "death": {
+          "file": "characters/pixel/dh_knight_sample_death.webp",
+          "width": 476,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "0da8d08644"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/samples 초기 샘플 프레임."
+    },
+    {
+      "id": "dh_skeleton_sample",
+      "name": "해골병 (샘플)",
+      "category": "pixel",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/pixel/dh_skeleton_sample_idle.webp",
+          "width": 272,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 4,
+          "cols": 4,
+          "rows": 1,
+          "fps": 6,
+          "hash": "2093359960"
+        },
+        "attack": {
+          "file": "characters/pixel/dh_skeleton_sample_attack.webp",
+          "width": 532,
+          "height": 76,
+          "frameWidth": 76,
+          "frameHeight": 76,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 12,
+          "hash": "adc075c900"
+        },
+        "death": {
+          "file": "characters/pixel/dh_skeleton_sample_death.webp",
+          "width": 476,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "3eb0f2306e"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/samples 초기 샘플 프레임."
+    },
+    {
+      "id": "dh_lord_skull",
+      "name": "마왕 (해골)",
+      "category": "pixel",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/pixel/dh_lord_skull_idle.webp",
+          "width": 384,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 4,
+          "cols": 4,
+          "rows": 1,
+          "fps": 6,
+          "hash": "c141f73784"
+        },
+        "attack": {
+          "file": "characters/pixel/dh_lord_skull_attack.webp",
+          "width": 672,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 12,
+          "hash": "f5996c42d4"
+        },
+        "death": {
+          "file": "characters/pixel/dh_lord_skull_death.webp",
+          "width": 672,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "fee1664f20"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/unused, 게임에 안 쓴 시트."
+    },
+    {
+      "id": "dh_lord_season_frost_cand",
+      "name": "마왕 시즌 후보 · 서리 용",
+      "category": "pixel",
+      "defaultAnimation": "c0",
+      "animations": {
+        "c0": {
+          "file": "characters/pixel/dh_lord_season_frost_cand_0.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "d00c83cc04"
+        },
+        "c1": {
+          "file": "characters/pixel/dh_lord_season_frost_cand_1.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "f9feabf5e7"
+        },
+        "c2": {
+          "file": "characters/pixel/dh_lord_season_frost_cand_2.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "53030711f5"
+        },
+        "c3": {
+          "file": "characters/pixel/dh_lord_season_frost_cand_3.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "a7447d02d1"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord/season, 같은 주제의 시안 4장(프레임 아님)."
+    },
+    {
+      "id": "dh_lord_season_gold_cand",
+      "name": "마왕 시즌 후보 · 황금 기사",
+      "category": "pixel",
+      "defaultAnimation": "c0",
+      "animations": {
+        "c0": {
+          "file": "characters/pixel/dh_lord_season_gold_cand_0.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "04e885cf28"
+        },
+        "c1": {
+          "file": "characters/pixel/dh_lord_season_gold_cand_1.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "1db3383c11"
+        },
+        "c2": {
+          "file": "characters/pixel/dh_lord_season_gold_cand_2.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "854b4bd93b"
+        },
+        "c3": {
+          "file": "characters/pixel/dh_lord_season_gold_cand_3.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "1eb61a4759"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord/season, 같은 주제의 시안 4장(프레임 아님)."
+    },
+    {
+      "id": "dh_lord_season_hydra_cand",
+      "name": "마왕 시즌 후보 · 히드라",
+      "category": "pixel",
+      "defaultAnimation": "c0",
+      "animations": {
+        "c0": {
+          "file": "characters/pixel/dh_lord_season_hydra_cand_0.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "26a4355bda"
+        },
+        "c1": {
+          "file": "characters/pixel/dh_lord_season_hydra_cand_1.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "ffaf05bc7c"
+        },
+        "c2": {
+          "file": "characters/pixel/dh_lord_season_hydra_cand_2.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "c641afee40"
+        },
+        "c3": {
+          "file": "characters/pixel/dh_lord_season_hydra_cand_3.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "1821d6d753"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord/season, 같은 주제의 시안 4장(프레임 아님)."
+    },
+    {
+      "id": "dh_lord_season_kraken_cand",
+      "name": "마왕 시즌 후보 · 크라켄",
+      "category": "pixel",
+      "defaultAnimation": "c0",
+      "animations": {
+        "c0": {
+          "file": "characters/pixel/dh_lord_season_kraken_cand_0.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "5a06aa0d02"
+        },
+        "c1": {
+          "file": "characters/pixel/dh_lord_season_kraken_cand_1.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "26097c1ad1"
+        },
+        "c2": {
+          "file": "characters/pixel/dh_lord_season_kraken_cand_2.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "89bb409f83"
+        },
+        "c3": {
+          "file": "characters/pixel/dh_lord_season_kraken_cand_3.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "18c8a30fa6"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord/season, 같은 주제의 시안 4장(프레임 아님)."
+    },
+    {
+      "id": "dh_lord_summon_cand",
+      "name": "마왕 소환 후보",
+      "category": "pixel",
+      "defaultAnimation": "c0",
+      "animations": {
+        "c0": {
+          "file": "characters/pixel/dh_lord_summon_cand_0.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "e05d4f3d1a"
+        },
+        "c1": {
+          "file": "characters/pixel/dh_lord_summon_cand_1.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "4cf6c80f49"
+        },
+        "c2": {
+          "file": "characters/pixel/dh_lord_summon_cand_2.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "352ae5b329"
+        },
+        "c3": {
+          "file": "characters/pixel/dh_lord_summon_cand_3.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "46552cd6c5"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord/summon, 시안 4장(프레임 아님)."
+    },
+    {
+      "id": "dh_banshee_concept",
+      "name": "밴시 (콘셉트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_banshee_concept.webp",
+          "width": 64,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "3bb0385730"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters/concept."
+    },
+    {
+      "id": "dh_deathknight_concept",
+      "name": "데스 나이트 (콘셉트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_deathknight_concept.webp",
+          "width": 64,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "e8e0eae940"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters/concept."
+    },
+    {
+      "id": "dh_golem_concept",
+      "name": "돌 골렘 (콘셉트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_golem_concept.webp",
+          "width": 64,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "8d31f003e5"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters/concept."
+    },
+    {
+      "id": "dh_vampire_concept",
+      "name": "흡혈귀 (콘셉트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_vampire_concept.webp",
+          "width": 64,
+          "height": 64,
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "347e581cd0"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters/concept."
+    },
+    {
+      "id": "dh_banshee_orig",
+      "name": "밴시 (원본 이미지)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_banshee_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "8025fe8a7c"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters, 시트를 만들기 전 정지 그림."
+    },
+    {
+      "id": "dh_deathknight_orig",
+      "name": "데스 나이트 (원본 이미지)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_deathknight_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "24cbf44a53"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters, 시트를 만들기 전 정지 그림."
+    },
+    {
+      "id": "dh_golem_orig",
+      "name": "돌 골렘 (원본 이미지)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_golem_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "2860a478db"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters, 시트를 만들기 전 정지 그림."
+    },
+    {
+      "id": "dh_vampire_orig",
+      "name": "흡혈귀 (원본 이미지)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_vampire_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "17b995b767"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters, 시트를 만들기 전 정지 그림."
+    },
+    {
+      "id": "dh_golem_obj_orig",
+      "name": "돌 골렘 (오브젝트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_golem_obj_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "0078c8392c"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters."
+    },
+    {
+      "id": "dh_werewolf_orig",
+      "name": "늑대인간 (원본 이미지)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_werewolf_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "34055979d9"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/monsters/new3."
+    },
+    {
+      "id": "dh_captain_orig",
+      "name": "용사단장 (원본 이미지)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_captain_orig.webp",
+          "width": 92,
+          "height": 92,
+          "frameWidth": 92,
+          "frameHeight": 92,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "0f0343cb6e"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/invaders."
+    },
+    {
+      "id": "dh_lancer_orig",
+      "name": "창병 (원본 이미지)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lancer_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "48bfbb13ba"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/invaders."
+    },
+    {
+      "id": "dh_mage_orig",
+      "name": "마법사 (원본 이미지)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_mage_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "1efc867a38"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/invaders."
+    },
+    {
+      "id": "dh_paladin_orig",
+      "name": "성기사 (원본 이미지)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_paladin_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "f782bf3ff9"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/invaders."
+    },
+    {
+      "id": "dh_thief_orig",
+      "name": "도적 (원본 이미지)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_thief_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "204b06e4aa"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/invaders."
+    },
+    {
+      "id": "dh_imp_v2_orig",
+      "name": "임프 v2",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_imp_v2_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "34a9c8db16"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord."
+    },
+    {
+      "id": "dh_imp_v3_orig",
+      "name": "임프 v3",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_imp_v3_orig.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "05de8471b3"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord."
+    },
+    {
+      "id": "dh_lord_char_a_orig",
+      "name": "마왕 (원본 A)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lord_char_a_orig.webp",
+          "width": 92,
+          "height": 92,
+          "frameWidth": 92,
+          "frameHeight": 92,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "2f0aedb45f"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord."
+    },
+    {
+      "id": "dh_lord_pack_0_orig",
+      "name": "마왕 팩 0",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lord_pack_0_orig.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "8bc32bd727"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord."
+    },
+    {
+      "id": "dh_lord_pack_1_orig",
+      "name": "마왕 팩 1",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lord_pack_1_orig.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "9744252d2f"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord."
+    },
+    {
+      "id": "dh_lord_pack_2_orig",
+      "name": "마왕 팩 2",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lord_pack_2_orig.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "8c1adf2097"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord."
+    },
+    {
+      "id": "dh_lord_pack_3_orig",
+      "name": "마왕 팩 3",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lord_pack_3_orig.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "dbcba16a1d"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord."
+    },
+    {
+      "id": "dh_lord_base_summon",
+      "name": "마왕 (소환 베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lord_base_summon.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "382cc4453b"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord/summon."
+    },
+    {
+      "id": "dh_lord_demon_base_summon",
+      "name": "마왕 (악마) (소환 베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lord_demon_base_summon.webp",
+          "width": 92,
+          "height": 92,
+          "frameWidth": 92,
+          "frameHeight": 92,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "7111a5c01f"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord/summon."
+    },
+    {
+      "id": "dh_lord_dragon_base_summon",
+      "name": "마왕 (용) (소환 베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lord_dragon_base_summon.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "8c1adf2097"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord/summon."
+    },
+    {
+      "id": "dh_lord_lava_base_summon",
+      "name": "마왕 (용암) (소환 베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lord_lava_base_summon.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "3bf6d5d776"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord/summon."
+    },
+    {
+      "id": "dh_lord_skull_base_summon",
+      "name": "lord_skull (소환 베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_lord_skull_base_summon.webp",
+          "width": 96,
+          "height": 96,
+          "frameWidth": 96,
+          "frameHeight": 96,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "ef24cb9072"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/lord/summon."
+    },
+    {
+      "id": "dh_base_dragon_gear",
+      "name": "새끼 용 (베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_base_dragon_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "40cc4eb59b"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_base_imp_gear",
+      "name": "임프 (베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_base_imp_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "071404003b"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_base_necro_gear",
+      "name": "네크로맨서 (베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_base_necro_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "ee8b70e0e0"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_base_skeleton_gear",
+      "name": "해골병 (베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_base_skeleton_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "480f718ff2"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_base_slime_gear",
+      "name": "슬라임 (베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_base_slime_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "8bc04cc1a2"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_base_spider_gear",
+      "name": "거미 (베이스)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_base_spider_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "ccbe78cebd"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_dragon_knight_gear",
+      "name": "기사 용 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_dragon_knight_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "be7d3fac18"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_dragon_royal_gear",
+      "name": "왕실 용 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_dragon_royal_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "8192897d29"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_imp_king_gear",
+      "name": "임프 왕 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_imp_king_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "b6fb57787d"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_imp_warlock_gear",
+      "name": "흑마법사 임프 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_imp_warlock_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "fd0bfb6fd8"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_necro_bone_gear",
+      "name": "뼈 갑옷 네크로맨서 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_necro_bone_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "1e997baa6f"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_necro_lich_gear",
+      "name": "리치 왕 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_necro_lich_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "00389013d8"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_skeleton_dread_gear",
+      "name": "공포의 갑옷 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_skeleton_dread_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "ca653ee04b"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_skeleton_royal_gear",
+      "name": "해골 왕 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_skeleton_royal_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "f2b91da9dd"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_slime_crown_gear",
+      "name": "슬라임 왕 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_slime_crown_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "ef6381d8b0"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_slime_helm_gear",
+      "name": "기사 슬라임 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_slime_helm_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "de1ece30b1"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_spider_crown_gear",
+      "name": "거미 여왕 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_spider_crown_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "68918508c1"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "dh_spider_iron_gear",
+      "name": "강철 거미 (장비 외형)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/dh_spider_iron_gear.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "2eb711acb5"
+        }
+      },
+      "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "mt_park_head_shine",
+      "name": "박부장 머리 반짝임",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/mt_park_head_shine.webp",
+          "width": 66,
+          "height": 11,
+          "frameWidth": 11,
+          "frameHeight": 11,
+          "frames": 6,
+          "cols": 6,
+          "rows": 1,
+          "fps": 10,
+          "hash": "748053c293"
+        }
+      },
+      "note": "명퇴용사 박부장 (myeongtoe-hero) — art/park/fx, 11×11 6프레임."
+    },
+    {
+      "id": "mt_airpod_mz_src",
+      "name": "에어팟 MZ사원 (원본 시트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/mt_airpod_mz_src.webp",
+          "width": 1448,
+          "height": 1086,
+          "frameWidth": 1448,
+          "frameHeight": 1086,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "efe48fb790"
+        }
+      },
+      "note": "명퇴용사 박부장 (myeongtoe-hero) — art/monsters/src, 몬스터를 만들기 전 생성 원본 시트(여러 포즈가 한 장에 있다)."
+    },
+    {
+      "id": "mt_card_audit_bujang_src",
+      "name": "법카 감사 부장 (원본 시트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/mt_card_audit_bujang_src.webp",
+          "width": 1448,
+          "height": 1086,
+          "frameWidth": 1448,
+          "frameHeight": 1086,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "58c8eecd7a"
+        }
+      },
+      "note": "명퇴용사 박부장 (myeongtoe-hero) — art/monsters/src, 몬스터를 만들기 전 생성 원본 시트(여러 포즈가 한 장에 있다)."
+    },
+    {
+      "id": "mt_lee_ceo_src",
+      "name": "명품 두른 이대표 (원본 시트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/mt_lee_ceo_src.webp",
+          "width": 1448,
+          "height": 1086,
+          "frameWidth": 1448,
+          "frameHeight": 1086,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "adccc0752a"
+        }
+      },
+      "note": "명퇴용사 박부장 (myeongtoe-hero) — art/monsters/src, 몬스터를 만들기 전 생성 원본 시트(여러 포즈가 한 장에 있다)."
+    },
+    {
+      "id": "mt_love_daeri_src",
+      "name": "억울한 사랑꾼 대리 (원본 시트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/mt_love_daeri_src.webp",
+          "width": 1448,
+          "height": 1086,
+          "frameWidth": 1448,
+          "frameHeight": 1086,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "91f87aa6b9"
+        }
+      },
+      "note": "명퇴용사 박부장 (myeongtoe-hero) — art/monsters/src, 몬스터를 만들기 전 생성 원본 시트(여러 포즈가 한 장에 있다)."
+    },
+    {
+      "id": "mt_love_daeri_old_src",
+      "name": "억울한 사랑꾼 대리 (이전 원본 시트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/mt_love_daeri_old_src.webp",
+          "width": 1448,
+          "height": 1086,
+          "frameWidth": 1448,
+          "frameHeight": 1086,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "4709887751"
+        }
+      },
+      "note": "명퇴용사 박부장 (myeongtoe-hero) — art/monsters/src, 몬스터를 만들기 전 생성 원본 시트(여러 포즈가 한 장에 있다)."
+    },
+    {
+      "id": "mt_mz_sawon_src",
+      "name": "MZ사원 (원본 시트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/mt_mz_sawon_src.webp",
+          "width": 1536,
+          "height": 1152,
+          "frameWidth": 1536,
+          "frameHeight": 1152,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "a6776e2a48"
+        }
+      },
+      "note": "명퇴용사 박부장 (myeongtoe-hero) — art/monsters/src, 몬스터를 만들기 전 생성 원본 시트(여러 포즈가 한 장에 있다)."
+    },
+    {
+      "id": "mt_ppeongtwigi_gwajang_src",
+      "name": "뻥튀기 과장 (원본 시트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/mt_ppeongtwigi_gwajang_src.webp",
+          "width": 1448,
+          "height": 1086,
+          "frameWidth": 1448,
+          "frameHeight": 1086,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "f7fea57c51"
+        }
+      },
+      "note": "명퇴용사 박부장 (myeongtoe-hero) — art/monsters/src, 몬스터를 만들기 전 생성 원본 시트(여러 포즈가 한 장에 있다)."
+    },
+    {
+      "id": "mt_third_year_jooim_src",
+      "name": "호흡 장인 주임 (원본 시트)",
+      "category": "pixel",
+      "defaultAnimation": "default",
+      "animations": {
+        "default": {
+          "file": "characters/pixel/mt_third_year_jooim_src.webp",
+          "width": 1536,
+          "height": 1152,
+          "frameWidth": 1536,
+          "frameHeight": 1152,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "fps": 1,
+          "hash": "a5d6fd984d"
+        }
+      },
+      "note": "명퇴용사 박부장 (myeongtoe-hero) — art/monsters/src, 몬스터를 만들기 전 생성 원본 시트(여러 포즈가 한 장에 있다)."
     }
   ]
 }

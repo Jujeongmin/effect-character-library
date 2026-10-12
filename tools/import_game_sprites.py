@@ -12,6 +12,7 @@ Re-running replaces the dh_* / mt_* entries and their webp files, nothing else.
 import glob
 import json
 import os
+import re
 import sys
 
 from PIL import Image
@@ -55,6 +56,31 @@ MT_CATEGORY = {
 }
 PARK_FPS = {'idle': 4, 'walk': 9, 'attack': 13}
 PARK_FRAMES = {'idle': 4, 'walk': 6, 'attack': 8}
+
+
+# ids owned by import_game_candidates.py (leftover candidates / drafts / older versions)
+CANDIDATE_RE = re.compile(r'(_v1|_draft|_sample|_orig|_cand|_src|_gear|_concept|_base_summon)$|^dh_lord_skull$|^mt_park_head_shine$')
+
+
+def is_candidate(cid):
+    return bool(CANDIDATE_RE.search(cid))
+
+
+def write_manifest(new, owns):
+    """Replaces the dh_/mt_ entries `owns(id)` says are ours (and their files); leaves everything else."""
+    path = os.path.join(ROOT, 'characters.json')
+    data = json.loads(open(path, encoding='utf-8').read())
+    mine = lambda a: a['id'].startswith(('dh_', 'mt_')) and owns(a['id'])
+    fresh = {c['file'] for e in new for c in e['animations'].values()}
+    for a in data['assets']:
+        if mine(a):
+            for c in a['animations'].values():
+                if c['file'] not in fresh and os.path.exists(os.path.join(ROOT, c['file'])):
+                    os.remove(os.path.join(ROOT, c['file']))
+    ids = {e['id'] for e in new}
+    data['categories']['pixel'] = '픽셀'
+    data['assets'] = [a for a in data['assets'] if not mine(a) and a['id'] not in ids] + new
+    open(path, 'w', encoding='utf-8').write(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 
 
 def webp(src, dest):
@@ -122,20 +148,8 @@ def main(dh_dir, mt_dir):
     new.append(entry('mt_park', '박부장', 'humanoid', anims,
                      '명퇴용사 박부장 (myeongtoe-hero) 주인공. 오른쪽을 보고 있다. 장비/의상 파츠(art/parts)는 안 넣었다.'))
 
-    path = os.path.join(ROOT, 'characters.json')
-    raw = open(path, encoding='utf-8').read()
-    data = json.loads(raw)
-    keep = [a for a in data['assets'] if not a['id'].startswith(('dh_', 'mt_'))]
-    for a in data['assets']:
-        if a['id'].startswith(('dh_', 'mt_')):
-            for c in (a.get('animations') or {}).values():
-                p = os.path.join(ROOT, c['file'])
-                if os.path.exists(p) and c['file'] not in {x['file'] for e in new for x in e['animations'].values()}:
-                    os.remove(p)
-    data['categories']['pixel'] = '픽셀'
-    data['assets'] = keep + new
-    open(path, 'w', encoding='utf-8').write(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
-    print(len(new), 'characters added;', len(data['assets']), 'total')
+    write_manifest(new, lambda cid: not is_candidate(cid))
+    print(len(new), 'characters added')
 
 
 if __name__ == '__main__':
