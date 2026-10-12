@@ -59,7 +59,7 @@ PARK_FRAMES = {'idle': 4, 'walk': 6, 'attack': 8}
 
 
 # ids owned by import_game_candidates.py (leftover candidates / drafts / older versions)
-CANDIDATE_RE = re.compile(r'(_v1|_draft|_sample|_orig|_cand|_src|_gear|_concept|_base_summon)$|^dh_lord_skull$|^mt_park_head_shine$')
+CANDIDATE_RE = re.compile(r'(_v1|_draft|_sample|_orig|_cand|_gear|_concept|_base_summon)$|^dh_lord_skull$')
 
 
 def is_candidate(cid):

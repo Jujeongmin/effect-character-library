@@ -2,8 +2,8 @@
 """Imports the leftover candidates / drafts / older versions of the two games' characters.
 
 Companion of import_game_sprites.py (same repos, same `pixel` category). Adds dh_* / mt_* entries whose
-ids are not touched by that script (everything here has a suffix such as _v1, _draft, _cand, _src).
-Not imported on purpose: backgrounds, towers, loading/store art, UI/product/trap icons and
+ids are not touched by that script (everything here has a suffix such as _draft, _cand, _orig).
+Not imported on purpose: myeongtoe-hero head shine and art/monsters/src sheets, backgrounds, towers, loading/store art, UI/product/trap icons and
 the 박부장 costume parts (art/parts).
 
   python tools/import_game_candidates.py <day-hero-night-demon dir> <myeongtoe-hero dir>
@@ -136,19 +136,7 @@ def main(dh, mt):
     for cid, name, p, where in singles:
         new.append(entry(cid, name, {'default': still(p, f'characters/pixel/{cid}.webp')}, f'{src} — {where}.', 'default'))
 
-    # 7) myeongtoe-hero: 박부장 머리 반짝임, 몬스터 원본(codex) 시트
-    msrc = '명퇴용사 박부장 (myeongtoe-hero)'
-    shine = Image.open(os.path.join(mt, 'art/park/fx/head_shine.png'))
-    new.append(entry('mt_park_head_shine', '박부장 머리 반짝임',
-                     {'default': sheet_clip(os.path.join(mt, 'art/park/fx/head_shine.png'), 'characters/pixel/mt_park_head_shine.webp', 11, 11, shine.size[0] // 11, 10)},
-                     f'{msrc} — art/park/fx, 11×11 6프레임.', 'default'))
-    for p in sorted(glob.glob(os.path.join(mt, 'art/monsters/src/*_codex.png'))):
-        stem = os.path.basename(p)[:-10]
-        mid = stem.replace('_old', '')
-        nm = base_mt_name(mt, mid) + (' (이전 원본 시트)' if stem.endswith('_old') else ' (원본 시트)')
-        cid = f'mt_{stem}_src'
-        new.append(entry(cid, nm, {'default': still(p, f'characters/pixel/{cid}.webp')},
-                         f'{msrc} — art/monsters/src, 몬스터를 만들기 전 생성 원본 시트(여러 포즈가 한 장에 있다).', 'default'))
+    # (myeongtoe-hero 의 박부장 머리 반짝임, 몬스터 원본 시트 art/monsters/src/*_codex 는 넣지 않는다.)
 
     new = drop_duplicates(new)
     base.write_manifest(new, base.is_candidate)
