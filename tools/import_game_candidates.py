@@ -10,6 +10,8 @@ the 박부장 costume parts (art/parts).
   node tools/stamp_hashes.js
 """
 import glob
+import hashlib
+import json
 import os
 import re
 import sys
@@ -70,22 +72,13 @@ def main(dh, mt):
     new = []
     src = '낮엔 용사, 밤엔 마왕 (day-hero-night-demon)'
 
-    # 1) 이전 버전 — art/frames/<unit>_<anim>_v1
-    groups = {}
-    for d in sorted(glob.glob(os.path.join(art, 'frames', '*_v1'))):
-        m = re.match(r'(.+)_(idle|attack|death)_v1$', os.path.basename(d))
-        groups.setdefault(m[1], {})[m[2]] = d
-    for uid, anims in groups.items():
-        clips = {a: strip(frames_of(d), f'characters/pixel/dh_{uid}_v1_{a}.webp', base.DH_FPS[a]) for a, d in anims.items()}
-        new.append(entry(f'dh_{uid}_v1', f'{DH_NAME.get(uid, uid)} (이전 버전)', clips,
-                         f'{src} — 지금 게임에 쓰는 것 이전의 애니메이션 프레임(art/frames/*_v1).'))
+    # (이전 버전 art/frames/*_v1 은 지금 캐릭터와 같은 모습이라 넣지 않는다.)
 
     # 2) new3 시안 — 늑대인간/버섯/눈의 프레임 초안과 대체 모션
     new3 = os.path.join(art, 'monsters/new3')
     draft = {
-        'werewolf': ('늑대인간', 'ww', {'idle': 'idle', 'attack': 'attack', 'death': 'death', 'attack2': 'atk2', 'attack3': 'atk3'}),
-        'mushroom': ('역병 버섯', 'mu', {'idle': 'idle', 'attack': 'attack', 'death': 'death', 'death2': 'death2', 'mud': None}),
-        'eye': ('심연의 눈', 'ey', {'idle': 'idle', 'attack': 'attack', 'death': 'death'}),
+        'werewolf': ('늑대인간', 'ww', {'attack2': 'atk2', 'attack3': 'atk3'}),
+        'mushroom': ('역병 버섯', 'mu', {'death2': 'death2', 'mud': None}),
     }
     for uid, (name, pre, anims) in draft.items():
         clips = {}
@@ -95,7 +88,7 @@ def main(dh, mt):
             fps = 12 if 'attack' in a or a == 'mud' else (6 if a == 'idle' else 10)
             clips[a] = strip(files, f'characters/pixel/dh_{uid}_draft_{a}.webp', fps)
         new.append(entry(f'dh_{uid}_draft', f'{name} (시안)', clips,
-                         f'{src} — art/monsters/new3 의 초안 프레임과 대체 모션(공격2·3, 사망2 등).', 'idle'))
+                         f'{src} — art/monsters/new3 의 대체 모션(공격2·3, 사망2 등). 게임 시트와 같은 모션은 뺐다.'))
 
     # 3) 샘플 — art/samples
     for uid in ('knight', 'skeleton'):
@@ -157,8 +150,43 @@ def main(dh, mt):
         new.append(entry(cid, nm, {'default': still(p, f'characters/pixel/{cid}.webp')},
                          f'{msrc} — art/monsters/src, 몬스터를 만들기 전 생성 원본 시트(여러 포즈가 한 장에 있다).', 'default'))
 
+    new = drop_duplicates(new)
     base.write_manifest(new, base.is_candidate)
     print(len(new), 'entries added')
+
+
+def clip_frames(c):
+    im = Image.open(os.path.join(ROOT, c['file'])).convert('RGBA')
+    fw, fh = c['frameWidth'], c['frameHeight']
+    return tuple(hashlib.md5(im.crop(((i % c['cols']) * fw, (i // c['cols']) * fh, (i % c['cols']) * fw + fw,
+                                       (i // c['cols']) * fh + fh)).tobytes()).hexdigest() for i in range(c['frames']))
+
+
+def drop_duplicates(new):
+    """Drops clips whose pixels already exist in an entry of import_game_sprites.py (whole clip, or a
+    single still equal to any frame of one) and entries left without clips."""
+    data = json.load(open(os.path.join(ROOT, 'characters.json'), encoding='utf-8'))
+    seen_clips, seen_frames = set(), set()
+    for a in data['assets']:
+        if a['id'].startswith(('dh_', 'mt_')) and not base.is_candidate(a['id']):
+            for c in a['animations'].values():
+                fr = clip_frames(c)
+                seen_clips.add(fr)
+                seen_frames.update(fr)
+    out = []
+    for e in new:
+        for k in list(e['animations']):
+            c = e['animations'][k]
+            fr = clip_frames(c)
+            if fr in seen_clips or (len(fr) == 1 and fr[0] in seen_frames):
+                os.remove(os.path.join(ROOT, c['file']))
+                del e['animations'][k]
+                print('duplicate, skipped:', e['id'], k)
+        if e['animations']:
+            if e['defaultAnimation'] not in e['animations']:
+                e['defaultAnimation'] = next(iter(e['animations']))
+            out.append(e)
+    return out
 
 
 def frames_of_prefix(d, stem):
