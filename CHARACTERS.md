@@ -28,12 +28,31 @@ characters/
 
 ## 지금 들어있는 데이터
 
-`characters.json` 에 **204개 항목**이 들어있다 (인간형 63 · 야수형 55 ·
-동물형 7 · 몬스터형 42 · 아이템 37). 아이콘 388개는 `icons.json` 으로 분리했다(아래). 여러 장 중 골라보는 항목은
+`characters.json` 에 **295개 항목**이 들어있다 (인간형 104 · 야수형 75 ·
+동물형 7 · 몬스터형 72 · 아이템 37). 이 중 91개(`dh_*` / `mt_*`)는 아래 "게임 스프라이트" 절의 진짜 애니메이션 시트다. 아이콘 388개는 `icons.json` 으로 분리했다(아래). 여러 장 중 골라보는 항목은
 B 형식(`animations`) — 뷰어에서 카드를 클릭하면 자동으로 탭이 뜨고, 그리드
 카드에도 미리 "N개" 표시가 붙어서 클릭 전에 여러 모습이 있는지 알 수 있다.
 
 **주의: `animations` 는 스키마 이름일 뿐, 지금 들어있는 건 전부 정지 그림이다.**
+
+### 게임 스프라이트 — 진짜 애니메이션 (`dh_*` / `mt_*`)
+
+픽셀랩으로 만든 두 게임의 **게임용 스프라이트 시트**를 그대로 가져왔다. 위 정지 그림들과 달리
+`animations` 에 실제 프레임 애니메이션이 들어있다 (B 형식, 가로 한 줄 시트, 무손실 webp 로 변환).
+
+| 접두어 | 출처 | 개수 | 애니메이션 |
+|---|---|---|---|
+| `dh_` | [day-hero-night-demon](https://github.com/Jujeongmin/day-hero-night-demon) (낮엔 용사, 밤엔 마왕) — 용사·몬스터·마왕 외형 | 42 | `idle`(4) `attack`(7) `death`(7), 프레임 68~96px |
+| `mt_` | [myeongtoe-hero](https://github.com/Jujeongmin/myeongtoe-hero) (명퇴용사 박부장) — 몬스터 47 + 주인공 박부장 1 | 48 | 몬스터 `idle`(4) `hurt`(2) `death`(4), 64px(임원은 80px) · 박부장 `idle`(4) `walk`(6) `attack`(8) |
+
+- 이 두 게임은 id 충돌을 피하려고 접두어를 붙였다 (`dh_knight`, `mt_baek_bujang`, `mt_park`).
+- 방향: `dh_*` 는 게임 코드에서 좌우를 뒤집어 썼고, `mt_` 몬스터는 왼쪽(박부장 쪽)을, `mt_park` 는 오른쪽을 보고 있다.
+- fps 는 게임의 프레임 시간에서 가져왔다 (`mt_` 몬스터는 `frameDurationMs`, `dh_` 는 idle 6 / attack 12 / death 10 으로 정함).
+- 분류는 원본 게임의 역할이 아니라 생김새 기준 (사람 체형 → `humanoid`, 짐승·벌레·게 → `beast`, 나머지 → `monster`).
+- 안 가져온 것: 장비/의상 파츠(`art/parts`), 배경, UI·상점 아이콘, 컷신·웹툰 컷, 타격 이펙트(`hit_spark` 등).
+  이펙트 쪽은 필요하면 effects 라이브러리에 따로 넣을 수 있다.
+- 다시 가져오려면: `python tools/import_game_sprites.py <day-hero-night-demon 경로> <myeongtoe-hero 경로>` 후
+  `node tools/stamp_hashes.js` (`dh_`/`mt_` 항목만 교체한다).
 
 ### 아이템 (`item` 카테고리)
 
