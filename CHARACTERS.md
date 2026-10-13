@@ -15,7 +15,8 @@ characters/
   beast/                  야수형 — 짐승 몸(네발 또는 짐승 머리)의 판타지 생물
   animal/                 동물형 — 평범한 실사풍 동물(고양이, 새 등)
   monster/                몬스터형 — 위 셋에 안 들어가는 나머지(슬라임, 유령, 오우거, 식물 골렘 등)
-  pixel/                  픽셀 — 게임용 픽셀아트 애니메이션 스프라이트 (`dh_*`, `mt_*`)
+  pixel/                  픽셀 — 게임용 픽셀아트 애니메이션 스프라이트 (`dh_*`, `mt_*`, `px_*`)
+  ui/                     UI — PixelLab UI 패널·버튼 (`icons.json` 의 `ui` 카테고리)
   items/                  아이템 — 캐릭터 몸에서 분리한 무기/장비 낱개 그림
 ```
 
@@ -29,8 +30,8 @@ characters/
 
 ## 지금 들어있는 데이터
 
-`characters.json` 에 **295개 항목**이 들어있다 (인간형 63 · 야수형 55 ·
-동물형 7 · 몬스터형 42 · 아이템 37 · 픽셀 121). `pixel` 의 121개(`dh_*` / `mt_*`)는 아래 "게임 스프라이트" 절의 픽셀아트 스프라이트다 (91개는 게임에 실제로 쓰던 애니메이션, 30개는 후보·시안). 아이콘 388개는 `icons.json` 으로 분리했다(아래). 여러 장 중 골라보는 항목은
+`characters.json` 에 **302개 항목**이 들어있다 (인간형 63 · 야수형 55 ·
+동물형 7 · 몬스터형 42 · 아이템 37 · 픽셀 128). `pixel` 의 121개(`dh_*` / `mt_*`)는 아래 "게임 스프라이트" 절의 픽셀아트 스프라이트다 (91개는 게임에 실제로 쓰던 애니메이션, 30개는 후보·시안). 나머지 7개(`px_*`)는 게임에 안 들어간 PixelLab 캐릭터다(아래). 아이콘 388개 + UI 6개는 `icons.json` 으로 분리했다(아래). 여러 장 중 골라보는 항목은
 B 형식(`animations`) — 뷰어에서 카드를 클릭하면 자동으로 탭이 뜨고, 그리드
 카드에도 미리 "N개" 표시가 붙어서 클릭 전에 여러 모습이 있는지 알 수 있다.
 
@@ -62,6 +63,30 @@ B 형식(`animations`) — 뷰어에서 카드를 클릭하면 자동으로 탭�
   넣지 않은 것: 박부장 머리 반짝임, 몬스터 생성 원본 시트(`art/monsters/src`), 배경·탑·로딩/스토어 그림, UI·상품·함정 아이콘, 박부장 의상/장비 파츠(`art/parts`), 타격 이펙트.
 - 다시 가져오려면(후보 쪽은 `tools/import_game_candidates.py`, 인자 동일): `python tools/import_game_sprites.py <day-hero-night-demon 경로> <myeongtoe-hero 경로>` 후
   `node tools/stamp_hashes.js` (`dh_`/`mt_` 항목만 교체한다).
+
+### PixelLab 캐릭터·UI (`px_*`)
+
+PixelLab 계정에 있는 캐릭터 32개 중 **25개는 위 `dh_*`/`mt_*` 와 같은 그림**이라(프레임 픽셀 비교로 확인 —
+기사·침략자 5종·네크로/임프/해골 변형·박부장 판타지 영웅 등) 넣지 않았고, 게임에 안 쓰인 7개만 `pixel` 에 넣었다:
+박부장 회사원 베이스 A·B·C, 박쥐 날개 임프, 꼬마 데몬 로드, 8방향 검사·해골병.
+애니메이션은 east(오른쪽) 방향만 있고(`idle`/`attack`/`death`/`cast`/`walk` …, 10fps),
+나머지 탭(`south`/`east`/`north`/`west`, 8방향이면 대각선까지)은 방향별 정지 그림이다.
+
+UI 패널 6개는 `icons.json` 의 새 `ui` 카테고리 (`characters/ui/`) — PixelLab 이 384px 캔버스에 얹어주는
+투명 여백만 잘라냈다. 버튼 B 와 패널 C 는 한 장에 여러 조각이 모인 세트 그림이다.
+
+다시 가져오려면:
+
+1. 캐릭터는 `https://api.pixellab.ai/mcp/characters/<id>/download` (zip) 을 `<src>/chars/<id>.zip`,
+   UI 는 `https://api.pixellab.ai/mcp/ui-assets/<id>/download` (png) 을 `<src>/ui/<id>.png` 로 받는다.
+2. 새로 넣을 것은 `tools/import_pixellab.py` 의 `CHARACTERS` / `UI_ASSETS` 표에 id·이름을 추가한다.
+3. `python tools/import_pixellab.py <src>` — `hash` 도 직접 찍는다.
+
+스크립트는 라이브러리에 이미 있는 프레임(좌우 반전 포함, 투명 여백 무시)과 픽셀이 같은 그림이 하나라도 있으면
+그 항목을 건너뛰고, `px_*` 항목만 지우고 다시 만들어서 여러 번 돌려도 중복되지 않는다.
+
+> Windows 체크아웃에서는 `node tools/stamp_hashes.js` 를 돌리지 말 것 — 줄바꿈이 CRLF 로 바뀌어 있어서
+> Spine 항목 해시가 전부 바뀐다.
 
 ### 아이템 (`item` 카테고리)
 

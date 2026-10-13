@@ -4,7 +4,8 @@
   "categories": {
     "weapon": "무기(아이콘)",
     "skill_icon": "스킬 아이콘",
-    "equipment_icon": "장비 아이콘"
+    "equipment_icon": "장비 아이콘",
+    "ui": "UI"
   },
   "assets": [
     {
@@ -7378,6 +7379,96 @@
           "hash": "1333836dce"
         }
       }
+    },
+    {
+      "id": "px_ui_panel_a_blue",
+      "name": "UI 패널 A (파란 창)",
+      "category": "ui",
+      "file": "characters/ui/px_ui_panel_a_blue.webp",
+      "width": 193,
+      "height": 127,
+      "frameWidth": 193,
+      "frameHeight": 127,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "hash": "568e9c6f28",
+      "note": "PixelLab UI 패널 생성기로 만든 이미지 (투명 여백만 잘라냄)"
+    },
+    {
+      "id": "px_ui_button_a_blue",
+      "name": "UI 버튼 A (파랑)",
+      "category": "ui",
+      "file": "characters/ui/px_ui_button_a_blue.webp",
+      "width": 288,
+      "height": 119,
+      "frameWidth": 288,
+      "frameHeight": 119,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "hash": "b896025c47",
+      "note": "PixelLab UI 패널 생성기로 만든 이미지 (투명 여백만 잘라냄)"
+    },
+    {
+      "id": "px_ui_panel_b_stone_gold",
+      "name": "UI 패널 B (돌·금장)",
+      "category": "ui",
+      "file": "characters/ui/px_ui_panel_b_stone_gold.webp",
+      "width": 285,
+      "height": 204,
+      "frameWidth": 285,
+      "frameHeight": 204,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "hash": "21e7a6f644",
+      "note": "PixelLab UI 패널 생성기로 만든 이미지 (투명 여백만 잘라냄)"
+    },
+    {
+      "id": "px_ui_button_b_stone_gold",
+      "name": "UI 버튼 B (돌·금장) 세트",
+      "category": "ui",
+      "file": "characters/ui/px_ui_button_b_stone_gold.webp",
+      "width": 269,
+      "height": 216,
+      "frameWidth": 269,
+      "frameHeight": 216,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "hash": "bc55e65fbf",
+      "note": "PixelLab UI 패널 생성기로 만든 이미지 (투명 여백만 잘라냄)"
+    },
+    {
+      "id": "px_ui_panel_c_iron_bone",
+      "name": "UI 패널 C (철·뼈) 세트",
+      "category": "ui",
+      "file": "characters/ui/px_ui_panel_c_iron_bone.webp",
+      "width": 374,
+      "height": 243,
+      "frameWidth": 374,
+      "frameHeight": 243,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "hash": "bcb39aeba8",
+      "note": "PixelLab UI 패널 생성기로 만든 이미지 (투명 여백만 잘라냄)"
+    },
+    {
+      "id": "px_ui_button_c_iron_bone",
+      "name": "UI 버튼 C (철·뼈)",
+      "category": "ui",
+      "file": "characters/ui/px_ui_button_c_iron_bone.webp",
+      "width": 134,
+      "height": 57,
+      "frameWidth": 134,
+      "frameHeight": 57,
+      "frames": 1,
+      "cols": 1,
+      "rows": 1,
+      "hash": "d8c473897b",
+      "note": "PixelLab UI 패널 생성기로 만든 이미지 (투명 여백만 잘라냄)"
     }
   ]
 }

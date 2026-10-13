@@ -510,6 +510,8 @@ function drawCardFrame(c, dt) {
   ctx.clearRect(0, 0, W, H);
   var scale = Math.min(W / r.w, H / r.h);
   var dw = r.w * scale, dh = r.h * scale;
+  // 작은 픽셀아트(pixel/ui)는 확대할 때 보간하면 뭉개진다 - 상세 패널처럼 최근접으로
+  ctx.imageSmoothingEnabled = !(c.character.category === 'pixel' || c.character.category === 'ui');
   ctx.drawImage(c.clip.image, r.x, r.y, r.w, r.h, (W - dw) / 2, (H - dh) / 2, dw, dh);
 }
 

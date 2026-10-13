@@ -13009,6 +13009,657 @@
         }
       },
       "note": "낮엔 용사, 밤엔 마왕 (day-hero-night-demon) — art/gear."
+    },
+    {
+      "id": "px_park_base_a",
+      "name": "박부장 회사원 (베이스 A)",
+      "category": "pixel",
+      "defaultAnimation": "south",
+      "animations": {
+        "south": {
+          "file": "characters/pixel/px_park_base_a_south.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "45881c02eb"
+        },
+        "east": {
+          "file": "characters/pixel/px_park_base_a_east.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "59ceda386d"
+        },
+        "north": {
+          "file": "characters/pixel/px_park_base_a_north.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "2e13066a7e"
+        },
+        "west": {
+          "file": "characters/pixel/px_park_base_a_west.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "17d6c362a1"
+        }
+      },
+      "note": "PixelLab 캐릭터 (68x68, 4방향). 애니메이션은 east(오른쪽) 방향만 있고, 나머지 탭은 방향별 정지 그림. 원본 프롬프트: chubby balding 52-year-old Korean middle-aged office manager with thin comb-over hair, tired droopy eyes, round belly, wearing a plain white sleeveless undershirt and plain dark grey slacks, black shoes"
+    },
+    {
+      "id": "px_park_base_b",
+      "name": "박부장 회사원 (베이스 B)",
+      "category": "pixel",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/pixel/px_park_base_b_idle.webp",
+          "width": 272,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 4,
+          "cols": 4,
+          "rows": 1,
+          "fps": 10,
+          "hash": "26aa2d23ef"
+        },
+        "attack": {
+          "file": "characters/pixel/px_park_base_b_attack.webp",
+          "width": 588,
+          "height": 84,
+          "frameWidth": 84,
+          "frameHeight": 84,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "533788fb3b"
+        },
+        "attack_jab": {
+          "file": "characters/pixel/px_park_base_b_attack_jab.webp",
+          "width": 204,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 3,
+          "cols": 3,
+          "rows": 1,
+          "fps": 10,
+          "hash": "5b18dfeebb"
+        },
+        "attack_cross": {
+          "file": "characters/pixel/px_park_base_b_attack_cross.webp",
+          "width": 408,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 6,
+          "cols": 6,
+          "rows": 1,
+          "fps": 10,
+          "hash": "7a24ee6082"
+        },
+        "walk": {
+          "file": "characters/pixel/px_park_base_b_walk.webp",
+          "width": 408,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 6,
+          "cols": 6,
+          "rows": 1,
+          "fps": 10,
+          "hash": "d0f7e4b8bd"
+        },
+        "attack_chop": {
+          "file": "characters/pixel/px_park_base_b_attack_chop.webp",
+          "width": 588,
+          "height": 84,
+          "frameWidth": 84,
+          "frameHeight": 84,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "d85e8a66a9"
+        },
+        "south": {
+          "file": "characters/pixel/px_park_base_b_south.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "336265f827"
+        },
+        "east": {
+          "file": "characters/pixel/px_park_base_b_east.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "1b9fe29be4"
+        },
+        "north": {
+          "file": "characters/pixel/px_park_base_b_north.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "40b295c8f7"
+        },
+        "west": {
+          "file": "characters/pixel/px_park_base_b_west.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e071f626d2"
+        }
+      },
+      "note": "PixelLab 캐릭터 (68x68, 4방향). 애니메이션은 east(오른쪽) 방향만 있고, 나머지 탭은 방향별 정지 그림. 원본 프롬프트: middle-aged Korean salaryman, bald top with a few combed-over strands, chubby, tired face, plain white t-shirt undershirt, plain charcoal trousers, simple dark shoes, B-grade comedy"
+    },
+    {
+      "id": "px_park_base_c",
+      "name": "박부장 회사원 (베이스 C)",
+      "category": "pixel",
+      "defaultAnimation": "south",
+      "animations": {
+        "south": {
+          "file": "characters/pixel/px_park_base_c_south.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "6e76827d0d"
+        },
+        "east": {
+          "file": "characters/pixel/px_park_base_c_east.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "07a7dc9975"
+        },
+        "north": {
+          "file": "characters/pixel/px_park_base_c_north.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c444e5a0b2"
+        },
+        "west": {
+          "file": "characters/pixel/px_park_base_c_west.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "695452c6da"
+        }
+      },
+      "note": "PixelLab 캐릭터 (68x68, 4방향). 애니메이션은 east(오른쪽) 방향만 있고, 나머지 탭은 방향별 정지 그림. 원본 프롬프트: balding chubby middle-aged office worker man with comb-over, tired face, white undershirt, plain gray slacks, chibi big head"
+    },
+    {
+      "id": "px_imp_winged",
+      "name": "임프 (박쥐 날개)",
+      "category": "pixel",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/pixel/px_imp_winged_idle.webp",
+          "width": 272,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 4,
+          "cols": 4,
+          "rows": 1,
+          "fps": 10,
+          "hash": "75b917e1f5"
+        },
+        "attack": {
+          "file": "characters/pixel/px_imp_winged_attack.webp",
+          "width": 532,
+          "height": 76,
+          "frameWidth": 76,
+          "frameHeight": 76,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "04bd529642"
+        },
+        "death": {
+          "file": "characters/pixel/px_imp_winged_death.webp",
+          "width": 476,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "ae4c62843d"
+        },
+        "south": {
+          "file": "characters/pixel/px_imp_winged_south.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "fae04b6849"
+        },
+        "east": {
+          "file": "characters/pixel/px_imp_winged_east.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c19fac22c7"
+        },
+        "north": {
+          "file": "characters/pixel/px_imp_winged_north.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8b8f96d433"
+        },
+        "west": {
+          "file": "characters/pixel/px_imp_winged_west.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "bff4d8fffd"
+        }
+      },
+      "note": "PixelLab 캐릭터 (68x68, 4방향). 애니메이션은 east(오른쪽) 방향만 있고, 나머지 탭은 방향별 정지 그림. 원본 프롬프트: cute chibi red imp demon with small bat wings, horns and a pitchfork, dark fantasy"
+    },
+    {
+      "id": "px_demon_lord_chibi",
+      "name": "마왕 (꼬마 데몬 로드)",
+      "category": "pixel",
+      "defaultAnimation": "idle",
+      "animations": {
+        "idle": {
+          "file": "characters/pixel/px_demon_lord_chibi_idle.webp",
+          "width": 272,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 4,
+          "cols": 4,
+          "rows": 1,
+          "fps": 10,
+          "hash": "0a2db6241c"
+        },
+        "cast": {
+          "file": "characters/pixel/px_demon_lord_chibi_cast.webp",
+          "width": 532,
+          "height": 76,
+          "frameWidth": 76,
+          "frameHeight": 76,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "782187a957"
+        },
+        "death": {
+          "file": "characters/pixel/px_demon_lord_chibi_death.webp",
+          "width": 476,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "ace6c271f1"
+        },
+        "south": {
+          "file": "characters/pixel/px_demon_lord_chibi_south.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "06899b6419"
+        },
+        "east": {
+          "file": "characters/pixel/px_demon_lord_chibi_east.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "977b31ca1b"
+        },
+        "north": {
+          "file": "characters/pixel/px_demon_lord_chibi_north.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8bb0c462bf"
+        },
+        "west": {
+          "file": "characters/pixel/px_demon_lord_chibi_west.webp",
+          "width": 68,
+          "height": 68,
+          "frameWidth": 68,
+          "frameHeight": 68,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "c1cbb9a327"
+        }
+      },
+      "note": "PixelLab 캐릭터 (68x68, 4방향). 애니메이션은 east(오른쪽) 방향만 있고, 나머지 탭은 방향별 정지 그림. 원본 프롬프트: cute chibi demon lord with big curved horns, black spiked armor, red cape and a dark crown, dark fantasy"
+    },
+    {
+      "id": "px_swordsman_8dir",
+      "name": "검사 (8방향)",
+      "category": "pixel",
+      "defaultAnimation": "walk",
+      "animations": {
+        "walk": {
+          "file": "characters/pixel/px_swordsman_8dir_walk.webp",
+          "width": 240,
+          "height": 80,
+          "frameWidth": 60,
+          "frameHeight": 80,
+          "frames": 4,
+          "cols": 4,
+          "rows": 1,
+          "fps": 10,
+          "hash": "cbc38324f3"
+        },
+        "death": {
+          "file": "characters/pixel/px_swordsman_8dir_death.webp",
+          "width": 420,
+          "height": 80,
+          "frameWidth": 60,
+          "frameHeight": 80,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "96c8d7d344"
+        },
+        "south": {
+          "file": "characters/pixel/px_swordsman_8dir_south.webp",
+          "width": 60,
+          "height": 80,
+          "frameWidth": 60,
+          "frameHeight": 80,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "4a65f44924"
+        },
+        "south-east": {
+          "file": "characters/pixel/px_swordsman_8dir_south-east.webp",
+          "width": 60,
+          "height": 80,
+          "frameWidth": 60,
+          "frameHeight": 80,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "8944fb26c3"
+        },
+        "east": {
+          "file": "characters/pixel/px_swordsman_8dir_east.webp",
+          "width": 60,
+          "height": 80,
+          "frameWidth": 60,
+          "frameHeight": 80,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "684a086ce6"
+        },
+        "north-east": {
+          "file": "characters/pixel/px_swordsman_8dir_north-east.webp",
+          "width": 60,
+          "height": 80,
+          "frameWidth": 60,
+          "frameHeight": 80,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "adacf73eb9"
+        },
+        "north": {
+          "file": "characters/pixel/px_swordsman_8dir_north.webp",
+          "width": 60,
+          "height": 80,
+          "frameWidth": 60,
+          "frameHeight": 80,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "e18dba78f2"
+        },
+        "north-west": {
+          "file": "characters/pixel/px_swordsman_8dir_north-west.webp",
+          "width": 60,
+          "height": 80,
+          "frameWidth": 60,
+          "frameHeight": 80,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "63499aa581"
+        },
+        "west": {
+          "file": "characters/pixel/px_swordsman_8dir_west.webp",
+          "width": 60,
+          "height": 80,
+          "frameWidth": 60,
+          "frameHeight": 80,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "95c53b8f77"
+        },
+        "south-west": {
+          "file": "characters/pixel/px_swordsman_8dir_south-west.webp",
+          "width": 60,
+          "height": 80,
+          "frameWidth": 60,
+          "frameHeight": 80,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "92bc4c65f5"
+        }
+      },
+      "note": "PixelLab 캐릭터 (60x80, 8방향). 애니메이션은 east(오른쪽) 방향만 있고, 나머지 탭은 방향별 정지 그림. 원본 프롬프트: armored swordsman hero with a sword"
+    },
+    {
+      "id": "px_skeleton_8dir",
+      "name": "해골병 (8방향 소형)",
+      "category": "pixel",
+      "defaultAnimation": "walk",
+      "animations": {
+        "walk": {
+          "file": "characters/pixel/px_skeleton_8dir_walk.webp",
+          "width": 64,
+          "height": 32,
+          "frameWidth": 16,
+          "frameHeight": 32,
+          "frames": 4,
+          "cols": 4,
+          "rows": 1,
+          "fps": 10,
+          "hash": "84c7e5ed28"
+        },
+        "death": {
+          "file": "characters/pixel/px_skeleton_8dir_death.webp",
+          "width": 112,
+          "height": 32,
+          "frameWidth": 16,
+          "frameHeight": 32,
+          "frames": 7,
+          "cols": 7,
+          "rows": 1,
+          "fps": 10,
+          "hash": "5da07ae9f7"
+        },
+        "south": {
+          "file": "characters/pixel/px_skeleton_8dir_south.webp",
+          "width": 16,
+          "height": 32,
+          "frameWidth": 16,
+          "frameHeight": 32,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f03cc86d71"
+        },
+        "south-east": {
+          "file": "characters/pixel/px_skeleton_8dir_south-east.webp",
+          "width": 16,
+          "height": 32,
+          "frameWidth": 16,
+          "frameHeight": 32,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "f3d283b80e"
+        },
+        "east": {
+          "file": "characters/pixel/px_skeleton_8dir_east.webp",
+          "width": 16,
+          "height": 32,
+          "frameWidth": 16,
+          "frameHeight": 32,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "35098b5e60"
+        },
+        "north-east": {
+          "file": "characters/pixel/px_skeleton_8dir_north-east.webp",
+          "width": 16,
+          "height": 32,
+          "frameWidth": 16,
+          "frameHeight": 32,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "998c1a795c"
+        },
+        "north": {
+          "file": "characters/pixel/px_skeleton_8dir_north.webp",
+          "width": 16,
+          "height": 32,
+          "frameWidth": 16,
+          "frameHeight": 32,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "d1918d5de9"
+        },
+        "north-west": {
+          "file": "characters/pixel/px_skeleton_8dir_north-west.webp",
+          "width": 16,
+          "height": 32,
+          "frameWidth": 16,
+          "frameHeight": 32,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "b7a168d36a"
+        },
+        "west": {
+          "file": "characters/pixel/px_skeleton_8dir_west.webp",
+          "width": 16,
+          "height": 32,
+          "frameWidth": 16,
+          "frameHeight": 32,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "a294818cbd"
+        },
+        "south-west": {
+          "file": "characters/pixel/px_skeleton_8dir_south-west.webp",
+          "width": 16,
+          "height": 32,
+          "frameWidth": 16,
+          "frameHeight": 32,
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "hash": "69203a0db7"
+        }
+      },
+      "note": "PixelLab 캐릭터 (16x32, 8방향). 애니메이션은 east(오른쪽) 방향만 있고, 나머지 탭은 방향별 정지 그림. 원본 프롬프트: skeleton warrior with bone armor"
     }
   ]
 }
